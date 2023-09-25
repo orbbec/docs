@@ -1,8 +1,9 @@
 # Orbbec Documents
 
 ## OrbbecSDK
-[API Referrence: English](https://orbbec.github.io/OrbbecSDK/doc/api/English/index.html)
-[API Referrence: Chinese](https://orbbec.github.io/OrbbecSDK/doc/api/Chinese/index.html)
+
+* [API Referrence: English](https://orbbec.github.io/OrbbecSDK/doc/api/English/index.html)
+* [API Referrence: Chinese](https://orbbec.github.io/OrbbecSDK/doc/api/Chinese/index.html)
 
 ## OrbbecSDK-K4A-Wrapper
 
