@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['math_5faffine_5ftransform_5f3_0',['math_affine_transform_3',['../math_8h.html#a736aa8c2c940cdd3db679007b567a59c',1,'math.h']]],
-  ['math_5feval_5fpoly_5f3_1',['math_eval_poly_3',['../math_8h.html#a4c9b3aa86ce7e1271eba697c3792a638',1,'math.h']]],
-  ['math_5fquadratic_5ftransform_5f3_2',['math_quadratic_transform_3',['../math_8h.html#ac57856e612185769614b651804e893be',1,'math.h']]]
+  ['playback_0',['playback',['../classk4a_1_1playback.html#a19e7c75290cbef1587e80f493a9c4c74',1,'k4a::playback::playback(k4a_playback_t handle=nullptr) noexcept'],['../classk4a_1_1playback.html#ae95a8d8d3133017d3c3200a18289c705',1,'k4a::playback::playback(playback &amp;&amp;other) noexcept']]]
 ];

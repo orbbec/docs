@@ -1,6 +1,26 @@
 var searchData=
 [
-  ['bias_5ftemperature_5fmodel_0',['bias_temperature_model',['../struct__k4a__calibration__imu__t.html#a27029b147c305aedb99887b573b91d71',1,'_k4a_calibration_imu_t']]],
-  ['bias_5funcertainty_1',['bias_uncertainty',['../struct__k4a__calibration__imu__t.html#a9aa13658fce6b2f42c8a55885a6c9944',1,'_k4a_calibration_imu_t']]],
-  ['bitmapinfoheader_2',['BITMAPINFOHEADER',['../structk4arecord_1_1_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html',1,'k4arecord']]]
+  ['c_20reference_0',['C Reference',['../group__csdk.html',1,'']]],
+  ['c_2b_2b_20reference_1',['C++ Reference',['../group__cppsdk.html',1,'']]],
+  ['calibration_2',['calibration',['../structk4a_1_1calibration.html',1,'k4a']]],
+  ['callback_20function_20prototypes_3',['Callback Function prototypes',['../group___prototypes.html',1,'']]],
+  ['camera_5ffps_4',['camera_fps',['../struct__k4a__device__configuration__t.html#a8dbabf9299c3a89bb17f1a4908a2f7e6',1,'_k4a_device_configuration_t::camera_fps()'],['../struct__k4a__record__configuration__t.html#aeba97a01ff163cb3b37d28dbd3d73bf8',1,'_k4a_record_configuration_t::camera_fps()']]],
+  ['capture_5',['capture',['../classk4a_1_1capture.html#a713dcb3e3539e8d08f30be67b23b6ea8',1,'k4a::capture::capture(k4a_capture_t handle=nullptr) noexcept'],['../classk4a_1_1capture.html#a6da3c95c4331e4c25a8379f8e1feb97e',1,'k4a::capture::capture(const capture &amp;other) noexcept'],['../classk4a_1_1capture.html#aa06ed4ed8711325935e906a0414c1009',1,'k4a::capture::capture(capture &amp;&amp;other) noexcept'],['../classk4a_1_1capture.html',1,'k4a::capture']]],
+  ['close_6',['close',['../classk4a_1_1device.html#a1060f1cee688cbb125d112259b7b0739',1,'k4a::device::close()'],['../classk4a_1_1playback.html#a88c998625e37754fb8b1bdf0340bd122',1,'k4a::playback::close()'],['../classk4a_1_1record.html#a8d4c279d8f96b606f11a1ce811655e55',1,'k4a::record::close()']]],
+  ['codx_7',['codx',['../structk4a__calibration__intrinsic__parameters__t_1_1__param.html#a11b533b26b38b6cfd0e3b69c9aeade55',1,'k4a_calibration_intrinsic_parameters_t::_param']]],
+  ['cody_8',['cody',['../structk4a__calibration__intrinsic__parameters__t_1_1__param.html#a0e3edc5180a9323a5f7d28c7f3cd7f65',1,'k4a_calibration_intrinsic_parameters_t::_param']]],
+  ['color_5fcamera_5fcalibration_9',['color_camera_calibration',['../struct__k4a__calibration__t.html#a7fecc0e2a971a706fca9f40d2bdf3c3d',1,'_k4a_calibration_t']]],
+  ['color_5fformat_10',['color_format',['../struct__k4a__device__configuration__t.html#aec766b55488fba5302f960f0bb047b9b',1,'_k4a_device_configuration_t::color_format()'],['../struct__k4a__record__configuration__t.html#ab19ab7123ed95781bd91d9f6d78a1cff',1,'_k4a_record_configuration_t::color_format()']]],
+  ['color_5fimage_5fto_5fdepth_5fcamera_11',['color_image_to_depth_camera',['../classk4a_1_1transformation.html#a208b7009485b1d14ccebaade276a32dc',1,'k4a::transformation::color_image_to_depth_camera(const image &amp;depth_image, const image &amp;color_image) const'],['../classk4a_1_1transformation.html#ae25f1d6159f91bda04e9026959f94b15',1,'k4a::transformation::color_image_to_depth_camera(const image &amp;depth_image, const image &amp;color_image, image *transformed_color_image) const']]],
+  ['color_5fresolution_12',['color_resolution',['../struct__k4a__calibration__t.html#a31cfedf162c26fa0586b8b029bdb61fc',1,'_k4a_calibration_t::color_resolution()'],['../struct__k4a__record__configuration__t.html#a2fd4caca81796ba3f21fa6e312eae334',1,'_k4a_record_configuration_t::color_resolution()'],['../struct__k4a__device__configuration__t.html#a9fde3cc3127a572eff3229f1b9de1f06',1,'_k4a_device_configuration_t::color_resolution()']]],
+  ['color_5ftrack_5fenabled_13',['color_track_enabled',['../struct__k4a__record__configuration__t.html#a3928c76fce76544cd80199d84e1d5eb5',1,'_k4a_record_configuration_t']]],
+  ['convert_5f2d_5fto_5f2d_14',['convert_2d_to_2d',['../structk4a_1_1calibration.html#afd343e2419c2a3437559aa90fcf2a4f0',1,'k4a::calibration']]],
+  ['convert_5f2d_5fto_5f3d_15',['convert_2d_to_3d',['../structk4a_1_1calibration.html#a84577df64d47642d0b8f1fee11b21a96',1,'k4a::calibration']]],
+  ['convert_5f3d_5fto_5f2d_16',['convert_3d_to_2d',['../structk4a_1_1calibration.html#a74a6fef25540e9cdf18ed06ff1cfdc2e',1,'k4a::calibration']]],
+  ['convert_5f3d_5fto_5f3d_17',['convert_3d_to_3d',['../structk4a_1_1calibration.html#a44fbcadffdbef6fa2be0e076afcfb470',1,'k4a::calibration']]],
+  ['convert_5fcolor_5f2d_5fto_5fdepth_5f2d_18',['convert_color_2d_to_depth_2d',['../structk4a_1_1calibration.html#ab72a37ed466a41d68c522678fa57ff4f',1,'k4a::calibration']]],
+  ['create_19',['create',['../classk4a_1_1image.html#a7a92d9119d57b57039946f6f7220d9a9',1,'k4a::image::create()'],['../classk4a_1_1capture.html#a92b8f943cef424490692fc6e76bfe3ec',1,'k4a::capture::create()'],['../classk4a_1_1record.html#ac9df8117997ff676aefbdebba7a79490',1,'k4a::record::create()']]],
+  ['create_5ffrom_5fbuffer_20',['create_from_buffer',['../classk4a_1_1image.html#a2885ff39ce74f193d5fe9fd1e92072ce',1,'k4a::image']]],
+  ['cx_21',['cx',['../structk4a__calibration__intrinsic__parameters__t_1_1__param.html#acdaf3c374353bc3347551b379ee4f83c',1,'k4a_calibration_intrinsic_parameters_t::_param']]],
+  ['cy_22',['cy',['../structk4a__calibration__intrinsic__parameters__t_1_1__param.html#a033e90a9b862dddffc0e4e5f6d1f02b3',1,'k4a_calibration_intrinsic_parameters_t::_param']]]
 ];

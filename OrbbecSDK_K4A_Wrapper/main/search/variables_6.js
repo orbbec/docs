@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gyro_5fsample_0',['gyro_sample',['../struct__k4a__imu__sample__t.html#a3a8acb1ba87f3958f14bf962f3f24986',1,'_k4a_imu_sample_t']]],
-  ['gyro_5ftimestamp_5fusec_1',['gyro_timestamp_usec',['../struct__k4a__imu__sample__t.html#abcf6452801f6528aae21cdde0ee5c026',1,'_k4a_imu_sample_t']]]
+  ['height_0',['height',['../struct__k4a__record__video__settings__t.html#aed079d642d8c6ca3b0a4ca8a60f6cd96',1,'_k4a_record_video_settings_t']]],
+  ['high_5ffreq_5fdata_1',['high_freq_data',['../struct__k4a__record__subtitle__settings__t.html#a33a1bf5e52d927fbbc6effda61a80145',1,'_k4a_record_subtitle_settings_t']]]
 ];

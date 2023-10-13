@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['resolution_5fheight_0',['resolution_height',['../struct__k4a__calibration__camera__t.html#a351591907f95082b3cb5a700c9c0e962',1,'_k4a_calibration_camera_t']]],
-  ['resolution_5fwidth_1',['resolution_width',['../struct__k4a__calibration__camera__t.html#ae4b75955898c6ce7c69e5804a9533ef7',1,'_k4a_calibration_camera_t']]],
-  ['rgb_2',['rgb',['../struct__k4a__hardware__version__t.html#a1552394665082e9831055edf08fad3ea',1,'_k4a_hardware_version_t']]],
-  ['rotation_3',['rotation',['../struct__k4a__calibration__extrinsics__t.html#ae563b0351e217c237b6d3b8c32ac828f',1,'_k4a_calibration_extrinsics_t']]]
+  ['width_0',['width',['../struct__k4a__record__video__settings__t.html#ab4397fc2a6eec18bcc74ea8b65536adb',1,'_k4a_record_video_settings_t']]],
+  ['wired_5fsync_5fmode_1',['wired_sync_mode',['../struct__k4a__device__configuration__t.html#a782a7f1d5da82fb008f721c63e0edc06',1,'_k4a_device_configuration_t::wired_sync_mode()'],['../struct__k4a__record__configuration__t.html#a101db6f46517e5efc008a32a00bceb52',1,'_k4a_record_configuration_t::wired_sync_mode()']]]
 ];

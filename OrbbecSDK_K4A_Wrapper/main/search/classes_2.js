@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['calibration_0',['calibration',['../structk4a_1_1calibration.html',1,'k4a']]],
-  ['capture_1',['capture',['../classk4a_1_1capture.html',1,'k4a']]]
+  ['data_5fblock_0',['data_block',['../classk4a_1_1data__block.html',1,'k4a']]],
+  ['device_1',['device',['../classk4a_1_1device.html',1,'k4a']]]
 ];

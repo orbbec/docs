@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['firmware_5fbuild_0',['firmware_build',['../struct__k4a__hardware__version__t.html#a2336bef08cb4f1726b07f8094427ce50',1,'_k4a_hardware_version_t']]],
-  ['firmware_5fsignature_1',['firmware_signature',['../struct__k4a__hardware__version__t.html#a7e68aae354bf73cfb7509db55689b3be',1,'_k4a_hardware_version_t']]],
-  ['frame_5frate_2',['frame_rate',['../struct__k4a__record__video__settings__t.html#a1068a20de843725b9eca9cac5f3b4408',1,'_k4a_record_video_settings_t']]],
-  ['fx_3',['fx',['../structk4a__calibration__intrinsic__parameters__t_1_1__param.html#a8069e7da60119d09b9c7a37cf9f65d6a',1,'k4a_calibration_intrinsic_parameters_t::_param']]],
-  ['fy_4',['fy',['../structk4a__calibration__intrinsic__parameters__t_1_1__param.html#a88fcdda1ec2d887b03be4011d8442c6a',1,'k4a_calibration_intrinsic_parameters_t::_param']]]
+  ['gyro_5fsample_0',['gyro_sample',['../struct__k4a__imu__sample__t.html#a3a8acb1ba87f3958f14bf962f3f24986',1,'_k4a_imu_sample_t']]],
+  ['gyro_5ftimestamp_5fusec_1',['gyro_timestamp_usec',['../struct__k4a__imu__sample__t.html#abcf6452801f6528aae21cdde0ee5c026',1,'_k4a_imu_sample_t']]]
 ];

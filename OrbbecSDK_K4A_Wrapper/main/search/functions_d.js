@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['record_0',['record',['../classk4a_1_1record.html#ad9bffd0cadcf6ada491252030afbd16b',1,'k4a::record::record(k4a_record_t handle=nullptr) noexcept'],['../classk4a_1_1record.html#ac8819a14ffd372f9311c5dc530eb3a0d',1,'k4a::record::record(record &amp;&amp;other) noexcept']]],
-  ['reset_1',['reset',['../classk4a_1_1image.html#a5654ce02204e255e11350c14cf1f4b89',1,'k4a::image::reset()'],['../classk4a_1_1capture.html#aa922aa6bae17310b4d73464a2486be92',1,'k4a::capture::reset()'],['../classk4a_1_1data__block.html#a214de084e41a7a1b4af1e1ab9f292d0b',1,'k4a::data_block::reset()']]]
+  ['write_5fcapture_0',['write_capture',['../classk4a_1_1record.html#af6b60c4d648ef2b14d838a4c9310a498',1,'k4a::record']]],
+  ['write_5fcustom_5ftrack_5fdata_1',['write_custom_track_data',['../classk4a_1_1record.html#aaf00e22c38d49348b71b45c62ba0ad2b',1,'k4a::record']]],
+  ['write_5fheader_2',['write_header',['../classk4a_1_1record.html#adfb9cbc32254ae96b1cf5fef0d865d28',1,'k4a::record']]],
+  ['write_5fimu_5fsample_3',['write_imu_sample',['../classk4a_1_1record.html#a37a49b99e15592882c07751b5a9bee44',1,'k4a::record']]]
 ];

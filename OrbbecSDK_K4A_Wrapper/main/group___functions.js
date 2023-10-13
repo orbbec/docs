@@ -1,5 +1,10 @@
 var group___functions =
 [
+    [ "_k4a_calibration_t::k4a_calibration_2d_to_2d", "group___functions.html#ga3a757106b8c9e5a7f680d03878250a47", null ],
+    [ "_k4a_calibration_t::k4a_calibration_2d_to_3d", "group___functions.html#gaf2826841959acfd3c497953f2085983f", null ],
+    [ "_k4a_calibration_t::k4a_calibration_3d_to_2d", "group___functions.html#ga49106e9c3dd0300df6922262396bd081", null ],
+    [ "_k4a_calibration_t::k4a_calibration_3d_to_3d", "group___functions.html#ga4fad1a3bc5b10d828c04f7b0375fc02f", null ],
+    [ "_k4a_calibration_t::k4a_calibration_color_2d_to_depth_2d", "group___functions.html#gad5fc343ca30aca888c4af57893a1fd7b", null ],
     [ "k4a_device_t::k4a_calibration_get_from_raw", "group___functions.html#gabc1949fe1614294d2e27ecb69eea2212", null ],
     [ "k4a_capture_t::k4a_capture_create", "group___functions.html#ga033e68dd9c013e838fde67204a9b5be3", null ],
     [ "k4a_capture_t::k4a_capture_get_color_image", "group___functions.html#gad574b5dcc6e7cb2e25b702e0fdd5671b", null ],
@@ -95,6 +100,7 @@ var group___functions =
     [ "k4a_set_allocator", "group___functions.html#ga7d42e1dbb05f4ea3d4d2c823e9f545a0", null ],
     [ "k4a_set_debug_message_handler", "group___functions.html#gad6c7977249c2e9d1d786afa4d60aeeeb", null ],
     [ "k4a_transformation_t::k4a_transformation_color_image_to_depth_camera", "group___functions.html#gaa3cfbe85228b09612b17f737a3184efd", null ],
+    [ "_k4a_calibration_t::k4a_transformation_create", "group___functions.html#ga569171012005a2ee4a9e40315a5b0cc7", null ],
     [ "k4a_transformation_t::k4a_transformation_depth_image_to_color_camera", "group___functions.html#gab51ca6c6bddde3acf16b83c6370564a2", null ],
     [ "k4a_transformation_t::k4a_transformation_depth_image_to_color_camera_custom", "group___functions.html#ga917c81aede0aad08738f66dd8ea3c0e7", null ],
     [ "k4a_transformation_t::k4a_transformation_depth_image_to_point_cloud", "group___functions.html#ga7b6cbdf5b0f8eeb271156a6468df039a", null ],
