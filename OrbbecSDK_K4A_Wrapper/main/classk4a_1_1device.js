@@ -1,0 +1,26 @@
+var classk4a_1_1device =
+[
+    [ "device", "classk4a_1_1device.html#a060093e3ad034aaeb05ea9dc69958a58", null ],
+    [ "device", "classk4a_1_1device.html#a7543679a25b5761293869d1856d219aa", null ],
+    [ "close", "classk4a_1_1device.html#a1060f1cee688cbb125d112259b7b0739", null ],
+    [ "get_calibration", "classk4a_1_1device.html#ac857cfc66cd1c367d48cb83fba8a032c", null ],
+    [ "get_capture", "classk4a_1_1device.html#a14c9e31b77fa4fc8e55054276e580cf8", null ],
+    [ "get_capture", "classk4a_1_1device.html#a591d2f9a0a1a25eaf7f2fc9cfc5b7c7e", null ],
+    [ "get_color_control", "classk4a_1_1device.html#a4a0757363fc3e7937908f90b30f3666d", null ],
+    [ "get_imu_sample", "classk4a_1_1device.html#a5957d37c22bca085fe4a8da3d7444999", null ],
+    [ "get_imu_sample", "classk4a_1_1device.html#a59acd51c256b17441c6a2a4e335bc982", null ],
+    [ "get_raw_calibration", "classk4a_1_1device.html#a6c09cad228362d6732af98d9e2a7613b", null ],
+    [ "get_serialnum", "classk4a_1_1device.html#a452df45f6aa4ce3d8ae442bc1f2e7e7d", null ],
+    [ "get_version", "classk4a_1_1device.html#a56dd0f20dcc26c014cdd8b47145a523b", null ],
+    [ "handle", "classk4a_1_1device.html#a67c4cbd2cf6113228b5dfed56fef987b", null ],
+    [ "is_sync_in_connected", "classk4a_1_1device.html#acaba6c5d8a28965882a4703e8806810a", null ],
+    [ "is_sync_out_connected", "classk4a_1_1device.html#aec0191ecf75549f650af7ac61d0afbef", null ],
+    [ "is_valid", "classk4a_1_1device.html#aece422ef7b2e662ceccebb4a990ed613", null ],
+    [ "operator bool", "classk4a_1_1device.html#a015a45ab5362697ef77ec4be2f387e31", null ],
+    [ "operator=", "classk4a_1_1device.html#a1c4af7b4258b1e66c107445b2b86fda8", null ],
+    [ "set_color_control", "classk4a_1_1device.html#af257d6c8181222823c7cfbdf57e032d7", null ],
+    [ "start_cameras", "classk4a_1_1device.html#a52c94d759b88a19421f9fce558c44c7b", null ],
+    [ "start_imu", "classk4a_1_1device.html#abc8bb828de9b48b10fefa5ca6b8482c7", null ],
+    [ "stop_cameras", "classk4a_1_1device.html#a54390cae2a759ad9e36f47a30c223fd5", null ],
+    [ "stop_imu", "classk4a_1_1device.html#a18f23e91f38643520228d784435938e5", null ]
+];

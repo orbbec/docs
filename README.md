@@ -2,9 +2,10 @@
 
 ## OrbbecSDK
 
-* [API Referrence: English](https://orbbec.github.io/OrbbecSDK/doc/api/English/index.html)
-* [API Referrence: Chinese](https://orbbec.github.io/OrbbecSDK/doc/api/Chinese/index.html)
+* [API Reference: English](https://orbbec.github.io/OrbbecSDK/doc/api/English/index.html)
+* [API Reference: Chinese](https://orbbec.github.io/OrbbecSDK/doc/api/Chinese/index.html)
 
-## OrbbecSDK-K4A-Wrapper
+## Orbbec SDK K4A Wrapper
 
-[API Referrence: bolt-1.7.x-dev](https://orbbec.github.io/docs/OrbbecSDK_K4A_Wrapper/bolt-1.7.x-dev/)
+[API Reference: main](https://orbbec.github.io/docs/OrbbecSDK_K4A_Wrapper/main/)
+[API Reference: bolt-1.7.x-dev](https://orbbec.github.io/docs/OrbbecSDK_K4A_Wrapper/bolt-1.7.x-dev/)

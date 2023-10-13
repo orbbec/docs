@@ -1,0 +1,26 @@
+var classk4a__image__t =
+[
+    [ "k4a_image_create", "group___functions.html#ga7995ce9b9f7495e6fff5b24fe8165a13", null ],
+    [ "k4a_image_create_from_buffer", "group___functions.html#gab8b72b0886aafdc3f80c46e01495c4c2", null ],
+    [ "k4a_image_get_buffer", "group___functions.html#gaa0d2bac782b906e5eae90d52f64df2ad", null ],
+    [ "k4a_image_get_device_timestamp_usec", "group___functions.html#ga21a1d7a8bbdfbafccd45f1d1d32bf935", null ],
+    [ "k4a_image_get_exposure_usec", "group___functions.html#ga3944445e00031ccc6f974840bacb75d9", null ],
+    [ "k4a_image_get_format", "group___functions.html#ga5dab13d47515a2588d6af6e6bd01d368", null ],
+    [ "k4a_image_get_height_pixels", "group___functions.html#gaf7c1cdc66a9e034e707014b19300ef3c", null ],
+    [ "k4a_image_get_iso_speed", "group___functions.html#ga810da58e592873e5f01449912bec3b2f", null ],
+    [ "k4a_image_get_size", "group___functions.html#ga46f8333ae80087fe8761c1a372290c5c", null ],
+    [ "k4a_image_get_stride_bytes", "group___functions.html#ga8701dc133e774aecc4c4e7d6cee22938", null ],
+    [ "k4a_image_get_system_timestamp_nsec", "group___functions.html#ga26c2610cba9eb2522abbc3f76f438826", null ],
+    [ "k4a_image_get_timestamp_usec", "group___functions.html#ga5a0940fb8ecf418eb3a388412bd08643", null ],
+    [ "k4a_image_get_white_balance", "group___functions.html#ga45a1043e4dd3d88c32316537b0f8dd4b", null ],
+    [ "k4a_image_get_width_pixels", "group___functions.html#ga05286812b7838d979f36da2f8514831a", null ],
+    [ "k4a_image_reference", "group___functions.html#ga6f2a8d5a2e4e7426a77b56da43f0cfed", null ],
+    [ "k4a_image_release", "group___functions.html#ga4dd13ff37fa1b77ac84519bda0427ddc", null ],
+    [ "k4a_image_set_device_timestamp_usec", "group___functions.html#ga9a59fdb2df0f65fba06cbfa9d18eba02", null ],
+    [ "k4a_image_set_exposure_time_usec", "group___functions.html#ga29954cc87d1fabc8651155f7baff5c9f", null ],
+    [ "k4a_image_set_exposure_usec", "group___functions.html#gab4df1a2c5bfa6f5b231f9959551bd1c2", null ],
+    [ "k4a_image_set_iso_speed", "group___functions.html#ga330dffe21466291bd65773614fc4a4e5", null ],
+    [ "k4a_image_set_system_timestamp_nsec", "group___functions.html#ga5696414b3e9758f6640564f8af9deef3", null ],
+    [ "k4a_image_set_timestamp_usec", "group___functions.html#ga276298132ac76f56bf2c8b7589e38d63", null ],
+    [ "k4a_image_set_white_balance", "group___functions.html#ga988e03b5ef661d804ff2d338d9485c17", null ]
+];

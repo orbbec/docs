@@ -1,0 +1,25 @@
+var classk4a_1_1capture =
+[
+    [ "capture", "classk4a_1_1capture.html#a713dcb3e3539e8d08f30be67b23b6ea8", null ],
+    [ "capture", "classk4a_1_1capture.html#a6da3c95c4331e4c25a8379f8e1feb97e", null ],
+    [ "capture", "classk4a_1_1capture.html#aa06ed4ed8711325935e906a0414c1009", null ],
+    [ "get_color_image", "classk4a_1_1capture.html#a885c87e3fdd40c567350bfece9c6969c", null ],
+    [ "get_depth_image", "classk4a_1_1capture.html#a36de50df5f36391e7ed606c0cb5607a2", null ],
+    [ "get_ir_image", "classk4a_1_1capture.html#aa19b3af5fefbb2dc4dabd4a31c94d6fc", null ],
+    [ "get_temperature_c", "classk4a_1_1capture.html#a48bbcd6a4e69cf1c5574162d2d0f0d33", null ],
+    [ "handle", "classk4a_1_1capture.html#a5e5a361b96542cc0206524b03ddaf95d", null ],
+    [ "is_valid", "classk4a_1_1capture.html#ab35642daed5d6d74f44b69806665573e", null ],
+    [ "operator bool", "classk4a_1_1capture.html#a9b195bd62ed46c3138b88942ca8b6447", null ],
+    [ "operator!=", "classk4a_1_1capture.html#a34e5cc8621b5c782f79e8ad7a6d667b1", null ],
+    [ "operator!=", "classk4a_1_1capture.html#a1a5b1eac81bfd22a978f5c2ccbfc38a4", null ],
+    [ "operator=", "classk4a_1_1capture.html#a7f476d6b9c852fb0f4b0f3e60f2ee686", null ],
+    [ "operator=", "classk4a_1_1capture.html#a570f60846e0338f2320f6effdfd8cfc2", null ],
+    [ "operator=", "classk4a_1_1capture.html#af2e427ff72ba44f1168e8fd6ef9dfdd0", null ],
+    [ "operator==", "classk4a_1_1capture.html#aa25047bfa3d41a3e350b93dbead41b58", null ],
+    [ "operator==", "classk4a_1_1capture.html#a650a8677ba836694aac75a22683f3d9d", null ],
+    [ "reset", "classk4a_1_1capture.html#aa922aa6bae17310b4d73464a2486be92", null ],
+    [ "set_color_image", "classk4a_1_1capture.html#ac97e202cb82abcbd95cf584045233d64", null ],
+    [ "set_depth_image", "classk4a_1_1capture.html#a6136c6d7369ebccbee2a65ef4d800f9e", null ],
+    [ "set_ir_image", "classk4a_1_1capture.html#aba19a0d0ff58f841223832422415c790", null ],
+    [ "set_temperature_c", "classk4a_1_1capture.html#a462b292bdb1f7a525e461bc8a7d94510", null ]
+];
