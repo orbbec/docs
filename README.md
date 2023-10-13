@@ -7,5 +7,4 @@
 
 ## Orbbec SDK K4A Wrapper
 
-* [API Reference: main](https://orbbec.github.io/docs/OrbbecSDK_K4A_Wrapper/main/)
-* [API Reference: bolt-1.7.x-dev](https://orbbec.github.io/docs/OrbbecSDK_K4A_Wrapper/bolt-1.7.x-dev/)
+* [API Reference](https://orbbec.github.io/docs/OrbbecSDK_K4A_Wrapper)
