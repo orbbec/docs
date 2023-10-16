@@ -930,6 +930,7 @@ k4a_calibration_3d_to_3d()</dd></dl>
 </table>
 </div><div class="memdoc">
 <p>Get the temperature associated with the capture.</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">capture_handle</td><td>Capture handle to retrieve the temperature from.</td></tr>
@@ -1195,6 +1196,7 @@ Any <a class="el" href="classk4a__image__t.html">k4a_image_t</a> contained in th
 </table>
 </div><div class="memdoc">
 <p>Set the temperature associated with the capture.</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">capture_handle</td><td>Capture handle to set the temperature on.</td></tr>
@@ -1764,6 +1766,7 @@ Only a complete serial number will be returned. If the caller's buffer is too sm
 </table>
 </div><div class="memdoc">
 <p>Get the device jack status for the synchronization in and synchronization out connectors.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The Orbbec device does not support retrieving the jack connection status, so this function will always return false (disconnected).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device_handle</td><td>Handle obtained by <a class="el" href="group___functions.html#gae9972f1c1a771813e3f6c7e75fefd96a">k4a_device_open()</a>.</td></tr>
@@ -1773,7 +1776,6 @@ Only a complete serial number will be returned. If the caller's buffer is too sm
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___enumerations.html#gga4b419a99aa2220b076a4520dc2afd1e5a66d48bea75b8ddf1c568a824469da9d3">K4A_RESULT_SUCCEEDED</a> if the connector status was successfully read.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>The Orbbec device does not support retrieving the jack connection status, so this function will always return false (disconnected).</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>If <code>sync_out_jack_connected</code> is true then <a class="el" href="group___structures.html#gaa3764c9309d6fae0a927be1327965633">k4a_device_configuration_t</a> wired_sync_mode mode can be set to <a class="el" href="group___enumerations.html#gga6404c655dd8656efb745c6ee90da2505ad5e3a4dcef58c6d591a7d73a3a02602c">K4A_WIRED_SYNC_MODE_STANDALONE</a> or <a class="el" href="group___enumerations.html#gga6404c655dd8656efb745c6ee90da2505a014b98f7b0c962a994abe1a472bf6697">K4A_WIRED_SYNC_MODE_MASTER</a>. If <code>sync_in_jack_connected</code> is true then <a class="el" href="group___structures.html#gaa3764c9309d6fae0a927be1327965633">k4a_device_configuration_t</a> wired_sync_mode mode can be set to <a class="el" href="group___enumerations.html#gga6404c655dd8656efb745c6ee90da2505ad5e3a4dcef58c6d591a7d73a3a02602c">K4A_WIRED_SYNC_MODE_STANDALONE</a> or <a class="el" href="group___enumerations.html#gga6404c655dd8656efb745c6ee90da2505a8140f817b21902d275832a1ef6c216ca">K4A_WIRED_SYNC_MODE_SUBORDINATE</a>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group___functions.html#gadcba304c93173494cc3f065623bf62ae">k4a_device_start_cameras()</a></dd></dl>
  
@@ -2361,6 +2363,7 @@ Release the reference on this function with <a class="el" href="group___function
 </table>
 </div><div class="memdoc">
 <p>Get the image exposure in microseconds.</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image_handle</td><td>Handle of the image for which the get operation is performed on.</td></tr>
@@ -2465,6 +2468,7 @@ Release the reference on this function with <a class="el" href="group___function
 </table>
 </div><div class="memdoc">
 <p>Get the image ISO speed.</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image_handle</td><td>Handle of the image for which the get operation is performed on.</td></tr>
@@ -2645,6 +2649,7 @@ On Linux the system timestamp is read from clock_gettime(CLOCK_MONOTONIC), which
 </table>
 </div><div class="memdoc">
 <p>Get the image white balance.</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image_handle</td><td>Handle of the image for which the get operation is performed on.</td></tr>
@@ -2886,6 +2891,7 @@ The device timestamp represents the mid-point of exposure of the image, as captu
 </table>
 </div><div class="memdoc">
 <p>Set the exposure time, in microseconds, of the image.</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image_handle</td><td>Handle of the image to set the exposure time on.</td></tr>
@@ -2931,6 +2937,7 @@ The device timestamp represents the mid-point of exposure of the image, as captu
 </table>
 </div><div class="memdoc">
 <p>Set the ISO speed of the image.</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image_handle</td><td>Handle of the image to set the ISO speed on.</td></tr>
@@ -3072,6 +3079,7 @@ The device timestamp represents the mid-point of exposure of the image, as captu
 </table>
 </div><div class="memdoc">
 <p>Set the white balance of the image.</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">image_handle</td><td>Handle of the image to set the white balance on.</td></tr>
@@ -5031,6 +5039,7 @@ When writing imu samples at the same time as captures, the samples should be wit
       </table>
 </div><div class="memdoc">
 <p>Sets the callback functions for the SDK allocator</p>
+<dl class="section attention"><dt>Attention</dt><dd>For the Orbbec SDK K4A wrapper, this function is not yet supported.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">allocate</td><td>The callback function to allocate memory. When the SDK requires memory allocation this callback will be called and the application can provide a buffer and a context.</td></tr>
