@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: D:/program/gitlab_repository/package/openorbbecsdkgroup/OpenOrbbecSDK/include/libobsensor/h/Property.h File Reference</title>
+<title>OrbbecSDK: E:/Program/Code/orbbec/tmp/group/OpenOrbbecSDK/include/libobsensor/h/Property.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.1.1</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.2.8</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -250,11 +250,21 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafe71a808ca2f802da7bb9e22adcfa446">OB_PROP_IR_AE_MAX_EXPOSURE_INT</a> = 190
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaf0d09c6ee91a38f9b1ccddf6caed925c">OB_PROP_DISP_SEARCH_RANGE_MODE_INT</a> = 191
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba1e58541ca1dff99322d42437e3923a4f">OB_PROP_LASER_HIGH_TEMPERATURE_PROTECT_BOOL</a> = 193
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaa1572bea8407864b820d034b3f8a48b7">OB_PROP_LOW_EXPOSURE_LASER_CONTROL_BOOL</a> = 194
+, <br />
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba51d67a2bb6c47000500f66ce91854a0a">OB_PROP_CHECK_PPS_SYNC_IN_SIGNAL_BOOL</a> = 195
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabae3063aa3f16b4ac5c70f10e2ffdc173b">OB_PROP_DISP_SEARCH_OFFSET_INT</a> = 196
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac06cf1ad81b41297ec0229e7773ecc12">OB_PROP_DEVICE_REPOWER_BOOL</a> = 202
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8bb5b7265ab11719eaf4b25aaa00d5cd">OB_PROP_FRAME_INTERLEAVE_CONFIG_INDEX_INT</a> = 204
 , <br />
 &#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac98a49586f65ed597d6d6a6b42970ec2">OB_PROP_FRAME_INTERLEAVE_ENABLE_BOOL</a> = 205
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba204cd40dc8e5f8052604a23ea42258cc">OB_PROP_FRAME_INTERLEAVE_LASER_PATTERN_SYNC_DELAY_INT</a> = 206
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafb799a9ac5576e6d9943c8d50c0e3243">OB_PROP_ON_CHIP_CALIBRATION_HEALTH_CHECK_FLOAT</a> = 209
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba08ee14ecbc2883b8f857c94dcba2c171">OB_PROP_ON_CHIP_CALIBRATION_ENABLE_BOOL</a> = 210
+, <br />
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba146b6daaec493c4a7a3b195c08e04723">OB_PROP_HW_NOISE_REMOVE_FILTER_ENABLE_BOOL</a> = 211
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba64da5c3cc633c6c940cdd1744ecd35cf">OB_PROP_HW_NOISE_REMOVE_FILTER_THRESHOLD_FLOAT</a> = 212
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabad5d4191f8738853ba279aad12d13aaa1">OB_STRUCT_BASELINE_CALIBRATION_PARAM</a> = 1002
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac6f97352c9f3d2ef9838227d168ff05d">OB_STRUCT_DEVICE_TEMPERATURE</a> = 1003
 , <br />
@@ -274,58 +284,61 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba57764177c4d18a7506cccdb9ecdddf89">OB_STRUCT_DEPTH_AE_ROI</a> = 1061
 , <br />
 &#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac9b652f69e1e105150a15b21ba98909d">OB_STRUCT_ASIC_SERIAL_NUMBER</a> = 1063
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba742d3279870cadef85505d03a82c23de">OB_STRUCT_DISP_OFFSET_CONFIG</a> = 1064
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabad079a2535d5c99bedc93f368cfa47d38">OB_PROP_COLOR_AUTO_EXPOSURE_BOOL</a> = 2000
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba85f29e393214ce11b46e32f3363289b5">OB_PROP_COLOR_EXPOSURE_INT</a> = 2001
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba926125aea97f1601a2213f9dab37eaa5">OB_PROP_COLOR_GAIN_INT</a> = 2002
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababda9cd3eec29877c35eb8484201cf76b">OB_PROP_COLOR_AUTO_WHITE_BALANCE_BOOL</a> = 2003
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba926125aea97f1601a2213f9dab37eaa5">OB_PROP_COLOR_GAIN_INT</a> = 2002
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababda9cd3eec29877c35eb8484201cf76b">OB_PROP_COLOR_AUTO_WHITE_BALANCE_BOOL</a> = 2003
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba5ca8f197256333201044efdfb8596c2e">OB_PROP_COLOR_WHITE_BALANCE_INT</a> = 2004
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaaeab84ace968acdb565ff117247e2ba2">OB_PROP_COLOR_BRIGHTNESS_INT</a> = 2005
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababd2021ed7e3df757382eb5455dc18259">OB_PROP_COLOR_SHARPNESS_INT</a> = 2006
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba092569c30725be70a1654bc34ca67048">OB_PROP_COLOR_SHUTTER_INT</a> = 2007
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababd2021ed7e3df757382eb5455dc18259">OB_PROP_COLOR_SHARPNESS_INT</a> = 2006
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba092569c30725be70a1654bc34ca67048">OB_PROP_COLOR_SHUTTER_INT</a> = 2007
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafd1d14da3c54e51fb7be1be5f43c4943">OB_PROP_COLOR_SATURATION_INT</a> = 2008
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba48c936f148ef52313d18b1846cf91abc">OB_PROP_COLOR_CONTRAST_INT</a> = 2009
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3718ede42b015f81cf429d0e1579b4e6">OB_PROP_COLOR_GAMMA_INT</a> = 2010
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba415c12a50603d1a402c3f2410c025e87">OB_PROP_COLOR_ROLL_INT</a> = 2011
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3718ede42b015f81cf429d0e1579b4e6">OB_PROP_COLOR_GAMMA_INT</a> = 2010
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba415c12a50603d1a402c3f2410c025e87">OB_PROP_COLOR_ROLL_INT</a> = 2011
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac1faca8ca531e3aeb10f8e9af3da966c">OB_PROP_COLOR_AUTO_EXPOSURE_PRIORITY_INT</a> = 2012
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba33d29649465ee7b5f341447094cd27f4">OB_PROP_COLOR_BACKLIGHT_COMPENSATION_INT</a> = 2013
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba19ea7f7c905c3afcf8d5c2e43abd33c3">OB_PROP_COLOR_HUE_INT</a> = 2014
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8c742234f530e76daa23da65fab1621e">OB_PROP_COLOR_POWER_LINE_FREQUENCY_INT</a> = 2015
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba19ea7f7c905c3afcf8d5c2e43abd33c3">OB_PROP_COLOR_HUE_INT</a> = 2014
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8c742234f530e76daa23da65fab1621e">OB_PROP_COLOR_POWER_LINE_FREQUENCY_INT</a> = 2015
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababba227494de0b246f3faba208b4878e3">OB_PROP_DEPTH_AUTO_EXPOSURE_BOOL</a> = 2016
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba770da9cd29f4e71444f2d335c36893f4">OB_PROP_DEPTH_EXPOSURE_INT</a> = 2017
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba4c8e11c63e1bfa4c6ffbcb2ac996d85f">OB_PROP_DEPTH_GAIN_INT</a> = 2018
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba61f5084fdd2444bb1227090ec0fe7ce5">OB_PROP_IR_AUTO_EXPOSURE_BOOL</a> = 2025
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba4c8e11c63e1bfa4c6ffbcb2ac996d85f">OB_PROP_DEPTH_GAIN_INT</a> = 2018
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba61f5084fdd2444bb1227090ec0fe7ce5">OB_PROP_IR_AUTO_EXPOSURE_BOOL</a> = 2025
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba63ada6d6d7d8d35b0eb364e661fcfbf2">OB_PROP_IR_EXPOSURE_INT</a> = 2026
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3c2a6a781a5582cdb7d40be1339fe193">OB_PROP_IR_GAIN_INT</a> = 2027
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabab041e2a493240734c6fc490608cf1c6c">OB_PROP_IR_CHANNEL_DATA_SOURCE_INT</a> = 2028
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafde74455cca9d681622204c4d9bf1ca1">OB_PROP_DEPTH_RM_FILTER_BOOL</a> = 2029
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabab041e2a493240734c6fc490608cf1c6c">OB_PROP_IR_CHANNEL_DATA_SOURCE_INT</a> = 2028
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafde74455cca9d681622204c4d9bf1ca1">OB_PROP_DEPTH_RM_FILTER_BOOL</a> = 2029
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba101cee369c0630d8d07a9adcd7c5ac22">OB_PROP_COLOR_MAXIMAL_GAIN_INT</a> = 2030
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba24450874f07f1a5dfb69124b6402945b">OB_PROP_COLOR_MAXIMAL_SHUTTER_INT</a> = 2031
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba1fb102a92334fc347e117c220b69655f">OB_PROP_IR_SHORT_EXPOSURE_BOOL</a> = 2032
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba203ef64ff04a7a576f485cde163dc9de">OB_PROP_COLOR_HDR_BOOL</a> = 2034
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba1fb102a92334fc347e117c220b69655f">OB_PROP_IR_SHORT_EXPOSURE_BOOL</a> = 2032
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba203ef64ff04a7a576f485cde163dc9de">OB_PROP_COLOR_HDR_BOOL</a> = 2034
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba922fb146cc1fb960713d84843d37ab76">OB_PROP_IR_LONG_EXPOSURE_BOOL</a> = 2035
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba848a1de51d70107cd991b01713796a0e">OB_PROP_SKIP_FRAME_BOOL</a> = 2036
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba6475fd2ec30bbb097454e1f2066ccc78">OB_PROP_HDR_MERGE_BOOL</a> = 2037
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba48c1a03e092b74ed999692cd594a14a3">OB_PROP_COLOR_FOCUS_INT</a> = 2038
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba6475fd2ec30bbb097454e1f2066ccc78">OB_PROP_HDR_MERGE_BOOL</a> = 2037
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba48c1a03e092b74ed999692cd594a14a3">OB_PROP_COLOR_FOCUS_INT</a> = 2038
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba4cfd1df4fc87b264cd0e1d2053ef268a">OB_PROP_IR_RECTIFY_BOOL</a> = 2040
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba9bb676b7c938ec29c92b6f4597135494">OB_PROP_DEPTH_AUTO_EXPOSURE_PRIORITY_INT</a> = 2052
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8d1e1aa5988ccd64ca3609894725f547">OB_PROP_SDK_DISPARITY_TO_DEPTH_BOOL</a> = 3004
+, <br />
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8d1e1aa5988ccd64ca3609894725f547">OB_PROP_SDK_DISPARITY_TO_DEPTH_BOOL</a> = 3004
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba34ce08223b8b6703d8be3ba2628aa33e">OB_PROP_SDK_DEPTH_FRAME_UNPACK_BOOL</a> = 3007
-, <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba552c6c020ef86f487abffb08c4e97eb8">OB_PROP_SDK_IR_FRAME_UNPACK_BOOL</a> = 3008
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba552c6c020ef86f487abffb08c4e97eb8">OB_PROP_SDK_IR_FRAME_UNPACK_BOOL</a> = 3008
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba7b3d82e2970079c83f92dc05bbbf8250">OB_PROP_SDK_ACCEL_FRAME_TRANSFORMED_BOOL</a> = 3009
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabada43ade44a5e9930e186e42be4da6525">OB_PROP_SDK_GYRO_FRAME_TRANSFORMED_BOOL</a> = 3010
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba6047e09286d84cc540a4386a9804e44f">OB_PROP_SDK_IR_LEFT_FRAME_UNPACK_BOOL</a> = 3011
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3a93fe185b0296e90cf8961985158c42">OB_PROP_SDK_IR_RIGHT_FRAME_UNPACK_BOOL</a> = 3012
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabada43ade44a5e9930e186e42be4da6525">OB_PROP_SDK_GYRO_FRAME_TRANSFORMED_BOOL</a> = 3010
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba6047e09286d84cc540a4386a9804e44f">OB_PROP_SDK_IR_LEFT_FRAME_UNPACK_BOOL</a> = 3011
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3a93fe185b0296e90cf8961985158c42">OB_PROP_SDK_IR_RIGHT_FRAME_UNPACK_BOOL</a> = 3012
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba70b359730187e3c11aa8da671390096a">OB_PROP_NETWORK_BANDWIDTH_TYPE_INT</a> = 3027
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababe21a5d5336201ea9131c4c7d2b705b7">OB_RAW_DATA_CAMERA_CALIB_JSON_FILE</a> = 4029
+, <br />
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababe21a5d5336201ea9131c4c7d2b705b7">OB_RAW_DATA_CAMERA_CALIB_JSON_FILE</a> = 4029
 <br />
  }</td></tr>
 <tr class="memdesc:a9e7aac1ea041c8958ea8c6e3aa53bbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration value describing all attribute control commands of the device.  <a href="#a9e7aac1ea041c8958ea8c6e3aa53bbab">More...</a><br /></td></tr>
@@ -355,7 +368,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00762">762</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00811">811</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +384,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00763">763</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00812">812</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +400,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00764">764</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00813">813</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +416,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00765">765</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00814">814</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +432,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00766">766</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00815">815</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +448,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00767">767</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00816">816</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +464,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00768">768</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00817">817</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +480,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00769">769</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00818">818</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -730,6 +743,15 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabaf0d09c6ee91a38f9b1ccddf6caed925c" name="a9e7aac1ea041c8958ea8c6e3aa53bbabaf0d09c6ee91a38f9b1ccddf6caed925c"></a>OB_PROP_DISP_SEARCH_RANGE_MODE_INT&#160;</td><td class="fielddoc"><p>Disparity search range mode, 1: 128, 2: 256. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba1e58541ca1dff99322d42437e3923a4f" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba1e58541ca1dff99322d42437e3923a4f"></a>OB_PROP_LASER_HIGH_TEMPERATURE_PROTECT_BOOL&#160;</td><td class="fielddoc"><p>Laser high temperature protection. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabaa1572bea8407864b820d034b3f8a48b7" name="a9e7aac1ea041c8958ea8c6e3aa53bbabaa1572bea8407864b820d034b3f8a48b7"></a>OB_PROP_LOW_EXPOSURE_LASER_CONTROL_BOOL&#160;</td><td class="fielddoc"><p>low exposure laser control </p>
+<p>Currently using for DabaiA device,if the exposure value is lower than a certain threshold, the laser is turned off; if it exceeds another threshold, the laser is turned on again. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba51d67a2bb6c47000500f66ce91854a0a" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba51d67a2bb6c47000500f66ce91854a0a"></a>OB_PROP_CHECK_PPS_SYNC_IN_SIGNAL_BOOL&#160;</td><td class="fielddoc"><p>check pps sync in signal </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabae3063aa3f16b4ac5c70f10e2ffdc173b" name="a9e7aac1ea041c8958ea8c6e3aa53bbabae3063aa3f16b4ac5c70f10e2ffdc173b"></a>OB_PROP_DISP_SEARCH_OFFSET_INT&#160;</td><td class="fielddoc"><p>Disparity search range offset, range: [0, 127]. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabac06cf1ad81b41297ec0229e7773ecc12" name="a9e7aac1ea041c8958ea8c6e3aa53bbabac06cf1ad81b41297ec0229e7773ecc12"></a>OB_PROP_DEVICE_REPOWER_BOOL&#160;</td><td class="fielddoc"><p>Repower device (cut off power and power on again) </p>
 <p>Currently using for GMSL device, cut off power and power on again by GMSL host driver. </p>
 </td></tr>
@@ -738,6 +760,14 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabac98a49586f65ed597d6d6a6b42970ec2" name="a9e7aac1ea041c8958ea8c6e3aa53bbabac98a49586f65ed597d6d6a6b42970ec2"></a>OB_PROP_FRAME_INTERLEAVE_ENABLE_BOOL&#160;</td><td class="fielddoc"><p>frame interleave enable (true:enable,false:disable) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba204cd40dc8e5f8052604a23ea42258cc" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba204cd40dc8e5f8052604a23ea42258cc"></a>OB_PROP_FRAME_INTERLEAVE_LASER_PATTERN_SYNC_DELAY_INT&#160;</td><td class="fielddoc"><p>laser pattern sync with delay(us) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabafb799a9ac5576e6d9943c8d50c0e3243" name="a9e7aac1ea041c8958ea8c6e3aa53bbabafb799a9ac5576e6d9943c8d50c0e3243"></a>OB_PROP_ON_CHIP_CALIBRATION_HEALTH_CHECK_FLOAT&#160;</td><td class="fielddoc"><p>Get the health check result from device,range is [0.0f,1.5f]. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba08ee14ecbc2883b8f857c94dcba2c171" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba08ee14ecbc2883b8f857c94dcba2c171"></a>OB_PROP_ON_CHIP_CALIBRATION_ENABLE_BOOL&#160;</td><td class="fielddoc"><p>Enable or disable on-chip calibration. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba146b6daaec493c4a7a3b195c08e04723" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba146b6daaec493c4a7a3b195c08e04723"></a>OB_PROP_HW_NOISE_REMOVE_FILTER_ENABLE_BOOL&#160;</td><td class="fielddoc"><p>hardware noise remove filter switch </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba64da5c3cc633c6c940cdd1744ecd35cf" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba64da5c3cc633c6c940cdd1744ecd35cf"></a>OB_PROP_HW_NOISE_REMOVE_FILTER_THRESHOLD_FLOAT&#160;</td><td class="fielddoc"><p>hardware noise remove filter threshold ,range [0.0 - 1.0] </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabad5d4191f8738853ba279aad12d13aaa1" name="a9e7aac1ea041c8958ea8c6e3aa53bbabad5d4191f8738853ba279aad12d13aaa1"></a>OB_STRUCT_BASELINE_CALIBRATION_PARAM&#160;</td><td class="fielddoc"><p>Baseline calibration parameters. </p>
 </td></tr>
@@ -775,6 +805,8 @@ Enumerations</h2></td></tr>
 <p>Since the ir sensor is the same physical sensor as the depth sensor, this property will also effect the ir sensor. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabac9b652f69e1e105150a15b21ba98909d" name="a9e7aac1ea041c8958ea8c6e3aa53bbabac9b652f69e1e105150a15b21ba98909d"></a>OB_STRUCT_ASIC_SERIAL_NUMBER&#160;</td><td class="fielddoc"><p>ASIC serial number. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba742d3279870cadef85505d03a82c23de" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba742d3279870cadef85505d03a82c23de"></a>OB_STRUCT_DISP_OFFSET_CONFIG&#160;</td><td class="fielddoc"><p>Disparity offset interleaving. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabad079a2535d5c99bedc93f368cfa47d38" name="a9e7aac1ea041c8958ea8c6e3aa53bbabad079a2535d5c99bedc93f368cfa47d38"></a>OB_PROP_COLOR_AUTO_EXPOSURE_BOOL&#160;</td><td class="fielddoc"><p>Color camera auto exposure. </p>
 </td></tr>
@@ -840,6 +872,8 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba48c1a03e092b74ed999692cd594a14a3" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba48c1a03e092b74ed999692cd594a14a3"></a>OB_PROP_COLOR_FOCUS_INT&#160;</td><td class="fielddoc"><p>Color camera FOCUS. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba4cfd1df4fc87b264cd0e1d2053ef268a" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba4cfd1df4fc87b264cd0e1d2053ef268a"></a>OB_PROP_IR_RECTIFY_BOOL&#160;</td><td class="fielddoc"><p>ir rectify status,true: ir rectify, false: no rectify </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba9bb676b7c938ec29c92b6f4597135494" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba9bb676b7c938ec29c92b6f4597135494"></a>OB_PROP_DEPTH_AUTO_EXPOSURE_PRIORITY_INT&#160;</td><td class="fielddoc"><p>Depth camera priority. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba8d1e1aa5988ccd64ca3609894725f547" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba8d1e1aa5988ccd64ca3609894725f547"></a>OB_PROP_SDK_DISPARITY_TO_DEPTH_BOOL&#160;</td><td class="fielddoc"><p>Software disparity to depth. </p>
@@ -890,14 +924,14 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00774">774</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00823">823</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 20 2024 18:08:54 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sat Feb 15 2025 03:12:57 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

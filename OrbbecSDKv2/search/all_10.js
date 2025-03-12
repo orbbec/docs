@@ -10,10 +10,11 @@ var searchData=
   ['rangetraits_3c_20obuint8propertyrange_20_3e_7',['RangeTraits&lt; OBUint8PropertyRange &gt;',['../structob_1_1_range_traits_3_01_o_b_uint8_property_range_01_4.html',1,'ob']]],
   ['reboot_8',['reboot',['../classob_1_1_device.html#ab1159168feecb526dcdf87b3976130be',1,'ob::Device::reboot() const'],['../classob_1_1_device.html#a7f8078edc2e3544cd8699e94339265d7',1,'ob::Device::reboot(uint32_t delayMs) const']]],
   ['referencetemp_9',['referenceTemp',['../struct_o_b_accel_intrinsic.html#ab2685e781b607c920c96a4dc38cada3f',1,'OBAccelIntrinsic::referenceTemp'],['../struct_o_b_gyro_intrinsic.html#ae5313bbaa4af7e397d15f877e28a720b',1,'OBGyroIntrinsic::referenceTemp']]],
-  ['reset_10',['reset',['../classob_1_1_filter.html#ab1e19a53ca875de32693531e2c6cdfea',1,'ob::Filter']]],
-  ['rgbdistortion_11',['rgbDistortion',['../struct_o_b_camera_param.html#a0629e0ee848fc0b6a1ded5ac64166235',1,'OBCameraParam']]],
-  ['rgbintrinsic_12',['rgbIntrinsic',['../struct_o_b_camera_param.html#acc6d8df18c5216e8e1bd6188ed68d47e',1,'OBCameraParam']]],
-  ['rgbtemp_13',['rgbTemp',['../struct_o_b_device_temperature.html#af3e639159fffb2171c01381db38527e8',1,'OBDeviceTemperature']]],
-  ['rgbtriggersignalindelay_14',['rgbTriggerSignalInDelay',['../struct_o_b_device_sync_config.html#a004e403a03bc62458a6f7809d5463e51',1,'OBDeviceSyncConfig']]],
-  ['rot_15',['rot',['../struct_o_b_d2_c_transform.html#a9b8da8c82da9e03b92299e6816a963d1',1,'OBD2CTransform']]]
+  ['reserved_10',['reserved',['../struct_o_b_disp_offset_config.html#a97275ac5d5139f7f1b63a6f54b973778',1,'OBDispOffsetConfig']]],
+  ['reset_11',['reset',['../classob_1_1_filter.html#ab1e19a53ca875de32693531e2c6cdfea',1,'ob::Filter']]],
+  ['rgbdistortion_12',['rgbDistortion',['../struct_o_b_camera_param.html#a0629e0ee848fc0b6a1ded5ac64166235',1,'OBCameraParam']]],
+  ['rgbintrinsic_13',['rgbIntrinsic',['../struct_o_b_camera_param.html#acc6d8df18c5216e8e1bd6188ed68d47e',1,'OBCameraParam']]],
+  ['rgbtemp_14',['rgbTemp',['../struct_o_b_device_temperature.html#af3e639159fffb2171c01381db38527e8',1,'OBDeviceTemperature']]],
+  ['rgbtriggersignalindelay_15',['rgbTriggerSignalInDelay',['../struct_o_b_device_sync_config.html#a004e403a03bc62458a6f7809d5463e51',1,'OBDeviceSyncConfig']]],
+  ['rot_16',['rot',['../struct_o_b_d2_c_transform.html#a9b8da8c82da9e03b92299e6816a963d1',1,'OBD2CTransform']]]
 ];

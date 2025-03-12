@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: D:/program/gitlab_repository/package/openorbbecsdkgroup/OpenOrbbecSDK/include/libobsensor/h/Context.h File Reference</title>
+<title>OrbbecSDK: E:/Program/Code/orbbec/tmp/group/OpenOrbbecSDK/include/libobsensor/h/Context.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.1.1</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.2.8</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00167">167</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00168">168</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00168">168</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00169">169</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set a device plug-in callback function. </p>
-<dl class="section attention"><dt>Attention</dt><dd>The added and removed device lists returned through the callback interface need to be released manually</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>The added and removed device lists returned through the callback interface need to be released manually </dd>
+<dd>
+This function supports multiple callbacks. Each call to this function adds a new callback to an internal list.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object </td></tr>
@@ -446,7 +448,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00119">ob::Context::setDeviceChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00120">ob::Context::setDeviceChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -484,7 +486,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00131">ob::Context::enableDeviceClockSync()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00132">ob::Context::enableDeviceClockSync()</a>.</p>
 
 </div>
 </div>
@@ -516,7 +518,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00141">ob::Context::freeIdleMemory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00142">ob::Context::freeIdleMemory()</a>.</p>
 
 </div>
 </div>
@@ -556,7 +558,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00155">ob::Context::setUvcBackendType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00156">ob::Context::setUvcBackendType()</a>.</p>
 
 </div>
 </div>
@@ -589,7 +591,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00167">ob::Context::setLoggerSeverity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00168">ob::Context::setLoggerSeverity()</a>.</p>
 
 </div>
 </div>
@@ -627,7 +629,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00180">ob::Context::setLoggerToFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00181">ob::Context::setLoggerToFile()</a>.</p>
 
 </div>
 </div>
@@ -671,7 +673,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00203">ob::Context::setLoggerToCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00204">ob::Context::setLoggerToCallback()</a>.</p>
 
 </div>
 </div>
@@ -703,7 +705,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00191">ob::Context::setLoggerToConsole()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00192">ob::Context::setLoggerToConsole()</a>.</p>
 
 </div>
 </div>
@@ -737,14 +739,14 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00218">ob::Context::setExtensionsDirectory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00219">ob::Context::setExtensionsDirectory()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 20 2024 18:08:54 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sat Feb 15 2025 03:12:57 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.1.1</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.2.8</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -197,6 +197,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a113a244f2f48ee7ac0313920169fb56e" id="r_a113a244f2f48ee7ac0313920169fb56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a113a244f2f48ee7ac0313920169fb56e">updateFirmwareFromData</a> (const uint8_t *firmwareData, uint32_t firmwareDataSize, <a class="el" href="#a11eae92dd2a215571c512ea98f2e35d3">DeviceFwUpdateCallback</a> callback, bool async=true)</td></tr>
 <tr class="memdesc:a113a244f2f48ee7ac0313920169fb56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the device firmware from data.  <br /></td></tr>
 <tr class="separator:a113a244f2f48ee7ac0313920169fb56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a671441d101dad4537a183b457d335a" id="r_a5a671441d101dad4537a183b457d335a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a671441d101dad4537a183b457d335a">updateOptionalDepthPresets</a> (const char filePathList[][<a class="el" href="_ob_types_8h.html#abea930dfe20a819a2b33cfea8244a1e1">OB_PATH_MAX</a>], uint8_t pathCount, <a class="el" href="#a11eae92dd2a215571c512ea98f2e35d3">DeviceFwUpdateCallback</a> callback)</td></tr>
+<tr class="memdesc:a5a671441d101dad4537a183b457d335a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the device optional depth presets.  <br /></td></tr>
+<tr class="separator:a5a671441d101dad4537a183b457d335a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb598f9726aafc210c7fb01774065172" id="r_acb598f9726aafc210c7fb01774065172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb598f9726aafc210c7fb01774065172">setDeviceStateChangedCallback</a> (<a class="el" href="#a6d4c7adf2f3db04548a5da43444c19a7">DeviceStateChangedCallback</a> callback)</td></tr>
 <tr class="memdesc:acb598f9726aafc210c7fb01774065172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device state changed callbacks.  <br /></td></tr>
 <tr class="separator:acb598f9726aafc210c7fb01774065172"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -751,7 +754,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00161">161</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00482">reboot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00496">reboot()</a>.</p>
 
 </div>
 </div>
@@ -1359,7 +1362,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00364">364</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00797">deviceUpgrade()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00811">deviceUpgrade()</a>.</p>
 
 </div>
 </div>
@@ -1413,7 +1416,53 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00379">379</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00801">deviceUpgradeFromData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00815">deviceUpgradeFromData()</a>.</p>
+
+</div>
+</div>
+<a id="a5a671441d101dad4537a183b457d335a" name="a5a671441d101dad4537a183b457d335a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a671441d101dad4537a183b457d335a">&#9670;&#160;</a></span>updateOptionalDepthPresets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ob::Device::updateOptionalDepthPresets </td>
+          <td>(</td>
+          <td class="paramtype">const char</td>          <td class="paramname"><span class="paramname"><em>filePathList</em></span>[][OB_PATH_MAX], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>pathCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a11eae92dd2a215571c512ea98f2e35d3">DeviceFwUpdateCallback</a></td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the device optional depth presets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePathList</td><td>A list(2D array) of preset file paths, each up to OB_PATH_MAX characters. </td></tr>
+    <tr><td class="paramname">pathCount</td><td>The number of the preset file paths. </td></tr>
+    <tr><td class="paramname">callback</td><td>Preset update progress and status callback </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00393">393</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1448,7 +1497,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00392">392</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00406">406</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1484,9 +1533,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00399">399</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00413">413</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00392">setDeviceStateChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00406">setDeviceStateChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -1516,7 +1565,7 @@ Protected Attributes</h2></td></tr>
 <p>Get current depth work mode. </p>
 <dl class="section return"><dt>Returns</dt><dd>ob_depth_work_mode Current depth work mode </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00409">409</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00423">423</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1546,7 +1595,7 @@ Protected Attributes</h2></td></tr>
 <p>Get current depth mode name. </p>
 <p>According the current preset name to return current depth mode name </p><dl class="section return"><dt>Returns</dt><dd>const char* return the current depth mode name. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00421">421</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00435">435</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1581,7 +1630,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00433">433</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00447">447</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1616,7 +1665,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00445">445</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00459">459</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1646,7 +1695,7 @@ Protected Attributes</h2></td></tr>
 <p>Request support depth work mode list. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classob_1_1_o_b_depth_work_mode_list.html">OBDepthWorkModeList</a> list of ob_depth_work_mode </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00456">456</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00470">470</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1676,9 +1725,9 @@ Protected Attributes</h2></td></tr>
 <p><a class="el" href="classob_1_1_device.html">Device</a> restart. </p>
 <dl class="section attention"><dt>Attention</dt><dd>The device will be disconnected and reconnected. After the device is disconnected, the access to the <a class="el" href="classob_1_1_device.html">Device</a> object interface may be abnormal. Please delete the object directly and obtain it again after the device is reconnected. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00468">468</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00482">482</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00482">reboot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00496">reboot()</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1763,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00482">482</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00496">496</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1751,7 +1800,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00495">495</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00509">509</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1786,11 +1835,11 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="comment">//support OB_MULTI_DEVICE_SYNC_MODE_STANDALONE</span></div>
 <div class="line">}</div>
 <div class="line"><span class="comment">// and so on</span></div>
-<div class="ttc" id="a_ob_types_8h_html_aabad929b67059752029c3374594ac63ba6bd45c53211519f5392eab382e229225"><div class="ttname"><a href="_ob_types_8h.html#aabad929b67059752029c3374594ac63ba6bd45c53211519f5392eab382e229225">OB_MULTI_DEVICE_SYNC_MODE_STANDALONE</a></div><div class="ttdeci">@ OB_MULTI_DEVICE_SYNC_MODE_STANDALONE</div><div class="ttdoc">standalone mode</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l01177">ObTypes.h:1177</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_aabad929b67059752029c3374594ac63bad662690d57f70c078659e39b4e4b1a89"><div class="ttname"><a href="_ob_types_8h.html#aabad929b67059752029c3374594ac63bad662690d57f70c078659e39b4e4b1a89">OB_MULTI_DEVICE_SYNC_MODE_FREE_RUN</a></div><div class="ttdeci">@ OB_MULTI_DEVICE_SYNC_MODE_FREE_RUN</div><div class="ttdoc">free run mode</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l01170">ObTypes.h:1170</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_aabad929b67059752029c3374594ac63ba6bd45c53211519f5392eab382e229225"><div class="ttname"><a href="_ob_types_8h.html#aabad929b67059752029c3374594ac63ba6bd45c53211519f5392eab382e229225">OB_MULTI_DEVICE_SYNC_MODE_STANDALONE</a></div><div class="ttdeci">@ OB_MULTI_DEVICE_SYNC_MODE_STANDALONE</div><div class="ttdoc">standalone mode</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l01212">ObTypes.h:1212</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_aabad929b67059752029c3374594ac63bad662690d57f70c078659e39b4e4b1a89"><div class="ttname"><a href="_ob_types_8h.html#aabad929b67059752029c3374594ac63bad662690d57f70c078659e39b4e4b1a89">OB_MULTI_DEVICE_SYNC_MODE_FREE_RUN</a></div><div class="ttdeci">@ OB_MULTI_DEVICE_SYNC_MODE_FREE_RUN</div><div class="ttdoc">free run mode</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l01205">ObTypes.h:1205</a></div></div>
 </div><!-- fragment --> <dl class="section return"><dt>Returns</dt><dd>uint16_t return the supported multi device sync mode bitmap of the device. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00516">516</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00530">530</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1825,7 +1874,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00528">528</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00542">542</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1855,7 +1904,7 @@ Protected Attributes</h2></td></tr>
 <p>get the multi device sync configuration of the device. </p>
 <dl class="section return"><dt>Returns</dt><dd>OBMultiDeviceSyncConfig return the multi device sync configuration of the device. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00539">539</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00553">553</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1890,7 +1939,7 @@ For some models，receive and execute the capture command will have a certain de
 <dd>
 If the device is not in the <a class="el" href="_ob_types_8h.html#aabad929b67059752029c3374594ac63ba39ca63ef583695c083588ae28ea22ad9">OB_MULTI_DEVICE_SYNC_MODE_HARDWARE_TRIGGERING</a> mode, device will ignore the capture command. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00557">557</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00571">571</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1919,7 +1968,7 @@ If the device is not in the <a class="el" href="_ob_types_8h.html#aabad929b67059
 
 <p>set the timestamp reset configuration of the device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00566">566</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00580">580</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1949,7 +1998,7 @@ If the device is not in the <a class="el" href="_ob_types_8h.html#aabad929b67059
 <p>get the timestamp reset configuration of the device. </p>
 <dl class="section return"><dt>Returns</dt><dd>OBDeviceTimestampResetConfig return the timestamp reset configuration of the device. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00577">577</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00591">591</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -1983,7 +2032,7 @@ If the device is not in the <a class="el" href="_ob_types_8h.html#aabad929b67059
 <dd>
 Due to the timer of device is not high-accuracy, the timestamp of the continuous frames output by the stream will drift after a long time. User can call this function periodically to reset the timer to avoid the timestamp drift, the recommended interval time is 60 minutes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00595">595</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00609">609</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2016,7 +2065,7 @@ Due to the timer of device is not high-accuracy, the timestamp of the continuous
 <dd>
 Due to the timer of device is not high-accuracy, the timestamp of the continuous frames output by the stream will drift after a long time. User can call this function periodically to synchronize the timer to avoid the timestamp drift, the recommended interval time is 60 minutes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00617">617</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00631">631</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2046,7 +2095,7 @@ Due to the timer of device is not high-accuracy, the timestamp of the continuous
 <p>Get current preset name. </p>
 <p>The preset mean a set of parameters or configurations that can be applied to the device to achieve a specific effect or function. </p><dl class="section return"><dt>Returns</dt><dd>const char* return the current preset name, it should be one of the preset names returned by <a class="el" href="#aaee8649dbbd205925430e48f816b5391">getAvailablePresetList</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00628">628</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00642">642</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2082,7 +2131,7 @@ Due to the timer of device is not high-accuracy, the timestamp of the continuous
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00641">641</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00655">655</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2114,7 +2163,7 @@ Due to the timer of device is not high-accuracy, the timestamp of the continuous
 <p>User can load the custom preset by calling <a class="el" href="#aa986cb51f5eaad4815ddd4fff7f2e422">loadPresetFromJsonFile</a> to append the available preset list.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classob_1_1_device_preset_list.html" title="Class representing a list of device presets.">DevicePresetList</a> return the available preset list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00654">654</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00668">668</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2154,7 +2203,7 @@ It is recommended to re-read the device settings to update the user program temp
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00671">671</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00685">685</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2204,7 +2253,7 @@ It is recommended to re-read the device settings to update the user program temp
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00688">688</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00702">702</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2253,7 +2302,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00704">704</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00718">718</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2290,7 +2339,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00716">716</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00730">730</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2320,7 +2369,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 <p>Get the current device status. </p>
 <dl class="section return"><dt>Returns</dt><dd>OBDeviceState The device state information. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00727">727</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00741">741</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2374,7 +2423,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00746">746</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00760">760</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2404,7 +2453,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 <p>Check if the device supports the frame interleave feature. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns true if the device supports the frame interleave feature. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00757">757</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00771">771</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2439,7 +2488,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00769">769</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00783">783</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2469,7 +2518,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 <p>Get available frame interleave list. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classob_1_1_device_frame_interleave_list.html" title="Class representing a list of device Frame Interleave.">DeviceFrameInterleaveList</a> return the available frame interleave list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00780">780</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00794">794</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2505,7 +2554,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00797">797</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00811">811</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2546,7 +2595,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00801">801</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00815">815</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2573,7 +2622,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00805">805</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00819">819</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2600,7 +2649,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00812">812</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00826">826</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -2627,7 +2676,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 
 <p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00054">54</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00351">enableGlobalTimestamp()</a>, <a class="el" href="_device_8hpp_source.html#l00495">enableHeartbeat()</a>, <a class="el" href="_device_8hpp_source.html#l00704">exportSettingsAsPresetJsonData()</a>, <a class="el" href="_device_8hpp_source.html#l00716">exportSettingsAsPresetJsonFile()</a>, <a class="el" href="_device_8hpp_source.html#l00780">getAvailableFrameInterleaveList()</a>, <a class="el" href="_device_8hpp_source.html#l00654">getAvailablePresetList()</a>, <a class="el" href="_device_8hpp_source.html#l00223">getBoolProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00262">getBoolPropertyRange()</a>, <a class="el" href="_device_8hpp_source.html#l00805">getCalibrationCameraParamList()</a>, <a class="el" href="_device_8hpp_source.html#l00421">getCurrentDepthModeName()</a>, <a class="el" href="_device_8hpp_source.html#l00409">getCurrentDepthWorkMode()</a>, <a class="el" href="_device_8hpp_source.html#l00628">getCurrentPresetName()</a>, <a class="el" href="_device_8hpp_source.html#l00456">getDepthWorkModeList()</a>, <a class="el" href="_device_8hpp_source.html#l00097">getDeviceInfo()</a>, <a class="el" href="_device_8hpp_source.html#l00727">getDeviceState()</a>, <a class="el" href="_device_8hpp_source.html#l00123">getExtensionInfo()</a>, <a class="el" href="_device_8hpp_source.html#l00210">getFloatProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00249">getFloatPropertyRange()</a>, <a class="el" href="_device_8hpp_source.html#l00088">getImpl()</a>, <a class="el" href="_device_8hpp_source.html#l00197">getIntProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00236">getIntPropertyRange()</a>, <a class="el" href="_device_8hpp_source.html#l00539">getMultiDeviceSyncConfig()</a>, <a class="el" href="_device_8hpp_source.html#l00148">getSensor()</a>, <a class="el" href="_device_8hpp_source.html#l00135">getSensorList()</a>, <a class="el" href="_device_8hpp_source.html#l00289">getStructuredData()</a>, <a class="el" href="_device_8hpp_source.html#l00516">getSupportedMultiDeviceSyncModeBitmap()</a>, <a class="el" href="_device_8hpp_source.html#l00313">getSupportedProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00300">getSupportedPropertyCount()</a>, <a class="el" href="_device_8hpp_source.html#l00577">getTimestampResetConfig()</a>, <a class="el" href="_device_8hpp_source.html#l00110">isExtensionInfoExist()</a>, <a class="el" href="_device_8hpp_source.html#l00757">isFrameInterleaveSupported()</a>, <a class="el" href="_device_8hpp_source.html#l00339">isGlobalTimestampSupported()</a>, <a class="el" href="_device_8hpp_source.html#l00327">isPropertySupported()</a>, <a class="el" href="_device_8hpp_source.html#l00769">loadFrameInterleave()</a>, <a class="el" href="_device_8hpp_source.html#l00641">loadPreset()</a>, <a class="el" href="_device_8hpp_source.html#l00688">loadPresetFromJsonData()</a>, <a class="el" href="_device_8hpp_source.html#l00671">loadPresetFromJsonFile()</a>, <a class="el" href="_device_8hpp_source.html#l00068">operator=()</a>, <a class="el" href="_device_8hpp_source.html#l00468">reboot()</a>, <a class="el" href="_device_8hpp_source.html#l00746">sendAndReceiveData()</a>, <a class="el" href="_device_8hpp_source.html#l00185">setBoolProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00392">setDeviceStateChangedCallback()</a>, <a class="el" href="_device_8hpp_source.html#l00173">setFloatProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00161">setIntProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00528">setMultiDeviceSyncConfig()</a>, <a class="el" href="_device_8hpp_source.html#l00276">setStructuredData()</a>, <a class="el" href="_device_8hpp_source.html#l00566">setTimestampResetConfig()</a>, <a class="el" href="_device_8hpp_source.html#l00445">switchDepthWorkMode()</a>, <a class="el" href="_device_8hpp_source.html#l00433">switchDepthWorkMode()</a>, <a class="el" href="_device_8hpp_source.html#l00617">timerSyncWithHost()</a>, <a class="el" href="_device_8hpp_source.html#l00595">timestampReset()</a>, <a class="el" href="_device_8hpp_source.html#l00557">triggerCapture()</a>, <a class="el" href="_device_8hpp_source.html#l00364">updateFirmware()</a>, <a class="el" href="_device_8hpp_source.html#l00379">updateFirmwareFromData()</a>, and <a class="el" href="_device_8hpp_source.html#l00082">~Device()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00351">enableGlobalTimestamp()</a>, <a class="el" href="_device_8hpp_source.html#l00509">enableHeartbeat()</a>, <a class="el" href="_device_8hpp_source.html#l00718">exportSettingsAsPresetJsonData()</a>, <a class="el" href="_device_8hpp_source.html#l00730">exportSettingsAsPresetJsonFile()</a>, <a class="el" href="_device_8hpp_source.html#l00794">getAvailableFrameInterleaveList()</a>, <a class="el" href="_device_8hpp_source.html#l00668">getAvailablePresetList()</a>, <a class="el" href="_device_8hpp_source.html#l00223">getBoolProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00262">getBoolPropertyRange()</a>, <a class="el" href="_device_8hpp_source.html#l00819">getCalibrationCameraParamList()</a>, <a class="el" href="_device_8hpp_source.html#l00435">getCurrentDepthModeName()</a>, <a class="el" href="_device_8hpp_source.html#l00423">getCurrentDepthWorkMode()</a>, <a class="el" href="_device_8hpp_source.html#l00642">getCurrentPresetName()</a>, <a class="el" href="_device_8hpp_source.html#l00470">getDepthWorkModeList()</a>, <a class="el" href="_device_8hpp_source.html#l00097">getDeviceInfo()</a>, <a class="el" href="_device_8hpp_source.html#l00741">getDeviceState()</a>, <a class="el" href="_device_8hpp_source.html#l00123">getExtensionInfo()</a>, <a class="el" href="_device_8hpp_source.html#l00210">getFloatProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00249">getFloatPropertyRange()</a>, <a class="el" href="_device_8hpp_source.html#l00088">getImpl()</a>, <a class="el" href="_device_8hpp_source.html#l00197">getIntProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00236">getIntPropertyRange()</a>, <a class="el" href="_device_8hpp_source.html#l00553">getMultiDeviceSyncConfig()</a>, <a class="el" href="_device_8hpp_source.html#l00148">getSensor()</a>, <a class="el" href="_device_8hpp_source.html#l00135">getSensorList()</a>, <a class="el" href="_device_8hpp_source.html#l00289">getStructuredData()</a>, <a class="el" href="_device_8hpp_source.html#l00530">getSupportedMultiDeviceSyncModeBitmap()</a>, <a class="el" href="_device_8hpp_source.html#l00313">getSupportedProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00300">getSupportedPropertyCount()</a>, <a class="el" href="_device_8hpp_source.html#l00591">getTimestampResetConfig()</a>, <a class="el" href="_device_8hpp_source.html#l00110">isExtensionInfoExist()</a>, <a class="el" href="_device_8hpp_source.html#l00771">isFrameInterleaveSupported()</a>, <a class="el" href="_device_8hpp_source.html#l00339">isGlobalTimestampSupported()</a>, <a class="el" href="_device_8hpp_source.html#l00327">isPropertySupported()</a>, <a class="el" href="_device_8hpp_source.html#l00783">loadFrameInterleave()</a>, <a class="el" href="_device_8hpp_source.html#l00655">loadPreset()</a>, <a class="el" href="_device_8hpp_source.html#l00702">loadPresetFromJsonData()</a>, <a class="el" href="_device_8hpp_source.html#l00685">loadPresetFromJsonFile()</a>, <a class="el" href="_device_8hpp_source.html#l00068">operator=()</a>, <a class="el" href="_device_8hpp_source.html#l00482">reboot()</a>, <a class="el" href="_device_8hpp_source.html#l00760">sendAndReceiveData()</a>, <a class="el" href="_device_8hpp_source.html#l00185">setBoolProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00406">setDeviceStateChangedCallback()</a>, <a class="el" href="_device_8hpp_source.html#l00173">setFloatProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00161">setIntProperty()</a>, <a class="el" href="_device_8hpp_source.html#l00542">setMultiDeviceSyncConfig()</a>, <a class="el" href="_device_8hpp_source.html#l00276">setStructuredData()</a>, <a class="el" href="_device_8hpp_source.html#l00580">setTimestampResetConfig()</a>, <a class="el" href="_device_8hpp_source.html#l00459">switchDepthWorkMode()</a>, <a class="el" href="_device_8hpp_source.html#l00447">switchDepthWorkMode()</a>, <a class="el" href="_device_8hpp_source.html#l00631">timerSyncWithHost()</a>, <a class="el" href="_device_8hpp_source.html#l00609">timestampReset()</a>, <a class="el" href="_device_8hpp_source.html#l00571">triggerCapture()</a>, <a class="el" href="_device_8hpp_source.html#l00364">updateFirmware()</a>, <a class="el" href="_device_8hpp_source.html#l00379">updateFirmwareFromData()</a>, <a class="el" href="_device_8hpp_source.html#l00393">updateOptionalDepthPresets()</a>, and <a class="el" href="_device_8hpp_source.html#l00082">~Device()</a>.</p>
 
 </div>
 </div>
@@ -2653,7 +2702,7 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 
 <p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00055">55</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00399">deviceStateChangedCallback()</a>, and <a class="el" href="_device_8hpp_source.html#l00392">setDeviceStateChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00413">deviceStateChangedCallback()</a>, and <a class="el" href="_device_8hpp_source.html#l00406">setDeviceStateChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -2679,17 +2728,17 @@ The memory of the data will be reused by the SDK on the next call, so the user s
 
 <p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l00056">56</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00364">updateFirmware()</a>, and <a class="el" href="_device_8hpp_source.html#l00379">updateFirmwareFromData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l00364">updateFirmware()</a>, <a class="el" href="_device_8hpp_source.html#l00379">updateFirmwareFromData()</a>, and <a class="el" href="_device_8hpp_source.html#l00393">updateOptionalDepthPresets()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/program/gitlab_repository/package/openorbbecsdkgroup/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_device_8hpp_source.html">Device.hpp</a></li>
+<li>E:/Program/Code/orbbec/tmp/group/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_device_8hpp_source.html">Device.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 20 2024 18:08:54 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sat Feb 15 2025 03:12:57 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

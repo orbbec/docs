@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: D:/program/gitlab_repository/package/openorbbecsdkgroup/OpenOrbbecSDK/include/libobsensor/h/Pipeline.h Source File</title>
+<title>OrbbecSDK: E:/Program/Code/orbbec/tmp/group/OpenOrbbecSDK/include/libobsensor/h/Pipeline.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.1.1</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.2.8</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -196,7 +196,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="a_ob_types_8h_html_ab5988a7b0bb32ce20415cbe661f1097e"><div class="ttname"><a href="_ob_types_8h.html#ab5988a7b0bb32ce20415cbe661f1097e">ob_accel_full_scale_range</a></div><div class="ttdeci">enum OBAccelFullScaleRange ob_accel_full_scale_range</div></div>
 <div class="ttc" id="a_ob_types_8h_html_aca9dc7e0b11a78f00fa8a2ffd8b9ca1b"><div class="ttname"><a href="_ob_types_8h.html#aca9dc7e0b11a78f00fa8a2ffd8b9ca1b">ob_sensor_type</a></div><div class="ttdeci">enum OBSensorType ob_sensor_type</div></div>
 <div class="ttc" id="a_ob_types_8h_html_adcade9bf6aae2ae3a0eec281de3470d9"><div class="ttname"><a href="_ob_types_8h.html#adcade9bf6aae2ae3a0eec281de3470d9">ob_pipeline</a></div><div class="ttdeci">struct ob_pipeline_t ob_pipeline</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00034">ObTypes.h:34</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_afb35a0fe8ad0a8ebaed3de262e1705a0"><div class="ttname"><a href="_ob_types_8h.html#afb35a0fe8ad0a8ebaed3de262e1705a0">ob_frameset_callback</a></div><div class="ttdeci">void(* ob_frameset_callback)(ob_frame *frameset, void *user_data)</div><div class="ttdoc">Callback for frameset.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l01711">ObTypes.h:1711</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_afb35a0fe8ad0a8ebaed3de262e1705a0"><div class="ttname"><a href="_ob_types_8h.html#afb35a0fe8ad0a8ebaed3de262e1705a0">ob_frameset_callback</a></div><div class="ttdeci">void(* ob_frameset_callback)(ob_frame *frameset, void *user_data)</div><div class="ttdoc">Callback for frameset.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l01771">ObTypes.h:1771</a></div></div>
 <div class="ttc" id="a_pipeline_8h_html_a09309bb4d68fdfd4450fbc1543bac3ea"><div class="ttname"><a href="_pipeline_8h.html#a09309bb4d68fdfd4450fbc1543bac3ea">ob_create_pipeline_with_device</a></div><div class="ttdeci">OB_EXPORT ob_pipeline * ob_create_pipeline_with_device(const ob_device *dev, ob_error **error)</div><div class="ttdoc">Using device objects to create pipeline objects.</div></div>
 <div class="ttc" id="a_pipeline_8h_html_a0ade1440f7844dd6f8b204a22010a5de"><div class="ttname"><a href="_pipeline_8h.html#a0ade1440f7844dd6f8b204a22010a5de">ob_create_pipeline</a></div><div class="ttdeci">OB_EXPORT ob_pipeline * ob_create_pipeline(ob_error **error)</div><div class="ttdoc">Create a pipeline object.</div></div>
 <div class="ttc" id="a_pipeline_8h_html_a127832c183d9f6a19bcb67b7d550e088"><div class="ttname"><a href="_pipeline_8h.html#a127832c183d9f6a19bcb67b7d550e088">ob_pipeline_enable_frame_sync</a></div><div class="ttdeci">OB_EXPORT void ob_pipeline_enable_frame_sync(ob_pipeline *pipeline, ob_error **error)</div><div class="ttdoc">Enable frame synchronization.</div></div>
@@ -229,13 +229,13 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="a_pipeline_8h_html_aefa5bb43f925187bafb22a9a4296444d"><div class="ttname"><a href="_pipeline_8h.html#aefa5bb43f925187bafb22a9a4296444d">ob_pipeline_start_with_config</a></div><div class="ttdeci">OB_EXPORT void ob_pipeline_start_with_config(ob_pipeline *pipeline, const ob_config *config, ob_error **error)</div><div class="ttdoc">Start the pipeline with configuration parameters.</div></div>
 <div class="ttc" id="a_pipeline_8h_html_af447871736388cdac73f3010fdc7d3ce"><div class="ttname"><a href="_pipeline_8h.html#af447871736388cdac73f3010fdc7d3ce">ob_config_enable_gyro_stream</a></div><div class="ttdeci">OB_EXPORT void ob_config_enable_gyro_stream(ob_config *config, ob_gyro_full_scale_range full_scale_range, ob_gyro_sample_rate sample_rate, ob_error **error)</div><div class="ttdoc">Enable gyroscope stream with specified parameters.</div></div>
 <div class="ttc" id="a_pipeline_8h_html_afb1bb839ef786769658571ddee3995e2"><div class="ttname"><a href="_pipeline_8h.html#afb1bb839ef786769658571ddee3995e2">ob_pipeline_get_calibration_param</a></div><div class="ttdeci">OB_EXPORT ob_calibration_param ob_pipeline_get_calibration_param(ob_pipeline *pipeline, ob_config *config, ob_error **error)</div><div class="ttdoc">Get device calibration parameters with the specified configuration.</div></div>
-<div class="ttc" id="astruct_o_b_calibration_param_html"><div class="ttname"><a href="struct_o_b_calibration_param.html">OBCalibrationParam</a></div><div class="ttdoc">calibration parameters</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00443">ObTypes.h:443</a></div></div>
-<div class="ttc" id="astruct_o_b_camera_param_html"><div class="ttname"><a href="struct_o_b_camera_param.html">OBCameraParam</a></div><div class="ttdoc">Structure for camera parameters.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00431">ObTypes.h:431</a></div></div>
-<div class="ttc" id="astructob__error_html"><div class="ttname"><a href="structob__error.html">ob_error</a></div><div class="ttdoc">The error class exposed by the SDK, users can get detailed error information according to the error.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00109">ObTypes.h:109</a></div></div>
+<div class="ttc" id="astruct_o_b_calibration_param_html"><div class="ttname"><a href="struct_o_b_calibration_param.html">OBCalibrationParam</a></div><div class="ttdoc">calibration parameters</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00452">ObTypes.h:452</a></div></div>
+<div class="ttc" id="astruct_o_b_camera_param_html"><div class="ttname"><a href="struct_o_b_camera_param.html">OBCameraParam</a></div><div class="ttdoc">Structure for camera parameters.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00440">ObTypes.h:440</a></div></div>
+<div class="ttc" id="astructob__error_html"><div class="ttname"><a href="structob__error.html">ob_error</a></div><div class="ttdoc">The error class exposed by the SDK, users can get detailed error information according to the error.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00114">ObTypes.h:114</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 20 2024 18:08:54 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Sat Feb 15 2025 03:12:57 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
