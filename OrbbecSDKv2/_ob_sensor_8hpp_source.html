@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/Program/Code/orbbec/tmp/group/OpenOrbbecSDK/include/libobsensor/ObSensor.hpp Source File</title>
+<title>OrbbecSDK: E:/orbbec/package/openorbbecsdkgroup/OpenOrbbecSDK/include/libobsensor/ObSensor.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.2.8</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.3.5</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -104,18 +104,18 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="_filter_8hpp.html">libobsensor/hpp/Filter.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="_frame_8hpp.html">libobsensor/hpp/Frame.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="code" href="_pipeline_8hpp.html">libobsensor/hpp/Pipeline.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// #include &lt;libobsensor/hpp/RecordPlayback.hpp&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="_record_playback_8hpp.html">libobsensor/hpp/RecordPlayback.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="_sensor_8hpp.html">libobsensor/hpp/Sensor.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="_stream_profile_8hpp.html">libobsensor/hpp/StreamProfile.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="_version_8hpp.html">libobsensor/hpp/Version.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="_type_helper_8hpp.html">libobsensor/hpp/TypeHelper.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="ttc" id="a_context_8hpp_html"><div class="ttname"><a href="_context_8hpp.html">Context.hpp</a></div><div class="ttdoc">The SDK context class, which serves as the entry point to the underlying SDK. It is used to query dev...</div></div>
 <div class="ttc" id="a_device_8hpp_html"><div class="ttname"><a href="_device_8hpp.html">Device.hpp</a></div><div class="ttdoc">Device related types, including operations such as getting and creating a device, setting and obtaini...</div></div>
 <div class="ttc" id="a_error_8hpp_html"><div class="ttname"><a href="_error_8hpp.html">Error.hpp</a></div><div class="ttdoc">This file defines the Error class, which describes abnormal errors within the SDK....</div></div>
 <div class="ttc" id="a_filter_8hpp_html"><div class="ttname"><a href="_filter_8hpp.html">Filter.hpp</a></div><div class="ttdoc">This file contains the Filter class, which is the processing unit of the SDK that can perform point c...</div></div>
 <div class="ttc" id="a_frame_8hpp_html"><div class="ttname"><a href="_frame_8hpp.html">Frame.hpp</a></div><div class="ttdoc">Frame related type, which is mainly used to obtain frame data and frame information.</div></div>
 <div class="ttc" id="a_pipeline_8hpp_html"><div class="ttname"><a href="_pipeline_8hpp.html">Pipeline.hpp</a></div><div class="ttdoc">The SDK's advanced API type can quickly implement switching streaming and frame synchronization opera...</div></div>
+<div class="ttc" id="a_record_playback_8hpp_html"><div class="ttname"><a href="_record_playback_8hpp.html">RecordPlayback.hpp</a></div><div class="ttdoc">Record and playback device-related types, including interfaces to create recording and playback devic...</div></div>
 <div class="ttc" id="a_sensor_8hpp_html"><div class="ttname"><a href="_sensor_8hpp.html">Sensor.hpp</a></div><div class="ttdoc">Defines types related to sensors, which are used to obtain stream configurations, open and close stre...</div></div>
 <div class="ttc" id="a_stream_profile_8hpp_html"><div class="ttname"><a href="_stream_profile_8hpp.html">StreamProfile.hpp</a></div><div class="ttdoc">The stream profile related type is used to get information such as the width, height,...</div></div>
 <div class="ttc" id="a_type_helper_8hpp_html"><div class="ttname"><a href="_type_helper_8hpp.html">TypeHelper.hpp</a></div></div>
@@ -123,7 +123,7 @@ $(function(){ initResizable(false); });
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 15 2025 03:12:57 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Tue Apr 8 2025 20:22:40 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>

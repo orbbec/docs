@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.2.8</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.3.5</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -123,6 +123,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc56659a513ed329a65a89f32a292c6c" id="r_afc56659a513ed329a65a89f32a292c6c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc56659a513ed329a65a89f32a292c6c">getCoordinateValueScale</a> () const</td></tr>
 <tr class="memdesc:afc56659a513ed329a65a89f32a292c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the point coordinate value scale of the points frame. The point position value of the points frame is multiplied by the scale to give a position value in millimeters. For example, if scale=0.1, the x-coordinate value of a point is x = 10000, which means that the actual x-coordinate value = x*scale = 10000*0.1 = 1000mm.  <br /></td></tr>
 <tr class="separator:afc56659a513ed329a65a89f32a292c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3019dde76759e841dfa5c436b058a4a2" id="r_a3019dde76759e841dfa5c436b058a4a2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3019dde76759e841dfa5c436b058a4a2">getWidth</a> () const</td></tr>
+<tr class="memdesc:a3019dde76759e841dfa5c436b058a4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the width of the frame.  <br /></td></tr>
+<tr class="separator:a3019dde76759e841dfa5c436b058a4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce29bc7eafbc9977d857dc887ca9633" id="r_a0ce29bc7eafbc9977d857dc887ca9633"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ce29bc7eafbc9977d857dc887ca9633">getHeight</a> () const</td></tr>
+<tr class="memdesc:a0ce29bc7eafbc9977d857dc887ca9633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the height of the frame.  <br /></td></tr>
+<tr class="separator:a0ce29bc7eafbc9977d857dc887ca9633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classob_1_1_frame"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classob_1_1_frame')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classob_1_1_frame.html">ob::Frame</a></td></tr>
 <tr class="memitem:a33a5ec474d4793588c5b637f79d7c6ce inherit pub_methods_classob_1_1_frame" id="r_a33a5ec474d4793588c5b637f79d7c6ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a33a5ec474d4793588c5b637f79d7c6ce">Frame</a> (const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *impl)</td></tr>
 <tr class="memdesc:a33a5ec474d4793588c5b637f79d7c6ce inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classob_1_1_frame.html" title="Define the frame class, which is the base class of all frame types.">Frame</a> object with a given pointer to the internal frame object.  <br /></td></tr>
@@ -329,13 +335,73 @@ Please use the <a class="el" href="classob_1_1_frame_factory.html" title="FrameF
 
 </div>
 </div>
+<a id="a3019dde76759e841dfa5c436b058a4a2" name="a3019dde76759e841dfa5c436b058a4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3019dde76759e841dfa5c436b058a4a2">&#9670;&#160;</a></span>getWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ob::PointsFrame::getWidth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the width of the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t The width of the frame. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00601">601</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ce29bc7eafbc9977d857dc887ca9633" name="a0ce29bc7eafbc9977d857dc887ca9633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce29bc7eafbc9977d857dc887ca9633">&#9670;&#160;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ob::PointsFrame::getHeight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the height of the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint32_t The height of the frame. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00615">615</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Program/Code/orbbec/tmp/group/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_frame_8hpp_source.html">Frame.hpp</a></li>
+<li>E:/orbbec/package/openorbbecsdkgroup/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_frame_8hpp_source.html">Frame.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 15 2025 03:12:57 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Generated on Tue Apr 8 2025 20:22:40 for OrbbecSDK by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
