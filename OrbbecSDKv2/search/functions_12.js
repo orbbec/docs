@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['value_0',['value',['../classob_1_1_accel_frame.html#a0908897067c5aabb38bbd801457704d1',1,'ob::AccelFrame::value()'],['../classob_1_1_gyro_frame.html#a7e5148cc718c854e1f2f241a21e9a5c4',1,'ob::GyroFrame::value()']]],
-  ['vid_1',['vid',['../classob_1_1_device_info.html#a0caaa80ea1d68c4bf6604242ba2fc6a4',1,'ob::DeviceInfo::vid()'],['../classob_1_1_device_list.html#a62f7bcb43454d5040e0a4a8944de1090',1,'ob::DeviceList::vid()']]],
-  ['videoframe_2',['VideoFrame',['../classob_1_1_video_frame.html#aa37f43efc04e7aca80663d16b7fa1cc9',1,'ob::VideoFrame']]],
-  ['videostreamprofile_3',['VideoStreamProfile',['../classob_1_1_video_stream_profile.html#acc24673942909fe7e3c04efc6b35b83a',1,'ob::VideoStreamProfile']]]
+  ['uid_0',['uid',['../classob_1_1_device_info.html#a37aaf0a319d668fac0ed7c8eae8fb15c',1,'ob::DeviceInfo::uid()'],['../classob_1_1_device_list.html#a5edccc92c2196f8a95e4c0d5d399b5c8',1,'ob::DeviceList::uid()']]],
+  ['updatefirmware_1',['updateFirmware',['../classob_1_1_device.html#a7225d8294f7d3f526ccc8182ec530190',1,'ob::Device']]],
+  ['updatefirmwarefromdata_2',['updateFirmwareFromData',['../classob_1_1_device.html#a113a244f2f48ee7ac0313920169fb56e',1,'ob::Device']]],
+  ['updateoptionaldepthpresets_3',['updateOptionalDepthPresets',['../classob_1_1_device.html#a5a671441d101dad4537a183b457d335a',1,'ob::Device']]]
 ];

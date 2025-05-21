@@ -1,14 +1,16 @@
 var searchData=
 [
-  ['filter_0',['Filter',['../classob_1_1_filter.html#a805002efecbccf445e3a8022f2ccb888',1,'ob::Filter::Filter()=default'],['../classob_1_1_filter.html#ae0b786a1ce8ac090e26cb2d6f7195461',1,'ob::Filter::Filter(ob_filter *impl)']]],
-  ['firmwareversion_1',['firmwareVersion',['../classob_1_1_device_info.html#a68b56a5a8f68d9b7d27799fde807bb1e',1,'ob::DeviceInfo']]],
-  ['format_2',['format',['../classob_1_1_frame.html#ac02381cb60d381d3156566791f5e547f',1,'ob::Frame::format()'],['../classob_1_1_stream_profile.html#a857b2d48ed65fe1f8c8e525c621c70c1',1,'ob::StreamProfile::format()']]],
-  ['formatconvertfilter_3',['FormatConvertFilter',['../classob_1_1_format_convert_filter.html#ae8f175e46b2c48519a1778317e540df8',1,'ob::FormatConvertFilter']]],
-  ['fps_4',['fps',['../classob_1_1_video_stream_profile.html#a55f84b0e399a8e2e1dcfb92af73d8406',1,'ob::VideoStreamProfile']]],
-  ['frame_5',['Frame',['../classob_1_1_frame.html#a33a5ec474d4793588c5b637f79d7c6ce',1,'ob::Frame']]],
-  ['framecount_6',['frameCount',['../classob_1_1_frame_set.html#ac11a760fb844f2049a5b5bc97030a607',1,'ob::FrameSet']]],
-  ['frameset_7',['FrameSet',['../classob_1_1_frame_set.html#a6b30ac9e825e3bfb28b920498eb8990e',1,'ob::FrameSet']]],
-  ['framesetcallback_8',['frameSetCallback',['../classob_1_1_pipeline.html#aa3d655faf6ff03a5de6e557e8121c430',1,'ob::Pipeline']]],
-  ['freeidlememory_9',['freeIdleMemory',['../classob_1_1_context.html#ace3bc9a6f637a4c5d93b4c1df059ed53',1,'ob::Context']]],
-  ['fullscalerange_10',['fullScaleRange',['../classob_1_1_accel_stream_profile.html#ae27aaeccc57aa48d3849f690157d278e',1,'ob::AccelStreamProfile::fullScaleRange()'],['../classob_1_1_gyro_stream_profile.html#afafa054fa630ae00dc24fa5138049371',1,'ob::GyroStreamProfile::fullScaleRange()']]]
+  ['enable_0',['enable',['../classob_1_1_filter.html#a5471dea628faa02c234b74d43abcb0f5',1,'ob::Filter']]],
+  ['enableaccelstream_1',['enableAccelStream',['../classob_1_1_config.html#aedd1af0cadf61b31b7ee21cc416dcc62',1,'ob::Config']]],
+  ['enableallstream_2',['enableAllStream',['../classob_1_1_config.html#afd567dae35d849607594adb8ce143638',1,'ob::Config']]],
+  ['enabledeviceclocksync_3',['enableDeviceClockSync',['../classob_1_1_context.html#a456929389510efbff4d825ecee7e50ad',1,'ob::Context']]],
+  ['enableframesync_4',['enableFrameSync',['../classob_1_1_pipeline.html#a1b549a59d96135766ec693a2deebe08f',1,'ob::Pipeline']]],
+  ['enableglobaltimestamp_5',['enableGlobalTimestamp',['../classob_1_1_device.html#aa5a0cb4ec4272fa01eb5ceff1e0d71ab',1,'ob::Device']]],
+  ['enablegyrostream_6',['enableGyroStream',['../classob_1_1_config.html#aec6140b0563f0e628e14a657612317be',1,'ob::Config']]],
+  ['enableheartbeat_7',['enableHeartbeat',['../classob_1_1_device.html#aba0e98f4fb94e117f1bdb264c2b2384d',1,'ob::Device']]],
+  ['enablenetdeviceenumeration_8',['enableNetDeviceEnumeration',['../classob_1_1_context.html#a00f2f7c3fb07dc96b22e248e38c1ef8d',1,'ob::Context']]],
+  ['enablestream_9',['enableStream',['../classob_1_1_config.html#a8ef0809cbd631149b0a7809ff911ee77',1,'ob::Config::enableStream(OBStreamType streamType) const'],['../classob_1_1_config.html#a4b8993cdd732aefae925a64dc59f0835',1,'ob::Config::enableStream(OBSensorType sensorType) const'],['../classob_1_1_config.html#ad28da685ee73cda088cc69d0f414a09e',1,'ob::Config::enableStream(std::shared_ptr&lt; const StreamProfile &gt; streamProfile) const']]],
+  ['enablevideostream_10',['enableVideoStream',['../classob_1_1_config.html#aefb52cc87d6f1814c226de401a8ffd12',1,'ob::Config::enableVideoStream(OBStreamType streamType, uint32_t width=OB_WIDTH_ANY, uint32_t height=OB_HEIGHT_ANY, uint32_t fps=OB_FPS_ANY, OBFormat format=OB_FORMAT_ANY) const'],['../classob_1_1_config.html#a5f350cd84a931c67319c5f4f3793e981',1,'ob::Config::enableVideoStream(OBSensorType sensorType, uint32_t width=OB_WIDTH_ANY, uint32_t height=OB_HEIGHT_ANY, uint32_t fps=OB_FPS_ANY, OBFormat format=OB_FORMAT_ANY) const']]],
+  ['exportsettingsaspresetjsondata_11',['exportSettingsAsPresetJsonData',['../classob_1_1_device.html#aa45bf1cb1cca1da249c0396519958323',1,'ob::Device']]],
+  ['exportsettingsaspresetjsonfile_12',['exportSettingsAsPresetJsonFile',['../classob_1_1_device.html#a71cae6bd95656e2d4bcc18e19d9f0912',1,'ob::Device']]]
 ];
