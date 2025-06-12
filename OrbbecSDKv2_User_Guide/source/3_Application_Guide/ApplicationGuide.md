@@ -1139,6 +1139,7 @@ auto depthToAccelExtrinsic = depthStreamProfile->getExtrinsicTo(accelStreamProfi
 
 ## Set Depth AE
 
+Set the Depth for automatic exposure.Set Depth AE is equivalent to set IR AE.
 ```c++
 device->setBoolProperty(OB_PROP_DEPTH_AUTO_EXPOSURE_BOOL, true);
 ```
@@ -1168,6 +1169,8 @@ device->setIntProperty(OB_PROP_DEPTH_GAIN_INT, gain);  //
 
 ## Set Depth Mirror
 
+Depth mirror refers to horizontally flipping the depth image along its vertical centerline, meaning the pixel positions on the left and right sides of the image are swapped.
+
 ```c++ 
 if(device->isPropertySupported(OB_PROP_DEPTH_MIRROR_BOOL, OB_PERMISSION_READ)) {
      // Obtain the current mirror.
@@ -1179,6 +1182,9 @@ if(device->isPropertySupported(OB_PROP_DEPTH_MIRROR_BOOL, OB_PERMISSION_READ)) {
 ```
 
 ## Set Depth Flip
+
+Depth Flip means flipping the depth image up and down along the X-axis, that is, swapping the upper and lower parts of the image.
+
 ```
     if(device->isPropertySupported(OB_PROP_DEPTH_FLIP_BOOL, OB_PERMISSION_WRITE)) {
        // true: depth is flipped up and down; false: Does not flip
@@ -1300,6 +1306,8 @@ if(device->isPropertySupported(OB_PROP_SDK_DISPARITY_TO_DEPTH_BOOL, OB_PERMISSIO
 
 ## Set IR AE
 
+Set the IR for automatic exposure.
+
 ```c++
 device->setBoolProperty(OB_PROP_IR_AUTO_EXPOSURE_BOOL, true);
 ```
@@ -1345,6 +1353,8 @@ device->setIntProperty(OB_PROP_IR_AE_MAX_EXPOSURE_INT,3000);
 
 ## Set IR Mirror
 
+IR mirror refers to horizontally flipping the IR image along its vertical centerline, meaning the pixel positions on the left and right sides of the image are swapped.
+
 ```c++ 
 if(device->isPropertySupported(OB_PROP_IR_MIRROR_BOOL, OB_PERMISSION_READ)) {
      // Obtain the current mirror.
@@ -1356,6 +1366,9 @@ if(device->isPropertySupported(OB_PROP_IR_MIRROR_BOOL, OB_PERMISSION_READ)) {
 ```
 
 ## Set IR Flip
+
+IR Flip means flipping the IR image up and down along the X-axis, that is, swapping the upper and lower parts of the image.
+
 ```
     if(device->isPropertySupported(OB_PROP_IR_FLIP_BOOL, OB_PERMISSION_WRITE)) {
        // true: IR is flipped up and down; false: Does not flip
@@ -1364,7 +1377,9 @@ if(device->isPropertySupported(OB_PROP_IR_MIRROR_BOOL, OB_PERMISSION_READ)) {
 ```
 
 ## Set IR Rotation
+
 IR rotation can be rotated at 0, 90, 180, and 270 degrees. The default rotation is set to 0 degrees.
+
 ```
 // Rotation parameters
 Typedef enum {
@@ -1382,6 +1397,8 @@ if(device->isPropertySupported(OB_PROP_IR_ROTATE_INT, OB_PERMISSION_WRITE)) {
 
 ## Set Color AE
 
+Set the Color for automatic exposure.
+
 ```c++
 device->setBoolProperty(OB_PROP_COLOR_AUTO_EXPOSURE_BOOL, true);
 ```
@@ -1389,6 +1406,7 @@ device->setBoolProperty(OB_PROP_COLOR_AUTO_EXPOSURE_BOOL, true);
 ## Set Color Exposure
 
 - Set Color exposure, prerequisites, you need to turn off the Color AE
+
 ```c++
 //Disable AE
 device->setBoolProperty(OB_PROP_COLOR_AUTO_EXPOSURE_BOOL, false);
@@ -1397,6 +1415,7 @@ device->setIntProperty(OB_PROP_COLOR_EXPOSURE_INT, 1000);
 ```
 
 ## Set Color Gain
+
 - Set the Color gain and prerequisites. You need to turn off the Color AE
 
 ```c++
@@ -1408,6 +1427,9 @@ device->setIntProperty(OB_PROP_COLOR_GAIN_INT, gain);
 
 
 ## Set Color Mirror
+
+Color mirror refers to horizontally flipping the Color image along its vertical centerline, meaning the pixel positions on the left and right sides of the image are swapped.
+
 ```c++
     // Set the Color mirror.
 if(device->isPropertySupported(OB_PROP_COLOR_MIRROR_BOOL, OB_PERMISSION_READ)) {
@@ -1419,6 +1441,9 @@ if(device->isPropertySupported(OB_PROP_COLOR_MIRROR_BOOL, OB_PERMISSION_READ)) {
 ```
 
 ## Set Color Flip
+
+Color Flip means flipping the Color image up and down along the X-axis, that is, swapping the upper and lower parts of the image.
+
 ```c++
 if(device->isPropertySupported(OB_PROP_COLOR_FLIP_BOOL, OB_PERMISSION_WRITE)) {
 // true: indicates that the data is flipped up and down. false: indicates that the data is not flipped.
@@ -1427,6 +1452,9 @@ if(device->isPropertySupported(OB_PROP_COLOR_FLIP_BOOL, OB_PERMISSION_WRITE)) {
 ```
 
 ## Set Color Rotation
+
+Color rotation can be rotated at 0, 90, 180, and 270 degrees. The default rotation is set to 0 degrees.
+
 ```c++
 // Rotation parameters
 Typedef enum {
