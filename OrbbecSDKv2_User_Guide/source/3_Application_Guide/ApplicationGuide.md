@@ -793,10 +793,10 @@ Key API Description：
 auto device = pipe.getDevice();
 // 2. Determine whether to enable filter
 auto enable = device->getBoolProperty(OB_PROP_DEPTH_NOISE_REMOVAL_FILTER_BOOL);
-// 3. View filter-related parameters.
+// 3. get filter-related parameters
 auto max_diff = device->getIntProperty(OB_PROP_DEPTH_NOISE_REMOVAL_FILTER_MAX_DIFF_INT);
 auto max_size = device->getIntProperty(OB_PROP_DEPTH_NOISE_REMOVAL_FILTER_MAX_SPECKLE_SIZE_INT);
-// 4. Set the relevant filter parameters.
+// 4. Set the relevant filter parameters
 device->setIntProperty(OB_PROP_DEPTH_NOISE_REMOVAL_FILTER_MAX_DIFF_INT, 512);
 device->setIntProperty(OB_PROP_DEPTH_NOISE_REMOVAL_FILTER_MAX_SPECKLE_SIZE_INT, 960);
 ```
@@ -1145,7 +1145,7 @@ device->setBoolProperty(OB_PROP_DEPTH_AUTO_EXPOSURE_BOOL, true);
 
 ## Set Depth Exposure
 
-Set Depth exposure, prerequisites, you need to turn off the Depth AE. 
+Set Depth exposure, prerequisites, you need to turn off the Depth AE. Set Depth exposure is equivalent to set IR exposure.
 
 ```c++
 // Disable AE
@@ -1156,7 +1156,7 @@ device->setIntProperty(OB_PROP_DEPTH_EXPOSURE_INT, 1000);
 
 ## Set Depth Gain
 
-To set the exposure for Depth, you need to turn off the Depth AE.
+To set the exposure for Depth, you need to turn off the Depth AE. Set Depth gain is equivalent to set IR Gain.
 
 ```c++
 // Disable AE
@@ -1167,7 +1167,6 @@ device->setIntProperty(OB_PROP_DEPTH_GAIN_INT, gain);  //
 
 
 ## Set Depth Mirror
-    Determine whether the API is supported?
 
 ```c++ 
 if(device->isPropertySupported(OB_PROP_DEPTH_MIRROR_BOOL, OB_PERMISSION_READ)) {
@@ -1189,6 +1188,7 @@ if(device->isPropertySupported(OB_PROP_DEPTH_MIRROR_BOOL, OB_PERMISSION_READ)) {
 
 ## Set Depth Rotation
 
+Depth rotation can be rotated at 0, 90, 180, and 270 degrees. The default rotation is set to 0 degrees.
 ```
 // Rotation parameters
 Typedef enum {
@@ -1231,6 +1231,8 @@ device->setIntProperty(OB_PROP_DEPTH_PRECISION_LEVEL_INT，OB_PRECISION_1MM);
 ```
 
 ## Set the Minimum and Maximum Values of Depth
+
+To set the minimum and maximum values for Depth, any Depth values that fall outside this range are assigned a value of 0. This can be used to filter out noise.
 
 ```c++
 // create ThresholdFilter filter 
@@ -1362,7 +1364,7 @@ if(device->isPropertySupported(OB_PROP_IR_MIRROR_BOOL, OB_PERMISSION_READ)) {
 ```
 
 ## Set IR Rotation
-
+IR rotation can be rotated at 0, 90, 180, and 270 degrees. The default rotation is set to 0 degrees.
 ```
 // Rotation parameters
 Typedef enum {
@@ -1554,7 +1556,7 @@ device->setBoolProperty(OB_PROP_LASER_BOOL, true);
 
 ## Laser On-Off
 
-Currently, only the Gemini 330 series supports this feature (requires firmware version v1.4.00 or above).
+Currently, only the Gemini 330 series supports this feature (requires firmware version v1.4.00 or above) and requires Orbbec SDK version v2.1.1 or above
 
 ```c++
 // load frame interleave mode as 'Laser On-Off'

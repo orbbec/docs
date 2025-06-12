@@ -20,7 +20,7 @@ Open the sample project (orbbec_sdk_examples.sln) using Visual Studio 2019.
 Use the ob_quick_start sample as an introductory example to understand and use the SDK API. First, build the ob_quick_start sample and run it to start capturing data streams.
 
 - Note:
- Make sure to copy the required SDK dynamic libraries and OpenCV DLLs to the directory where ob_quick_start.exe is located. The OpenCV libraries are essential for rendering the sample views.
+ Make sure to copy the required SDK dynamic libraries(extensions & OrbbecSDK.dll) and OpenCV DLLs to the directory where ob_quick_start.exe is located. The OpenCV libraries are essential for rendering the sample views.
 
 ![image.png](../Images/CMake_Compile_5.png)
 
