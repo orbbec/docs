@@ -1090,7 +1090,7 @@ auto gyroStreamProfile = gyroFrameRaw->getStreamProfile();
 auto gyroProfile = gyroStreamProfile->as<ob::GyroStreamProfile>();
 ```
 
-## Obtaining Intrinsic and Extrinsic Parameters
+## Obtain Intrinsic and Extrinsic Parameters
 
 Intrinsic and extrinsic parameters can be obtained via the StreamProfile. 
 
@@ -1108,7 +1108,7 @@ auto colorDistortion = colorVideoProfile->getDistortion();
 auto depthToColorExtrinsic = depthVideoProfile->getExtrinsicTo(colorVideoProfile);
 ```
 
-## Obtaining IMU Intrinsic Parameters
+## Obtain IMU Intrinsic Parameters
 
 ```c++
 auto frameSet           = pipe.waitForFrameset();
@@ -1128,7 +1128,7 @@ auto gyroProfile   = gyroStreamProfile->as<ob::GyroStreamProfile>();
 auto gyroIntrinsic = gyroProfile->getIntrinsic();
 ```
 
-## Obtaining the Extrinsic Parameters Between Video Frames and IMU
+## Obtain the Extrinsic Parameters Between Video Frames and IMU
 
 ```c++
 // depth to gyro extrinsic
@@ -1532,7 +1532,7 @@ device->setIntProperty(OB_PROP_COLOR_BACKLIGHT_COMPENSATION_INT, 1);
 device->setIntProperty(OB_PROP_COLOR_CONTRAST_INT, contrast);
 ```
 
-## set Color power line frequency
+## Set Color power line frequency
 It is necessary to set 50Hz or 60Hz according to the power line frequency of different countries and regions. The purpose of setting the power supply frequency is to prevent Color images from flickering.
 ```c++
 typedef enum {
