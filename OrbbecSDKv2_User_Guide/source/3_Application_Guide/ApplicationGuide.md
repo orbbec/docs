@@ -76,6 +76,8 @@ Common data streams include Depth, Left IR, Right IR, and Color.
 Using the Depth stream as an example, the resolution is set to 640x400, the frame rate to 15 fps, and the output format to Y16.
 The handling of infrared and color streams follows a similar process.
 
+The difference between Blocking Polling Mode and Asynchronous Callback Mode: In Blocking Polling Mode after frame aggregation in the pipeline, the frame is inserted into the queue, and the application obtain frame data from the queue by calling waitForFrameset. In Asynchronous Callback Mode, after frame aggregation, the frame is directly passed back to the application via a callback. The advantage of Asynchronous Callback Mode is that it is more real-time, but in the callback function, the application layer should avoid time-consuming tasks and should release the frame as soon as possible.
+
 ##  Blocking Polling Mode
 
 Workflow Diagram:
