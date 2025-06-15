@@ -1,19 +1,22 @@
 
 # Quick Start on Windows Platform
 
-This section demonstrates how to quickly start and build the SDK on the Windows platform. The SDK version used here is v2.4.3. First, extract the downloaded Orbbec SDK package, then navigate to the examples directory in the extracted folder and use CMake to compile the project.
+This section demonstrates how to quickly start and build the SDK on the Windows platform. The SDK version used here is v2.4.3.
+
+- First, extract the downloaded Orbbec SDK package, then navigate to the examples directory in the extracted folder and use CMake to compile the project.
 
 ![image.png](../Images/CMake_Compile_1.png)
 
-Click the Configure button, and the following dialog will appear:
+- Click the Configure button, and the following dialog will appear:
 
 ![image.png](../Images/CMake_Compile_2.png)
 
-Click Finish, then click Generate, as shown below:
+
+- Click Finish, Set OpenCV_DIR to the installation directory of OpenCV, then click Generate, as shown below:
 
 ![image.png](../Images/CMake_Compile_3.png)
 
-Open the sample project (orbbec_sdk_examples.sln) using Visual Studio 2019.
+- Open the sample project (orbbec_sdk_examples.sln) using Visual Studio 2019.
 
 ![image.png](../Images/CMake_Compile_4.png)
 
