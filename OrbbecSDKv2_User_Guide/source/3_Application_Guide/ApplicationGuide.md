@@ -2002,7 +2002,7 @@ Multi devices sync please refer [ob_multi_devices_sync sample](https://github.co
 **How to test multi devices sync using C++ sample**
 
 #### Build
-1. Extract the OrbbecSDK sample package [OrbbecSDK_v2.4.3_20250523_linux_aarch64.zip](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.3) to the current directory
+1. Extract the OrbbecSDK sample package [OrbbecSDK_v2.x.x_xxxxxxxx_linux_aarch64.zip](https://github.com/orbbec/OrbbecSDK_v2/releases) to the current directory
 2. Open a terminal and run cd to enter the extracted directory
 3. Run the setup script to build and configure the environment: `sudo ./setup.sh`
 
