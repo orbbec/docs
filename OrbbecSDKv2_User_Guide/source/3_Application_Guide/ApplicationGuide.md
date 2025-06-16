@@ -1499,7 +1499,7 @@ device->setIntProperty(OB_PROP_COLOR_BRIGHTNESS_INT, brightness);
 device->setIntProperty(OB_PROP_COLOR_SHARPNESS_INT, sharpness);
 ```
 
-### Set Color Gamma
+## Set Color Gamma
 
 ```c++
 device->setIntProperty(OB_PROP_COLOR_GAMMA_INT, gamma);
