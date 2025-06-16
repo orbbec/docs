@@ -12,3 +12,6 @@
 ## Orbbec SDK K4A Wrapper
 
 * [API Reference](https://orbbec.github.io/docs/OrbbecSDK_K4A_Wrapper)
+
+## Orbbec SDK v2 API User Guide
+* [OrbbecSDK v2 API User Guide](https://orbbec.github.io/docs/OrbbecSDKv2_API_User_Guide/)
