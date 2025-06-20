@@ -2,7 +2,7 @@
 
 ## SDK Download
 
-Visit the official Orbbec GitHub repository[OrbbecSDK_v2 releases](https://github.com/orbbec/OrbbecSDK_v2/releases) to download a precompiled version of the SDK,You can also download the source code and build it[OrbbecSDK_v2](https://github.com/orbbec/OrbbecSDK_v2), For build instructions, refer to: [build orbbe sdk](https://github.com/orbbec/OrbbecSDK_v2/blob/main/docs/tutorial/building_orbbec_sdk.md).
+Visit the official Orbbec GitHub repository [OrbbecSDK_v2 releases](https://github.com/orbbec/OrbbecSDK_v2/releases) to download a precompiled version of the SDK, You can also download the [source code](https://github.com/orbbec/OrbbecSDK_v2), and build it. For build instructions, refer to: [build orbbec sdk](https://github.com/orbbec/OrbbecSDK_v2/blob/main/docs/tutorial/building_orbbec_sdk.md).
 
 
 The image below shows an example using version v2.4.3. Go to the [OrbbecSDK_v2 GitHub release page](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.3) and download the precompiled SDK and OrbbecViewer tool from the Assets section.
