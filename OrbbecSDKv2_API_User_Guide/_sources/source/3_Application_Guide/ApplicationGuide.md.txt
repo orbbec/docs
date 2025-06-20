@@ -408,10 +408,10 @@ auto depth2colorAlign = std::make_shared<ob::Align>(OB_STREAM_COLOR);
 depth2colorAlign->setCallBack([&win](std::shared_ptr<ob::Frame> frame) {
     // 11.Processed frames after alignment
     auto alignFrameSet = frame->as<ob::FrameSet>();
-    if(frameSet != nullptr) {
+    if(alignFrameSet != nullptr) {
        // Get the depth and color frame.
-       auto depthFrameRaw = frameSet->getFrame(OB_FRAME_DEPTH);
-       auto colorFrameRaw = frameSet->getFrame(OB_FRAME_COLOR);
+       auto depthFrameRaw = alignFrameSet->getFrame(OB_FRAME_DEPTH);
+       auto colorFrameRaw = alignFrameSet->getFrame(OB_FRAME_COLOR);
     }
 });
 

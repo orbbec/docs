@@ -589,10 +589,10 @@ Sample code is shown below:</p>
 <span class="n">depth2colorAlign</span><span class="o">-&gt;</span><span class="n">setCallBack</span><span class="p">([</span><span class="o">&amp;</span><span class="n">win</span><span class="p">](</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Frame</span><span class="o">&gt;</span><span class="w"> </span><span class="n">frame</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// 11.Processed frames after alignment</span>
 <span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">alignFrameSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">FrameSet</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">frameSet</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">alignFrameSet</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">       </span><span class="c1">// Get the depth and color frame.</span>
-<span class="w">       </span><span class="k">auto</span><span class="w"> </span><span class="n">depthFrameRaw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_DEPTH</span><span class="p">);</span>
-<span class="w">       </span><span class="k">auto</span><span class="w"> </span><span class="n">colorFrameRaw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_COLOR</span><span class="p">);</span>
+<span class="w">       </span><span class="k">auto</span><span class="w"> </span><span class="n">depthFrameRaw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alignFrameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_DEPTH</span><span class="p">);</span>
+<span class="w">       </span><span class="k">auto</span><span class="w"> </span><span class="n">colorFrameRaw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alignFrameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_COLOR</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">});</span>
 
@@ -2214,7 +2214,7 @@ Enter FPS (frames per second) (for example: 3000): 3000(3000 indicates 30 fps) .
 
   <div role="contentinfo">
     <p>&#169; Copyright 2025,Orbbec Inc. All Rights Reserved.
-      <span class="lastupdated">Last updated on 2025-06-16 17:12:13.
+      <span class="lastupdated">Last updated on 2025-06-20 09:47:56.
       </span></p>
   </div>
 
