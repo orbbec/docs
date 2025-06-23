@@ -45,7 +45,8 @@ The realization of the core business logic framework.
 
 - Platform abstraction layer
 
-Cross-platform components shield the implementation of different operating systems and provide a unified access method.
+Cross-platform components abstract operating system differences and provide a unified access interface.
+
 
 - Platform implementation layer 
 
