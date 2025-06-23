@@ -37,7 +37,7 @@ project = 'OrbbecSDK V2'
 # project = """
 # OrbbecSDK ROS2 documentation
 # """
-copyright = '2025,Orbbec Inc. All Rights Reserved'
+copyright = '2024-2025,Orbbec Inc. All Rights Reserved'
 author = 'ORBBEC INC. www.orbbec.com.'
 
 
