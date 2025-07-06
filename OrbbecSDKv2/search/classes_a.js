@@ -33,13 +33,14 @@ var searchData=
   ['obnoiseremovalfilterparams_30',['OBNoiseRemovalFilterParams',['../struct_o_b_noise_removal_filter_params.html',1,'']]],
   ['obpoint_31',['OBPoint',['../struct_o_b_point.html',1,'']]],
   ['obpoint2f_32',['OBPoint2f',['../struct_o_b_point2f.html',1,'']]],
-  ['obpropertyitem_33',['OBPropertyItem',['../struct_o_b_property_item.html',1,'']]],
-  ['obprotocolversion_34',['OBProtocolVersion',['../struct_o_b_protocol_version.html',1,'']]],
-  ['obrect_35',['OBRect',['../struct_o_b_rect.html',1,'']]],
-  ['obsequenceiditem_36',['OBSequenceIdItem',['../struct_o_b_sequence_id_item.html',1,'']]],
-  ['obspatialadvancedfilterparams_37',['OBSpatialAdvancedFilterParams',['../struct_o_b_spatial_advanced_filter_params.html',1,'']]],
-  ['obtofexposurethresholdcontrol_38',['OBTofExposureThresholdControl',['../struct_o_b_tof_exposure_threshold_control.html',1,'']]],
-  ['obuint16propertyrange_39',['OBUint16PropertyRange',['../struct_o_b_uint16_property_range.html',1,'']]],
-  ['obuint8propertyrange_40',['OBUint8PropertyRange',['../struct_o_b_uint8_property_range.html',1,'']]],
-  ['obxytables_41',['OBXYTables',['../struct_o_b_x_y_tables.html',1,'']]]
+  ['obpresetresolutionconfig_33',['OBPresetResolutionConfig',['../struct_o_b_preset_resolution_config.html',1,'']]],
+  ['obpropertyitem_34',['OBPropertyItem',['../struct_o_b_property_item.html',1,'']]],
+  ['obprotocolversion_35',['OBProtocolVersion',['../struct_o_b_protocol_version.html',1,'']]],
+  ['obrect_36',['OBRect',['../struct_o_b_rect.html',1,'']]],
+  ['obsequenceiditem_37',['OBSequenceIdItem',['../struct_o_b_sequence_id_item.html',1,'']]],
+  ['obspatialadvancedfilterparams_38',['OBSpatialAdvancedFilterParams',['../struct_o_b_spatial_advanced_filter_params.html',1,'']]],
+  ['obtofexposurethresholdcontrol_39',['OBTofExposureThresholdControl',['../struct_o_b_tof_exposure_threshold_control.html',1,'']]],
+  ['obuint16propertyrange_40',['OBUint16PropertyRange',['../struct_o_b_uint16_property_range.html',1,'']]],
+  ['obuint8propertyrange_41',['OBUint8PropertyRange',['../struct_o_b_uint8_property_range.html',1,'']]],
+  ['obxytables_42',['OBXYTables',['../struct_o_b_x_y_tables.html',1,'']]]
 ];

@@ -11,13 +11,14 @@ var searchData=
   ['pipeline_2eh_8',['Pipeline.h',['../_pipeline_8h.html',1,'']]],
   ['pipeline_2ehpp_9',['Pipeline.hpp',['../_pipeline_8hpp.html',1,'']]],
   ['pixelavailablebitsize_10',['pixelAvailableBitSize',['../classob_1_1_video_frame.html#a2757e0b1ea67fee8f985961270ee466d',1,'ob::VideoFrame']]],
-  ['playbackdevice_11',['PlaybackDevice',['../classob_1_1_playback_device.html',1,'ob::PlaybackDevice'],['../classob_1_1_playback_device.html#a37b7490d059611e58d8d610ed2b4721b',1,'ob::PlaybackDevice::PlaybackDevice(const std::string &amp;file)'],['../classob_1_1_playback_device.html#ad4e43c76917d38d49cff4eef75c39fe3',1,'ob::PlaybackDevice::PlaybackDevice(PlaybackDevice &amp;&amp;other)'],['../classob_1_1_playback_device.html#aa2bfaf7e3b1ef51bdcfb340ad6c569db',1,'ob::PlaybackDevice::PlaybackDevice(const PlaybackDevice &amp;)=delete']]],
+  ['playbackdevice_11',['PlaybackDevice',['../classob_1_1_playback_device.html',1,'ob::PlaybackDevice'],['../classob_1_1_playback_device.html#a37b7490d059611e58d8d610ed2b4721b',1,'ob::PlaybackDevice::PlaybackDevice(const std::string &amp;file)'],['../classob_1_1_playback_device.html#a293ca809e739fed256216d23b0054017',1,'ob::PlaybackDevice::PlaybackDevice(PlaybackDevice &amp;&amp;other) noexcept'],['../classob_1_1_playback_device.html#aa2bfaf7e3b1ef51bdcfb340ad6c569db',1,'ob::PlaybackDevice::PlaybackDevice(const PlaybackDevice &amp;)=delete']]],
   ['playbackstatuschangecallback_12',['PlaybackStatusChangeCallback',['../namespaceob.html#a4153c115c578fb8aa2b0a32c3612c1ab',1,'ob']]],
   ['pointcloudfilter_13',['PointCloudFilter',['../classob_1_1_point_cloud_filter.html',1,'ob::PointCloudFilter'],['../classob_1_1_point_cloud_filter.html#aa8b59d9e70d1f9c24054b2db9f1604a1',1,'ob::PointCloudFilter::PointCloudFilter()']]],
   ['pointcloudhelper_14',['PointCloudHelper',['../classob_1_1_point_cloud_helper.html',1,'ob']]],
   ['pointsframe_15',['PointsFrame',['../classob_1_1_points_frame.html',1,'ob::PointsFrame'],['../classob_1_1_points_frame.html#a0f284d5547e377b4f1d32ffe7acd3cc3',1,'ob::PointsFrame::PointsFrame()']]],
   ['pointsframe_16',['pointsFrame',['../classob_1_1_frame_set.html#a5d0acb48d2d831d20501d7866560fb1b',1,'ob::FrameSet']]],
-  ['process_17',['process',['../classob_1_1_filter.html#a9836956bb6fe191e1ef57b967e3392cf',1,'ob::Filter']]],
-  ['property_2eh_18',['Property.h',['../_property_8h.html',1,'']]],
-  ['pushframe_19',['pushFrame',['../classob_1_1_filter.html#a91b225f24ac31ed896ba141f8dd15d03',1,'ob::Filter::pushFrame()'],['../classob_1_1_frame_set.html#ab3b88c8210219e96689c090ef3805f6e',1,'ob::FrameSet::pushFrame()']]]
+  ['presetresolutionconfigelist_17',['PresetResolutionConfigeList',['../classob_1_1_preset_resolution_confige_list.html',1,'ob::PresetResolutionConfigeList'],['../classob_1_1_preset_resolution_confige_list.html#a46a2405873ea480c3704a18553a5175e',1,'ob::PresetResolutionConfigeList::PresetResolutionConfigeList()']]],
+  ['process_18',['process',['../classob_1_1_filter.html#a9836956bb6fe191e1ef57b967e3392cf',1,'ob::Filter']]],
+  ['property_2eh_19',['Property.h',['../_property_8h.html',1,'']]],
+  ['pushframe_20',['pushFrame',['../classob_1_1_filter.html#a91b225f24ac31ed896ba141f8dd15d03',1,'ob::Filter::pushFrame()'],['../classob_1_1_frame_set.html#ab3b88c8210219e96689c090ef3805f6e',1,'ob::FrameSet::pushFrame()']]]
 ];

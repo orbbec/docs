@@ -5,10 +5,11 @@ var searchData=
   ['imutemp_2',['imuTemp',['../struct_o_b_device_temperature.html#a216f0f34b5ff54e64f2674cd41fe90da',1,'OBDeviceTemperature']]],
   ['intrinsics_3',['intrinsics',['../struct_o_b_calibration_param.html#ae87a47121194b9bbeeaad738e152c012',1,'OBCalibrationParam']]],
   ['invaliddisp_4',['invalidDisp',['../struct_o_b_disparity_param.html#a4a84d7b3ba390ad53b9eb3c67c48cd5d',1,'OBDisparityParam']]],
-  ['irlefttemp_5',['irLeftTemp',['../struct_o_b_device_temperature.html#a52a6b76be7b79347e8e7aefb938a3690',1,'OBDeviceTemperature']]],
-  ['irrighttemp_6',['irRightTemp',['../struct_o_b_device_temperature.html#a0dcab19faea03411a3c46acfb2c091b6',1,'OBDeviceTemperature']]],
-  ['irtemp_7',['irTemp',['../struct_o_b_device_temperature.html#a2a3a4d01b0e9e354fec9bb7378359d02',1,'OBDeviceTemperature']]],
-  ['irtriggersignalindelay_8',['irTriggerSignalInDelay',['../struct_o_b_device_sync_config.html#a9a26f092fcd880d683a7ee39d11b1645',1,'OBDeviceSyncConfig']]],
-  ['isdualcamera_9',['isDualCamera',['../struct_o_b_disparity_param.html#a900b07e1aa3fb66552e4ca410e5ea437',1,'OBDisparityParam']]],
-  ['ismirrored_10',['isMirrored',['../struct_o_b_camera_param.html#a214e4a8c69cf4d6e7f50c0ebe9772efb',1,'OBCameraParam']]]
+  ['irdecimationfactor_5',['irDecimationFactor',['../struct_o_b_preset_resolution_config.html#a5fb2a73731b715408f352163e5135433',1,'OBPresetResolutionConfig']]],
+  ['irlefttemp_6',['irLeftTemp',['../struct_o_b_device_temperature.html#a52a6b76be7b79347e8e7aefb938a3690',1,'OBDeviceTemperature']]],
+  ['irrighttemp_7',['irRightTemp',['../struct_o_b_device_temperature.html#a0dcab19faea03411a3c46acfb2c091b6',1,'OBDeviceTemperature']]],
+  ['irtemp_8',['irTemp',['../struct_o_b_device_temperature.html#a2a3a4d01b0e9e354fec9bb7378359d02',1,'OBDeviceTemperature']]],
+  ['irtriggersignalindelay_9',['irTriggerSignalInDelay',['../struct_o_b_device_sync_config.html#a9a26f092fcd880d683a7ee39d11b1645',1,'OBDeviceSyncConfig']]],
+  ['isdualcamera_10',['isDualCamera',['../struct_o_b_disparity_param.html#a900b07e1aa3fb66552e4ca410e5ea437',1,'OBDisparityParam']]],
+  ['ismirrored_11',['isMirrored',['../struct_o_b_camera_param.html#a214e4a8c69cf4d6e7f50c0ebe9772efb',1,'OBCameraParam']]]
 ];
