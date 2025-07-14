@@ -1,6 +1,4 @@
 
-This section demonstrates how to quickly start and build the precompiled SDK package on windows and Linux platform. If you want to compile from the OrbbecSDK v2 source code, please refer to [the link](https://github.com/orbbec/OrbbecSDK_v2/blob/main/docs/tutorial/building_orbbec_sdk.md).
-
 # Quick Start on Windows Platform
 
 This section demonstrates how to quickly start and build SDK package on the Windows platform. The SDK version used here is [v2.4.3](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.3).

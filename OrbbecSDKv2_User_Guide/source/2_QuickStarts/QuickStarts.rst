@@ -3,7 +3,7 @@
 QuickStarts
 ======================================================
 
-    This section describes Compile and run quick start sample.
+    This section demonstrates how to quickly start and build the precompiled SDK package on windows and Linux platform. If you want to compile from the OrbbecSDK v2 source code, please refer to https://github.com/orbbec/OrbbecSDK_v2/blob/main/docs/tutorial/building_orbbec_sdk.md.
 
 ======================================================
 
