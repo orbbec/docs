@@ -90,9 +90,9 @@ The installation process is shown below:
 If you do not want to compile the Orbbec SDK, you can use the SDK installation package. Taking [v2.4.8](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.8) as an example, first download the corresponding installation package for your platform.
 
 
-The file OrbbecSDK_vx.x.x_win64.exe serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Windows.
-The file OrbbecSDK_vx.x.x_amd64.deb serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Linux x86_64, likes ubuntu.
-The file OrbbecSDK_vx.x.x_arm64.deb serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on ARM64，likes NVIDIA Jetson AGX Orin , NVIDIA Jetson Orin NX , NVIDIA Jetson Orin Nano , NVIDIA Jetson AGX Xavier , NVIDIA Jetson Xavier NX.
+- The file OrbbecSDK_vx.x.x_win64.exe serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Windows.
+- The file OrbbecSDK_vx.x.x_amd64.deb serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Linux x86_64, likes ubuntu.
+- The file OrbbecSDK_vx.x.x_arm64.deb serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on ARM64，likes NVIDIA Jetson AGX Orin , NVIDIA Jetson Orin NX , NVIDIA Jetson Orin Nano , NVIDIA Jetson AGX Xavier , NVIDIA Jetson Xavier NX.
 
 ## Install via .deb Package
 - On the Linux x64 (ubuntu) platform, install using the following command. (If you are using the Arm64 platform, please use OrbbecSDK_vx.x.x_arm64.deb)
