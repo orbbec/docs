@@ -63,8 +63,21 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="QuickStarts.html">2. QuickStarts</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1. Quick Start on Windows Platform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#quick-start-on-linux-platform">2.2. Quick Start on Linux Platform</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1. Quick Start on Windows Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#metadata-registration">2.1.1. Metadata registration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-sdk-package-zip">2.1.2. build SDK package(.zip)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start-on-linux-platform">2.2. Quick Start on Linux Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-udev-rules-script">2.2.1. install udev rules script</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.2.2. build SDK package(.zip)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-install-package">2.3. How to Use install package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-via-deb-package">2.3.1. Install via .deb Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-via-exe-package">2.3.2. Install via .exe Package</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../3_Application_Guide/Application_Guide.html">3. Application Guide</a><ul>
@@ -214,6 +227,14 @@
              
   <section id="quick-start-on-windows-platform">
 <h1><span class="section-number">2.1. </span>Quick Start on Windows Platform<a class="headerlink" href="#quick-start-on-windows-platform" title="Link to this heading"></a></h1>
+<section id="metadata-registration">
+<h2><span class="section-number">2.1.1. </span>Metadata registration<a class="headerlink" href="#metadata-registration" title="Link to this heading"></a></h2>
+<p>For windows,you need to register the metadata associated with frames (this includes things like timestamps and other information about the video frame).</p>
+<p>Metadata registration follow this:<a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/blob/main/scripts/env_setup/obsensor_metadata_win10.md">/scripts/env_setup/obsensor_metadata_win10.md</a></p>
+<p><strong>Notes: If the metadata is not registered, the device timestamp will be abnormal, thereby affecting the SDK’s internal frame synchronization functionality.</strong></p>
+</section>
+<section id="build-sdk-package-zip">
+<h2><span class="section-number">2.1.2. </span>build SDK package(.zip)<a class="headerlink" href="#build-sdk-package-zip" title="Link to this heading"></a></h2>
 <p>This section demonstrates how to quickly start and build SDK package on the Windows platform. The SDK version used here is <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.3">v2.4.3</a>.</p>
 <ul class="simple">
 <li><p>First, extract the downloaded Orbbec SDK package, then navigate to the examples directory in the extracted folder and use CMake to compile the project.</p></li>
@@ -240,8 +261,22 @@ Make sure to copy the required SDK dynamic libraries(extensions &amp; OrbbecSDK.
 <p>The ob_quick_start sample captures and displays data streams as shown below:</p>
 <p><img alt="image.png" src="../../_images/Quick_Start_Sample.png" /></p>
 </section>
+</section>
 <section id="quick-start-on-linux-platform">
 <h1><span class="section-number">2.2. </span>Quick Start on Linux Platform<a class="headerlink" href="#quick-start-on-linux-platform" title="Link to this heading"></a></h1>
+<section id="install-udev-rules-script">
+<h2><span class="section-number">2.2.1. </span>install udev rules script<a class="headerlink" href="#install-udev-rules-script" title="Link to this heading"></a></h2>
+<p>Please install it using the following commands:<a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/blob/main/scripts/env_setup/install_udev_rules.sh">/scripts/env_setup/install_udev_rules.sh</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">OrbbecSDK_v2</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">env_setup</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="o">+</span><span class="n">x</span> <span class="o">./</span><span class="n">install_udev_rules</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">sudo</span> <span class="o">./</span><span class="n">install_udev_rules</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">sudo</span> <span class="n">udevadm</span> <span class="n">control</span> <span class="o">--</span><span class="n">reload</span><span class="o">-</span><span class="n">rules</span> <span class="o">&amp;&amp;</span> <span class="n">udevadm</span> <span class="n">trigger</span>
+</pre></div>
+</div>
+<p><strong>Notes: If this script is not executed, open the device will fail due to permission issues. You need to run the sample with sudo (administrator privileges).</strong></p>
+</section>
+<section id="id1">
+<h2><span class="section-number">2.2.2. </span>build SDK package(.zip)<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>Build Requirements：</p>
 <ul>
@@ -270,6 +305,39 @@ After installing the udev script, you can run the samples without sudo privilege
 </ul>
 <p><img alt="image.png" src="../../_images/Linux_Quick_Start.png" /></p>
 </section>
+</section>
+<section id="how-to-use-install-package">
+<h1><span class="section-number">2.3. </span>How to Use install package<a class="headerlink" href="#how-to-use-install-package" title="Link to this heading"></a></h1>
+<p>If you do not want to compile the Orbbec SDK, you can use the SDK installation package. Taking <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.8">v2.4.8</a> as an example, first download the corresponding installation package for your platform.</p>
+<p>The file OrbbecSDK_vx.x.x_win64.exe serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Windows.
+The file OrbbecSDK_vx.x.x_amd64.deb serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Linux x86_64, likes ubuntu.
+The file OrbbecSDK_vx.x.x_arm64.deb serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on ARM64，likes NVIDIA Jetson AGX Orin , NVIDIA Jetson Orin NX , NVIDIA Jetson Orin Nano , NVIDIA Jetson AGX Xavier , NVIDIA Jetson Xavier NX.</p>
+<section id="install-via-deb-package">
+<h2><span class="section-number">2.3.1. </span>Install via .deb Package<a class="headerlink" href="#install-via-deb-package" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>On the Linux x64 (ubuntu) platform, install using the following command. (If you are using the Arm64 platform, please use OrbbecSDK_vx.x.x_arm64.deb)</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">OrbbecSDK_v2</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">x_amd64</span><span class="o">.</span><span class="n">deb</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Check the entire package path of the Orbbec SDK using dpkg -L orbbecsdk, while the header files and library files of the Orbbec SDK will be installed in the /usr/local path.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dpkg</span> <span class="o">-</span><span class="n">L</span> <span class="n">orbbecsdk</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Run the Orbbec Viewer.
+sudo ./OrbbecViewer</p></li>
+</ul>
+</section>
+<section id="install-via-exe-package">
+<h2><span class="section-number">2.3.2. </span>Install via .exe Package<a class="headerlink" href="#install-via-exe-package" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>On the windows platform, Double-click OrbbecSDK_vx.x.x_win64.exe directly to install, After installation is complete, run OrbbecViewer or the Orbbec SDK from the installation directory.</p></li>
+</ul>
+</section>
+</section>
 
 
            </div>
@@ -283,7 +351,7 @@ After installing the udev script, you can run the samples without sudo privilege
 
   <div role="contentinfo">
     <p>&#169; Copyright 2024-2025,Orbbec Inc. All Rights Reserved.
-      <span class="lastupdated">Last updated on 2025-07-14 20:20:42.
+      <span class="lastupdated">Last updated on 2025-07-15 21:49:18.
       </span></p>
   </div>
 
