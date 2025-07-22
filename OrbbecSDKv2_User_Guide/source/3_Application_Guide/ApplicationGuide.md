@@ -456,7 +456,7 @@ std::shared_ptr<ob::Config> config = std::make_shared<ob::Config>();
 config->enableVideoStream(OB_STREAM_DEPTH, 640, 480, 15, OB_FORMAT_Y16);
 
 // 4.Enable color video stream. You can modify the parameters based on your usage requirements
-config->enableVideoStream(OB_STREAM_COLOR, 640, 480, 15, OB_FORMAT_YUYV);
+config->enableVideoStream(OB_STREAM_COLOR, 640, 480, 15, OB_FORMAT_RGB);
 
 // 5.Set the frame aggregate output mode to ensure all types of frames are included in the output frameset
 config->setFrameAggregateOutputMode(OB_FRAME_AGGREGATE_OUTPUT_ALL_TYPE_FRAME_REQUIRE);
@@ -844,14 +844,14 @@ If you want to record multiple streams at the same time, you can enable them sim
 
 Key API Description：
 ```c++
-// Initialize recording device with output file
+// Initialize recording device with output file,and start record
 auto recordDevice = std::make_shared<ob::RecordDevice>(device, filePath);
 
-// Start record
-recorder->resume();
-
-// Stop record
+// pause
 recorder->pause();
+
+// resume
+recorder->resume();
 ```
 
 Workflow Diagram:
