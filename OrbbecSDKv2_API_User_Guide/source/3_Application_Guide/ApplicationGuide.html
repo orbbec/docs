@@ -647,7 +647,7 @@ Sample code is shown below:</p>
 <span class="n">config</span><span class="o">-&gt;</span><span class="n">enableVideoStream</span><span class="p">(</span><span class="n">OB_STREAM_DEPTH</span><span class="p">,</span><span class="w"> </span><span class="mi">640</span><span class="p">,</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_Y16</span><span class="p">);</span>
 
 <span class="c1">// 4.Enable color video stream. You can modify the parameters based on your usage requirements</span>
-<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableVideoStream</span><span class="p">(</span><span class="n">OB_STREAM_COLOR</span><span class="p">,</span><span class="w"> </span><span class="mi">640</span><span class="p">,</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_YUYV</span><span class="p">);</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableVideoStream</span><span class="p">(</span><span class="n">OB_STREAM_COLOR</span><span class="p">,</span><span class="w"> </span><span class="mi">640</span><span class="p">,</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_RGB</span><span class="p">);</span>
 
 <span class="c1">// 5.Set the frame aggregate output mode to ensure all types of frames are included in the output frameset</span>
 <span class="n">config</span><span class="o">-&gt;</span><span class="n">setFrameAggregateOutputMode</span><span class="p">(</span><span class="n">OB_FRAME_AGGREGATE_OUTPUT_ALL_TYPE_FRAME_REQUIRE</span><span class="p">);</span>
@@ -999,14 +999,14 @@ The following section demonstrates how to acquire depth and color streams using 
 The method for recording infrared and color streams is similar.
 If you want to record multiple streams at the same time, you can enable them simultaneously.</p>
 <p>Key API Description：</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Initialize recording device with output file</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Initialize recording device with output file,and start record</span>
 <span class="k">auto</span><span class="w"> </span><span class="n">recordDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">RecordDevice</span><span class="o">&gt;</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">filePath</span><span class="p">);</span>
 
-<span class="c1">// Start record</span>
-<span class="n">recorder</span><span class="o">-&gt;</span><span class="n">resume</span><span class="p">();</span>
-
-<span class="c1">// Stop record</span>
+<span class="c1">// pause</span>
 <span class="n">recorder</span><span class="o">-&gt;</span><span class="n">pause</span><span class="p">();</span>
+
+<span class="c1">// resume</span>
+<span class="n">recorder</span><span class="o">-&gt;</span><span class="n">resume</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>Workflow Diagram:</p>
@@ -2227,7 +2227,7 @@ Enter FPS (frames per second) (for example: 3000): 3000(3000 indicates 30 fps) .
 
   <div role="contentinfo">
     <p>&#169; Copyright 2024-2025,Orbbec Inc. All Rights Reserved.
-      <span class="lastupdated">Last updated on 2025-07-15 22:29:14.
+      <span class="lastupdated">Last updated on 2025-07-22 13:57:31.
       </span></p>
   </div>
 
