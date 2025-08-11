@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r_0',['r',['../struct_o_b_color_point.html#afe48bc5c44ced94fc3e9bde3653ba5fb',1,'OBColorPoint']]],
-  ['radius_1',['radius',['../struct_o_b_spatial_advanced_filter_params.html#ad5ba7e142440fe36767062b1813ff3a2',1,'OBSpatialAdvancedFilterParams']]],
+  ['radius_1',['radius',['../struct_o_b_spatial_fast_filter_params.html#a7be21489cdb6639760feefc179aa1031',1,'OBSpatialFastFilterParams::radius'],['../struct_o_b_spatial_moderate_filter_params.html#a355b158738739523ebf43f4c9a34cc57',1,'OBSpatialModerateFilterParams::radius'],['../struct_o_b_spatial_advanced_filter_params.html#ad5ba7e142440fe36767062b1813ff3a2',1,'OBSpatialAdvancedFilterParams::radius']]],
   ['randomwalk_2',['randomWalk',['../struct_o_b_accel_intrinsic.html#a913d5d1229786cd69f358b504ccd0246',1,'OBAccelIntrinsic::randomWalk'],['../struct_o_b_gyro_intrinsic.html#a2043610fbcc23df252d8c34fdbc294dc',1,'OBGyroIntrinsic::randomWalk']]],
   ['referencetemp_3',['referenceTemp',['../struct_o_b_accel_intrinsic.html#ab2685e781b607c920c96a4dc38cada3f',1,'OBAccelIntrinsic::referenceTemp'],['../struct_o_b_gyro_intrinsic.html#ae5313bbaa4af7e397d15f877e28a720b',1,'OBGyroIntrinsic::referenceTemp']]],
   ['reserved_4',['reserved',['../struct_o_b_disp_offset_config.html#a97275ac5d5139f7f1b63a6f54b973778',1,'OBDispOffsetConfig']]],

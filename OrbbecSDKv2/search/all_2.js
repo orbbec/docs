@@ -37,12 +37,13 @@ var searchData=
   ['createframefrombuffer_34',['createFrameFromBuffer',['../classob_1_1_frame_factory.html#ac853a9e62a6c223e39568a33ffe3bae5',1,'ob::FrameFactory']]],
   ['createframefromotherframe_35',['createFrameFromOtherFrame',['../classob_1_1_frame_factory.html#a31b203d7ea31673c98d217758c6af264',1,'ob::FrameFactory']]],
   ['createframefromstreamprofile_36',['createFrameFromStreamProfile',['../classob_1_1_frame_factory.html#a47dfd36e6744eb5613a8f2bea00911c9',1,'ob::FrameFactory']]],
-  ['createnetdevice_37',['createNetDevice',['../classob_1_1_context.html#ae6c8a65de3ef08c6a28e53abfe09071e',1,'ob::Context']]],
-  ['createprivatefilter_38',['createPrivateFilter',['../classob_1_1_filter_factory.html#a92ab858cfead96ad62bd32312cae8615',1,'ob::FilterFactory']]],
-  ['createrecommendedfilters_39',['createRecommendedFilters',['../classob_1_1_sensor.html#a3935d1f55f37786d5fd07a23d56228e6',1,'ob::Sensor']]],
-  ['createvideoframe_40',['createVideoFrame',['../classob_1_1_frame_factory.html#aee71c688fb5e7b211095b6059ad23d35',1,'ob::FrameFactory']]],
-  ['createvideoframefrombuffer_41',['createVideoFrameFromBuffer',['../classob_1_1_frame_factory.html#a20856c6c5632cfb06a277e7b573a387e',1,'ob::FrameFactory']]],
-  ['cur_42',['cur',['../struct_o_b_int_property_range.html#acae2aaab07f2cc2a2842f1e602765a7b',1,'OBIntPropertyRange::cur'],['../struct_o_b_float_property_range.html#a0196dc2692726aeafc9718f5988b1ec8',1,'OBFloatPropertyRange::cur'],['../struct_o_b_uint16_property_range.html#a662b642815c91042fa9e9461ec99dda6',1,'OBUint16PropertyRange::cur'],['../struct_o_b_uint8_property_range.html#a7280633bdf7aa3578dab4b463421cd11',1,'OBUint8PropertyRange::cur'],['../struct_o_b_bool_property_range.html#a6aec56bfe29835e89fa5607e3bf04ce8',1,'OBBoolPropertyRange::cur']]],
-  ['cx_43',['cx',['../struct_o_b_camera_intrinsic.html#a50b429aad5b3819aec089b154cea6297',1,'OBCameraIntrinsic']]],
-  ['cy_44',['cy',['../struct_o_b_camera_intrinsic.html#a6f6b987279f103e7843dc1fd9caa369f',1,'OBCameraIntrinsic']]]
+  ['createframeset_37',['createFrameSet',['../classob_1_1_frame_factory.html#aef99aca484b9dbcdc39b19609d00b5b4',1,'ob::FrameFactory']]],
+  ['createnetdevice_38',['createNetDevice',['../classob_1_1_context.html#ae6c8a65de3ef08c6a28e53abfe09071e',1,'ob::Context']]],
+  ['createprivatefilter_39',['createPrivateFilter',['../classob_1_1_filter_factory.html#a92ab858cfead96ad62bd32312cae8615',1,'ob::FilterFactory']]],
+  ['createrecommendedfilters_40',['createRecommendedFilters',['../classob_1_1_sensor.html#a3935d1f55f37786d5fd07a23d56228e6',1,'ob::Sensor']]],
+  ['createvideoframe_41',['createVideoFrame',['../classob_1_1_frame_factory.html#aee71c688fb5e7b211095b6059ad23d35',1,'ob::FrameFactory']]],
+  ['createvideoframefrombuffer_42',['createVideoFrameFromBuffer',['../classob_1_1_frame_factory.html#a20856c6c5632cfb06a277e7b573a387e',1,'ob::FrameFactory']]],
+  ['cur_43',['cur',['../struct_o_b_int_property_range.html#acae2aaab07f2cc2a2842f1e602765a7b',1,'OBIntPropertyRange::cur'],['../struct_o_b_float_property_range.html#a0196dc2692726aeafc9718f5988b1ec8',1,'OBFloatPropertyRange::cur'],['../struct_o_b_uint16_property_range.html#a662b642815c91042fa9e9461ec99dda6',1,'OBUint16PropertyRange::cur'],['../struct_o_b_uint8_property_range.html#a7280633bdf7aa3578dab4b463421cd11',1,'OBUint8PropertyRange::cur'],['../struct_o_b_bool_property_range.html#a6aec56bfe29835e89fa5607e3bf04ce8',1,'OBBoolPropertyRange::cur']]],
+  ['cx_44',['cx',['../struct_o_b_camera_intrinsic.html#a50b429aad5b3819aec089b154cea6297',1,'OBCameraIntrinsic']]],
+  ['cy_45',['cy',['../struct_o_b_camera_intrinsic.html#a6f6b987279f103e7843dc1fd9caa369f',1,'OBCameraIntrinsic']]]
 ];

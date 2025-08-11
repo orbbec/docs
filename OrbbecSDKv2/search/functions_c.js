@@ -144,7 +144,7 @@ var searchData=
   ['ob_5fdevice_5fpreset_5flist_5fget_5fname_141',['ob_device_preset_list_get_name',['../_advanced_8h.html#af421206d3fd372c5cc7c5a3b3c829aa5',1,'Advanced.h']]],
   ['ob_5fdevice_5fpreset_5flist_5fhas_5fpreset_142',['ob_device_preset_list_has_preset',['../_advanced_8h.html#a84a4a729e1ddc0d7ce0cbfeb55dee1f4',1,'Advanced.h']]],
   ['ob_5fdevice_5fpreset_5fresolution_5fconfig_5fget_5fcount_143',['ob_device_preset_resolution_config_get_count',['../_advanced_8h.html#afb563de0a463bddc51b7f90672f5e31d',1,'Advanced.h']]],
-  ['ob_5fdevice_5fpreset_5fresolution_5fconfig_5flist_5fget_5fitem_144',['ob_device_preset_resolution_config_list_get_item',['../_advanced_8h.html#ad1e4e78f1f084dbad3f1578492722496',1,'Advanced.h']]],
+  ['ob_5fdevice_5fpreset_5fresolution_5fconfig_5flist_5fget_5fitem_144',['ob_device_preset_resolution_config_list_get_item',['../_advanced_8h.html#a8ffcd5ee49b98ca3ee1ae67c40517584',1,'Advanced.h']]],
   ['ob_5fdevice_5fread_5fcustomer_5fdata_145',['ob_device_read_customer_data',['../_device_8h.html#ad6413c4f95ef7f56b7c83d3b1fa7d324',1,'Device.h']]],
   ['ob_5fdevice_5freboot_146',['ob_device_reboot',['../_device_8h.html#a3280be44ebb8ac2a08f48a173699ea45',1,'Device.h']]],
   ['ob_5fdevice_5fsend_5fand_5freceive_5fdata_147',['ob_device_send_and_receive_data',['../_device_8h.html#a93be69f596015308ef1b6189e5f17d8b',1,'Device.h']]],

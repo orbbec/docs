@@ -39,8 +39,10 @@ var searchData=
   ['obrect_36',['OBRect',['../struct_o_b_rect.html',1,'']]],
   ['obsequenceiditem_37',['OBSequenceIdItem',['../struct_o_b_sequence_id_item.html',1,'']]],
   ['obspatialadvancedfilterparams_38',['OBSpatialAdvancedFilterParams',['../struct_o_b_spatial_advanced_filter_params.html',1,'']]],
-  ['obtofexposurethresholdcontrol_39',['OBTofExposureThresholdControl',['../struct_o_b_tof_exposure_threshold_control.html',1,'']]],
-  ['obuint16propertyrange_40',['OBUint16PropertyRange',['../struct_o_b_uint16_property_range.html',1,'']]],
-  ['obuint8propertyrange_41',['OBUint8PropertyRange',['../struct_o_b_uint8_property_range.html',1,'']]],
-  ['obxytables_42',['OBXYTables',['../struct_o_b_x_y_tables.html',1,'']]]
+  ['obspatialfastfilterparams_39',['OBSpatialFastFilterParams',['../struct_o_b_spatial_fast_filter_params.html',1,'']]],
+  ['obspatialmoderatefilterparams_40',['OBSpatialModerateFilterParams',['../struct_o_b_spatial_moderate_filter_params.html',1,'']]],
+  ['obtofexposurethresholdcontrol_41',['OBTofExposureThresholdControl',['../struct_o_b_tof_exposure_threshold_control.html',1,'']]],
+  ['obuint16propertyrange_42',['OBUint16PropertyRange',['../struct_o_b_uint16_property_range.html',1,'']]],
+  ['obuint8propertyrange_43',['OBUint8PropertyRange',['../struct_o_b_uint8_property_range.html',1,'']]],
+  ['obxytables_44',['OBXYTables',['../struct_o_b_x_y_tables.html',1,'']]]
 ];

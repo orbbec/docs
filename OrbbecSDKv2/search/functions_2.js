@@ -27,9 +27,10 @@ var searchData=
   ['createframefrombuffer_24',['createFrameFromBuffer',['../classob_1_1_frame_factory.html#ac853a9e62a6c223e39568a33ffe3bae5',1,'ob::FrameFactory']]],
   ['createframefromotherframe_25',['createFrameFromOtherFrame',['../classob_1_1_frame_factory.html#a31b203d7ea31673c98d217758c6af264',1,'ob::FrameFactory']]],
   ['createframefromstreamprofile_26',['createFrameFromStreamProfile',['../classob_1_1_frame_factory.html#a47dfd36e6744eb5613a8f2bea00911c9',1,'ob::FrameFactory']]],
-  ['createnetdevice_27',['createNetDevice',['../classob_1_1_context.html#ae6c8a65de3ef08c6a28e53abfe09071e',1,'ob::Context']]],
-  ['createprivatefilter_28',['createPrivateFilter',['../classob_1_1_filter_factory.html#a92ab858cfead96ad62bd32312cae8615',1,'ob::FilterFactory']]],
-  ['createrecommendedfilters_29',['createRecommendedFilters',['../classob_1_1_sensor.html#a3935d1f55f37786d5fd07a23d56228e6',1,'ob::Sensor']]],
-  ['createvideoframe_30',['createVideoFrame',['../classob_1_1_frame_factory.html#aee71c688fb5e7b211095b6059ad23d35',1,'ob::FrameFactory']]],
-  ['createvideoframefrombuffer_31',['createVideoFrameFromBuffer',['../classob_1_1_frame_factory.html#a20856c6c5632cfb06a277e7b573a387e',1,'ob::FrameFactory']]]
+  ['createframeset_27',['createFrameSet',['../classob_1_1_frame_factory.html#aef99aca484b9dbcdc39b19609d00b5b4',1,'ob::FrameFactory']]],
+  ['createnetdevice_28',['createNetDevice',['../classob_1_1_context.html#ae6c8a65de3ef08c6a28e53abfe09071e',1,'ob::Context']]],
+  ['createprivatefilter_29',['createPrivateFilter',['../classob_1_1_filter_factory.html#a92ab858cfead96ad62bd32312cae8615',1,'ob::FilterFactory']]],
+  ['createrecommendedfilters_30',['createRecommendedFilters',['../classob_1_1_sensor.html#a3935d1f55f37786d5fd07a23d56228e6',1,'ob::Sensor']]],
+  ['createvideoframe_31',['createVideoFrame',['../classob_1_1_frame_factory.html#aee71c688fb5e7b211095b6059ad23d35',1,'ob::FrameFactory']]],
+  ['createvideoframefrombuffer_32',['createVideoFrameFromBuffer',['../classob_1_1_frame_factory.html#a20856c6c5632cfb06a277e7b573a387e',1,'ob::FrameFactory']]]
 ];

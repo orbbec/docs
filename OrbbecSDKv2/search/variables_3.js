@@ -12,7 +12,7 @@ var searchData=
   ['devicetriggersignaloutdelay_9',['deviceTriggerSignalOutDelay',['../struct_o_b_device_sync_config.html#acd2b333bb455fc6c6a716e16ae6e8bba',1,'OBDeviceSyncConfig']]],
   ['devicetriggersignaloutpolarity_10',['deviceTriggerSignalOutPolarity',['../struct_o_b_device_sync_config.html#a5e36a59f45da629155068a69dc8d7959',1,'OBDeviceSyncConfig']]],
   ['dhcp_11',['dhcp',['../struct_o_b_net_ip_config.html#a3de2c46f23cb239f849d0b3a3fabc337',1,'OBNetIpConfig']]],
-  ['disp_5fdiff_12',['disp_diff',['../struct_o_b_spatial_advanced_filter_params.html#a62db60d63fa61beed9c930c61b6b17e3',1,'OBSpatialAdvancedFilterParams::disp_diff'],['../struct_o_b_noise_removal_filter_params.html#a72f5863e10769e3e4332277206893db3',1,'OBNoiseRemovalFilterParams::disp_diff']]],
+  ['disp_5fdiff_12',['disp_diff',['../struct_o_b_spatial_moderate_filter_params.html#a448151fde47a0040dba3f4e2125c92ae',1,'OBSpatialModerateFilterParams::disp_diff'],['../struct_o_b_spatial_advanced_filter_params.html#a62db60d63fa61beed9c930c61b6b17e3',1,'OBSpatialAdvancedFilterParams::disp_diff'],['../struct_o_b_noise_removal_filter_params.html#a72f5863e10769e3e4332277206893db3',1,'OBNoiseRemovalFilterParams::disp_diff']]],
   ['dispintplace_13',['dispIntPlace',['../struct_o_b_disparity_param.html#aa7b588b6c950c67931262af6809c70e3',1,'OBDisparityParam']]],
   ['dispoffset_14',['dispOffset',['../struct_o_b_disparity_param.html#a2d39860204fc338db82d8c7509c53431',1,'OBDisparityParam']]],
   ['distortion_15',['distortion',['../struct_o_b_calibration_param.html#a6e9a709e1a4e23b8757ed096565d1a25',1,'OBCalibrationParam']]]

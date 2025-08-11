@@ -17,7 +17,7 @@ var searchData=
   ['pointcloudhelper_14',['PointCloudHelper',['../classob_1_1_point_cloud_helper.html',1,'ob']]],
   ['pointsframe_15',['PointsFrame',['../classob_1_1_points_frame.html',1,'ob::PointsFrame'],['../classob_1_1_points_frame.html#a0f284d5547e377b4f1d32ffe7acd3cc3',1,'ob::PointsFrame::PointsFrame()']]],
   ['pointsframe_16',['pointsFrame',['../classob_1_1_frame_set.html#a5d0acb48d2d831d20501d7866560fb1b',1,'ob::FrameSet']]],
-  ['presetresolutionconfigelist_17',['PresetResolutionConfigeList',['../classob_1_1_preset_resolution_confige_list.html',1,'ob::PresetResolutionConfigeList'],['../classob_1_1_preset_resolution_confige_list.html#a46a2405873ea480c3704a18553a5175e',1,'ob::PresetResolutionConfigeList::PresetResolutionConfigeList()']]],
+  ['presetresolutionconfiglist_17',['PresetResolutionConfigList',['../classob_1_1_preset_resolution_config_list.html',1,'ob::PresetResolutionConfigList'],['../classob_1_1_preset_resolution_config_list.html#af7b0175efb5bc4d4154a523a03f6f261',1,'ob::PresetResolutionConfigList::PresetResolutionConfigList()']]],
   ['process_18',['process',['../classob_1_1_filter.html#a9836956bb6fe191e1ef57b967e3392cf',1,'ob::Filter']]],
   ['property_2eh_19',['Property.h',['../_property_8h.html',1,'']]],
   ['pushframe_20',['pushFrame',['../classob_1_1_filter.html#a91b225f24ac31ed896ba141f8dd15d03',1,'ob::Filter::pushFrame()'],['../classob_1_1_frame_set.html#ab3b88c8210219e96689c090ef3805f6e',1,'ob::FrameSet::pushFrame()']]]

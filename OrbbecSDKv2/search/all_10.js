@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r_0',['r',['../struct_o_b_color_point.html#afe48bc5c44ced94fc3e9bde3653ba5fb',1,'OBColorPoint']]],
-  ['radius_1',['radius',['../struct_o_b_spatial_advanced_filter_params.html#ad5ba7e142440fe36767062b1813ff3a2',1,'OBSpatialAdvancedFilterParams']]],
+  ['radius_1',['radius',['../struct_o_b_spatial_fast_filter_params.html#a7be21489cdb6639760feefc179aa1031',1,'OBSpatialFastFilterParams::radius'],['../struct_o_b_spatial_moderate_filter_params.html#a355b158738739523ebf43f4c9a34cc57',1,'OBSpatialModerateFilterParams::radius'],['../struct_o_b_spatial_advanced_filter_params.html#ad5ba7e142440fe36767062b1813ff3a2',1,'OBSpatialAdvancedFilterParams::radius']]],
   ['randomwalk_2',['randomWalk',['../struct_o_b_accel_intrinsic.html#a913d5d1229786cd69f358b504ccd0246',1,'OBAccelIntrinsic::randomWalk'],['../struct_o_b_gyro_intrinsic.html#a2043610fbcc23df252d8c34fdbc294dc',1,'OBGyroIntrinsic::randomWalk']]],
   ['rangetraits_3',['RangeTraits',['../structob_1_1_range_traits.html',1,'ob']]],
   ['rangetraits_3c_20obfloatpropertyrange_20_3e_4',['RangeTraits&lt; OBFloatPropertyRange &gt;',['../structob_1_1_range_traits_3_01_o_b_float_property_range_01_4.html',1,'ob']]],

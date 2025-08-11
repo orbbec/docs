@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['magnitude_0',['magnitude',['../struct_o_b_spatial_advanced_filter_params.html#a9663438e1a5eeaf0137d5dd8c2ad1c8f',1,'OBSpatialAdvancedFilterParams']]],
+  ['magnitude_0',['magnitude',['../struct_o_b_spatial_moderate_filter_params.html#aa7351865af549b1a4cc51f82d1e8df3d',1,'OBSpatialModerateFilterParams::magnitude'],['../struct_o_b_spatial_advanced_filter_params.html#a9663438e1a5eeaf0137d5dd8c2ad1c8f',1,'OBSpatialAdvancedFilterParams::magnitude']]],
   ['mainboardtemp_1',['mainBoardTemp',['../struct_o_b_device_temperature.html#a24d338f202f84e7041b2e3b8a3eed6f4',1,'OBDeviceTemperature']]],
   ['major_2',['major',['../struct_o_b_protocol_version.html#a15d4c3496f308857db7aa6bcdd3492b1',1,'OBProtocolVersion']]],
   ['margin_5fx_5fth_3',['margin_x_th',['../structob__margin__filter__config.html#aee5d5735cd6eb7644f1b628dae0f8360',1,'ob_margin_filter_config::margin_x_th'],['../struct_o_b_m_g_c_filter_config.html#a75c628074330c21714ab76b06910cd3e',1,'OBMGCFilterConfig::margin_x_th']]],

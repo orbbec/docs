@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/code/orbbsdk_group/OpenOrbbecSDK/include/libobsensor/h/Filter.h File Reference</title>
+<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/include/libobsensor/h/Filter.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.4.8</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.4.11</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -142,7 +142,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a5431a9a33d48c3f9f2b367b7e8bf6048" id="r_a5431a9a33d48c3f9f2b367b7e8bf6048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#aa1117d5cdc3f85a4d1ce2c3522591379">ob_filter_config_schema_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5431a9a33d48c3f9f2b367b7e8bf6048">ob_filter_config_schema_list_get_item</a> (const <a class="el" href="_ob_types_8h.html#a8c862544a271e8fef46e05b8d7d091f6">ob_filter_config_schema_list</a> *config_schema_list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a5431a9a33d48c3f9f2b367b7e8bf6048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the config schema item by index.  <br /></td></tr>
 <tr class="memitem:a18147696a9ed7b07285f570e7ef33236" id="r_a18147696a9ed7b07285f570e7ef33236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18147696a9ed7b07285f570e7ef33236">ob_align_filter_set_align_to_stream_profile</a> (<a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> *filter, const <a class="el" href="_ob_types_8h.html#a225b1286277651ac5eb4258bac0f3d05">ob_stream_profile</a> *align_to_stream_profile, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
-<tr class="memdesc:a18147696a9ed7b07285f570e7ef33236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the align to stream profile for the align filter. @breif It is useful when the align target stream dose not started (without any frame to get intrinsics and extrinsics).  <br /></td></tr>
+<tr class="memdesc:a18147696a9ed7b07285f570e7ef33236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the align to stream profile for the align filter.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The processing unit of the SDK can perform point cloud generation, format conversion and other functions. </p>
@@ -318,7 +318,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_filter* Return the private filter object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00316">ob::FilterFactory::createPrivateFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00958">ob::DisparityTransform::DisparityTransform()</a>, <a class="el" href="_filter_8hpp_source.html#l00787">ob::HoleFillingFilter::HoleFillingFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00820">ob::NoiseRemovalFilter::NoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00678">ob::SpatialAdvancedFilter::SpatialAdvancedFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l00891">ob::TemporalFilter::TemporalFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00316">ob::FilterFactory::createPrivateFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01104">ob::DisparityTransform::DisparityTransform()</a>, <a class="el" href="_filter_8hpp_source.html#l00933">ob::HoleFillingFilter::HoleFillingFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00966">ob::NoiseRemovalFilter::NoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00678">ob::SpatialAdvancedFilter::SpatialAdvancedFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00788">ob::SpatialFastFilter::SpatialFastFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00842">ob::SpatialModerateFilter::SpatialModerateFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l01037">ob::TemporalFilter::TemporalFilter()</a>.</p>
 
 </div>
 </div>
@@ -841,7 +841,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The number of list </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l00986">ob::OBFilterList::getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01132">ob::OBFilterList::getCount()</a>.</p>
 
 </div>
 </div>
@@ -880,7 +880,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> The index of <a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l00999">ob::OBFilterList::getFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01145">ob::OBFilterList::getFilter()</a>.</p>
 
 </div>
 </div>
@@ -912,7 +912,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l00975">ob::OBFilterList::~OBFilterList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01121">ob::OBFilterList::~OBFilterList()</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1012,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the align to stream profile for the align filter. @breif It is useful when the align target stream dose not started (without any frame to get intrinsics and extrinsics). </p>
+<p>Set the align to stream profile for the align filter. </p>
+<p>It is useful when the align target stream dose not started (without any frame to get intrinsics and extrinsics).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filter</td><td>A filter object. </td></tr>
