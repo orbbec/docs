@@ -1998,10 +1998,15 @@ device-&gt;setIntProperty(OB_PROP_DEPTH_PRECISION_LEVEL_INT，OB_PRECISION_1MM);
 <ul class="simple">
 <li><p>For the Gemini 330 series with firmware version v1.5.10 or above, and using OrbbecSDK version v2.2.12 or above, the firmware already supports built-in timed capture functionality. Therefore, the SDK provides two new interfaces: one to enable timed capture, and the other to set the capture interval on the firmware side. You no longer need to create a thread to manually trigger capture.</p></li>
 </ul>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Enable automatic snapshot by setting it to true: automatic snapshot, set it to false: manual snapshot.</span>
-<span class="n">device</span><span class="o">-&gt;</span><span class="n">setBoolProperty</span><span class="p">(</span><span class="n">OB_DEVICE_AUTO_CAPTURE_ENABLE_BOOL</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// First, configure the device to software trigger mode through the Device.</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">curConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">getMultiDeviceSyncConfig</span><span class="p">();</span>
+<span class="n">curConfig</span><span class="p">.</span><span class="n">syncMode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OB_MULTI_DEVICE_SYNC_MODE_SOFTWARE_TRIGGERING</span><span class="p">;</span>
+<span class="n">device</span><span class="o">-&gt;</span><span class="n">setMultiDeviceSyncConfig</span><span class="p">(</span><span class="n">curConfig</span><span class="p">);</span>
+
 <span class="c1">// Set the automatic snapshot interval, unit: ms</span>
 <span class="n">device</span><span class="o">-&gt;</span><span class="n">setIntProperty</span><span class="p">(</span><span class="n">OB_DEVICE_AUTO_CAPTURE_INTERVAL_TIME_INT</span><span class="p">,</span><span class="w"> </span><span class="mi">67</span><span class="p">);</span><span class="w">  </span>
+<span class="c1">// Enable automatic snapshot by setting it to true: automatic snapshot, set it to false: manual snapshot.</span>
+<span class="n">device</span><span class="o">-&gt;</span><span class="n">setBoolProperty</span><span class="p">(</span><span class="n">OB_DEVICE_AUTO_CAPTURE_ENABLE_BOOL</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
@@ -2227,7 +2232,7 @@ Enter FPS (frames per second) (for example: 3000): 3000(3000 indicates 30 fps) .
 
   <div role="contentinfo">
     <p>&#169; Copyright 2024-2025,Orbbec Inc. All Rights Reserved.
-      <span class="lastupdated">Last updated on 2025-07-22 13:57:31.
+      <span class="lastupdated">Last updated on 2025-10-10 15:33:02.
       </span></p>
   </div>
 

@@ -1882,10 +1882,15 @@ device->triggerCapture();
 
 
 ```c++
-// Enable automatic snapshot by setting it to true: automatic snapshot, set it to false: manual snapshot.
-device->setBoolProperty(OB_DEVICE_AUTO_CAPTURE_ENABLE_BOOL, true);
+// First, configure the device to software trigger mode through the Device.
+auto curConfig = device->getMultiDeviceSyncConfig();
+curConfig.syncMode = OB_MULTI_DEVICE_SYNC_MODE_SOFTWARE_TRIGGERING;
+device->setMultiDeviceSyncConfig(curConfig);
+
 // Set the automatic snapshot interval, unit: ms
 device->setIntProperty(OB_DEVICE_AUTO_CAPTURE_INTERVAL_TIME_INT, 67);  
+// Enable automatic snapshot by setting it to true: automatic snapshot, set it to false: manual snapshot.
+device->setBoolProperty(OB_DEVICE_AUTO_CAPTURE_ENABLE_BOOL, true);
 ```
 
 ## Timestamp Reset
