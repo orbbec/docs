@@ -1,12 +1,5 @@
 
 # Quick Start on Windows Platform
-## Metadata registration
-For windows,you need to register the metadata associated with frames (this includes things like timestamps and other information about the video frame).
-
-Metadata registration follow this:[/scripts/env_setup/obsensor_metadata_win10.md](https://github.com/orbbec/OrbbecSDK_v2/blob/main/scripts/env_setup/obsensor_metadata_win10.md)
-
-**Notes: If the metadata is not registered, the device timestamp will be abnormal, thereby affecting the SDK's internal frame synchronization functionality.**
-
 ## build SDK package(.zip)
 This section demonstrates how to quickly start and build SDK package on the Windows platform. The SDK version used here is [v2.4.3](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.3).
 
@@ -18,71 +11,42 @@ This section demonstrates how to quickly start and build SDK package on the Wind
 
 ![image.png](../Images/CMake_Compile_2.png)
 
-
-- Click Finish, Set OpenCV_DIR to the installation directory of OpenCV, then click Generate, as shown below:
-
-![image.png](../Images/CMake_Compile_3.png)
-
 - Open the sample project (orbbec_sdk_examples.sln) using Visual Studio 2019.
 
 ![image.png](../Images/CMake_Compile_4.png)
 
-Use the ob_quick_start sample as an introductory example to understand and use the SDK API. First, build the ob_quick_start sample and run it to start capturing data streams.
+Use the `ob_lidar_quick_start` sample as an introductory example to understand and use the SDK API. First, build the `ob_lidar_quick_start` sample and run it to start capturing data streams.
 
 - Note:
- Make sure to copy the required SDK dynamic libraries(extensions & OrbbecSDK.dll) and OpenCV DLLs to the directory where ob_quick_start.exe is located. The OpenCV libraries are essential for rendering the sample views.
+ Make sure to copy the required SDK dynamic libraries(extensions & OrbbecSDK.dll) to the directory where `ob_lidar_quick_start .exe` is located. 
 
 ![image.png](../Images/CMake_Compile_5.png)
 
-The ob_quick_start sample captures and displays data streams as shown below:
-
-![image.png](../Images/Quick_Start_Sample.png)
-
 # Quick Start on Linux Platform
-
-## install udev rules script
-Please install it using the following commands:[/scripts/env_setup/install_udev_rules.sh](https://github.com/orbbec/OrbbecSDK_v2/blob/main/scripts/env_setup/install_udev_rules.sh)
-
-~~~
-cd OrbbecSDK_v2/scripts/env_setup
-sudo chmod +x ./install_udev_rules.sh
-sudo ./install_udev_rules.sh
-sudo udevadm control --reload-rules && udevadm trigger
-~~~
-
-**Notes: If this script is not executed, open the device will fail due to permission issues. You need to run the sample with sudo (administrator privileges).**
 
 ## build SDK package(.zip)
 
 *   Build Requirements：
     
     * Operating System：Ubuntu 18.04 or later
-        
+      
     * Compiler：GCC，>=7.5
-        
+      
     * CMake v3.15 or later
-        
-    * OpenCV：Version 3.4.0 is recommended
-        
+      
     * Visual Studio Code：Recommended IDE for building and debugging
-        
+      
 
 - First, download the Linux version of the Orbbec SDK package and extract it.
-Then, navigate to the shared directory and install the udev script.
-This script ensures that the correct libusb driver is loaded. 
-After installing the udev script, you can run the samples without sudo privileges.
 
-The installation process is shown below:
-
-![image.png](../Images/Linux_Compile_1.png)
-
-- Run the build_examples.sh script to compile the examples.
-    
+- Then run the `build_examples.sh` script to compile the examples.
+  
 
 ![image.png](../Images/Linux_Compile_2.png)
 
-- Navigate to the bin directory and run the ob_quick_start sample to capture data streams.
-    
+- Navigate to the bin directory and run the `ob_lidar_quick_start` sample to capture data streams.
+  
+
 ![image.png](../Images/Linux_Quick_Start.png)
 
 

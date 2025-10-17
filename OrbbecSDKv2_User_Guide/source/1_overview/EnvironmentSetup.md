@@ -23,12 +23,4 @@ This page lists the supported platforms and device.
 
 ## Development Environment Configuration
 
-Use Windows as an example to set up your development environment. Visual Studio 2019 is recommended as the IDE. Make sure that CMake, Visual Studio 2017 or later, GCC, OpenCV, and other necessary dependencies are properly installed.
-
-To ensure the SDK samples render and display correctly, OpenCV must be installed. Otherwise, This samples may fail to run or display incorrectly.
-
-![image.png](../Images/Need_Opencv_Sample.png)
-
-
-You can download OpenCV from:[https://opencv.org/releases/](https://opencv.org/releases/).
-
+Use Windows as an example to set up your development environment. Visual Studio 2019 is recommended as the IDE. Make sure that CMake, Visual Studio 2017 or later, GCC, and other necessary dependencies are properly installed.
