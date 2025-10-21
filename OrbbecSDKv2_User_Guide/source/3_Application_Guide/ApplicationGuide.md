@@ -60,7 +60,7 @@ std::shared_ptr<ob::Device> device = pipe.getDevice();
 // 3.Get the sensor list from device.
 std::shared_ptr<ob::SensorList> sensorList = device->getSensorList();
 
-// 5.Query all supported sensor type
+// 4.Query all supported sensor type
 for(uint32_t index = 0; index < sensorList->getCount(); index++) {
     OBSensorType sensorType = sensorList->getSensorType(index);
     std::cout << "Supported Sensor type: \n" << sensorType;
@@ -69,9 +69,7 @@ for(uint32_t index = 0; index < sensorList->getCount(); index++) {
 
 # Obtain LiDAR Data Streams
 
-Common data streams include Depth, Left IR, Right IR, and Color.
-Using the Depth stream as an example, the resolution is set to 640x400, the frame rate to 15 fps, and the output format to Y16.
-The handling of infrared and color streams follows a similar process.
+The LiDAR point cloud data stream includes formats such as `OB_FORMAT_LIDAR_SCAN`, `OB_FORMAT_LIDAR_POINT`, and `OB_FORMAT_LIDAR_SPHERE_POINT`. Among these, `OB_FORMAT_LIDAR_SCAN` is designed for single-line LiDAR systems, while `OB_FORMAT_LIDAR_POINT` and `OB_FORMAT_LIDAR_SPHERE_POINT` are intended for multi-line LiDAR systems. The key distinction between the latter two is that `OB_FORMAT_LIDAR_POINT` outputs data in Cartesian coordinates (rectangular coordinates), whereas `OB_FORMAT_LIDAR_SPHERE_POINT` outputs data in spherical coordinates.
 
 The difference between Blocking Polling Mode and Asynchronous Callback Mode: In Blocking Polling Mode after frame aggregation in the pipeline, the frame is inserted into the queue, and the application obtain frame data from the queue by calling waitForFrameset. In Asynchronous Callback Mode, after frame aggregation, the frame is directly passed back to the application via a callback. The advantage of Asynchronous Callback Mode is that it is more real-time, but in the callback function, the application layer should avoid time-consuming tasks and should release the frame as soon as possible.
 
@@ -79,7 +77,7 @@ The difference between Blocking Polling Mode and Asynchronous Callback Mode: In 
 
 Workflow Diagram:
 
-![image](../Images/Get_Depth.png)
+![image](../Images/Get_LiDAR.jpg)
 
 Key API Descriptions:
 
@@ -90,8 +88,8 @@ ob::Pipeline pipe;
 // 2.Create config.
 std::shared_ptr<ob::Config> config = std::make_shared<ob::Config>();
 
-// 3.Enable video stream. You can modify the parameters based on your usage requirements
-config->enableVideoStream(OB_STREAM_DEPTH, 640, 400, 15, OB_FORMAT_Y16);
+// 3.Enable LiDAR stream. You can modify the parameters based on your usage requirements
+config->enableLiDARStream(OB_LIDAR_SCAN_20HZ, OB_FORMAT_LIDAR_SPHERE_POINT);
 
 // 4.Start the pipeline with config.
 pipe.start(config);
@@ -102,16 +100,21 @@ while(true) {
     if(frameSet == nullptr) {
         continue;
     }
-  
-    // Get the depth frame.
-    auto depthFrameRaw = frameSet->getFrame(OB_FRAME_DEPTH);
-    if(depthFrameRaw) {
-      // Get the depth Frame form depthFrame,process depth data.
-      auto depthFrame = depthFrameRaw->as<ob::DepthFrame>();
-      uint32_t        width  = depthFrame->getWidth();
-      uint32_t        height = depthFrame->getHeight();
-      const uint16_t *data   = reinterpret_cast<const uint16_t *>(depthFrame->getData());
+    
+    // Get LiDAR point cloud frame
+    auto frame = frameset->getFrame(OB_FRAME_LIDAR_POINTS);
+    if(!frame) {
+        std::cout << "No LiDAR frame found!" << std::endl;
+        continue;
     }
+
+    // Save point cloud data to ply file
+    if(!ob::PointCloudHelper::savePointcloudToPly("LiDARPoints.ply", frame, false, false, 50)) {
+        std::cout << "Failed to save LiDARPoints.ply" << std::endl;
+        continue;
+    }
+
+    std::cout << "LiDARPoints.ply Saved" << std::endl;
 }
 
 // 6.Stop the pipeline
@@ -122,7 +125,7 @@ pipe.stop();
 
 Workflow Diagram:
 
-![image](../Images/Get_Depth_Callback.png)
+![image](../Images/Get_LiDAR_Callback.jpg)
 
 Key API Descriptions:
 
@@ -133,19 +136,17 @@ ob::Pipeline pipe;
 // 2.Create config.
 std::shared_ptr<ob::Config> config = std::make_shared<ob::Config>();
 
-// 3.Enable video stream. You can modify the parameters based on your usage requirements
-config->enableVideoStream(OB_STREAM_DEPTH, 640, 400, 15, OB_FORMAT_Y16);
+// 3.Enable LiDAR stream. You can modify the parameters based on your usage requirements
+config->enableLiDARStream(OB_LIDAR_SCAN_20HZ, OB_FORMAT_LIDAR_SPHERE_POINT);
 
 // 4.Start the pipeline with config and callback.
 pipe.start(config, [&](std::shared_ptr<ob::FrameSet> frameSet) {
-    // Get the depth frame.
-    auto depthFrameRaw = frameSet->getFrame(OB_FRAME_DEPTH);
-    if(depthFrameRaw) {
-      // Get the depth Frame form depthFrame,process depth data.
-      auto depthFrame = depthFrameRaw->as<ob::DepthFrame>();
-      uint32_t        width  = depthFrame->getWidth();
-      uint32_t        height = depthFrame->getHeight();
-      const uint16_t *data   = reinterpret_cast<const uint16_t *>(depthFrame->getData());
+    // Get LiDAR point cloud frame
+    auto frame = frameset->getFrame(OB_FRAME_LIDAR_POINTS);
+    if(!frame) {
+        std::cout << "No LiDAR frame found!" << std::endl;
+    }else{
+        // Process LiDAR point cloud frame
     }
 });
 
@@ -153,13 +154,13 @@ pipe.start(config, [&](std::shared_ptr<ob::FrameSet> frameSet) {
 pipe.stop();
 ```
 
-# Obtain Imu Data Streams
+# Obtain IMU Data Streams
 
 ##  Blocking Polling Mode
 
 Workflow Diagram:
 
-![image](../Images/Get_Imu.png)
+![image](../Images/Get_Imu.jpg)
 
 Key API Descriptions:
 
@@ -262,8 +263,7 @@ typedef enum {
 } OB_FRAME_AGGREGATE_OUTPUT_MODE,OBFrameAggregateOutputMode,ob_frame_aggregate_output_mode
 ```
 
-
-For example, if Depth, Color, Left IR, and Right IR streams are all enabled and the frame aggregation mode is set to OB_FRAME_AGGREGATE_OUTPUT_ALL_TYPE_FRAME_REQUIRE, it means that the returned FrameSet will contain non-null frame data for all four streams.
+For example, if LiDAR and IMU streams are all enabled and the frame aggregation mode is set to OB_FRAME_AGGREGATE_OUTPUT_ALL_TYPE_FRAME_REQUIRE, it means that the returned FrameSet will contain non-null frame data for all two streams.
 Sample code is shown below:
 
 ```c++
@@ -271,55 +271,47 @@ Sample code is shown below:
 ob::Pipeline pipe;
 // 2.Create config.
 std::shared_ptr<ob::Config> config = std::make_shared<ob::Config>();
-// 3.Enable depth video stream. You can modify the parameters based on your usage requirements
-config->enableVideoStream(OB_STREAM_DEPTH, 640, 480, 15, OB_FORMAT_Y16);
-// 4.Enable color video stream. You can modify the parameters based on your usage requirements
-config->enableVideoStream(OB_STREAM_COLOR, 640, 480, 15, OB_FORMAT_YUYV);
-// 5.Enable left ir video stream. You can modify the parameters based on your usage requirements
-config->enableVideoStream(OB_STREAM_IR_LEFT, 640, 480, 15, OB_FORMAT_Y8);
-// 6.Enable right ir video stream. You can modify the parameters based on your usage requirements
-config->enableVideoStream(OB_STREAM_IR_RIGHT, 640, 480, 15, OB_FORMAT_Y8);
-// 7.Set the frame aggregate output mode to ensure all types of frames are included in the output frameset
-config->setFrameAggregateOutputMode(OB_FRAME_AGGREGATE_OUTPUT_ALL_TYPE_FRAME_REQUIRE);
+// 3.Enable LiDAR stream. You can modify the parameters based on your usage requirements
+config->enableLiDARStream(OB_LIDAR_SCAN_20HZ, OB_FORMAT_LIDAR_SPHERE_POINT);
+// 4.Enable Accel stream. You can modify the parameters based on your usage requirements
+config->enableAccelStream();
+// 5.Enable Gyro stream. You can modify the parameters based on your usage requirements
+config->enableGyroStream();
 
-// 8.Start the pipeline with config.
+// 6.Start the pipeline with config.
 pipe.start(config);
 
 while(true) {
-    // 9.Wait for up to 100ms for a frameset in blocking mode.
+    // 7.Wait for up to 100ms for a frameset in blocking mode.
     auto frameSet = pipe.waitForFrameset(100);
     if(frameSet == nullptr) {
         continue;
     }
   
-    // 10.Push the frameset to the Align Filter to align the frames.
+    // 8.Push the frameset to the Align Filter to align the frames.
     auto alignFrameSet = frame->as<ob::FrameSet>();
     if(frameSet != nullptr) {
        // Get all frame.
-       auto depthFrameRaw = frameSet->getFrame(OB_FRAME_DEPTH);
-       auto colorFrameRaw = frameSet->getFrame(OB_FRAME_COLOR);
-       auto leftIrFrameRaw = frameSet->getFrame(OB_FRAME_IR_LEFT);
-       auto RightIrFrameRaw = frameSet->getFrame(OB_FRAME_RIGHT_LEFT);
+        auto lidarFrame = frameset->getFrame(OB_FRAME_LIDAR_POINTS);
+        auto accelFrame = frameset->getFrame(OB_FRAME_ACCEL);
+        auto gyroFrame  = frameset->getFrame(OB_FRAME_GYRO);
     }
 }
 
-// 11.Stop the pipeline.
+// 9.Stop the pipeline.
 pipe.stop();
 ```
 
 Workflow Diagram:
 
-![image](../Images/Frame_Aggregate.png)
+![image](../Images/Frame_Aggregate_LiDAR.jpg)
 
 # Recording and Playback
 
 
 ## Recording
 
-Data stream recording is primarily implemented using ob::RecordDevice.
-
-Taking depth stream recording as an example, you can set the resolution to 640×400, the frame rate to 15 fps, and the output format to Y16.
-The method for recording infrared and color streams is similar.
+Data stream recording is primarily implemented using ob::RecordDevice. Taking LiDAR stream recording as an example.
 If you want to record multiple streams at the same time, you can enable them simultaneously.
 
 Key API Description：
@@ -336,7 +328,7 @@ recorder->resume();
 
 Workflow Diagram:
 
-![image](../Images/Recorder.png)
+![image](../Images/Recorder_LiDAR.jpg)
 
 ## Playback
 
@@ -364,13 +356,13 @@ playback->seek(timestamp)
 
 Workflow Diagram:
 
-![image](../Images/Playback.png)
+![image](../Images/Playback_LiDAR.jpg)
 
 Key API Description：
 
 ```c++
 // Get valid .bag
-std::string   filePath = "./Depth.bag";
+std::string   filePath = "./LiDAR.bag";
 
 // 1.Create a playback device with a Rosbag file
 std::shared_ptr<ob::PlaybackDevice> playback = std::make_shared<ob::PlaybackDevice>(filePath);
@@ -399,12 +391,13 @@ for(uint32_t i = 0; i < sensorList->getCount(); i++) {
 pipe->start(config);
 
 while(!playbackStop) {
+    // 8.Wait for up to 1000ms for a frameset in blocking mode.
     auto frameSet = pipe->waitForFrames(1000);
     if(frameSet == nullptr) {
         continue;
     }
-    // Get depth frame
-    auto depthFrame = frameSet->getFrame(OB_FRAME_DEPTH)
+    // Get LiDAR frame
+ 	auto frame = frameset->getFrame(OB_FRAME_LIDAR_POINTS);
 }
 
 // 9.Stop the pipeline.
@@ -441,20 +434,14 @@ auto deviceInfo = device->getDeviceInfo();
 std::string serialNumber = deviceInfo->serialNumber();
 ```
 
-## Obtain StreamProfile
+## Obtain LiDAR StreamProfile
 
 - Obtain StreamProfile via Pipeline
 
 ```c++
 ob::Pipeline pipe;
-// Obtain the list of all Profile of the 3D camera.
-auto colorProfiles = pipe.getStreamProfileList(OB_SENSOR_COLOR);
-auto depthProfiles = pipe.getStreamProfileList(OB_SENSOR_DEPTH);
-
-// Get the color stream profile
-auto colorProfile = colorProfiles->getVideoStreamProfile(640, 480, OB_FORMAT_MJPG, 30);
-// Get the depth stream profile
-auto depthProfile = depthProfiles->getVideoStreamProfile(640, 480, OB_FORMAT_Y16, 30);
+// Obtain the profile list of the LiDAR.
+auto lidarProfiles = pipe.getStreamProfileList(OB_SENSOR_LIDAR);
 ```
 
 - Obtain StreamProfile via Frame
@@ -462,15 +449,11 @@ auto depthProfile = depthProfiles->getVideoStreamProfile(640, 480, OB_FORMAT_Y16
 ```c++
 auto frameSet = pipe->waitForFrameset(100);
 
-// Get the depth stream profile
-auto depthFrame = frameSet->getFrame(OB_FRAME_DEPTH);
-auto depthProfile      = depthFrame->getStreamProfile();
-auto depthVideoProfile = depthProfile->as<ob::VideoStreamProfile>();
+// Get the LiDAR stream profile
+auto frame = frameset->getFrame(OB_FRAME_LIDAR_POINTS);
+auto profile = frame->getStreamProfile();
 
-// Get the color stream profile
-auto colorFrame        = frameSet->getFrame(OB_FRAME_COLOR);
-auto colorProfile      = colorFrame->getStreamProfile();
-auto colorVideoProfile = colorProfile->as<ob::VideoStreamProfile>();
+auto lidarProfile = profile->as<ob::LiDARStreamProfile>();
 ```
 
 ## Obtain IMU StreamProfile

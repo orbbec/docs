@@ -6,7 +6,8 @@
 
 Overview
 ==============================================================================
-This section describes Orbbec SDK v2's architecture and environment setup
+This section describes Orbbec SDK v2's architecture and environment setup.
+(This document is for LiDAR devices. If you want to learn about the use of camera devices, please refer to the document  `OrbbecSDKv2_API_User_Guide(Camera) <https://orbbec.github.io/docs/OrbbecSDKv2_API_User_Guide/>`_.)
 
 ==============================================================================
 

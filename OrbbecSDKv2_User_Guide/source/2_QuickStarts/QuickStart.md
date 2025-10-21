@@ -18,7 +18,7 @@ This section demonstrates how to quickly start and build SDK package on the Wind
 Use the `ob_lidar_quick_start` sample as an introductory example to understand and use the SDK API. First, build the `ob_lidar_quick_start` sample and run it to start capturing data streams.
 
 - Note:
- Make sure to copy the required SDK dynamic libraries(extensions & OrbbecSDK.dll) to the directory where `ob_lidar_quick_start .exe` is located. 
+ Make sure to copy the required SDK dynamic libraries(extensions & OrbbecSDK.dll) to the directory where `ob_lidar_quick_start.exe` is located. 
 
 ![image.png](../Images/CMake_Compile_5.png)
 
