@@ -1042,6 +1042,99 @@ auto         device = pipe.getDevice();
 auto deviceInfo = device->getDeviceInfo();
 std::string serialNumber = deviceInfo->serialNumber();
 ```
+## LDP Switch
+The LDP (Laser Distance Protection) module is capable of detecting objects in close proximity. When LDP is enabled, the system detects obstacles within the specified distance range of the camera and gradually reduces the laser power level until the laser is switched off, ensuring laser protection. This functionality is disabled when LDP is disabled.
+```c++
+device->setBoolProperty(OB_PROP_LDP_BOOL, true);
+```
+
+## Obtain LDP Measurement Value
+To obtain the LDP (Laser Distance Protection) measurement values when the LDP switch is enabled.
+
+```c++
+int32_t value = device->getIntProperty(OB_PROP_LDP_MEASURE_DISTANCE_INT);
+```
+
+## Obtain LDP Protection Status
+
+```c++
+ bool status = device->getBoolProperty(OB_PROP_LDP_STATUS_BOOL);
+```
+
+## Laser Switch
+
+The command to turn the laser on or off for the Gemini 330 is as follows：
+
+```c++
+//Gemini 330 series Laser control, 0: off, 1: on, 2: auto
+device->setBoolProperty(OB_PROP_LASER_CONTROL_INT, 1);
+```
+
+For devices other than the Gemini 330, the command to turn the laser on or off is as follows：
+
+```c++
+device->setBoolProperty(OB_PROP_LASER_BOOL, true);
+```
+
+## Device Reboot
+
+```c++
+device->reboot();
+```
+
+## Network Device IP Address Modification Settings
+
+- Set network camera configuration parameters — only supported by network devices such as the Gemini 335Le and Femto Mega Series.
+
+```c++
+typedef struct {
+    /**
+     * @brief DHCP status
+     * @note 0: static IP; 1: DHCP
+     */
+    uint16_t dhcp;
+
+    /**
+     * @brief IP address (IPv4, big endian: 192.168.1.10, address[0] = 192, address[1] = 168, address[2] = 1, address[3] = 10)
+     */
+    uint8_t address[4];
+
+    /**
+     * @brief Subnet mask (big endian)
+     */
+    uint8_t mask[4];
+
+    /**
+     * @brief Gateway (big endian)
+     */
+    uint8_t gateway[4];
+} OBNetIpConfig, ob_net_ip_config, DEVICE_IP_ADDR_CONFIG;
+
+//Set the network parameters. A restart of the device is required after success.
+OBNetIpConfig config;
+device->setStructuredData(OB_STRUCT_DEVICE_IP_ADDR_CONFIG, &config, sizeof(OBNetIpConfig));
+```
+
+## Obtain Device Temperature
+
+```cpp
+    ob::Pipeline pipe;
+    auto device = pipe.getDevice();
+    OBDeviceTemperature temperature = {0};
+    uint32_t dataSize = sizeof(OBDeviceTemperature);
+    device->getStructuredData(OB_STRUCT_DEVICE_TEMPERATURE, (uint8_t*)&temperature, (uint32_t*)&dataSize);
+```
+
+## Obtain Device Baseline
+
+```cpp
+    OBBaselineCalibrationParam baseParam = { 0 };
+    uint32_t                        size      = 0;
+    device->getStructuredData(OB_STRUCT_BASELINE_CALIBRATION_PARAM, (uint8_t*)&baseParam, (uint32_t*)&size);
+    auto baseline = baseParam.baseline;
+    printf("baseline:%f\n",baseline);
+```
+
 
 ## Obtain StreamProfile
 
@@ -1551,40 +1644,6 @@ if(device->isPropertySupported(OB_PROP_COLOR_POWER_LINE_FREQUENCY_INT, OB_PERMIS
     }
 ```
 
-## LDP Switch
-The LDP (Laser Distance Protection) module is capable of detecting objects in close proximity. When LDP is enabled, the system detects obstacles within the specified distance range of the camera and gradually reduces the laser power level until the laser is switched off, ensuring laser protection. This functionality is disabled when LDP is disabled.
-```c++
-device->setBoolProperty(OB_PROP_LDP_BOOL, true);
-```
-
-## Obtain LDP Measurement Value
-To obtain the LDP (Laser Distance Protection) measurement values when the LDP switch is enabled.
-
-```c++
-int32_t value = device->getIntProperty(OB_PROP_LDP_MEASURE_DISTANCE_INT);
-```
-
-## Obtain LDP Protection Status
-
-```c++
- bool status = device->getBoolProperty(OB_PROP_LDP_STATUS_BOOL);
-```
-
-## Laser Switch
-
-The command to turn the laser on or off for the Gemini 330 is as follows：
-
-```c++
-//Gemini 330 series Laser control, 0: off, 1: on, 2: auto
-device->setBoolProperty(OB_PROP_LASER_CONTROL_INT, 1);
-```
-
-For devices other than the Gemini 330, the command to turn the laser on or off is as follows：
-
-```c++
-device->setBoolProperty(OB_PROP_LASER_BOOL, true);
-```
-
 ## Laser On-Off
 
 Currently, only the Gemini 330 series supports this feature (requires firmware version v1.4.00 or above) and requires Orbbec SDK version v2.1.1 or above
@@ -1942,46 +2001,6 @@ context->enableDeviceClockSync(uint64_t repeatInterval);
 ```c++
 device->timerSyncWithHost();
 ```
-
-## Device Reboot
-
-```c++
-device->reboot();
-```
-
-## Network Device IP Address Modification Settings
-
-- Set network camera configuration parameters — only supported by network devices such as the Gemini 335Le and Femto Mega Series.
-
-```c++
-typedef struct {
-    /**
-     * @brief DHCP status
-     * @note 0: static IP; 1: DHCP
-     */
-    uint16_t dhcp;
-
-    /**
-     * @brief IP address (IPv4, big endian: 192.168.1.10, address[0] = 192, address[1] = 168, address[2] = 1, address[3] = 10)
-     */
-    uint8_t address[4];
-
-    /**
-     * @brief Subnet mask (big endian)
-     */
-    uint8_t mask[4];
-
-    /**
-     * @brief Gateway (big endian)
-     */
-    uint8_t gateway[4];
-} OBNetIpConfig, ob_net_ip_config, DEVICE_IP_ADDR_CONFIG;
-
-//Set the network parameters. A restart of the device is required after success. 
-OBNetIpConfig config;
-device->setStructuredData(OB_STRUCT_DEVICE_IP_ADDR_CONFIG, &config, sizeof(OBNetIpConfig));
-```
-
 
 ## Multi-device Synchronization
 For more information about multi-device synchronization, see the [multi-device synchronization documentation](https://www.orbbec.com/docs-general/set-up-cameras-for-external-synchronization_v1-2/).
