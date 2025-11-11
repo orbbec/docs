@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.4.11</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -111,8 +111,10 @@ $(function() {
 <li>getDevice()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#a21010abb7ccac3779ad8e1d0bbf1bb68">ob::DeviceList</a>, <a class="el" href="classob_1_1_frame.html#a8cd1a3bdb1991b77fed437aab5c25a36">ob::Frame</a>, <a class="el" href="classob_1_1_pipeline.html#af10838ba42018adbac53c98e1685848f">ob::Pipeline</a></li>
 <li>getDeviceBySN()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#aa6f5858e30ee59ac14d52fa3417e91ed">ob::DeviceList</a></li>
 <li>getDeviceByUid()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#ade3b5086c5aeb70bae0d5563efa287ef">ob::DeviceList</a></li>
+<li>getDevicegateway()&#160;:&#160;<a class="el" href="classob_1_1_device_info.html#a10a5896a931eb22f879595e925d7ca18">ob::DeviceInfo</a></li>
 <li>getDeviceInfo()&#160;:&#160;<a class="el" href="classob_1_1_device.html#a8451b77bfa01935b1027632890425246">ob::Device</a></li>
 <li>getDeviceState()&#160;:&#160;<a class="el" href="classob_1_1_device.html#aac2306bc576a712b9ac2ce8ec72d55f8">ob::Device</a></li>
+<li>getDeviceSubnetMask()&#160;:&#160;<a class="el" href="classob_1_1_device_info.html#a207f9fbf886075dab641df38c2a00350">ob::DeviceInfo</a></li>
 <li>getDeviceType()&#160;:&#160;<a class="el" href="classob_1_1_device_info.html#a7875ebc294d792e60aaa63499ea87ced">ob::DeviceInfo</a></li>
 <li>getDiffScaleRange()&#160;:&#160;<a class="el" href="classob_1_1_temporal_filter.html#a8458275c72ed79b8aeb529374b2383ac">ob::TemporalFilter</a></li>
 <li>getDispDiffRange()&#160;:&#160;<a class="el" href="classob_1_1_noise_removal_filter.html#a50afa9a720e181a2a94889ec00589c0a">ob::NoiseRemovalFilter</a>, <a class="el" href="classob_1_1_spatial_advanced_filter.html#a9b749dbc944af4a7597b993261a4ae95">ob::SpatialAdvancedFilter</a>, <a class="el" href="classob_1_1_spatial_moderate_filter.html#a8ed880924b2de1151f66b72dd9e2072f">ob::SpatialModerateFilter</a></li>
@@ -135,6 +137,7 @@ $(function() {
 <li>getFrameByIndex()&#160;:&#160;<a class="el" href="classob_1_1_frame_set.html#a8cbcd3f82a5179770191bf6f51c3ac33">ob::FrameSet</a></li>
 <li>getFullScaleRange()&#160;:&#160;<a class="el" href="classob_1_1_accel_stream_profile.html#a863503291951eb7443c12121bfc1cbf1">ob::AccelStreamProfile</a>, <a class="el" href="classob_1_1_gyro_stream_profile.html#a237dd18f31fa95b10a435945fd2b5b49">ob::GyroStreamProfile</a></li>
 <li>getFunction()&#160;:&#160;<a class="el" href="classob_1_1_error.html#a7a43ac7c0cedc711e68099000963369a">ob::Error</a></li>
+<li>getGateway()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#a377db979417ea51e38880037a519e544">ob::DeviceList</a></li>
 <li>getGlobalTimeStampUs()&#160;:&#160;<a class="el" href="classob_1_1_frame.html#ac6f51ad24f72fe1c872f14368bfa5db1">ob::Frame</a></li>
 <li>getGyroStreamProfile()&#160;:&#160;<a class="el" href="classob_1_1_stream_profile_list.html#a309a7fe5fb5cd7141c272080cae27b48">ob::StreamProfileList</a></li>
 <li>getHardwareVersion()&#160;:&#160;<a class="el" href="classob_1_1_device_info.html#a1520171ad039533b306d854d7c0719eb">ob::DeviceInfo</a></li>
@@ -145,7 +148,10 @@ $(function() {
 <li>getIntPropertyRange()&#160;:&#160;<a class="el" href="classob_1_1_device.html#a68d15702629153656bc3a6c900624de1">ob::Device</a></li>
 <li>getIntrinsic()&#160;:&#160;<a class="el" href="classob_1_1_accel_stream_profile.html#a373f262275082ff7f13a9dff126ce750">ob::AccelStreamProfile</a>, <a class="el" href="classob_1_1_gyro_stream_profile.html#a35454b640af39f1a470ee0f5e63fbbb3">ob::GyroStreamProfile</a>, <a class="el" href="classob_1_1_video_stream_profile.html#a952f603947b61689556b579938c1e4d3">ob::VideoStreamProfile</a></li>
 <li>getIpAddress()&#160;:&#160;<a class="el" href="classob_1_1_device_info.html#a21c53d61bbde48ba6b37353f6c2f8bac">ob::DeviceInfo</a>, <a class="el" href="classob_1_1_device_list.html#a2c35cb0b5e4011b00b1ac930db04fd26">ob::DeviceList</a></li>
+<li>getLocalGateway()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#a842c354f5444314d620f2143df70267b">ob::DeviceList</a></li>
+<li>getLocalIP()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#ae36f532a53552e0fe1d4d3587e285117">ob::DeviceList</a></li>
 <li>getLocalMacAddress()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#a0f9c6a956852a13585d47806f0c57cdf">ob::DeviceList</a></li>
+<li>getLocalSubnetLength()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#a3565db5b8e3c7e10d32f191a7c4c5387">ob::DeviceList</a></li>
 <li>getMagnitudeRange()&#160;:&#160;<a class="el" href="classob_1_1_spatial_advanced_filter.html#aaf5b2b8ca60751c6dc2ab74989108969">ob::SpatialAdvancedFilter</a>, <a class="el" href="classob_1_1_spatial_moderate_filter.html#a7d7dd8aaa356d4462d05668bdd6c8dad">ob::SpatialModerateFilter</a></li>
 <li>getMajor()&#160;:&#160;<a class="el" href="classob_1_1_version.html#a8feeb6a66ce85dc30f0da64851c448e4">ob::Version</a></li>
 <li>getMaxRange()&#160;:&#160;<a class="el" href="classob_1_1_threshold_filter.html#af709258e3234763aeab48f59a2d6a43e">ob::ThresholdFilter</a></li>
@@ -183,6 +189,7 @@ $(function() {
 <li>getStreamProfile()&#160;:&#160;<a class="el" href="classob_1_1_frame.html#a04764452c1bd7d50d877687ccede3441">ob::Frame</a></li>
 <li>getStreamProfileList()&#160;:&#160;<a class="el" href="classob_1_1_pipeline.html#a783bc025bfe4448034ffcb149b3d93fb">ob::Pipeline</a>, <a class="el" href="classob_1_1_sensor.html#a68ffea87c292b59d10fe69e9178fdd33">ob::Sensor</a></li>
 <li>getStructuredData()&#160;:&#160;<a class="el" href="classob_1_1_device.html#a521ef3838b631e772c9506455bf9a337">ob::Device</a></li>
+<li>getSubnetMask()&#160;:&#160;<a class="el" href="classob_1_1_device_list.html#a68ee36a7beb58ed8ce7ee7871b660c9f">ob::DeviceList</a></li>
 <li>getSupportedMinSdkVersion()&#160;:&#160;<a class="el" href="classob_1_1_device_info.html#a116fe4c6050db7b0d2e2b35811a16d54">ob::DeviceInfo</a></li>
 <li>getSupportedMultiDeviceSyncModeBitmap()&#160;:&#160;<a class="el" href="classob_1_1_device.html#abda43bb229c26d752bfe3e79affe7e38">ob::Device</a></li>
 <li>getSupportedProperty()&#160;:&#160;<a class="el" href="classob_1_1_device.html#a133998e6fe9320608d2a0118cfd728ab">ob::Device</a></li>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/include/libobsensor/h/Device.h File Reference</title>
+<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/h/Device.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.4.11</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -198,6 +198,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6968ccf1868cfb9d52020c02207de385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device connection type.  <br /></td></tr>
 <tr class="memitem:abba39b7265c0e687a7cb0f49678fef7e" id="r_abba39b7265c0e687a7cb0f49678fef7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abba39b7265c0e687a7cb0f49678fef7e">ob_device_info_get_ip_address</a> (const <a class="el" href="_ob_types_8h.html#a1bf2bdaa2815d538912cc22bc5cc6720">ob_device_info</a> *info, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:abba39b7265c0e687a7cb0f49678fef7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device IP address.  <br /></td></tr>
+<tr class="memitem:a46b945513a224abff3cd5b3ed07ae519" id="r_a46b945513a224abff3cd5b3ed07ae519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46b945513a224abff3cd5b3ed07ae519">ob_device_info_get_subnet_mask</a> (const <a class="el" href="_ob_types_8h.html#a1bf2bdaa2815d538912cc22bc5cc6720">ob_device_info</a> *info, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a46b945513a224abff3cd5b3ed07ae519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network device subnet mask.  <br /></td></tr>
+<tr class="memitem:ad27147906ed18f87c0f2e7e6e0af3f61" id="r_ad27147906ed18f87c0f2e7e6e0af3f61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad27147906ed18f87c0f2e7e6e0af3f61">ob_device_info_get_gateway</a> (const <a class="el" href="_ob_types_8h.html#a1bf2bdaa2815d538912cc22bc5cc6720">ob_device_info</a> *info, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:ad27147906ed18f87c0f2e7e6e0af3f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network device gateway address.  <br /></td></tr>
 <tr class="memitem:a90a35155014fbaf1684206591a70f280" id="r_a90a35155014fbaf1684206591a70f280"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90a35155014fbaf1684206591a70f280">ob_device_info_get_hardware_version</a> (const <a class="el" href="_ob_types_8h.html#a1bf2bdaa2815d538912cc22bc5cc6720">ob_device_info</a> *info, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a90a35155014fbaf1684206591a70f280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hardware version number.  <br /></td></tr>
 <tr class="memitem:a8dc5b1cd2ae7920ee63204c90b17ab15" id="r_a8dc5b1cd2ae7920ee63204c90b17ab15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dc5b1cd2ae7920ee63204c90b17ab15">ob_device_is_extension_info_exist</a> (const <a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> *device, const char *info_key, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -228,8 +232,18 @@ Functions</h2></td></tr>
 <tr class="memdesc:af3de5f0cfaee716b3fce5a6039c918e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device connection type.  <br /></td></tr>
 <tr class="memitem:aa52c2e18d35b0f33a710ca36dfd2a025" id="r_aa52c2e18d35b0f33a710ca36dfd2a025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa52c2e18d35b0f33a710ca36dfd2a025">ob_device_list_get_device_ip_address</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:aa52c2e18d35b0f33a710ca36dfd2a025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device ip address.  <br /></td></tr>
+<tr class="memitem:a366b89ba4f4198a8df01ff9dd652a77a" id="r_a366b89ba4f4198a8df01ff9dd652a77a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a366b89ba4f4198a8df01ff9dd652a77a">ob_device_list_get_device_subnet_mask</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a366b89ba4f4198a8df01ff9dd652a77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device subnet mask.  <br /></td></tr>
+<tr class="memitem:afc0945d8cdad132b4e019f2106cb67df" id="r_afc0945d8cdad132b4e019f2106cb67df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc0945d8cdad132b4e019f2106cb67df">ob_device_list_get_device_gateway</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:afc0945d8cdad132b4e019f2106cb67df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device gateway.  <br /></td></tr>
 <tr class="memitem:a50f0bbe2ebfa4cef35f13c2de46db737" id="r_a50f0bbe2ebfa4cef35f13c2de46db737"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50f0bbe2ebfa4cef35f13c2de46db737">ob_device_list_get_device_local_mac</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
-<tr class="memdesc:a50f0bbe2ebfa4cef35f13c2de46db737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device local mac address.  <br /></td></tr>
+<tr class="memdesc:a50f0bbe2ebfa4cef35f13c2de46db737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MAC address of the host network interface corresponding to the network device.  <br /></td></tr>
+<tr class="memitem:a0c5aeb53ab5211d3cc575d66947e14d1" id="r_a0c5aeb53ab5211d3cc575d66947e14d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c5aeb53ab5211d3cc575d66947e14d1">ob_device_list_get_device_local_ip</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a0c5aeb53ab5211d3cc575d66947e14d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IP address of the host network interface corresponding to the network device.  <br /></td></tr>
+<tr class="memitem:a50bb23ef6097079f71d6c4b62c14de97" id="r_a50bb23ef6097079f71d6c4b62c14de97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50bb23ef6097079f71d6c4b62c14de97">ob_device_list_get_device_local_subnet_length</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a50bb23ef6097079f71d6c4b62c14de97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the subnet length of the host network interface corresponding to the network device.  <br /></td></tr>
+<tr class="memitem:aa831f2fc49dd97f5a7a0ef33c04a6195" id="r_aa831f2fc49dd97f5a7a0ef33c04a6195"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa831f2fc49dd97f5a7a0ef33c04a6195">ob_device_list_get_device_local_gateway</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:aa831f2fc49dd97f5a7a0ef33c04a6195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gateway of the host network interface corresponding to the network device.  <br /></td></tr>
 <tr class="memitem:a0fdefcfc90ee002eb00fe457af3917b6" id="r_a0fdefcfc90ee002eb00fe457af3917b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fdefcfc90ee002eb00fe457af3917b6">ob_device_list_get_device</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, uint32_t index, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a0fdefcfc90ee002eb00fe457af3917b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a device.  <br /></td></tr>
 <tr class="memitem:a19970621802f095270e35a34f1141cde" id="r_a19970621802f095270e35a34f1141cde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19970621802f095270e35a34f1141cde">ob_device_list_get_device_by_serial_number</a> (const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *list, const char *serial_number, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -262,7 +276,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00667">667</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00745">745</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +292,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00668">668</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00746">746</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +308,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00669">669</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00747">747</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +324,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00670">670</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00748">748</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +340,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00671">671</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00749">749</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -342,7 +356,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00672">672</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00750">750</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +372,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00673">673</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00751">751</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +388,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00674">674</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00752">752</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +404,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00675">675</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00753">753</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +420,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00676">676</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00754">754</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -422,7 +436,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00677">677</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00755">755</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +452,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00678">678</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00756">756</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -454,7 +468,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00679">679</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00757">757</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +484,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00680">680</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00758">758</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +500,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00681">681</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00759">759</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +516,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00682">682</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00760">760</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +532,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00683">683</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00761">761</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +548,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00684">684</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00762">762</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +564,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00685">685</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00763">763</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -566,7 +580,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00686">686</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8h_source.html#l00764">764</a> of file <a class="el" href="_device_8h_source.html">Device.h</a>.</p>
 
 </div>
 </div>
@@ -2176,6 +2190,72 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a46b945513a224abff3cd5b3ed07ae519" name="a46b945513a224abff3cd5b3ed07ae519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b945513a224abff3cd5b3ed07ae519">&#9670;&#160;</a></span>ob_device_info_get_subnet_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char * ob_device_info_get_subnet_mask </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#a1bf2bdaa2815d538912cc22bc5cc6720">ob_device_info</a> *</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the network device subnet mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>Device information </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The subnet mask, such as "255.255.255.0" </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01036">ob::DeviceInfo::getDeviceSubnetMask()</a>.</p>
+
+</div>
+</div>
+<a id="ad27147906ed18f87c0f2e7e6e0af3f61" name="ad27147906ed18f87c0f2e7e6e0af3f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27147906ed18f87c0f2e7e6e0af3f61">&#9670;&#160;</a></span>ob_device_info_get_gateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char * ob_device_info_get_gateway </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#a1bf2bdaa2815d538912cc22bc5cc6720">ob_device_info</a> *</td>          <td class="paramname"><span class="paramname"><em>info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the network device gateway address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>Device information </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The gateway address, such as "192.168.1.1" </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01048">ob::DeviceInfo::getDevicegateway()</a>.</p>
+
+</div>
+</div>
 <a id="a90a35155014fbaf1684206591a70f280" name="a90a35155014fbaf1684206591a70f280"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90a35155014fbaf1684206591a70f280">&#9670;&#160;</a></span>ob_device_info_get_hardware_version()</h2>
 
@@ -2415,7 +2495,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01091">ob::DeviceList::~DeviceList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01115">ob::DeviceList::~DeviceList()</a>.</p>
 
 </div>
 </div>
@@ -2448,7 +2528,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the number of devices </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01102">ob::DeviceList::getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01126">ob::DeviceList::getCount()</a>.</p>
 
 </div>
 </div>
@@ -2487,7 +2567,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* return device name </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01170">ob::DeviceList::getName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01194">ob::DeviceList::getName()</a>.</p>
 
 </div>
 </div>
@@ -2526,7 +2606,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int return the device pid </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01115">ob::DeviceList::getPid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01139">ob::DeviceList::getPid()</a>.</p>
 
 </div>
 </div>
@@ -2565,7 +2645,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int return device vid </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01128">ob::DeviceList::getVid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01152">ob::DeviceList::getVid()</a>.</p>
 
 </div>
 </div>
@@ -2604,7 +2684,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* return the device uid </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01141">ob::DeviceList::getUid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01165">ob::DeviceList::getUid()</a>.</p>
 
 </div>
 </div>
@@ -2643,7 +2723,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* The device UID. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01154">ob::DeviceList::getSerialNumber()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01178">ob::DeviceList::getSerialNumber()</a>.</p>
 
 </div>
 </div>
@@ -2682,7 +2762,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* returns the device connection type, currently supports: "USB", "USB1.0", "USB1.1", "USB2.0", "USB2.1", "USB3.0", "USB3.1", "USB3.2", "Ethernet" </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01183">ob::DeviceList::getConnectionType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01207">ob::DeviceList::getConnectionType()</a>.</p>
 
 </div>
 </div>
@@ -2722,7 +2802,87 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* returns the device ip address, such as "192.168.1.10" </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01198">ob::DeviceList::getIpAddress()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01222">ob::DeviceList::getIpAddress()</a>.</p>
+
+</div>
+</div>
+<a id="a366b89ba4f4198a8df01ff9dd652a77a" name="a366b89ba4f4198a8df01ff9dd652a77a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366b89ba4f4198a8df01ff9dd652a77a">&#9670;&#160;</a></span>ob_device_list_get_device_subnet_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char * ob_device_list_get_device_subnet_mask </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *</td>          <td class="paramname"><span class="paramname"><em>list</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device subnet mask. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return "0.0.0.0".</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Device list object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Device index </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* returns the device subnet mask, such as "255.255.255.0" </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01237">ob::DeviceList::getSubnetMask()</a>.</p>
+
+</div>
+</div>
+<a id="afc0945d8cdad132b4e019f2106cb67df" name="afc0945d8cdad132b4e019f2106cb67df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc0945d8cdad132b4e019f2106cb67df">&#9670;&#160;</a></span>ob_device_list_get_device_gateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char * ob_device_list_get_device_gateway </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *</td>          <td class="paramname"><span class="paramname"><em>list</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device gateway. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return "0.0.0.0".</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Device list object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Device index </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* returns the device gateway, such as "192.168.1.1" </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01252">ob::DeviceList::getGateway()</a>.</p>
 
 </div>
 </div>
@@ -2750,8 +2910,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get device local mac address. </p>
-<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return "0:0:0:0:0:0".</dd></dl>
+<p>Get the MAC address of the host network interface corresponding to the network device. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices. Returns "0:0:0:0:0:0" for non-network devices.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">list</td><td>Device list object </td></tr>
@@ -2760,9 +2920,129 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>const char* returns the device mac address </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The MAC address of the host network interface associated with the device. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01213">ob::DeviceList::getLocalMacAddress()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01267">ob::DeviceList::getLocalMacAddress()</a>.</p>
+
+</div>
+</div>
+<a id="a0c5aeb53ab5211d3cc575d66947e14d1" name="a0c5aeb53ab5211d3cc575d66947e14d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5aeb53ab5211d3cc575d66947e14d1">&#9670;&#160;</a></span>ob_device_list_get_device_local_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char * ob_device_list_get_device_local_ip </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *</td>          <td class="paramname"><span class="paramname"><em>list</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the IP address of the host network interface corresponding to the network device. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices. Returns "0.0.0.0" for non-network devices.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Device list object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Device index </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The IP address of the host network interface associated with the device. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01282">ob::DeviceList::getLocalIP()</a>.</p>
+
+</div>
+</div>
+<a id="a50bb23ef6097079f71d6c4b62c14de97" name="a50bb23ef6097079f71d6c4b62c14de97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50bb23ef6097079f71d6c4b62c14de97">&#9670;&#160;</a></span>ob_device_list_get_device_local_subnet_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> uint8_t ob_device_list_get_device_local_subnet_length </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *</td>          <td class="paramname"><span class="paramname"><em>list</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the subnet length of the host network interface corresponding to the network device. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices. Returns 0 for non-network devices.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Device list object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Device index </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const uint8_t The subnet length (0~32) of the host network interface associated with the device. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01297">ob::DeviceList::getLocalSubnetLength()</a>.</p>
+
+</div>
+</div>
+<a id="aa831f2fc49dd97f5a7a0ef33c04a6195" name="aa831f2fc49dd97f5a7a0ef33c04a6195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa831f2fc49dd97f5a7a0ef33c04a6195">&#9670;&#160;</a></span>ob_device_list_get_device_local_gateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char * ob_device_list_get_device_local_gateway </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#ac05c93e123cbdace8e36b445f4cc2a40">ob_device_list</a> *</td>          <td class="paramname"><span class="paramname"><em>list</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the gateway of the host network interface corresponding to the network device. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices. Returns "0.0.0.0" for non-network devices.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>Device list object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Device index </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The gateway of the host network interface associated with the device. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01312">ob::DeviceList::getLocalGateway()</a>.</p>
 
 </div>
 </div>
@@ -2802,7 +3082,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_device* The created device. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01228">ob::DeviceList::getDevice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01327">ob::DeviceList::getDevice()</a>.</p>
 
 </div>
 </div>
@@ -2842,7 +3122,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_device* The created device. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01243">ob::DeviceList::getDeviceBySN()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01342">ob::DeviceList::getDeviceBySN()</a>.</p>
 
 </div>
 </div>
@@ -2884,7 +3164,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_device* The created device. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01262">ob::DeviceList::getDeviceByUid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01361">ob::DeviceList::getDeviceByUid()</a>.</p>
 
 </div>
 </div>
@@ -2951,7 +3231,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The number of lists </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01438">ob::CameraParamList::getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01537">ob::CameraParamList::getCount()</a>.</p>
 
 </div>
 </div>
@@ -2990,7 +3270,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0a9062fd0ef0ed06f67494e3011f40ef">ob_camera_param</a> The camera parameters. Since it returns the structure object directly, there is no need to provide a delete interface. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01451">ob::CameraParamList::getCameraParam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01550">ob::CameraParamList::getCameraParam()</a>.</p>
 
 </div>
 </div>
@@ -3022,7 +3302,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01427">ob::CameraParamList::~CameraParamList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01526">ob::CameraParamList::~CameraParamList()</a>.</p>
 
 </div>
 </div>

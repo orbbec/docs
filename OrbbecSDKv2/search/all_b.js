@@ -19,9 +19,10 @@ var searchData=
   ['message_16',['message',['../structob__error.html#a5908345db2c6b3bb0897a93d827a33c5',1,'ob_error']]],
   ['metadata_17',['metadata',['../classob_1_1_frame.html#aa6555ff95a0755f54973dbaf64a8c21c',1,'ob::Frame']]],
   ['metadatasize_18',['metadataSize',['../classob_1_1_frame.html#a56408f07e8df01db6aafc85a6ddeabad',1,'ob::Frame']]],
-  ['min_19',['min',['../struct_o_b_int_property_range.html#ac0c147eec2de949121373cc4f5b84bbd',1,'OBIntPropertyRange::min'],['../struct_o_b_float_property_range.html#a73c45274baa52298f211ca42fa4ef685',1,'OBFloatPropertyRange::min'],['../struct_o_b_uint16_property_range.html#a562edca06c9a8379e974f3812396a367',1,'OBUint16PropertyRange::min'],['../struct_o_b_uint8_property_range.html#a1bc714ce0891b57cadfa79b3c3008653',1,'OBUint8PropertyRange::min'],['../struct_o_b_bool_property_range.html#a3a4369a40e962b0fdb51a1f53b647a52',1,'OBBoolPropertyRange::min'],['../struct_o_b_filter_config_schema_item.html#a2d9622672b43068bf3f80e366e210ad5',1,'OBFilterConfigSchemaItem::min']]],
-  ['mindisparity_20',['minDisparity',['../struct_o_b_disparity_param.html#a384186467d00aaa0302f4993831ebe72',1,'OBDisparityParam']]],
-  ['minor_21',['minor',['../struct_o_b_protocol_version.html#a5fc843e1e3540175110fc52531d58cff',1,'OBProtocolVersion']]],
-  ['model_22',['model',['../struct_o_b_camera_distortion.html#ac1a58c23893438eb48be602e5fd52633',1,'OBCameraDistortion']]],
-  ['multipledevices_2eh_23',['MultipleDevices.h',['../_multiple_devices_8h.html',1,'']]]
+  ['middle_5fof_5fexposure_19',['MIDDLE_OF_EXPOSURE',['../_ob_types_8h.html#ab55581f4b14bc49ec8a4b41d5fc043e3af38062cc840be7ed906aea00cc81dbb8',1,'ObTypes.h']]],
+  ['min_20',['min',['../struct_o_b_int_property_range.html#ac0c147eec2de949121373cc4f5b84bbd',1,'OBIntPropertyRange::min'],['../struct_o_b_float_property_range.html#a73c45274baa52298f211ca42fa4ef685',1,'OBFloatPropertyRange::min'],['../struct_o_b_uint16_property_range.html#a562edca06c9a8379e974f3812396a367',1,'OBUint16PropertyRange::min'],['../struct_o_b_uint8_property_range.html#a1bc714ce0891b57cadfa79b3c3008653',1,'OBUint8PropertyRange::min'],['../struct_o_b_bool_property_range.html#a3a4369a40e962b0fdb51a1f53b647a52',1,'OBBoolPropertyRange::min'],['../struct_o_b_filter_config_schema_item.html#a2d9622672b43068bf3f80e366e210ad5',1,'OBFilterConfigSchemaItem::min']]],
+  ['mindisparity_21',['minDisparity',['../struct_o_b_disparity_param.html#a384186467d00aaa0302f4993831ebe72',1,'OBDisparityParam']]],
+  ['minor_22',['minor',['../struct_o_b_protocol_version.html#a5fc843e1e3540175110fc52531d58cff',1,'OBProtocolVersion']]],
+  ['model_23',['model',['../struct_o_b_camera_distortion.html#ac1a58c23893438eb48be602e5fd52633',1,'OBCameraDistortion']]],
+  ['multipledevices_2eh_24',['MultipleDevices.h',['../_multiple_devices_8h.html',1,'']]]
 ];

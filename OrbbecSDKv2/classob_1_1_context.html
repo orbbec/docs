@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.4.11</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -105,6 +105,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae92967f6967638c4672b29b676263fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the enumerated device list.  <br /></td></tr>
 <tr class="memitem:a00f2f7c3fb07dc96b22e248e38c1ef8d" id="r_a00f2f7c3fb07dc96b22e248e38c1ef8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f2f7c3fb07dc96b22e248e38c1ef8d">enableNetDeviceEnumeration</a> (bool enable) const</td></tr>
 <tr class="memdesc:a00f2f7c3fb07dc96b22e248e38c1ef8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable or disable net device enumeration.  <br /></td></tr>
+<tr class="memitem:a2610b0f957e942df11e32c95d674a138" id="r_a2610b0f957e942df11e32c95d674a138"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2610b0f957e942df11e32c95d674a138">forceIp</a> (const char *macAddress, const <a class="el" href="struct_o_b_net_ip_config.html">OBNetIpConfig</a> &amp;config)</td></tr>
+<tr class="memdesc:a2610b0f957e942df11e32c95d674a138"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Force" a static IP address configuration in a device identified by its MAC Address.  <br /></td></tr>
 <tr class="memitem:ae6c8a65de3ef08c6a28e53abfe09071e" id="r_ae6c8a65de3ef08c6a28e53abfe09071e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6c8a65de3ef08c6a28e53abfe09071e">createNetDevice</a> (const char *address, uint16_t port) const</td></tr>
 <tr class="memdesc:ae6c8a65de3ef08c6a28e53abfe09071e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a network device with the specified IP address and port.  <br /></td></tr>
 <tr class="memitem:a1dcc95b63547ba0ec763206a81ef8f40" id="r_a1dcc95b63547ba0ec763206a81ef8f40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dcc95b63547ba0ec763206a81ef8f40">setDeviceChangedCallback</a> (<a class="el" href="#a049eab85977896212d1ca133e36ccb21">DeviceChangedCallback</a> callback)</td></tr>
@@ -317,6 +319,48 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2610b0f957e942df11e32c95d674a138" name="a2610b0f957e942df11e32c95d674a138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2610b0f957e942df11e32c95d674a138">&#9670;&#160;</a></span>forceIp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ob::Context::forceIp </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>macAddress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_o_b_net_ip_config.html">OBNetIpConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"Force" a static IP address configuration in a device identified by its MAC Address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">macAddress</td><td>MAC address of the network device. You can obtain it from <a class="el" href="classob_1_1_device_list.html#a5edccc92c2196f8a95e4c0d5d399b5c8">DeviceList::uid()</a>, or specify it manually in the format xx:xx:xx:xx:xx:xx, where each xx is a two-digit hexadecimal value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>The new IP configuration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool true if the configuration command was processed successfully, false otherwise.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This applies to all Orbbec GigE Vision devices </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00111">111</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+
+</div>
+</div>
 <a id="ae6c8a65de3ef08c6a28e53abfe09071e" name="ae6c8a65de3ef08c6a28e53abfe09071e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6c8a65de3ef08c6a28e53abfe09071e">&#9670;&#160;</a></span>createNetDevice()</h2>
 
@@ -354,7 +398,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Device&gt; The created device object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00107">107</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00125">125</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -390,7 +434,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00120">120</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00138">138</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -425,7 +469,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00132">132</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00150">150</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -455,7 +499,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Frees idle memory from the internal frame memory pool. </p>
 <p>The SDK includes an internal frame memory pool that caches memory allocated for frames received from devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00142">142</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00160">160</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -492,7 +536,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00156">156</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00174">174</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -527,7 +571,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00168">168</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00186">186</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -567,7 +611,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00181">181</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00199">199</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -602,7 +646,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00192">192</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00210">210</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -642,7 +686,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00204">204</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00222">222</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -679,12 +723,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00219">219</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00237">237</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/include/libobsensor/hpp/<a class="el" href="_context_8hpp_source.html">Context.hpp</a></li>
+<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_context_8hpp_source.html">Context.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

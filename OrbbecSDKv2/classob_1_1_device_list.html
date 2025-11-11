@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.4.11</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -109,8 +109,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac6e796dac437ada53b32063a31f736be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device connection type.  <br /></td></tr>
 <tr class="memitem:a2c35cb0b5e4011b00b1ac930db04fd26" id="r_a2c35cb0b5e4011b00b1ac930db04fd26"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c35cb0b5e4011b00b1ac930db04fd26">getIpAddress</a> (uint32_t index) const</td></tr>
 <tr class="memdesc:a2c35cb0b5e4011b00b1ac930db04fd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the ip address of the device at the specified index  <br /></td></tr>
+<tr class="memitem:a68ee36a7beb58ed8ce7ee7871b660c9f" id="r_a68ee36a7beb58ed8ce7ee7871b660c9f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68ee36a7beb58ed8ce7ee7871b660c9f">getSubnetMask</a> (uint32_t index) const</td></tr>
+<tr class="memdesc:a68ee36a7beb58ed8ce7ee7871b660c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the subnet mask of the device at the specified index  <br /></td></tr>
+<tr class="memitem:a377db979417ea51e38880037a519e544" id="r_a377db979417ea51e38880037a519e544"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a377db979417ea51e38880037a519e544">getGateway</a> (uint32_t index) const</td></tr>
+<tr class="memdesc:a377db979417ea51e38880037a519e544"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the gateway of the device at the specified index  <br /></td></tr>
 <tr class="memitem:a0f9c6a956852a13585d47806f0c57cdf" id="r_a0f9c6a956852a13585d47806f0c57cdf"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f9c6a956852a13585d47806f0c57cdf">getLocalMacAddress</a> (uint32_t index) const</td></tr>
-<tr class="memdesc:a0f9c6a956852a13585d47806f0c57cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the local mac address of the device at the specified index  <br /></td></tr>
+<tr class="memdesc:a0f9c6a956852a13585d47806f0c57cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MAC address of the host network interface corresponding to the device at the specified index.  <br /></td></tr>
+<tr class="memitem:ae36f532a53552e0fe1d4d3587e285117" id="r_ae36f532a53552e0fe1d4d3587e285117"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae36f532a53552e0fe1d4d3587e285117">getLocalIP</a> (uint32_t index) const</td></tr>
+<tr class="memdesc:ae36f532a53552e0fe1d4d3587e285117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IP address of the host network interface corresponding to the device at the specified index.  <br /></td></tr>
+<tr class="memitem:a3565db5b8e3c7e10d32f191a7c4c5387" id="r_a3565db5b8e3c7e10d32f191a7c4c5387"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3565db5b8e3c7e10d32f191a7c4c5387">getLocalSubnetLength</a> (uint32_t index) const</td></tr>
+<tr class="memdesc:a3565db5b8e3c7e10d32f191a7c4c5387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the subnet length of the host network interface corresponding to the device at the specified index.  <br /></td></tr>
+<tr class="memitem:a842c354f5444314d620f2143df70267b" id="r_a842c354f5444314d620f2143df70267b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a842c354f5444314d620f2143df70267b">getLocalGateway</a> (uint32_t index) const</td></tr>
+<tr class="memdesc:a842c354f5444314d620f2143df70267b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gateway of the host network interface corresponding to the device at the specified index.  <br /></td></tr>
 <tr class="memitem:a21010abb7ccac3779ad8e1d0bbf1bb68" id="r_a21010abb7ccac3779ad8e1d0bbf1bb68"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21010abb7ccac3779ad8e1d0bbf1bb68">getDevice</a> (uint32_t index) const</td></tr>
 <tr class="memdesc:a21010abb7ccac3779ad8e1d0bbf1bb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device object at the specified index.  <br /></td></tr>
 <tr class="memitem:aa6f5858e30ee59ac14d52fa3417e91ed" id="r_aa6f5858e30ee59ac14d52fa3417e91ed"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6f5858e30ee59ac14d52fa3417e91ed">getDeviceBySN</a> (const char *<a class="el" href="#a1955154b44b5b5a839da6d08e9a58e29">serialNumber</a>) const</td></tr>
@@ -129,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class representing a list of devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01085">1085</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01109">1109</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af422491d4f23bc646ca60d0d1eea1c2f" name="af422491d4f23bc646ca60d0d1eea1c2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af422491d4f23bc646ca60d0d1eea1c2f">&#9670;&#160;</a></span>DeviceList()</h2>
@@ -154,7 +164,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01090">1090</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01114">1114</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -181,7 +191,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01091">1091</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01115">1115</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -212,9 +222,9 @@ Public Member Functions</h2></td></tr>
 <p>Get the number of devices in the list. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t the number of devices in the list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01102">1102</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01126">1126</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01271">deviceCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01370">deviceCount()</a>.</p>
 
 </div>
 </div>
@@ -250,9 +260,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int the PID of the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01115">1115</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01139">1139</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01275">pid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01374">pid()</a>.</p>
 
 </div>
 </div>
@@ -288,9 +298,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int the VID of the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01128">1128</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01152">1152</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01279">vid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01378">vid()</a>.</p>
 
 </div>
 </div>
@@ -326,9 +336,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* the UID of the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01141">1141</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01165">1165</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01283">uid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01382">uid()</a>.</p>
 
 </div>
 </div>
@@ -364,9 +374,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* the serial number of the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01154">1154</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01178">1178</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01287">serialNumber()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01386">serialNumber()</a>.</p>
 
 </div>
 </div>
@@ -403,9 +413,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* The name of the device at the specified index. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01170">1170</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01194">1194</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01291">name()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01390">name()</a>.</p>
 
 </div>
 </div>
@@ -441,9 +451,9 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* returns connection type, currently supports: "USB", "USB1.0", "USB1.1", "USB2.0", "USB2.1", "USB3.0", "USB3.1", "USB3.2", "Ethernet" </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01183">1183</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01207">1207</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01295">connectionType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01394">connectionType()</a>.</p>
 
 </div>
 </div>
@@ -480,9 +490,83 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* the ip address of the device </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01198">1198</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01222">1222</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01299">ipAddress()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01398">ipAddress()</a>.</p>
+
+</div>
+</div>
+<a id="a68ee36a7beb58ed8ce7ee7871b660c9f" name="a68ee36a7beb58ed8ce7ee7871b660c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ee36a7beb58ed8ce7ee7871b660c9f">&#9670;&#160;</a></span>getSubnetMask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ob::DeviceList::getSubnetMask </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the subnet mask of the device at the specified index </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return "0.0.0.0".</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* the subnet mask of the device </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01237">1237</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a377db979417ea51e38880037a519e544" name="a377db979417ea51e38880037a519e544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377db979417ea51e38880037a519e544">&#9670;&#160;</a></span>getGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ob::DeviceList::getGateway </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the gateway of the device at the specified index </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return "0.0.0.0".</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* the gateway of the device </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01252">1252</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -509,7 +593,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>get the local mac address of the device at the specified index </p>
+<p>Get the MAC address of the host network interface corresponding to the device at the specified index. </p>
 <dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return "0:0:0:0:0:0".</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -517,9 +601,120 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>const char* the local mac address of the device </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The MAC address of the host network interface associated with the device. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01213">1213</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01267">1267</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae36f532a53552e0fe1d4d3587e285117" name="ae36f532a53552e0fe1d4d3587e285117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36f532a53552e0fe1d4d3587e285117">&#9670;&#160;</a></span>getLocalIP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ob::DeviceList::getLocalIP </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the IP address of the host network interface corresponding to the device at the specified index. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return "0.0.0.0".</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The IP address of the host network interface associated with the device. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01282">1282</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3565db5b8e3c7e10d32f191a7c4c5387" name="a3565db5b8e3c7e10d32f191a7c4c5387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3565db5b8e3c7e10d32f191a7c4c5387">&#9670;&#160;</a></span>getLocalSubnetLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ob::DeviceList::getLocalSubnetLength </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the subnet length of the host network interface corresponding to the device at the specified index. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return 0.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint8_t The subnet length (0~32) of the host network interface associated with the device. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01297">1297</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a842c354f5444314d620f2143df70267b" name="a842c354f5444314d620f2143df70267b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842c354f5444314d620f2143df70267b">&#9670;&#160;</a></span>getLocalGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ob::DeviceList::getLocalGateway </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the gateway of the host network interface corresponding to the device at the specified index. </p>
+<dl class="section attention"><dt>Attention</dt><dd>Only valid for network devices, otherwise it will return "0.0.0.0".</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The gateway of the host network interface associated with the device. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01312">1312</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -556,7 +751,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Device&gt; the device object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01228">1228</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01327">1327</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -593,7 +788,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Device&gt; the device object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01243">1243</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01342">1342</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -632,7 +827,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Device&gt; returns the device object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01262">1262</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01361">1361</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -659,7 +854,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01271">1271</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01370">1370</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -686,9 +881,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01275">1275</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01374">1374</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01115">getPid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01139">getPid()</a>.</p>
 
 </div>
 </div>
@@ -715,9 +910,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01279">1279</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01378">1378</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01128">getVid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01152">getVid()</a>.</p>
 
 </div>
 </div>
@@ -744,9 +939,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01283">1283</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01382">1382</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01262">getDeviceByUid()</a>, and <a class="el" href="_device_8hpp_source.html#l01141">getUid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01361">getDeviceByUid()</a>, and <a class="el" href="_device_8hpp_source.html#l01165">getUid()</a>.</p>
 
 </div>
 </div>
@@ -773,9 +968,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01287">1287</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01386">1386</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01243">getDeviceBySN()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01342">getDeviceBySN()</a>.</p>
 
 </div>
 </div>
@@ -802,9 +997,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01291">1291</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01390">1390</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01170">getName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_device_8hpp_source.html#l01194">getName()</a>.</p>
 
 </div>
 </div>
@@ -831,7 +1026,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01295">1295</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01394">1394</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
@@ -858,12 +1053,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01299">1299</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_device_8hpp_source.html#l01398">1398</a> of file <a class="el" href="_device_8hpp_source.html">Device.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/include/libobsensor/hpp/<a class="el" href="_device_8hpp_source.html">Device.hpp</a></li>
+<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_device_8hpp_source.html">Device.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
