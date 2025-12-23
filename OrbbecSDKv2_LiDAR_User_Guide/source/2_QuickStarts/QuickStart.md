@@ -1,7 +1,7 @@
 
 # Quick Start on Windows Platform
 ## build SDK package(.zip)
-This section demonstrates how to quickly start and build SDK package on the Windows platform. The SDK version used here is [v2.4.3](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.3).
+This section demonstrates how to quickly start and build SDK package on the Windows platform. The SDK version used here is [v2.6.3](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.6.3).
 
 - First, extract the downloaded Orbbec SDK package, then navigate to the examples directory in the extracted folder and use CMake to compile the project.
 

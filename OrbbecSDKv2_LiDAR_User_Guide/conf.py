@@ -33,7 +33,7 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Project information -----------------------------------------------------
 
-project = 'OrbbecSDK V2'
+project = 'OrbbecSDK V2 LiDAR API User Guide'
 # project = """
 # OrbbecSDK ROS2 documentation
 # """

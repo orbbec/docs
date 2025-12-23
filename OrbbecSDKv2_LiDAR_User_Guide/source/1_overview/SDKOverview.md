@@ -1,5 +1,7 @@
 # SDK  Overview
 
+**Orbbec SDK v2.6.2 and later supports LiDAR devices such as the Pulsar ME450 and Pulsar SL450**.
+
 ## Terms
 
 |  ID  |  Name  |  Explain  |
