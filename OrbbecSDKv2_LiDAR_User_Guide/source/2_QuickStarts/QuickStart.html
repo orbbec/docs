@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.1. Quick Start on Windows Platform &mdash; OrbbecSDK V2 LiDAR API User Guide  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=a2eacb60" />
+
+  
+    <link rel="shortcut icon" href="../../_static/orbbec_footerlogo_3d_world.svg"/>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Application Guide" href="../3_Application_Guide/Application_Guide.html" />
+    <link rel="prev" title="2. QuickStarts" href="QuickStarts.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            OrbbecSDK V2 LiDAR API User Guide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_overview/overview.html">1. Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_overview/Introduction.html">1.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_overview/SDKOverview.html">1.2. SDK  Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/SDKOverview.html#terms">1.2.1. Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/SDKOverview.html#orbbec-sdk-v2-architecture-overview">1.2.2. Orbbec SDK v2 Architecture Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/SDKOverview.html#sdk-concept-overview">1.2.3. SDK Concept Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/SDKOverview.html#sdk-programming-model">1.2.4. SDK Programming Model</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../1_overview/EnvironmentSetup.html">1.3. Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/EnvironmentSetup.html#sdk-download">1.3.1. SDK Download</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/EnvironmentSetup.html#device-support-verification">1.3.2. Device Support Verification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/EnvironmentSetup.html#development-environment-configuration">1.3.3. Development Environment Configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="QuickStarts.html">2. QuickStarts</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1. Quick Start on Windows Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#build-sdk-package-zip">2.1.1. build SDK package(.zip)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start-on-linux-platform">2.2. Quick Start on Linux Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">2.2.1. build SDK package(.zip)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-install-package">2.3. How to Use install package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-via-deb-package">2.3.1. Install via .deb Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-via-exe-package">2.3.2. Install via .exe Package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_Application_Guide/Application_Guide.html">3. Application Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html">3.1. Create Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#create-pipeline">3.2. Create Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#obtain-the-sensor-list">3.3. Obtain the Sensor List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#obtain-lidar-data-streams">3.4. Obtain LiDAR Data Streams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#blocking-polling-mode">3.4.1. Blocking Polling Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#asynchronous-callback-mode">3.4.2. Asynchronous Callback Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#obtain-imu-data-streams">3.5. Obtain IMU Data Streams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id1">3.5.1. Blocking Polling Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id2">3.5.2. Asynchronous Callback Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#frame-aggregate">3.6. Frame Aggregate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#recording-and-playback">3.7. Recording and Playback</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#recording">3.7.1. Recording</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#playback">3.7.2. Playback</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#device-disconnection-and-reconnection">3.8. Device Disconnection and Reconnection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#commonly-used-interfaces">3.9. Commonly Used Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#obtain-the-serial-number">3.9.1. Obtain the Serial Number</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#obtain-lidar-streamprofile">3.9.2. Obtain LiDAR StreamProfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#obtain-imu-streamprofile">3.9.3. Obtain IMU StreamProfile</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">4. License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OrbbecSDK V2 LiDAR API User Guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="QuickStarts.html"><span class="section-number">2. </span>QuickStarts</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2.1. </span>Quick Start on Windows Platform</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/2_QuickStarts/QuickStart.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="quick-start-on-windows-platform">
+<h1><span class="section-number">2.1. </span>Quick Start on Windows Platform<a class="headerlink" href="#quick-start-on-windows-platform" title="Link to this heading"></a></h1>
+<section id="build-sdk-package-zip">
+<h2><span class="section-number">2.1.1. </span>build SDK package(.zip)<a class="headerlink" href="#build-sdk-package-zip" title="Link to this heading"></a></h2>
+<p>This section demonstrates how to quickly start and build SDK package on the Windows platform. The SDK version used here is <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.6.3">v2.6.3</a>.</p>
+<ul class="simple">
+<li><p>First, extract the downloaded Orbbec SDK package, then navigate to the examples directory in the extracted folder and use CMake to compile the project.</p></li>
+</ul>
+<p><img alt="image.png" src="../../_images/CMake_Compile_1.png" /></p>
+<ul class="simple">
+<li><p>Click the Configure button, and the following dialog will appear:</p></li>
+</ul>
+<p><img alt="image.png" src="../../_images/CMake_Compile_2.png" /></p>
+<ul class="simple">
+<li><p>Open the sample project (orbbec_sdk_examples.sln) using Visual Studio 2019.</p></li>
+</ul>
+<p><img alt="image.png" src="../../_images/CMake_Compile_4.png" /></p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">ob_lidar_quick_start</span></code> sample as an introductory example to understand and use the SDK API. First, build the <code class="docutils literal notranslate"><span class="pre">ob_lidar_quick_start</span></code> sample and run it to start capturing data streams.</p>
+<ul class="simple">
+<li><p>Note:
+Make sure to copy the required SDK dynamic libraries(extensions &amp; OrbbecSDK.dll) to the directory where <code class="docutils literal notranslate"><span class="pre">ob_lidar_quick_start.exe</span></code> is located.</p></li>
+</ul>
+<p><img alt="image.png" src="../../_images/CMake_Compile_5.png" /></p>
+</section>
+</section>
+<section id="quick-start-on-linux-platform">
+<h1><span class="section-number">2.2. </span>Quick Start on Linux Platform<a class="headerlink" href="#quick-start-on-linux-platform" title="Link to this heading"></a></h1>
+<section id="id1">
+<h2><span class="section-number">2.2.1. </span>build SDK package(.zip)<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Build Requirements：</p>
+<ul>
+<li><p>Operating System：Ubuntu 18.04 or later</p></li>
+<li><p>Compiler：GCC，&gt;=7.5</p></li>
+<li><p>CMake v3.15 or later</p></li>
+<li><p>Visual Studio Code：Recommended IDE for building and debugging</p></li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li><p>First, download the Linux version of the Orbbec SDK package and extract it.</p></li>
+<li><p>Then run the <code class="docutils literal notranslate"><span class="pre">build_examples.sh</span></code> script to compile the examples.</p></li>
+</ul>
+<p><img alt="image.png" src="../../_images/Linux_Compile_2.png" /></p>
+<ul>
+<li><p>Navigate to the bin directory and run the <code class="docutils literal notranslate"><span class="pre">ob_lidar_quick_start</span></code> sample to capture data streams.</p>
+<p><img alt="image-20251223141443860" src="../../_images/Linux_Compile_3.png" /></p>
+</li>
+</ul>
+</section>
+</section>
+<section id="how-to-use-install-package">
+<h1><span class="section-number">2.3. </span>How to Use install package<a class="headerlink" href="#how-to-use-install-package" title="Link to this heading"></a></h1>
+<p>If you do not want to compile the Orbbec SDK, you can use the SDK installation package. Taking <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.8">v2.4.8</a> as an example, first download the corresponding installation package for your platform.</p>
+<ul class="simple">
+<li><p>The file OrbbecSDK_vx.x.x_win64.exe serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Windows.</p></li>
+<li><p>The file OrbbecSDK_vx.x.x_amd64.deb serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Linux x86_64, likes ubuntu.</p></li>
+<li><p>The file OrbbecSDK_vx.x.x_arm64.deb serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on ARM64，likes NVIDIA Jetson AGX Orin , NVIDIA Jetson Orin NX , NVIDIA Jetson Orin Nano , NVIDIA Jetson AGX Xavier , NVIDIA Jetson Xavier NX.</p></li>
+</ul>
+<section id="install-via-deb-package">
+<h2><span class="section-number">2.3.1. </span>Install via .deb Package<a class="headerlink" href="#install-via-deb-package" title="Link to this heading"></a></h2>
+<ul>
+<li><p>On the Linux x64 (ubuntu) platform, install using the following command. (If you are using the Arm64 platform, please use OrbbecSDK_vx.x.x_arm64.deb)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>OrbbecSDK_v2.x.x_amd64.deb
+</pre></div>
+</div>
+</li>
+<li><p>Check the entire package path of the Orbbec SDK using dpkg -L orbbecsdk, while the header files and library files of the Orbbec SDK will be installed in the /usr/local path.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dpkg<span class="w"> </span>-L<span class="w"> </span>orbbecsdk
+</pre></div>
+</div>
+</li>
+<li><p>Run the Orbbec Viewer.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>./OrbbecViewer<span class="w"> </span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="install-via-exe-package">
+<h2><span class="section-number">2.3.2. </span>Install via .exe Package<a class="headerlink" href="#install-via-exe-package" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>On the windows platform, Double-click OrbbecSDK_vx.x.x_win64.exe directly to install, After installation is complete, run OrbbecViewer or the Orbbec SDK from the installation directory.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="QuickStarts.html" class="btn btn-neutral float-left" title="2. QuickStarts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../3_Application_Guide/Application_Guide.html" class="btn btn-neutral float-right" title="3. Application Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024-2025,Orbbec Inc. All Rights Reserved.
+      <span class="lastupdated">Last updated on 2025-12-23 16:57:04.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

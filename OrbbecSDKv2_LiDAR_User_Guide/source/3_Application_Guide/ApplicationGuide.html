@@ -1,0 +1,617 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1. Create Device &mdash; OrbbecSDK V2 LiDAR API User Guide  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=a2eacb60" />
+
+  
+    <link rel="shortcut icon" href="../../_static/orbbec_footerlogo_3d_world.svg"/>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. License" href="../license.html" />
+    <link rel="prev" title="3. Application Guide" href="Application_Guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            OrbbecSDK V2 LiDAR API User Guide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1_overview/overview.html">1. Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_overview/Introduction.html">1.1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_overview/SDKOverview.html">1.2. SDK  Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/SDKOverview.html#terms">1.2.1. Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/SDKOverview.html#orbbec-sdk-v2-architecture-overview">1.2.2. Orbbec SDK v2 Architecture Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/SDKOverview.html#sdk-concept-overview">1.2.3. SDK Concept Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/SDKOverview.html#sdk-programming-model">1.2.4. SDK Programming Model</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../1_overview/EnvironmentSetup.html">1.3. Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/EnvironmentSetup.html#sdk-download">1.3.1. SDK Download</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/EnvironmentSetup.html#device-support-verification">1.3.2. Device Support Verification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../1_overview/EnvironmentSetup.html#development-environment-configuration">1.3.3. Development Environment Configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_QuickStarts/QuickStarts.html">2. QuickStarts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_QuickStarts/QuickStart.html">2.1. Quick Start on Windows Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#build-sdk-package-zip">2.1.1. build SDK package(.zip)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#quick-start-on-linux-platform">2.2. Quick Start on Linux Platform</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#id1">2.2.1. build SDK package(.zip)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#how-to-use-install-package">2.3. How to Use install package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#install-via-deb-package">2.3.1. Install via .deb Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#install-via-exe-package">2.3.2. Install via .exe Package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="Application_Guide.html">3. Application Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.1. Create Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-pipeline">3.2. Create Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#obtain-the-sensor-list">3.3. Obtain the Sensor List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#obtain-lidar-data-streams">3.4. Obtain LiDAR Data Streams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#blocking-polling-mode">3.4.1. Blocking Polling Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#asynchronous-callback-mode">3.4.2. Asynchronous Callback Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#obtain-imu-data-streams">3.5. Obtain IMU Data Streams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">3.5.1. Blocking Polling Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">3.5.2. Asynchronous Callback Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#frame-aggregate">3.6. Frame Aggregate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recording-and-playback">3.7. Recording and Playback</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#recording">3.7.1. Recording</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#playback">3.7.2. Playback</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#device-disconnection-and-reconnection">3.8. Device Disconnection and Reconnection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commonly-used-interfaces">3.9. Commonly Used Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#obtain-the-serial-number">3.9.1. Obtain the Serial Number</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obtain-lidar-streamprofile">3.9.2. Obtain LiDAR StreamProfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obtain-imu-streamprofile">3.9.3. Obtain IMU StreamProfile</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">4. License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OrbbecSDK V2 LiDAR API User Guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Application_Guide.html"><span class="section-number">3. </span>Application Guide</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1. </span>Create Device</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/3_Application_Guide/ApplicationGuide.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="create-device">
+<h1><span class="section-number">3.1. </span>Create Device<a class="headerlink" href="#create-device" title="Link to this heading"></a></h1>
+<p>There are multiple ways to obtain a Device.
+If your use case involves multiple devices, it is recommended to use Method 1, Method 2, or Method 3.
+If you are working with a single device, Method 4 is recommended for accessing the Device.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Create a Context</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">ctx</span><span class="p">;</span>
+
+<span class="c1">// Method 1</span>
+<span class="c1">// Enumerate all connected devices through the Context.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">DeviceList</span><span class="o">&gt;</span><span class="w"> </span><span class="n">devices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">queryDeviceList</span><span class="p">();</span>
+<span class="c1">// Get the device at index 0.</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">devices</span><span class="o">-&gt;</span><span class="n">getDevice</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+<span class="c1">// Method 2</span>
+<span class="c1">// Enumerate all connected devices through the Context.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">DeviceList</span><span class="o">&gt;</span><span class="w"> </span><span class="n">devices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">queryDeviceList</span><span class="p">();</span>
+<span class="c1">// Get the device by serial number.</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">devices</span><span class="o">-&gt;</span><span class="n">getDeviceBySN</span><span class="p">(</span><span class="s">&quot;AE4M73D0040&quot;</span><span class="p">);</span>
+
+<span class="c1">// Method 3</span>
+<span class="c1">// Enumerate all connected devices through the Context.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">DeviceList</span><span class="o">&gt;</span><span class="w"> </span><span class="n">devices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">queryDeviceList</span><span class="p">();</span>
+<span class="c1">// Get the device by uid.</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">devices</span><span class="o">-&gt;</span><span class="n">getDeviceByUid</span><span class="p">(</span><span class="s">&quot;NDSG3958LKHY45&quot;</span><span class="p">);</span>
+
+<span class="c1">// Method 4</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+<span class="c1">// Get the device by pipeline.</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">getDevice</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+<section id="create-pipeline">
+<h1><span class="section-number">3.2. </span>Create Pipeline<a class="headerlink" href="#create-pipeline" title="Link to this heading"></a></h1>
+<p>There are two ways to create a Pipeline.
+If your use case involves multiple devices, use Method 2, which creates a separate Pipeline for each Device.
+For single-device scenarios, Method 1 is the most straightforward way to create a Pipeline.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">//Method 1</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+
+<span class="c1">//Method 2，create with device</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">pipe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="o">&gt;</span><span class="p">(</span><span class="n">device</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="obtain-the-sensor-list">
+<h1><span class="section-number">3.3. </span>Obtain the Sensor List<a class="headerlink" href="#obtain-the-sensor-list" title="Link to this heading"></a></h1>
+<p>Obtain the sensor list from the Device, and then obtain the supported sensor types from the sensor list.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1.Create a pipeline with default device.</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+
+<span class="c1">// 2.Get the device from pipeline.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Device</span><span class="o">&gt;</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">getDevice</span><span class="p">();</span>
+
+<span class="c1">// 3.Get the sensor list from device.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">SensorList</span><span class="o">&gt;</span><span class="w"> </span><span class="n">sensorList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">getSensorList</span><span class="p">();</span>
+
+<span class="c1">// 4.Query all supported sensor type</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">sensorList</span><span class="o">-&gt;</span><span class="n">getCount</span><span class="p">();</span><span class="w"> </span><span class="n">index</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">OBSensorType</span><span class="w"> </span><span class="n">sensorType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensorList</span><span class="o">-&gt;</span><span class="n">getSensorType</span><span class="p">(</span><span class="n">index</span><span class="p">);</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Supported Sensor type: </span><span class="se">\n</span><span class="s">&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">sensorType</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="obtain-lidar-data-streams">
+<h1><span class="section-number">3.4. </span>Obtain LiDAR Data Streams<a class="headerlink" href="#obtain-lidar-data-streams" title="Link to this heading"></a></h1>
+<p>The LiDAR point cloud data stream includes formats such as <code class="docutils literal notranslate"><span class="pre">OB_FORMAT_LIDAR_SCAN</span></code>, <code class="docutils literal notranslate"><span class="pre">OB_FORMAT_LIDAR_POINT</span></code>, and <code class="docutils literal notranslate"><span class="pre">OB_FORMAT_LIDAR_SPHERE_POINT</span></code>. Among these, <code class="docutils literal notranslate"><span class="pre">OB_FORMAT_LIDAR_SCAN</span></code> is designed for single-line LiDAR systems, while <code class="docutils literal notranslate"><span class="pre">OB_FORMAT_LIDAR_POINT</span></code> and <code class="docutils literal notranslate"><span class="pre">OB_FORMAT_LIDAR_SPHERE_POINT</span></code> are intended for multi-line LiDAR systems. The key distinction between the latter two is that <code class="docutils literal notranslate"><span class="pre">OB_FORMAT_LIDAR_POINT</span></code> outputs data in Cartesian coordinates (rectangular coordinates), whereas <code class="docutils literal notranslate"><span class="pre">OB_FORMAT_LIDAR_SPHERE_POINT</span></code> outputs data in spherical coordinates.</p>
+<p>The difference between Blocking Polling Mode and Asynchronous Callback Mode: In Blocking Polling Mode after frame aggregation in the pipeline, the frame is inserted into the queue, and the application obtain frame data from the queue by calling waitForFrameset. In Asynchronous Callback Mode, after frame aggregation, the frame is directly passed back to the application via a callback. The advantage of Asynchronous Callback Mode is that it is more real-time, but in the callback function, the application layer should avoid time-consuming tasks and should release the frame as soon as possible.</p>
+<section id="blocking-polling-mode">
+<h2><span class="section-number">3.4.1. </span>Blocking Polling Mode<a class="headerlink" href="#blocking-polling-mode" title="Link to this heading"></a></h2>
+<p>Workflow Diagram:</p>
+<p><img alt="image" src="../../_images/Get_LiDAR.jpg" /></p>
+<p>Key API Descriptions:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1.Create a pipeline with default device.</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+
+<span class="c1">// 2.Create config.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="c1">// 3.Enable LiDAR stream. You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableLiDARStream</span><span class="p">(</span><span class="n">OB_LIDAR_SCAN_20HZ</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_LIDAR_SPHERE_POINT</span><span class="p">);</span>
+
+<span class="c1">// 4.Start the pipeline with config.</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">start</span><span class="p">(</span><span class="n">config</span><span class="p">);</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 5.Wait for up to 100ms for a frameset in blocking mode.</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">frameSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">waitForFrameset</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">frameSet</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="c1">// Get LiDAR point cloud frame</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameset</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_LIDAR_POINTS</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">frame</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;No LiDAR frame found!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Save point cloud data to ply file</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">ob</span><span class="o">::</span><span class="n">PointCloudHelper</span><span class="o">::</span><span class="n">savePointcloudToPly</span><span class="p">(</span><span class="s">&quot;LiDARPoints.ply&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Failed to save LiDARPoints.ply&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;LiDARPoints.ply Saved&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 6.Stop the pipeline</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">stop</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+<section id="asynchronous-callback-mode">
+<h2><span class="section-number">3.4.2. </span>Asynchronous Callback Mode<a class="headerlink" href="#asynchronous-callback-mode" title="Link to this heading"></a></h2>
+<p>Workflow Diagram:</p>
+<p><img alt="image" src="../../_images/Get_LiDAR_Callback.jpg" /></p>
+<p>Key API Descriptions:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1.Create a pipeline with default device.</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+
+<span class="c1">// 2.Create config.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="c1">// 3.Enable LiDAR stream. You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableLiDARStream</span><span class="p">(</span><span class="n">OB_LIDAR_SCAN_20HZ</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_LIDAR_SPHERE_POINT</span><span class="p">);</span>
+
+<span class="c1">// 4.Start the pipeline with config and callback.</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">start</span><span class="p">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">FrameSet</span><span class="o">&gt;</span><span class="w"> </span><span class="n">frameSet</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Get LiDAR point cloud frame</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameset</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_LIDAR_POINTS</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">frame</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;No LiDAR frame found!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="k">else</span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Process LiDAR point cloud frame</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// 5.Stop the pipeline</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">stop</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="obtain-imu-data-streams">
+<h1><span class="section-number">3.5. </span>Obtain IMU Data Streams<a class="headerlink" href="#obtain-imu-data-streams" title="Link to this heading"></a></h1>
+<section id="id1">
+<h2><span class="section-number">3.5.1. </span>Blocking Polling Mode<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>Workflow Diagram:</p>
+<p><img alt="image" src="../../_images/Get_Imu.jpg" /></p>
+<p>Key API Descriptions:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1.Create a pipeline with default device.</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+
+<span class="c1">// 2.Create config.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="c1">// 3.Enable Accel stream, You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableAccelStream</span><span class="p">(</span><span class="n">OB_ACCEL_FS_4g</span><span class="p">,</span><span class="w"> </span><span class="n">OB_SAMPLE_RATE_200_HZ</span><span class="p">);</span>
+
+<span class="c1">// 4.Enable Gyro stream, You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableGyroStream</span><span class="p">(</span><span class="n">OB_GYRO_FS_1000dps</span><span class="p">,</span><span class="w"> </span><span class="n">OB_SAMPLE_RATE_200_HZ</span><span class="p">);</span>
+
+<span class="c1">// 5.Start the pipeline with config.</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">start</span><span class="p">(</span><span class="n">config</span><span class="p">);</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 6.Wait for up to 100ms for a frameset in blocking mode.</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">frameSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">waitForFrameset</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">frameSet</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">accelFrameRaw</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">frameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_ACCEL</span><span class="p">);</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">gyroFrameRaw</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">frameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_GYRO</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 7.Stop the pipeline</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">stop</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2><span class="section-number">3.5.2. </span>Asynchronous Callback Mode<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>Workflow Diagram:</p>
+<p><img alt="image" src="../../_images/Get_Imu_Callback.png" /></p>
+<p>Key API Descriptions:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1.Create a pipeline with default device.</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+
+<span class="c1">// 2.Create config.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="c1">// 3.Enable Accel stream, You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableAccelStream</span><span class="p">(</span><span class="n">OB_ACCEL_FS_4g</span><span class="p">,</span><span class="w"> </span><span class="n">OB_SAMPLE_RATE_200_HZ</span><span class="p">);</span>
+
+<span class="c1">// 4.Enable Gyro stream, You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableGyroStream</span><span class="p">(</span><span class="n">OB_GYRO_FS_1000dps</span><span class="p">,</span><span class="w"> </span><span class="n">OB_SAMPLE_RATE_200_HZ</span><span class="p">);</span>
+
+<span class="c1">// 5.Start the pipeline with config and callback.</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">start</span><span class="p">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">FrameSet</span><span class="o">&gt;</span><span class="w"> </span><span class="n">frameSet</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">frameSet</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">accelFrameRaw</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">frameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_ACCEL</span><span class="p">);</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">gyroFrameRaw</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">frameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_GYRO</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// 6.Stop the pipeline</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">stop</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="frame-aggregate">
+<h1><span class="section-number">3.6. </span>Frame Aggregate<a class="headerlink" href="#frame-aggregate" title="Link to this heading"></a></h1>
+<p>The frame aggregation feature is used to configure the output mode of frame data streams. This feature can be set through the interface provided by ob::Config.
+There are four types of frame aggregation modes.</p>
+<p>Key API Descriptions:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Set through the interface provided by ob::Config.</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setFrameAggregateOutputMode</span><span class="p">(</span><span class="n">OBFrameAggregateOutputMode</span><span class="w"> </span><span class="n">mode</span><span class="p">);</span>
+
+<span class="c1">// The types of modes included in frame aggregation are as follows.</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @brief Only FrameSet that contains all types of data frames will be output</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">OB_FRAME_AGGREGATE_OUTPUT_ALL_TYPE_FRAME_REQUIRE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @brief Color Frame Require output mode</span>
+<span class="cm">     * @brief Suitable for Color using H264, H265 and other inter-frame encoding format open stream</span>
+<span class="cm">     * @attention In this mode, the user may return null when getting a non-Color type data frame from the acquired FrameSet</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">OB_FRAME_AGGREGATE_OUTPUT_COLOR_FRAME_REQUIRE</span><span class="p">,</span>
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @brief FrameSet for any case will be output</span>
+<span class="cm">     * @attention In this mode, the user may return null when getting the specified type of data frame from the acquired FrameSet</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">OB_FRAME_AGGREGATE_OUTPUT_ANY_SITUATION</span><span class="p">,</span>
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @brief Disable Frame Aggreate</span>
+<span class="cm">     * @attention In this mode, All types of data frames will output independently.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">OB_FRAME_AGGREGATE_OUTPUT_DISABLE</span><span class="p">,</span>
+<span class="p">}</span><span class="w"> </span><span class="n">OB_FRAME_AGGREGATE_OUTPUT_MODE</span><span class="p">,</span><span class="n">OBFrameAggregateOutputMode</span><span class="p">,</span><span class="n">ob_frame_aggregate_output_mode</span>
+</pre></div>
+</div>
+<p>For example, if LiDAR and IMU streams are all enabled and the frame aggregation mode is set to OB_FRAME_AGGREGATE_OUTPUT_ALL_TYPE_FRAME_REQUIRE, it means that the returned FrameSet will contain non-null frame data for all two streams.
+Sample code is shown below:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1.Create a pipeline with default device.</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+<span class="c1">// 2.Create config.</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="c1">// 3.Enable LiDAR stream. You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableLiDARStream</span><span class="p">(</span><span class="n">OB_LIDAR_SCAN_20HZ</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_LIDAR_SPHERE_POINT</span><span class="p">);</span>
+<span class="c1">// 4.Enable Accel stream. You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableAccelStream</span><span class="p">();</span>
+<span class="c1">// 5.Enable Gyro stream. You can modify the parameters based on your usage requirements</span>
+<span class="n">config</span><span class="o">-&gt;</span><span class="n">enableGyroStream</span><span class="p">();</span>
+
+<span class="c1">// 6.Start the pipeline with config.</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">start</span><span class="p">(</span><span class="n">config</span><span class="p">);</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 7.Wait for up to 100ms for a frameset in blocking mode.</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">frameSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">waitForFrameset</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">frameSet</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span>
+<span class="w">    </span><span class="c1">// 8.Push the frameset to the Align Filter to align the frames.</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">alignFrameSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">FrameSet</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">frameSet</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">       </span><span class="c1">// Get all frame.</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">lidarFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameset</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_LIDAR_POINTS</span><span class="p">);</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">accelFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameset</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_ACCEL</span><span class="p">);</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">gyroFrame</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">frameset</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_GYRO</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// 9.Stop the pipeline.</span>
+<span class="n">pipe</span><span class="p">.</span><span class="n">stop</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Workflow Diagram:</p>
+<p><img alt="image" src="../../_images/Frame_Aggregate_LiDAR.jpg" /></p>
+</section>
+<section id="recording-and-playback">
+<h1><span class="section-number">3.7. </span>Recording and Playback<a class="headerlink" href="#recording-and-playback" title="Link to this heading"></a></h1>
+<section id="recording">
+<h2><span class="section-number">3.7.1. </span>Recording<a class="headerlink" href="#recording" title="Link to this heading"></a></h2>
+<p>Data stream recording is primarily implemented using ob::RecordDevice. Taking LiDAR stream recording as an example.
+If you want to record multiple streams at the same time, you can enable them simultaneously.</p>
+<p>Key API Description：</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Initialize recording device with output file,and start record</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">recordDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">RecordDevice</span><span class="o">&gt;</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="w"> </span><span class="n">filePath</span><span class="p">);</span>
+
+<span class="c1">// pause</span>
+<span class="n">recorder</span><span class="o">-&gt;</span><span class="n">pause</span><span class="p">();</span>
+
+<span class="c1">// resume</span>
+<span class="n">recorder</span><span class="o">-&gt;</span><span class="n">resume</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Workflow Diagram:</p>
+<p><img alt="image" src="../../_images/Recorder_LiDAR.jpg" /></p>
+</section>
+<section id="playback">
+<h2><span class="section-number">3.7.2. </span>Playback<a class="headerlink" href="#playback" title="Link to this heading"></a></h2>
+<p>Data stream playback is primarily implemented using ob::PlaybackDevice.
+For a detailed playback implementation, refer to the SDK sample ob_device_playback.</p>
+<p>Key API Description：</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Initialize playback device with input file</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">PlaybackDevice</span><span class="o">&gt;</span><span class="w"> </span><span class="n">playback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">PlaybackDevice</span><span class="o">&gt;</span><span class="p">(</span><span class="n">filePath</span><span class="p">);</span>
+
+<span class="c1">//Set playback speed, Setting it to 2 indicates playback at twice the speed.</span>
+<span class="n">playback</span><span class="o">-&gt;</span><span class="n">setPlaybackRate</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span><span class="w">  </span>
+
+<span class="c1">//The duration of the playback device, in milliseconds.</span>
+<span class="n">playback</span><span class="o">-&gt;</span><span class="n">getDuration</span><span class="p">();</span><span class="w"> </span>
+
+<span class="c1">// Get the current playback position</span>
+<span class="n">playback</span><span class="o">-&gt;</span><span class="n">getPosition</span><span class="p">();</span>
+
+<span class="c1">//Set the starting point for playback, which must be within the total duration of the recording.</span>
+<span class="n">playback</span><span class="o">-&gt;</span><span class="n">seek</span><span class="p">(</span><span class="n">timestamp</span><span class="p">)</span><span class="w"> </span>
+</pre></div>
+</div>
+<p>Workflow Diagram:</p>
+<p><img alt="image" src="../../_images/Playback_LiDAR.jpg" /></p>
+<p>Key API Description：</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Get valid .bag</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w">   </span><span class="n">filePath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;./LiDAR.bag&quot;</span><span class="p">;</span>
+
+<span class="c1">// 1.Create a playback device with a Rosbag file</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">PlaybackDevice</span><span class="o">&gt;</span><span class="w"> </span><span class="n">playback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">PlaybackDevice</span><span class="o">&gt;</span><span class="p">(</span><span class="n">filePath</span><span class="p">);</span>
+<span class="c1">// 2.Create a pipeline with the playback device</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pipe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="o">&gt;</span><span class="p">(</span><span class="n">playback</span><span class="p">);</span>
+<span class="c1">// 3.Enable all recording streams from the playback device</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">Config</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="c1">// 4.Set playback status change callback, when the playback stops, start the pipeline again with the same config</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">playbackStop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="n">playback</span><span class="o">-&gt;</span><span class="n">setPlaybackStatusChangeCallback</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="n">OBPlaybackStatus</span><span class="w"> </span><span class="n">status</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">OB_PLAYBACK_STOPPED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">playbackStop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// 5.Get the list of playback sensors</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">sensorList</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">playback</span><span class="o">-&gt;</span><span class="n">getSensorList</span><span class="p">();</span>
+<span class="c1">// 6.enable the data streams for playback</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">sensorList</span><span class="o">-&gt;</span><span class="n">getCount</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">sensorType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensorList</span><span class="o">-&gt;</span><span class="n">getSensorType</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="w">    </span><span class="n">config</span><span class="o">-&gt;</span><span class="n">enableStream</span><span class="p">(</span><span class="n">sensorType</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 7.Start the pipeline with the config</span>
+<span class="n">pipe</span><span class="o">-&gt;</span><span class="n">start</span><span class="p">(</span><span class="n">config</span><span class="p">);</span>
+
+<span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">playbackStop</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 8.Wait for up to 1000ms for a frameset in blocking mode.</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">frameSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="o">-&gt;</span><span class="n">waitForFrames</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">frameSet</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c1">// Get LiDAR frame</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameset</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_LIDAR_POINTS</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 9.Stop the pipeline.</span>
+<span class="n">pipe</span><span class="o">-&gt;</span><span class="n">stop</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="device-disconnection-and-reconnection">
+<h1><span class="section-number">3.8. </span>Device Disconnection and Reconnection<a class="headerlink" href="#device-disconnection-and-reconnection" title="Link to this heading"></a></h1>
+<p>The SDK provides a device connection change listener, which helps users handle exceptions when a device is disconnected and enables recovery the device is reconnected.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// 1.create context</span>
+<span class="n">ob</span><span class="o">::</span><span class="n">Context</span><span class="w"> </span><span class="n">ctx</span><span class="p">;</span>
+
+<span class="c1">// 2.register device callback</span>
+<span class="n">ctx</span><span class="p">.</span><span class="n">setDeviceChangedCallback</span><span class="p">([](</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">DeviceList</span><span class="o">&gt;</span><span class="w"> </span><span class="n">removedList</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">DeviceList</span><span class="o">&gt;</span><span class="w"> </span><span class="n">deviceList</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//Connected devices</span>
+<span class="w">        </span><span class="n">printDeviceList</span><span class="p">(</span><span class="s">&quot;added&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">deviceList</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">//Disconnected devices</span>
+<span class="w">        </span><span class="n">printDeviceList</span><span class="p">(</span><span class="s">&quot;removed&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">removedList</span><span class="p">);</span>
+<span class="w">    </span><span class="p">});</span>
+</pre></div>
+</div>
+<p>In the setDeviceChangedCallback callback of ob::Context,
+removedList indicates that the SDK has detected a device disconnection (offline),while deviceList indicates that the SDK has detected a device connection (online).</p>
+</section>
+<section id="commonly-used-interfaces">
+<h1><span class="section-number">3.9. </span>Commonly Used Interfaces<a class="headerlink" href="#commonly-used-interfaces" title="Link to this heading"></a></h1>
+<section id="obtain-the-serial-number">
+<h2><span class="section-number">3.9.1. </span>Obtain the Serial Number<a class="headerlink" href="#obtain-the-serial-number" title="Link to this heading"></a></h2>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span><span class="w">     </span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">getDevice</span><span class="p">();</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">deviceInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">device</span><span class="o">-&gt;</span><span class="n">getDeviceInfo</span><span class="p">();</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">serialNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">deviceInfo</span><span class="o">-&gt;</span><span class="n">serialNumber</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+<section id="obtain-lidar-streamprofile">
+<h2><span class="section-number">3.9.2. </span>Obtain LiDAR StreamProfile<a class="headerlink" href="#obtain-lidar-streamprofile" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Obtain StreamProfile via Pipeline</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ob</span><span class="o">::</span><span class="n">Pipeline</span><span class="w"> </span><span class="n">pipe</span><span class="p">;</span>
+<span class="c1">// Obtain the profile list of the LiDAR.</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">lidarProfiles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">getStreamProfileList</span><span class="p">(</span><span class="n">OB_SENSOR_LIDAR</span><span class="p">);</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Obtain StreamProfile via Frame</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span><span class="w"> </span><span class="n">frameSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="o">-&gt;</span><span class="n">waitForFrameset</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+
+<span class="c1">// Get the LiDAR stream profile</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frameset</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_LIDAR_POINTS</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">profile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame</span><span class="o">-&gt;</span><span class="n">getStreamProfile</span><span class="p">();</span>
+
+<span class="k">auto</span><span class="w"> </span><span class="n">lidarProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">profile</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">LiDARStreamProfile</span><span class="o">&gt;</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+<section id="obtain-imu-streamprofile">
+<h2><span class="section-number">3.9.3. </span>Obtain IMU StreamProfile<a class="headerlink" href="#obtain-imu-streamprofile" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Obtain IMU StreamProfile from IMU frame</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span><span class="w"> </span><span class="n">frameSet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">waitForFrameset</span><span class="p">();</span>
+
+<span class="c1">// Get the accel stream profile</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">accelFrameRaw</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">frameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_ACCEL</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">accelStreamProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">accelFrameRaw</span><span class="o">-&gt;</span><span class="n">getStreamProfile</span><span class="p">();</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">accelProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">accelStreamProfile</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">AccelStreamProfile</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="c1">// Get the gyro stream profile</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">gyroFrameRaw</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">frameSet</span><span class="o">-&gt;</span><span class="n">getFrame</span><span class="p">(</span><span class="n">OB_FRAME_GYRO</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">gyroStreamProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gyroFrameRaw</span><span class="o">-&gt;</span><span class="n">getStreamProfile</span><span class="p">();</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">gyroProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gyroStreamProfile</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">GyroStreamProfile</span><span class="o">&gt;</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Application_Guide.html" class="btn btn-neutral float-left" title="3. Application Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../license.html" class="btn btn-neutral float-right" title="4. License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024-2025,Orbbec Inc. All Rights Reserved.
+      <span class="lastupdated">Last updated on 2025-12-23 16:57:04.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
