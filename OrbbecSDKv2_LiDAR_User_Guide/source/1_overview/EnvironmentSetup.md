@@ -18,7 +18,12 @@ Before using the SDK, be sure to check the list of supported devices to verify t
 To check if your device is supported, visit [support device](https://github.com/orbbec/OrbbecSDK_v2?tab=readme-ov-file#12-supported-devices).
 This page lists the supported platforms and device.
 
-![image.png](../Images/Support_Device_Lists.png)
+### 1.4 Supported Devices
+
+| **Products List** | **Minimal Firmware Version** | **Recommended Firmware Version** |
+| ----------------- | ---------------------------- | -------------------------------- |
+| Pulsar SL450      | 2.2.4.5                      | 2.2.4.5                          |
+| Pulsar ME450      | 1.0.0.6                      | 1.0.0.6                          |
 
 
 ## Development Environment Configuration

@@ -46,8 +46,7 @@ Use the `ob_lidar_quick_start` sample as an introductory example to understand a
 
 - Navigate to the bin directory and run the `ob_lidar_quick_start` sample to capture data streams.
   
-
-![image.png](../Images/Linux_Quick_Start.png)
+  ![image-20251223141443860](../Images/Linux_Compile_3.png)
 
 
 # How to Use install package
@@ -60,15 +59,20 @@ If you do not want to compile the Orbbec SDK, you can use the SDK installation p
 
 ## Install via .deb Package
 - On the Linux x64 (ubuntu) platform, install using the following command. (If you are using the Arm64 platform, please use OrbbecSDK_vx.x.x_arm64.deb)
-~~~
-sudo dpkg -i OrbbecSDK_v2.x.x_amd64.deb
-~~~
+
+  ```shell
+  sudo dpkg -i OrbbecSDK_v2.x.x_amd64.deb
+  ```
 - Check the entire package path of the Orbbec SDK using dpkg -L orbbecsdk, while the header files and library files of the Orbbec SDK will be installed in the /usr/local path.
-~~~
-dpkg -L orbbecsdk
-~~~
+
+  ```shell
+  dpkg -L orbbecsdk
+  ```
 - Run the Orbbec Viewer.
-sudo ./OrbbecViewer 
+
+  ```shell
+  sudo ./OrbbecViewer 
+  ```
 
 ## Install via .exe Package
 - On the windows platform, Double-click OrbbecSDK_vx.x.x_win64.exe directly to install, After installation is complete, run OrbbecViewer or the Orbbec SDK from the installation directory.

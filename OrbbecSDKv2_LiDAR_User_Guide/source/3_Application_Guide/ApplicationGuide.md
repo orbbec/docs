@@ -397,7 +397,7 @@ while(!playbackStop) {
         continue;
     }
     // Get LiDAR frame
- 	auto frame = frameset->getFrame(OB_FRAME_LIDAR_POINTS);
+    auto frame = frameset->getFrame(OB_FRAME_LIDAR_POINTS);
 }
 
 // 9.Stop the pipeline.
@@ -429,8 +429,9 @@ removedList indicates that the SDK has detected a device disconnection (offline)
 ## Obtain the Serial Number
 
 ```c++
-auto         device = pipe.getDevice();
+auto     device = pipe.getDevice();
 auto deviceInfo = device->getDeviceInfo();
+
 std::string serialNumber = deviceInfo->serialNumber();
 ```
 
