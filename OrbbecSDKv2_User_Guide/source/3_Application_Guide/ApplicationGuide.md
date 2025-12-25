@@ -1112,7 +1112,7 @@ typedef struct {
 
 //Set the network parameters. A restart of the device is required after success.
 OBNetIpConfig config;
-device->setStructuredData(OB_STRUCT_DEVICE_IP_ADDR_CONFIG, &config, sizeof(OBNetIpConfig));
+device->setStructuredData(OB_STRUCT_DEVICE_IP_ADDR_CONFIG, reinterpret_cast<uint8_t *>(&config), sizeof(OBNetIpConfig));
 ```
 
 ## Obtain Device Temperature
