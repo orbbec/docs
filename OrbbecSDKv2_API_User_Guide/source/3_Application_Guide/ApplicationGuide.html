@@ -2254,9 +2254,11 @@ Enter FPS (frames per second) (for example: 3000): 3000(3000 indicates 30 fps) .
 <p>Each log management interface has a log level parameter, and the log level is determined by the last called interface.
 To set the global log level, you can use the setLoggerSeverity function, which simultaneously controls the log level for console output, file output and the log callback function.
 The following three log output methods are independent and setting one will not affect the others.</p>
-<p>1、Set the log output to the console (setLoggerToConsole function).
-2、Set output to file (setLoggerToFile function)
-3、Set log output from callback function (setLoggerToCallback function)</p>
+<ul class="simple">
+<li><p>1、Set the log output to the console (setLoggerToConsole function)</p></li>
+<li><p>2、Set output to file (setLoggerToFile function)</p></li>
+<li><p>3、Set log output from callback function (setLoggerToCallback function)</p></li>
+</ul>
 <section id="set-the-log-level">
 <h2><span class="section-number">3.18.1. </span>Set the log level<a class="headerlink" href="#set-the-log-level" title="Link to this heading"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">typedef</span> <span class="n">enum</span> <span class="p">{</span>
@@ -2269,9 +2271,11 @@ The following three log output methods are independent and setting one will not 
 <span class="p">}</span> <span class="n">OBLogSeverity</span>
 </pre></div>
 </div>
-<p>ob::Context  context;
-// Set the error level of Log output.
-context.setLoggerSeverity(OB_LOG_SEVERITY_DEBUG);</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ob</span><span class="p">::</span><span class="n">Context</span>  <span class="n">context</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">Set</span> <span class="n">the</span> <span class="n">error</span> <span class="n">level</span> <span class="n">of</span> <span class="n">Log</span> <span class="n">output</span><span class="o">.</span>
+<span class="n">context</span><span class="o">.</span><span class="n">setLoggerSeverity</span><span class="p">(</span><span class="n">OB_LOG_SEVERITY_DEBUG</span><span class="p">);</span>
+</pre></div>
+</div>
 <p>This is a global interface. Setting this interface can affect the log level for console output, file output and the log callback function.</p>
 <p>If the setLoggerSeverity function is called first to set the log level, and later other interfaces are called to set the log level, the log level will be determined by the last log level set.</p>
 </section>
@@ -2340,7 +2344,7 @@ context.setLoggerSeverity(OB_LOG_SEVERITY_DEBUG);</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2024-2025,Orbbec Inc. All Rights Reserved.
-      <span class="lastupdated">Last updated on 2025-12-25 16:11:10.
+      <span class="lastupdated">Last updated on 2025-12-25 16:18:02.
       </span></p>
   </div>
 
