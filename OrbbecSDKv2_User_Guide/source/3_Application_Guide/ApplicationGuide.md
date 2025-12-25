@@ -2132,9 +2132,9 @@ Each log management interface has a log level parameter, and the log level is de
 To set the global log level, you can use the setLoggerSeverity function, which simultaneously controls the log level for console output, file output and the log callback function.
 The following three log output methods are independent and setting one will not affect the others.
 
-1、Set the log output to the console (setLoggerToConsole function).
-2、Set output to file (setLoggerToFile function)
-3、Set log output from callback function (setLoggerToCallback function)
+- 1、Set the log output to the console (setLoggerToConsole function)
+- 2、Set output to file (setLoggerToFile function)
+- 3、Set log output from callback function (setLoggerToCallback function)
 
 ## Set the log level
 
@@ -2148,10 +2148,11 @@ typedef enum {
     OB_LOG_SEVERITY_OFF    /**< off (close LOG) */
 } OBLogSeverity
 ```
-
+```
 ob::Context  context;
 // Set the error level of Log output.
 context.setLoggerSeverity(OB_LOG_SEVERITY_DEBUG);
+```
 
 
 This is a global interface. Setting this interface can affect the log level for console output, file output and the log callback function.
