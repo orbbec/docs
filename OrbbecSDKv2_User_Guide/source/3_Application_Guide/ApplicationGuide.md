@@ -2125,3 +2125,88 @@ Enter FPS (frames per second) (for example: 3000): 3000(3000 indicates 30 fps) .
 #### Test Results
 Observe the timestamps. As shown in the figure below, the device timestamps of the two devices are identical, indicating that the two devices are successfully synchronized.
 ![image](../Images/Multi_Device_Sync.png)
+
+# Log management 
+
+Each log management interface has a log level parameter, and the log level is determined by the last called interface.
+To set the global log level, you can use the setLoggerSeverity function, which simultaneously controls the log level for console output, file output and the log callback function.
+The following three log output methods are independent and setting one will not affect the others.
+
+1、Set the log output to the console (setLoggerToConsole function).
+2、Set output to file (setLoggerToFile function)
+3、Set log output from callback function (setLoggerToCallback function)
+
+## set the log level
+
+```
+typedef enum {
+    OB_LOG_SEVERITY_DEBUG, /**< debug */
+    OB_LOG_SEVERITY_INFO,  /**< information */
+    OB_LOG_SEVERITY_WARN,  /**< warning */
+    OB_LOG_SEVERITY_ERROR, /**< error */
+    OB_LOG_SEVERITY_FATAL, /**< fatal error */
+    OB_LOG_SEVERITY_OFF    /**< off (close LOG) */
+} OBLogSeverity
+```
+
+ob::Context  context;
+// Set the error level of Log output.
+context.setLoggerSeverity(OB_LOG_SEVERITY_DEBUG);
+
+
+This is a global interface. Setting this interface can affect the log level for console output, file output and the log callback function.
+
+If the setLoggerSeverity function is called first to set the log level, and later other interfaces are called to set the log level, the log level will be determined by the last log level set.
+
+
+## Set the Log Output to the Console
+```
+ob::Context  context;
+// Set the Log output to the terminal console.
+context.setLoggerToConsole(OB_LOG_SEVERITY_DEBUG);
+```
+Note: Only the log level output to the console is affected.
+
+
+## Set Log Output to File
+```
+ob::Context  context;
+// Set Log output to file
+context.setLoggerToFile(OB_LOG_SEVERITY_DEBUG, "Log/Custom/");
+```
+
+Note: Only the log level of the output file is affected.
+
+## Set the Log Callback Output
+```
+    context.setLoggerToCallback(OB_LOG_SEVERITY_DEBUG,
+                                     [](OBLogSeverity severity, const char *logMsg) { std::cout << "[CallbackMessage][Level:" << severity << "]" << logMsg; });
+```
+
+Note: Only the log level output to the callback function is affected.
+
+## Modify Log level in configuration file 
+
+The following describes Orbbec SDK configuration file (OrbbecSDKConfig.xml).
+```
+    <Log>
+        <!-- Log output level, int type, optional values: 0-DEBUG, 1-INFO, 2-WARN, 3-ERROR, 4-FATAL,
+        5-OFF -->
+        <!-- File log output level -->
+        <FileLogLevel>5</FileLogLevel>
+        <!-- Console log output level -->
+        <ConsoleLogLevel>3</ConsoleLogLevel>
+        <!-- Default log output file path, string type. If this item is not configured, the default
+        path will be used: Win/Linux: "./Log"; Android: "/sdcard/orbbec/Log" -->
+        <!-- <OutputDir>./log</OutputDir> -->
+        <!-- Default log output file size, int type, unit: MB -->
+        <MaxFileSize>100</MaxFileSize>
+        <!-- Default log output file number (circular overwrite), int type -->
+        <MaxFileNum>3</MaxFileNum>
+        <!-- Log asynchronous output, changing to asynchronous output can reduce the blocking time
+        of printing logs, but some logs may be lost when the program exits abnormally; true-enable,
+        false-disable (default) -->
+        <Async>false</Async>
+    </Log>
+```
+
