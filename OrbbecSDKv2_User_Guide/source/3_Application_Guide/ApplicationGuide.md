@@ -2136,7 +2136,7 @@ The following three log output methods are independent and setting one will not 
 2、Set output to file (setLoggerToFile function)
 3、Set log output from callback function (setLoggerToCallback function)
 
-## set the log level
+## Set the log level
 
 ```
 typedef enum {
