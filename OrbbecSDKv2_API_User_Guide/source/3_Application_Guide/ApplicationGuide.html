@@ -197,6 +197,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#log-management">3.18. Log management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#set-the-log-level">3.18.1. Set the log level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-the-log-output-to-the-console">3.18.2. Set the Log Output to the Console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-log-output-to-file">3.18.3. Set Log Output to File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-the-log-callback-output">3.18.4. Set the Log Callback Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modify-log-level-in-configuration-file">3.18.5. Modify Log level in configuration file</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../license.html">4. License</a></li>
@@ -1250,7 +1258,7 @@ removedList indicates that the SDK has detected a device disconnection (offline)
 
 <span class="c1">//Set the network parameters. A restart of the device is required after success.</span>
 <span class="n">OBNetIpConfig</span><span class="w"> </span><span class="n">config</span><span class="p">;</span>
-<span class="n">device</span><span class="o">-&gt;</span><span class="n">setStructuredData</span><span class="p">(</span><span class="n">OB_STRUCT_DEVICE_IP_ADDR_CONFIG</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">OBNetIpConfig</span><span class="p">));</span>
+<span class="n">device</span><span class="o">-&gt;</span><span class="n">setStructuredData</span><span class="p">(</span><span class="n">OB_STRUCT_DEVICE_IP_ADDR_CONFIG</span><span class="p">,</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">config</span><span class="p">),</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">OBNetIpConfig</span><span class="p">));</span>
 </pre></div>
 </div>
 </section>
@@ -2241,6 +2249,84 @@ Enter FPS (frames per second) (for example: 3000): 3000(3000 indicates 30 fps) .
 </section>
 </section>
 </section>
+<section id="log-management">
+<h1><span class="section-number">3.18. </span>Log management<a class="headerlink" href="#log-management" title="Link to this heading"></a></h1>
+<p>Each log management interface has a log level parameter, and the log level is determined by the last called interface.
+To set the global log level, you can use the setLoggerSeverity function, which simultaneously controls the log level for console output, file output and the log callback function.
+The following three log output methods are independent and setting one will not affect the others.</p>
+<p>1、Set the log output to the console (setLoggerToConsole function).
+2、Set output to file (setLoggerToFile function)
+3、Set log output from callback function (setLoggerToCallback function)</p>
+<section id="set-the-log-level">
+<h2><span class="section-number">3.18.1. </span>Set the log level<a class="headerlink" href="#set-the-log-level" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">typedef</span> <span class="n">enum</span> <span class="p">{</span>
+    <span class="n">OB_LOG_SEVERITY_DEBUG</span><span class="p">,</span> <span class="o">/**&lt;</span> <span class="n">debug</span> <span class="o">*/</span>
+    <span class="n">OB_LOG_SEVERITY_INFO</span><span class="p">,</span>  <span class="o">/**&lt;</span> <span class="n">information</span> <span class="o">*/</span>
+    <span class="n">OB_LOG_SEVERITY_WARN</span><span class="p">,</span>  <span class="o">/**&lt;</span> <span class="n">warning</span> <span class="o">*/</span>
+    <span class="n">OB_LOG_SEVERITY_ERROR</span><span class="p">,</span> <span class="o">/**&lt;</span> <span class="n">error</span> <span class="o">*/</span>
+    <span class="n">OB_LOG_SEVERITY_FATAL</span><span class="p">,</span> <span class="o">/**&lt;</span> <span class="n">fatal</span> <span class="n">error</span> <span class="o">*/</span>
+    <span class="n">OB_LOG_SEVERITY_OFF</span>    <span class="o">/**&lt;</span> <span class="n">off</span> <span class="p">(</span><span class="n">close</span> <span class="n">LOG</span><span class="p">)</span> <span class="o">*/</span>
+<span class="p">}</span> <span class="n">OBLogSeverity</span>
+</pre></div>
+</div>
+<p>ob::Context  context;
+// Set the error level of Log output.
+context.setLoggerSeverity(OB_LOG_SEVERITY_DEBUG);</p>
+<p>This is a global interface. Setting this interface can affect the log level for console output, file output and the log callback function.</p>
+<p>If the setLoggerSeverity function is called first to set the log level, and later other interfaces are called to set the log level, the log level will be determined by the last log level set.</p>
+</section>
+<section id="set-the-log-output-to-the-console">
+<h2><span class="section-number">3.18.2. </span>Set the Log Output to the Console<a class="headerlink" href="#set-the-log-output-to-the-console" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ob</span><span class="p">::</span><span class="n">Context</span>  <span class="n">context</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">Set</span> <span class="n">the</span> <span class="n">Log</span> <span class="n">output</span> <span class="n">to</span> <span class="n">the</span> <span class="n">terminal</span> <span class="n">console</span><span class="o">.</span>
+<span class="n">context</span><span class="o">.</span><span class="n">setLoggerToConsole</span><span class="p">(</span><span class="n">OB_LOG_SEVERITY_DEBUG</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Note: Only the log level output to the console is affected.</p>
+</section>
+<section id="set-log-output-to-file">
+<h2><span class="section-number">3.18.3. </span>Set Log Output to File<a class="headerlink" href="#set-log-output-to-file" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ob</span><span class="p">::</span><span class="n">Context</span>  <span class="n">context</span><span class="p">;</span>
+<span class="o">//</span> <span class="n">Set</span> <span class="n">Log</span> <span class="n">output</span> <span class="n">to</span> <span class="n">file</span>
+<span class="n">context</span><span class="o">.</span><span class="n">setLoggerToFile</span><span class="p">(</span><span class="n">OB_LOG_SEVERITY_DEBUG</span><span class="p">,</span> <span class="s2">&quot;Log/Custom/&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Note: Only the log level of the output file is affected.</p>
+</section>
+<section id="set-the-log-callback-output">
+<h2><span class="section-number">3.18.4. </span>Set the Log Callback Output<a class="headerlink" href="#set-the-log-callback-output" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">context</span><span class="o">.</span><span class="n">setLoggerToCallback</span><span class="p">(</span><span class="n">OB_LOG_SEVERITY_DEBUG</span><span class="p">,</span>
+                                     <span class="p">[](</span><span class="n">OBLogSeverity</span> <span class="n">severity</span><span class="p">,</span> <span class="n">const</span> <span class="n">char</span> <span class="o">*</span><span class="n">logMsg</span><span class="p">)</span> <span class="p">{</span> <span class="n">std</span><span class="p">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;[CallbackMessage][Level:&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">severity</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;]&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">logMsg</span><span class="p">;</span> <span class="p">});</span>
+</pre></div>
+</div>
+<p>Note: Only the log level output to the callback function is affected.</p>
+</section>
+<section id="modify-log-level-in-configuration-file">
+<h2><span class="section-number">3.18.5. </span>Modify Log level in configuration file<a class="headerlink" href="#modify-log-level-in-configuration-file" title="Link to this heading"></a></h2>
+<p>The following describes Orbbec SDK configuration file (OrbbecSDKConfig.xml).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    &lt;Log&gt;
+        &lt;!-- Log output level, int type, optional values: 0-DEBUG, 1-INFO, 2-WARN, 3-ERROR, 4-FATAL,
+        5-OFF --&gt;
+        &lt;!-- File log output level --&gt;
+        &lt;FileLogLevel&gt;5&lt;/FileLogLevel&gt;
+        &lt;!-- Console log output level --&gt;
+        &lt;ConsoleLogLevel&gt;3&lt;/ConsoleLogLevel&gt;
+        &lt;!-- Default log output file path, string type. If this item is not configured, the default
+        path will be used: Win/Linux: &quot;./Log&quot;; Android: &quot;/sdcard/orbbec/Log&quot; --&gt;
+        &lt;!-- &lt;OutputDir&gt;./log&lt;/OutputDir&gt; --&gt;
+        &lt;!-- Default log output file size, int type, unit: MB --&gt;
+        &lt;MaxFileSize&gt;100&lt;/MaxFileSize&gt;
+        &lt;!-- Default log output file number (circular overwrite), int type --&gt;
+        &lt;MaxFileNum&gt;3&lt;/MaxFileNum&gt;
+        &lt;!-- Log asynchronous output, changing to asynchronous output can reduce the blocking time
+        of printing logs, but some logs may be lost when the program exits abnormally; true-enable,
+        false-disable (default) --&gt;
+        &lt;Async&gt;false&lt;/Async&gt;
+    &lt;/Log&gt;
+</pre></div>
+</div>
+</section>
+</section>
 
 
            </div>
@@ -2254,7 +2340,7 @@ Enter FPS (frames per second) (for example: 3000): 3000(3000 indicates 30 fps) .
 
   <div role="contentinfo">
     <p>&#169; Copyright 2024-2025,Orbbec Inc. All Rights Reserved.
-      <span class="lastupdated">Last updated on 2025-10-28 14:14:44.
+      <span class="lastupdated">Last updated on 2025-12-25 16:11:10.
       </span></p>
   </div>
 
