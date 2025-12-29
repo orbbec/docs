@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -274,7 +274,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00089">89</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00415">ob::Align::Align()</a>, <a class="el" href="_filter_8hpp_source.html#l00571">ob::DecimationFilter::DecimationFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01102">ob::DisparityTransform::DisparityTransform()</a>, <a class="el" href="_filter_8hpp_source.html#l00112">Filter()</a>, <a class="el" href="_filter_8hpp_source.html#l00462">ob::FormatConvertFilter::FormatConvertFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00488">ob::HdrMerge::HdrMerge()</a>, <a class="el" href="_filter_8hpp_source.html#l00931">ob::HoleFillingFilter::HoleFillingFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00964">ob::NoiseRemovalFilter::NoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00343">ob::PointCloudFilter::PointCloudFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00519">ob::SequenceIdFilter::SequenceIdFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00678">ob::SpatialAdvancedFilter::SpatialAdvancedFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00788">ob::SpatialFastFilter::SpatialFastFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00841">ob::SpatialModerateFilter::SpatialModerateFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01035">ob::TemporalFilter::TemporalFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l00615">ob::ThresholdFilter::ThresholdFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00442">ob::Align::Align()</a>, <a class="el" href="_filter_8hpp_source.html#l00598">ob::DecimationFilter::DecimationFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01129">ob::DisparityTransform::DisparityTransform()</a>, <a class="el" href="_filter_8hpp_source.html#l00112">Filter()</a>, <a class="el" href="_filter_8hpp_source.html#l00489">ob::FormatConvertFilter::FormatConvertFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00515">ob::HdrMerge::HdrMerge()</a>, <a class="el" href="_filter_8hpp_source.html#l00958">ob::HoleFillingFilter::HoleFillingFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00991">ob::NoiseRemovalFilter::NoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00348">ob::PointCloudFilter::PointCloudFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00546">ob::SequenceIdFilter::SequenceIdFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00705">ob::SpatialAdvancedFilter::SpatialAdvancedFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00815">ob::SpatialFastFilter::SpatialFastFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00868">ob::SpatialModerateFilter::SpatialModerateFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01062">ob::TemporalFilter::TemporalFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l00642">ob::ThresholdFilter::ThresholdFilter()</a>.</p>
 
 </div>
 </div>
@@ -336,7 +336,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00138">138</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00273">type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00276">type()</a>.</p>
 
 </div>
 </div>
@@ -455,13 +455,13 @@ Protected Attributes</h2></td></tr>
 <p>Processes a frame synchronously. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td>The frame to be processed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>The frame to be processed.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt; Frame &gt; The processed frame. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00177">177</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00178">178</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -491,12 +491,12 @@ Protected Attributes</h2></td></tr>
 <p>Pushes the pending frame into the cache for asynchronous processing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td>The pending frame. The processing result is returned by the callback function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>The pending frame. The processing result is returned by the callback function. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00192">192</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00193">193</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -526,12 +526,12 @@ Protected Attributes</h2></td></tr>
 <p>Set the callback function for asynchronous processing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">callback</td><td>The processing result callback. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>The processing result callback. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00203">203</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00204">204</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -559,10 +559,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get config schema of the filter. </p>
-<p>The returned string is a csv format string representing the configuration schema of the filter. The format of the string is: &lt;parameter_name&gt;, &lt;parameter_type: "int", "float", "bool"&gt;, &lt;minimum_value&gt;, &lt;maximum_value&gt;, &lt;value_step&gt;, &lt;default_value&gt;, &lt;parameter_description&gt;</p>
+<p>The returned string is a csv format string representing the configuration schema of the filter. The format of the string is: <span class="tt">&lt;parameter_name&gt;</span>, <span class="tt">&lt;parameter_type: "int", "float", "bool"&gt;</span>, <span class="tt">&lt;minimum_value&gt;</span>, <span class="tt">&lt;maximum_value&gt;</span>, <span class="tt">&lt;value_step&gt;</span>, <span class="tt">&lt;default_value&gt;</span>, <span class="tt">&lt;parameter_description&gt;</span></p>
 <dl class="section return"><dt>Returns</dt><dd>std::string The config schema of the filter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00217">217</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00219">219</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -593,9 +593,9 @@ Protected Attributes</h2></td></tr>
 <p>The returned vector contains the config schema items. Each item in the vector is an <a class="el" href="struct_o_b_filter_config_schema_item.html">OBFilterConfigSchemaItem</a> object.</p>
 <dl class="section return"><dt>Returns</dt><dd>std::vector&lt;OBFilterConfigSchemaItem&gt; The vector of the filter config schema. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00230">230</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00232">232</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00692">ob::SpatialAdvancedFilter::getAlphaRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01049">ob::TemporalFilter::getDiffScaleRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01001">ob::NoiseRemovalFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00709">ob::SpatialAdvancedFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00889">ob::SpatialModerateFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00743">ob::SpatialAdvancedFilter::getMagnitudeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00855">ob::SpatialModerateFilter::getMagnitudeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00646">ob::ThresholdFilter::getMaxRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01017">ob::NoiseRemovalFilter::getMaxSizeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00629">ob::ThresholdFilter::getMinRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00726">ob::SpatialAdvancedFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00802">ob::SpatialFastFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00872">ob::SpatialModerateFilter::getRadiusRange()</a>, and <a class="el" href="_filter_8hpp_source.html#l01075">ob::TemporalFilter::getWeightRange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00719">ob::SpatialAdvancedFilter::getAlphaRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01076">ob::TemporalFilter::getDiffScaleRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01028">ob::NoiseRemovalFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00736">ob::SpatialAdvancedFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00916">ob::SpatialModerateFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00770">ob::SpatialAdvancedFilter::getMagnitudeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00882">ob::SpatialModerateFilter::getMagnitudeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00673">ob::ThresholdFilter::getMaxRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01044">ob::NoiseRemovalFilter::getMaxSizeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00656">ob::ThresholdFilter::getMinRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00753">ob::SpatialAdvancedFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00829">ob::SpatialFastFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00899">ob::SpatialModerateFilter::getRadiusRange()</a>, and <a class="el" href="_filter_8hpp_source.html#l01102">ob::TemporalFilter::getWeightRange()</a>.</p>
 
 </div>
 </div>
@@ -630,15 +630,15 @@ Protected Attributes</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>The pass into value type is double, witch will be cast to the actual type inside the filter. The actual type can be queried by the filter config schema returned by <a class="el" href="#a4537b9e7846d44d56f2b667d6b3f7d53">getConfigSchemaVec</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">configName</td><td>The name of the config. </td></tr>
-    <tr><td class="paramname">value</td><td>The value of the config. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">configName</td><td>The name of the config. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The value of the config. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00243">243</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00245">245</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00415">ob::Align::Align()</a>, <a class="el" href="_filter_8hpp_source.html#l00539">ob::SequenceIdFilter::selectSequenceId()</a>, <a class="el" href="_filter_8hpp_source.html#l00381">ob::PointCloudFilter::setColorDataNormalization()</a>, <a class="el" href="_filter_8hpp_source.html#l00369">ob::PointCloudFilter::setCoordinateDataScaled()</a>, <a class="el" href="_filter_8hpp_source.html#l00390">ob::PointCloudFilter::setCoordinateSystem()</a>, <a class="el" href="_filter_8hpp_source.html#l00357">ob::PointCloudFilter::setCreatePointFormat()</a>, <a class="el" href="_filter_8hpp_source.html#l01066">ob::TemporalFilter::setDiffScale()</a>, <a class="el" href="_filter_8hpp_source.html#l00945">ob::HoleFillingFilter::setFilterMode()</a>, <a class="el" href="_filter_8hpp_source.html#l00978">ob::NoiseRemovalFilter::setFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00774">ob::SpatialAdvancedFilter::setFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00830">ob::SpatialFastFilter::setFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00919">ob::SpatialModerateFilter::setFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00476">ob::FormatConvertFilter::setFormatConvertType()</a>, <a class="el" href="_filter_8hpp_source.html#l00440">ob::Align::setMatchTargetResolution()</a>, <a class="el" href="_filter_8hpp_source.html#l00585">ob::DecimationFilter::setScaleValue()</a>, <a class="el" href="_filter_8hpp_source.html#l00661">ob::ThresholdFilter::setValueRange()</a>, and <a class="el" href="_filter_8hpp_source.html#l01092">ob::TemporalFilter::setWeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00442">ob::Align::Align()</a>, <a class="el" href="_filter_8hpp_source.html#l00566">ob::SequenceIdFilter::selectSequenceId()</a>, <a class="el" href="_filter_8hpp_source.html#l00386">ob::PointCloudFilter::setColorDataNormalization()</a>, <a class="el" href="_filter_8hpp_source.html#l00374">ob::PointCloudFilter::setCoordinateDataScaled()</a>, <a class="el" href="_filter_8hpp_source.html#l00395">ob::PointCloudFilter::setCoordinateSystem()</a>, <a class="el" href="_filter_8hpp_source.html#l00362">ob::PointCloudFilter::setCreatePointFormat()</a>, <a class="el" href="_filter_8hpp_source.html#l00405">ob::PointCloudFilter::setDecimationFactor()</a>, <a class="el" href="_filter_8hpp_source.html#l01093">ob::TemporalFilter::setDiffScale()</a>, <a class="el" href="_filter_8hpp_source.html#l00972">ob::HoleFillingFilter::setFilterMode()</a>, <a class="el" href="_filter_8hpp_source.html#l01005">ob::NoiseRemovalFilter::setFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00801">ob::SpatialAdvancedFilter::setFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00857">ob::SpatialFastFilter::setFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00946">ob::SpatialModerateFilter::setFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00503">ob::FormatConvertFilter::setFormatConvertType()</a>, <a class="el" href="_filter_8hpp_source.html#l00467">ob::Align::setMatchTargetResolution()</a>, <a class="el" href="_filter_8hpp_source.html#l00612">ob::DecimationFilter::setScaleValue()</a>, <a class="el" href="_filter_8hpp_source.html#l00688">ob::ThresholdFilter::setValueRange()</a>, and <a class="el" href="_filter_8hpp_source.html#l01119">ob::TemporalFilter::setWeight()</a>.</p>
 
 </div>
 </div>
@@ -669,15 +669,15 @@ Protected Attributes</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>The returned value type has been casted to double inside the filter. The actual type can be queried by the filter config schema returned by <a class="el" href="#a4537b9e7846d44d56f2b667d6b3f7d53">getConfigSchemaVec</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">configName</td><td>The name of the config. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">configName</td><td>The name of the config.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double The value of the config. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00258">258</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00261">261</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00426">ob::Align::getAlignToStreamType()</a>, <a class="el" href="_filter_8hpp_source.html#l00692">ob::SpatialAdvancedFilter::getAlphaRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01049">ob::TemporalFilter::getDiffScaleRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01001">ob::NoiseRemovalFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00709">ob::SpatialAdvancedFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00889">ob::SpatialModerateFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00954">ob::HoleFillingFilter::getFilterMode()</a>, <a class="el" href="_filter_8hpp_source.html#l00989">ob::NoiseRemovalFilter::getFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00760">ob::SpatialAdvancedFilter::getFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00819">ob::SpatialFastFilter::getFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00906">ob::SpatialModerateFilter::getFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00743">ob::SpatialAdvancedFilter::getMagnitudeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00855">ob::SpatialModerateFilter::getMagnitudeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00646">ob::ThresholdFilter::getMaxRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01017">ob::NoiseRemovalFilter::getMaxSizeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00629">ob::ThresholdFilter::getMinRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00726">ob::SpatialAdvancedFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00802">ob::SpatialFastFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00872">ob::SpatialModerateFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00599">ob::DecimationFilter::getScaleRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00592">ob::DecimationFilter::getScaleValue()</a>, <a class="el" href="_filter_8hpp_source.html#l00548">ob::SequenceIdFilter::getSelectSequenceId()</a>, and <a class="el" href="_filter_8hpp_source.html#l01075">ob::TemporalFilter::getWeightRange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00453">ob::Align::getAlignToStreamType()</a>, <a class="el" href="_filter_8hpp_source.html#l00719">ob::SpatialAdvancedFilter::getAlphaRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00412">ob::PointCloudFilter::getDecimationFactorRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01076">ob::TemporalFilter::getDiffScaleRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01028">ob::NoiseRemovalFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00736">ob::SpatialAdvancedFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00916">ob::SpatialModerateFilter::getDispDiffRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00981">ob::HoleFillingFilter::getFilterMode()</a>, <a class="el" href="_filter_8hpp_source.html#l01016">ob::NoiseRemovalFilter::getFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00787">ob::SpatialAdvancedFilter::getFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00846">ob::SpatialFastFilter::getFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00933">ob::SpatialModerateFilter::getFilterParams()</a>, <a class="el" href="_filter_8hpp_source.html#l00770">ob::SpatialAdvancedFilter::getMagnitudeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00882">ob::SpatialModerateFilter::getMagnitudeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00673">ob::ThresholdFilter::getMaxRange()</a>, <a class="el" href="_filter_8hpp_source.html#l01044">ob::NoiseRemovalFilter::getMaxSizeRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00656">ob::ThresholdFilter::getMinRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00753">ob::SpatialAdvancedFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00829">ob::SpatialFastFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00899">ob::SpatialModerateFilter::getRadiusRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00626">ob::DecimationFilter::getScaleRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00619">ob::DecimationFilter::getScaleValue()</a>, <a class="el" href="_filter_8hpp_source.html#l00575">ob::SequenceIdFilter::getSelectSequenceId()</a>, and <a class="el" href="_filter_8hpp_source.html#l01102">ob::TemporalFilter::getWeightRange()</a>.</p>
 
 </div>
 </div>
@@ -704,9 +704,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00273">273</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00276">276</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l01179">is()</a>, <a class="el" href="_filter_8hpp_source.html#l00390">ob::PointCloudFilter::setCoordinateSystem()</a>, and <a class="el" href="_filter_8hpp_source.html#l00476">ob::FormatConvertFilter::setFormatConvertType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l01207">is()</a>, <a class="el" href="_filter_8hpp_source.html#l00395">ob::PointCloudFilter::setCoordinateSystem()</a>, and <a class="el" href="_filter_8hpp_source.html#l00503">ob::FormatConvertFilter::setFormatConvertType()</a>.</p>
 
 </div>
 </div>
@@ -731,16 +731,16 @@ template&lt;typename T&gt; </div>
 <p>Define the <a class="el" href="#a16276049b4c1367606257780dc944901" title="Check if the runtime type of the filter object is compatible with a given type.">is()</a> template function for the <a class="el" href="classob_1_1_filter.html" title="The Filter class is the base class for all filters in the SDK.">Filter</a> class.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The given type. </td></tr>
+    <tr><td class="paramname">T</td><td>The given type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool The result.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>When adding a new filter class, ensure the filter type map (see <a class="el" href="namespaceob.html#a4c04bddabbdf5ae502f6a718018ce371" title="Returns the mapping of filter type names to their corresponding type_index.">getFilterTypeMap()</a>) is updated accordingly to maintain correct type matching. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l01179">1179</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l01207">1207</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00285">as()</a>, and <a class="el" href="_filter_8hpp_source.html#l01179">is()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00289">as()</a>, and <a class="el" href="_filter_8hpp_source.html#l01207">is()</a>.</p>
 
 </div>
 </div>
@@ -769,7 +769,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00285">285</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00289">289</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -796,7 +796,7 @@ template&lt;typename T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00078">78</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00155">enable()</a>, <a class="el" href="_filter_8hpp_source.html#l00217">getConfigSchema()</a>, <a class="el" href="_filter_8hpp_source.html#l00258">getConfigValue()</a>, <a class="el" href="_filter_8hpp_source.html#l00129">getImpl()</a>, <a class="el" href="_filter_8hpp_source.html#l00089">init()</a>, <a class="el" href="_filter_8hpp_source.html#l00164">isEnabled()</a>, <a class="el" href="_filter_8hpp_source.html#l00177">process()</a>, <a class="el" href="_filter_8hpp_source.html#l00192">pushFrame()</a>, <a class="el" href="_filter_8hpp_source.html#l00146">reset()</a>, <a class="el" href="_filter_8hpp_source.html#l00450">ob::Align::setAlignToStreamProfile()</a>, <a class="el" href="_filter_8hpp_source.html#l00203">setCallBack()</a>, <a class="el" href="_filter_8hpp_source.html#l00243">setConfigValue()</a>, and <a class="el" href="_filter_8hpp_source.html#l00116">~Filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00155">enable()</a>, <a class="el" href="_filter_8hpp_source.html#l00219">getConfigSchema()</a>, <a class="el" href="_filter_8hpp_source.html#l00261">getConfigValue()</a>, <a class="el" href="_filter_8hpp_source.html#l00129">getImpl()</a>, <a class="el" href="_filter_8hpp_source.html#l00089">init()</a>, <a class="el" href="_filter_8hpp_source.html#l00164">isEnabled()</a>, <a class="el" href="_filter_8hpp_source.html#l00178">process()</a>, <a class="el" href="_filter_8hpp_source.html#l00193">pushFrame()</a>, <a class="el" href="_filter_8hpp_source.html#l00146">reset()</a>, <a class="el" href="_filter_8hpp_source.html#l00477">ob::Align::setAlignToStreamProfile()</a>, <a class="el" href="_filter_8hpp_source.html#l00204">setCallBack()</a>, <a class="el" href="_filter_8hpp_source.html#l00245">setConfigValue()</a>, and <a class="el" href="_filter_8hpp_source.html#l00116">~Filter()</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ template&lt;typename T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00080">80</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00203">setCallBack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00204">setCallBack()</a>.</p>
 
 </div>
 </div>
@@ -874,12 +874,12 @@ template&lt;typename T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00081">81</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00230">getConfigSchemaVec()</a>, <a class="el" href="_filter_8hpp_source.html#l00599">ob::DecimationFilter::getScaleRange()</a>, and <a class="el" href="_filter_8hpp_source.html#l00089">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00232">getConfigSchemaVec()</a>, <a class="el" href="_filter_8hpp_source.html#l00412">ob::PointCloudFilter::getDecimationFactorRange()</a>, <a class="el" href="_filter_8hpp_source.html#l00626">ob::DecimationFilter::getScaleRange()</a>, and <a class="el" href="_filter_8hpp_source.html#l00089">init()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_filter_8hpp_source.html">Filter.hpp</a></li>
+<li><a class="el" href="_filter_8hpp_source.html">Filter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

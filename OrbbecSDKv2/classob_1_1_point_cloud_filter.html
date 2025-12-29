@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -111,6 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aed77173766ed9c337ff48cdc3ff9e521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set point cloud color data normalization.  <br /></td></tr>
 <tr class="memitem:a0162955ce076be68bb369537ede0e42b" id="r_a0162955ce076be68bb369537ede0e42b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0162955ce076be68bb369537ede0e42b">setCoordinateSystem</a> (<a class="el" href="_ob_types_8h.html#a99c10aab2762ac31b56d82e3b862c60e">OBCoordinateSystemType</a> <a class="el" href="classob_1_1_filter.html#ace60e52e0b0ca7c794eefcfc10cd8c34">type</a>)</td></tr>
 <tr class="memdesc:a0162955ce076be68bb369537ede0e42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the point cloud coordinate system.  <br /></td></tr>
+<tr class="memitem:ad8637c33fd5f86c0e79882e27465fe01" id="r_ad8637c33fd5f86c0e79882e27465fe01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8637c33fd5f86c0e79882e27465fe01">setDecimationFactor</a> (int value)</td></tr>
+<tr class="memdesc:ad8637c33fd5f86c0e79882e27465fe01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the point cloud decimation factor. Calling this function to decimation factor will output thedownsampled data of the the cloud frame.  <br /></td></tr>
+<tr class="memitem:aafd782562efd07e92ee0293f93a3e084" id="r_aafd782562efd07e92ee0293f93a3e084"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_o_b_int_property_range.html">OBIntPropertyRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafd782562efd07e92ee0293f93a3e084">getDecimationFactorRange</a> ()</td></tr>
+<tr class="memdesc:aafd782562efd07e92ee0293f93a3e084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the property range of the decimation factor range.  <br /></td></tr>
 <tr class="memitem:a2433a1a65918933b1986cd05f5d9f9fd" id="r_a2433a1a65918933b1986cd05f5d9f9fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2433a1a65918933b1986cd05f5d9f9fd">setPositionDataScaled</a> (float scale)</td></tr>
 <tr class="memitem:a980dc4e7ae1340245cd7fa4379420bf4" id="r_a980dc4e7ae1340245cd7fa4379420bf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a980dc4e7ae1340245cd7fa4379420bf4">setFrameAlignState</a> (bool state)</td></tr>
 <tr class="memitem:a050327a9db7e92d5531ceb1776997846" id="r_a050327a9db7e92d5531ceb1776997846"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a050327a9db7e92d5531ceb1776997846">setCameraParam</a> (<a class="el" href="struct_o_b_camera_param.html">OBCameraParam</a> param)</td></tr>
@@ -163,7 +167,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classob_1_1_point_cloud_filter.html" title="The PointCloudFilter class is a subclass of Filter that generates point clouds.">PointCloudFilter</a> class is a subclass of <a class="el" href="classob_1_1_filter.html" title="The Filter class is the base class for all filters in the SDK.">Filter</a> that generates point clouds. </p>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00341">341</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00346">346</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa8b59d9e70d1f9c24054b2db9f1604a1" name="aa8b59d9e70d1f9c24054b2db9f1604a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8b59d9e70d1f9c24054b2db9f1604a1">&#9670;&#160;</a></span>PointCloudFilter()</h2>
@@ -188,7 +192,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00343">343</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00348">348</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -244,14 +248,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the output pointcloud frame format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">format</td><td>The point cloud frame format: OB_FORMAT_POINT or OB_FORMAT_RGB_POINT </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The point cloud frame format: OB_FORMAT_POINT or OB_FORMAT_RGB_POINT </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00357">357</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00362">362</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00357">setCreatePointFormat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00362">setCreatePointFormat()</a>.</p>
 
 </div>
 </div>
@@ -282,14 +286,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Calling this function to set the scale will change the point coordinate scaling factor of the output point cloud frame, The point coordinate scaling factor for the output point cloud frame can be obtained via <a class="el" href="classob_1_1_points_frame.html#afc56659a513ed329a65a89f32a292c6c">PointsFrame::getCoordinateValueScale</a> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">factor</td><td>The scale factor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">factor</td><td>The scale factor. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00369">369</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00374">374</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00396">setPositionDataScaled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00423">setPositionDataScaled()</a>.</p>
 
 </div>
 </div>
@@ -321,12 +325,12 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>This function only works for when create point format is set to OB_FORMAT_RGB_POINT.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">state</td><td>Whether normalization is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>Whether normalization is required. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00381">381</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00386">386</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -356,12 +360,76 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the point cloud coordinate system. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>The coordinate system type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The coordinate system type. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00390">390</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00395">395</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad8637c33fd5f86c0e79882e27465fe01" name="ad8637c33fd5f86c0e79882e27465fe01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8637c33fd5f86c0e79882e27465fe01">&#9670;&#160;</a></span>setDecimationFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ob::PointCloudFilter::setDecimationFactor </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the point cloud decimation factor. Calling this function to decimation factor will output thedownsampled data of the the cloud frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The decimation factor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00405">405</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aafd782562efd07e92ee0293f93a3e084" name="aafd782562efd07e92ee0293f93a3e084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd782562efd07e92ee0293f93a3e084">&#9670;&#160;</a></span>getDecimationFactorRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_o_b_int_property_range.html">OBIntPropertyRange</a> ob::PointCloudFilter::getDecimationFactorRange </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the property range of the decimation factor range. </p>
+
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00412">412</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -388,7 +456,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00396">396</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00423">423</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +483,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00401">401</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00428">428</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
@@ -442,12 +510,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00405">405</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8hpp_source.html#l00432">432</a> of file <a class="el" href="_filter_8hpp_source.html">Filter.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_filter_8hpp_source.html">Filter.hpp</a></li>
+<li><a class="el" href="_filter_8hpp_source.html">Filter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

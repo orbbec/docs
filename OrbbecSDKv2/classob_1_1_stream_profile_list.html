@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -101,6 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab2cd53e52cf1c2f002c021d6346ae995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Match the corresponding accelerometer stream profile based on the passed-in parameters. If multiple Match are found, the first one in the list is returned by default. Throws an exception if no matching profile is found.  <br /></td></tr>
 <tr class="memitem:a309a7fe5fb5cd7141c272080cae27b48" id="r_a309a7fe5fb5cd7141c272080cae27b48"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_gyro_stream_profile.html">GyroStreamProfile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a309a7fe5fb5cd7141c272080cae27b48">getGyroStreamProfile</a> (<a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8">OBGyroFullScaleRange</a> fullScaleRange, <a class="el" href="_ob_types_8h.html#a6064351d7d7b83d544742746259e4133">OBGyroSampleRate</a> sampleRate) const</td></tr>
 <tr class="memdesc:a309a7fe5fb5cd7141c272080cae27b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Match the corresponding gyroscope stream profile based on the passed-in parameters. If multiple Match are found, the first one in the list is returned by default. Throws an exception if no matching profile is found.  <br /></td></tr>
+<tr class="memitem:ad755590465eac52e73e7e6bbffd3e3c8" id="r_ad755590465eac52e73e7e6bbffd3e3c8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_li_d_a_r_stream_profile.html">LiDARStreamProfile</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad755590465eac52e73e7e6bbffd3e3c8">getLiDARStreamProfile</a> (<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9">OBLiDARScanRate</a> scanRate, <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a">OBFormat</a> format) const</td></tr>
+<tr class="memdesc:ad755590465eac52e73e7e6bbffd3e3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Match the corresponding LiDAR stream profile based on the passed-in parameters. If multiple Match are found, the first one in the list is returned by default. Throws an exception if no matching profile is found.  <br /></td></tr>
 <tr class="memitem:ad779483a26e6feca3c074c726936ffb0" id="r_ad779483a26e6feca3c074c726936ffb0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad779483a26e6feca3c074c726936ffb0">count</a> () const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -109,7 +111,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00430">430</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00455">455</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afa4cf3c8e17a6ad6c4917be500b3390b" name="afa4cf3c8e17a6ad6c4917be500b3390b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa4cf3c8e17a6ad6c4917be500b3390b">&#9670;&#160;</a></span>StreamProfileList()</h2>
@@ -134,7 +136,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00435">435</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00460">460</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -161,7 +163,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00436">436</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00461">461</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -192,9 +194,9 @@ Protected Attributes</h2></td></tr>
 <p>Return the number of <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> objects. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t Return the number of <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> objects. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00447">447</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00472">472</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00518">count()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00561">count()</a>.</p>
 
 </div>
 </div>
@@ -224,13 +226,13 @@ Protected Attributes</h2></td></tr>
 <p>Return the <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> object at the specified index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The index of the <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> object to be retrieved. Must be in the range [0, count-1]. Throws an exception if the index is out of range. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> object to be retrieved. Must be in the range [0, count-1]. Throws an exception if the index is out of range.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;StreamProfile&gt; Return the <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00460">460</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00487">487</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -274,16 +276,16 @@ Protected Attributes</h2></td></tr>
 <p>Match the corresponding video stream profile based on the passed-in parameters. If multiple Match are found, the first one in the list is returned by default. Throws an exception if no matching profile is found. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">width</td><td>The width of the stream. Pass OB_WIDTH_ANY if no matching condition is required. </td></tr>
-    <tr><td class="paramname">height</td><td>The height of the stream. Pass OB_HEIGHT_ANY if no matching condition is required. </td></tr>
-    <tr><td class="paramname">format</td><td>The type of the stream. Pass OB_FORMAT_ANY if no matching condition is required. </td></tr>
-    <tr><td class="paramname">fps</td><td>The frame rate of the stream. Pass OB_FPS_ANY if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>The width of the stream. Pass OB_WIDTH_ANY if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>The height of the stream. Pass OB_HEIGHT_ANY if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The type of the stream. Pass OB_FORMAT_ANY if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps</td><td>The frame rate of the stream. Pass OB_FPS_ANY if no matching condition is required.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;VideoStreamProfile&gt; Return the matching resolution. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00477">477</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00505">505</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -317,13 +319,13 @@ Protected Attributes</h2></td></tr>
 <p>Match the corresponding accelerometer stream profile based on the passed-in parameters. If multiple Match are found, the first one in the list is returned by default. Throws an exception if no matching profile is found. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fullScaleRange</td><td>The full scale range. Pass 0 if no matching condition is required. </td></tr>
-    <tr><td class="paramname">sampleRate</td><td>The sampling frequency. Pass 0 if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fullScaleRange</td><td>The full scale range. Pass 0 if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampleRate</td><td>The sampling frequency. Pass 0 if no matching condition is required. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00493">493</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00521">521</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -357,13 +359,53 @@ Protected Attributes</h2></td></tr>
 <p>Match the corresponding gyroscope stream profile based on the passed-in parameters. If multiple Match are found, the first one in the list is returned by default. Throws an exception if no matching profile is found. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fullScaleRange</td><td>The full scale range. Pass 0 if no matching condition is required. </td></tr>
-    <tr><td class="paramname">sampleRate</td><td>The sampling frequency. Pass 0 if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fullScaleRange</td><td>The full scale range. Pass 0 if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampleRate</td><td>The sampling frequency. Pass 0 if no matching condition is required. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00508">508</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00536">536</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad755590465eac52e73e7e6bbffd3e3c8" name="ad755590465eac52e73e7e6bbffd3e3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad755590465eac52e73e7e6bbffd3e3c8">&#9670;&#160;</a></span>getLiDARStreamProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classob_1_1_li_d_a_r_stream_profile.html">LiDARStreamProfile</a> &gt; ob::StreamProfileList::getLiDARStreamProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9">OBLiDARScanRate</a></td>          <td class="paramname"><span class="paramname"><em>scanRate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a">OBFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Match the corresponding LiDAR stream profile based on the passed-in parameters. If multiple Match are found, the first one in the list is returned by default. Throws an exception if no matching profile is found. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scanRate</td><td>The scan rate of LiDAR. Pass OB_LIDAR_SCAN_ANY if no matching condition is required. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The type of the stream. Pass OB_FORMAT_ANY if no matching condition is required. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00551">551</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -390,9 +432,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00518">518</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00561">561</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00447">getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00472">getCount()</a>.</p>
 
 </div>
 </div>
@@ -417,14 +459,14 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00432">432</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00457">457</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00493">getAccelStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00447">getCount()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00508">getGyroStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00460">getProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00477">getVideoStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00435">StreamProfileList()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00436">~StreamProfileList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00521">getAccelStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00472">getCount()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00536">getGyroStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00551">getLiDARStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00487">getProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00505">getVideoStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00460">StreamProfileList()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00461">~StreamProfileList()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a></li>
+<li><a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

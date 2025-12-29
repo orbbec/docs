@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/h/RecordPlayback.h File Reference</title>
+<title>OrbbecSDK: RecordPlayback.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -151,7 +151,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The device to record. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">file_path</td><td>The file path to record to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">compression_enabled</td><td>Whether to enable compression for the recording. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -280,7 +280,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file_path</td><td>The file path to playback from. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -453,7 +453,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">player</td><td>The playback device to get the status for. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -497,6 +497,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">player</td><td>The playback device to set the callback for. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>The callback function to receive playback status updates. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>Pointer to user data that can be passed to and retrieved from the callback function </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
@@ -529,7 +530,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">player</td><td>The playback device to get the position for. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -562,7 +563,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">player</td><td>The playback device to get the duration for. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>

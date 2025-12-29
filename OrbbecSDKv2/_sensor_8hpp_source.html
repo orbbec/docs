@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/Sensor.hpp Source File</title>
+<title>OrbbecSDK: Sensor.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -250,51 +250,51 @@ $(function() {
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
 </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span></div>
-<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#ab60dcf1a4c9a72256167fc984553e0c0">  191</a></span>    <a class="code hl_enumeration" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> <a class="code hl_function" href="classob_1_1_sensor_list.html#ab60dcf1a4c9a72256167fc984553e0c0">getSensorType</a>(uint32_t index)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <a class="code hl_struct" href="structob__error.html">ob_error</a> *error = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keyword">auto</span>      <a class="code hl_function" href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">type</a>  = <a class="code hl_function" href="_sensor_8h.html#a4d82731bd44927fe949b7885bbb769dd">ob_sensor_list_get_sensor_type</a>(impl_, index, &amp;error);</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <a class="code hl_function" href="classob_1_1_error.html#aec4fbdda20bf042ebd301b5f723e6cb6">Error::handle</a>(&amp;error);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">type</a>;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+<div class="foldopen" id="foldopen00192" data-start="{" data-end="}">
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#ab60dcf1a4c9a72256167fc984553e0c0">  192</a></span>    <a class="code hl_enumeration" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> <a class="code hl_function" href="classob_1_1_sensor_list.html#ab60dcf1a4c9a72256167fc984553e0c0">getSensorType</a>(uint32_t index)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <a class="code hl_struct" href="structob__error.html">ob_error</a> *error = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keyword">auto</span>      <a class="code hl_function" href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">type</a>  = <a class="code hl_function" href="_sensor_8h.html#a4d82731bd44927fe949b7885bbb769dd">ob_sensor_list_get_sensor_type</a>(impl_, index, &amp;error);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <a class="code hl_function" href="classob_1_1_error.html#aec4fbdda20bf042ebd301b5f723e6cb6">Error::handle</a>(&amp;error);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">type</a>;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    }</div>
 </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span></div>
-<div class="foldopen" id="foldopen00204" data-start="{" data-end="}">
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#abf74605f6f7429e3811e698035378b41">  204</a></span>    std::shared_ptr&lt;Sensor&gt; <a class="code hl_function" href="classob_1_1_sensor_list.html#abf74605f6f7429e3811e698035378b41">getSensor</a>(uint32_t index)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <a class="code hl_struct" href="structob__error.html">ob_error</a> *error  = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keyword">auto</span>      sensor = <a class="code hl_function" href="_sensor_8h.html#a014284d315c1a3eecf61c159ab55eb63">ob_sensor_list_get_sensor</a>(impl_, index, &amp;error);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <a class="code hl_function" href="classob_1_1_error.html#aec4fbdda20bf042ebd301b5f723e6cb6">Error::handle</a>(&amp;error);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">return</span> std::make_shared&lt;Sensor&gt;(sensor);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span></div>
+<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#abf74605f6f7429e3811e698035378b41">  206</a></span>    std::shared_ptr&lt;Sensor&gt; <a class="code hl_function" href="classob_1_1_sensor_list.html#abf74605f6f7429e3811e698035378b41">getSensor</a>(uint32_t index)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <a class="code hl_struct" href="structob__error.html">ob_error</a> *error  = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keyword">auto</span>      sensor = <a class="code hl_function" href="_sensor_8h.html#a014284d315c1a3eecf61c159ab55eb63">ob_sensor_list_get_sensor</a>(impl_, index, &amp;error);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <a class="code hl_function" href="classob_1_1_error.html#aec4fbdda20bf042ebd301b5f723e6cb6">Error::handle</a>(&amp;error);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">return</span> std::make_shared&lt;Sensor&gt;(sensor);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
 </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span></div>
-<div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#a89ecf30f27ce40027131b987afa425cc">  217</a></span>    std::shared_ptr&lt;Sensor&gt; <a class="code hl_function" href="classob_1_1_sensor_list.html#a89ecf30f27ce40027131b987afa425cc">getSensor</a>(<a class="code hl_enumeration" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> sensorType)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <a class="code hl_struct" href="structob__error.html">ob_error</a> *error  = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="keyword">auto</span>      sensor = <a class="code hl_function" href="_sensor_8h.html#a5cf0876696d75b62da335e8c14e89ca0">ob_sensor_list_get_sensor_by_type</a>(impl_, sensorType, &amp;error);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <a class="code hl_function" href="classob_1_1_error.html#aec4fbdda20bf042ebd301b5f723e6cb6">Error::handle</a>(&amp;error);</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="keywordflow">return</span> std::make_shared&lt;Sensor&gt;(sensor);</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span></div>
+<div class="foldopen" id="foldopen00220" data-start="{" data-end="}">
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#a89ecf30f27ce40027131b987afa425cc">  220</a></span>    std::shared_ptr&lt;Sensor&gt; <a class="code hl_function" href="classob_1_1_sensor_list.html#a89ecf30f27ce40027131b987afa425cc">getSensor</a>(<a class="code hl_enumeration" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> sensorType)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <a class="code hl_struct" href="structob__error.html">ob_error</a> *error  = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keyword">auto</span>      sensor = <a class="code hl_function" href="_sensor_8h.html#a5cf0876696d75b62da335e8c14e89ca0">ob_sensor_list_get_sensor_by_type</a>(impl_, sensorType, &amp;error);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <a class="code hl_function" href="classob_1_1_error.html#aec4fbdda20bf042ebd301b5f723e6cb6">Error::handle</a>(&amp;error);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordflow">return</span> std::make_shared&lt;Sensor&gt;(sensor);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    }</div>
 </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="comment">// The following interfaces are deprecated and are retained here for compatibility purposes.</span></div>
-<div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#a5d9781f3bdc0a63eeb1c1cfb63a764c1">  226</a></span>    uint32_t <a class="code hl_function" href="classob_1_1_sensor_list.html#a5d9781f3bdc0a63eeb1c1cfb63a764c1">count</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classob_1_1_sensor_list.html#a053e0eabe09796ed473258233306f688">getCount</a>();</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="comment">// The following interfaces are deprecated and are retained here for compatibility purposes.</span></div>
+<div class="foldopen" id="foldopen00229" data-start="{" data-end="}">
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#a5d9781f3bdc0a63eeb1c1cfb63a764c1">  229</a></span>    uint32_t <a class="code hl_function" href="classob_1_1_sensor_list.html#a5d9781f3bdc0a63eeb1c1cfb63a764c1">count</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classob_1_1_sensor_list.html#a053e0eabe09796ed473258233306f688">getCount</a>();</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    }</div>
 </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">  230</a></span>    <a class="code hl_enumeration" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> <a class="code hl_function" href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">type</a>(uint32_t index)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classob_1_1_sensor_list.html#ab60dcf1a4c9a72256167fc984553e0c0">getSensorType</a>(index);</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="foldopen" id="foldopen00233" data-start="{" data-end="}">
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">  233</a></span>    <a class="code hl_enumeration" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> <a class="code hl_function" href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">type</a>(uint32_t index)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classob_1_1_sensor_list.html#ab60dcf1a4c9a72256167fc984553e0c0">getSensorType</a>(index);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
 </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>};</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>};</div>
 </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}  <span class="comment">// namespace ob</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}  <span class="comment">// namespace ob</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
 <div class="ttc" id="a_device_8hpp_html"><div class="ttname"><a href="_device_8hpp.html">Device.hpp</a></div><div class="ttdoc">Device related types, including operations such as getting and creating a device, setting and obtaini...</div></div>
 <div class="ttc" id="a_error_8hpp_html"><div class="ttname"><a href="_error_8hpp.html">Error.hpp</a></div><div class="ttdoc">This file defines the Error class, which describes abnormal errors within the SDK....</div></div>
 <div class="ttc" id="a_filter_8h_html"><div class="ttname"><a href="_filter_8h.html">Filter.h</a></div><div class="ttdoc">The processing unit of the SDK can perform point cloud generation, format conversion and other functi...</div></div>
@@ -304,7 +304,7 @@ $(function() {
 <div class="ttc" id="a_filter_8hpp_html"><div class="ttname"><a href="_filter_8hpp.html">Filter.hpp</a></div><div class="ttdoc">This file contains the Filter class, which is the processing unit of the SDK that can perform point c...</div></div>
 <div class="ttc" id="a_frame_8hpp_html"><div class="ttname"><a href="_frame_8hpp.html">Frame.hpp</a></div><div class="ttdoc">Frame related type, which is mainly used to obtain frame data and frame information.</div></div>
 <div class="ttc" id="a_ob_types_8h_html_a0246b271f418287137e3d1a0c1ddff72"><div class="ttname"><a href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a></div><div class="ttdeci">struct ob_frame_t ob_frame</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00033">ObTypes.h:33</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8"><div class="ttname"><a href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a></div><div class="ttdeci">OBSensorType</div><div class="ttdoc">Enumeration value describing the sensor type.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00128">ObTypes.h:128</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8"><div class="ttname"><a href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a></div><div class="ttdeci">OBSensorType</div><div class="ttdoc">Enumeration value describing the sensor type.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00130">ObTypes.h:130</a></div></div>
 <div class="ttc" id="a_sensor_8h_html"><div class="ttname"><a href="_sensor_8h.html">Sensor.h</a></div><div class="ttdoc">Defines types related to sensors, used for obtaining stream configurations, opening and closing strea...</div></div>
 <div class="ttc" id="a_sensor_8h_html_a014284d315c1a3eecf61c159ab55eb63"><div class="ttname"><a href="_sensor_8h.html#a014284d315c1a3eecf61c159ab55eb63">ob_sensor_list_get_sensor</a></div><div class="ttdeci">OB_EXPORT ob_sensor * ob_sensor_list_get_sensor(const ob_sensor_list *sensor_list, uint32_t index, ob_error **error)</div><div class="ttdoc">Get a sensor by index number.</div></div>
 <div class="ttc" id="a_sensor_8h_html_a0a6dba5b08738465051852f966ea9a5d"><div class="ttname"><a href="_sensor_8h.html#a0a6dba5b08738465051852f966ea9a5d">ob_delete_sensor_list</a></div><div class="ttdeci">OB_EXPORT void ob_delete_sensor_list(ob_sensor_list *sensor_list, ob_error **error)</div><div class="ttdoc">Delete a list of sensor objects.</div></div>
@@ -341,14 +341,14 @@ $(function() {
 <div class="ttc" id="aclassob_1_1_sensor_html_af2c1cc86f39ccc128fd842023f1688c2"><div class="ttname"><a href="classob_1_1_sensor.html#af2c1cc86f39ccc128fd842023f1688c2">ob::Sensor::switchProfile</a></div><div class="ttdeci">void switchProfile(std::shared_ptr&lt; StreamProfile &gt; streamProfile)</div><div class="ttdoc">Dynamically switch resolutions.</div><div class="ttdef"><b>Definition</b> <a href="#l00137">Sensor.hpp:137</a></div></div>
 <div class="ttc" id="aclassob_1_1_sensor_list_html_a053e0eabe09796ed473258233306f688"><div class="ttname"><a href="classob_1_1_sensor_list.html#a053e0eabe09796ed473258233306f688">ob::SensorList::getCount</a></div><div class="ttdeci">uint32_t getCount() const</div><div class="ttdoc">Get the number of sensors.</div><div class="ttdef"><b>Definition</b> <a href="#l00178">Sensor.hpp:178</a></div></div>
 <div class="ttc" id="aclassob_1_1_sensor_list_html_a16010f9a1b5a1a909dca046978bbb293"><div class="ttname"><a href="classob_1_1_sensor_list.html#a16010f9a1b5a1a909dca046978bbb293">ob::SensorList::~SensorList</a></div><div class="ttdeci">~SensorList() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00167">Sensor.hpp:167</a></div></div>
-<div class="ttc" id="aclassob_1_1_sensor_list_html_a5d9781f3bdc0a63eeb1c1cfb63a764c1"><div class="ttname"><a href="classob_1_1_sensor_list.html#a5d9781f3bdc0a63eeb1c1cfb63a764c1">ob::SensorList::count</a></div><div class="ttdeci">uint32_t count() const</div><div class="ttdef"><b>Definition</b> <a href="#l00226">Sensor.hpp:226</a></div></div>
-<div class="ttc" id="aclassob_1_1_sensor_list_html_a89ecf30f27ce40027131b987afa425cc"><div class="ttname"><a href="classob_1_1_sensor_list.html#a89ecf30f27ce40027131b987afa425cc">ob::SensorList::getSensor</a></div><div class="ttdeci">std::shared_ptr&lt; Sensor &gt; getSensor(OBSensorType sensorType) const</div><div class="ttdoc">Get a sensor by sensor type.</div><div class="ttdef"><b>Definition</b> <a href="#l00217">Sensor.hpp:217</a></div></div>
-<div class="ttc" id="aclassob_1_1_sensor_list_html_ab60dcf1a4c9a72256167fc984553e0c0"><div class="ttname"><a href="classob_1_1_sensor_list.html#ab60dcf1a4c9a72256167fc984553e0c0">ob::SensorList::getSensorType</a></div><div class="ttdeci">OBSensorType getSensorType(uint32_t index) const</div><div class="ttdoc">Get the type of the specified sensor.</div><div class="ttdef"><b>Definition</b> <a href="#l00191">Sensor.hpp:191</a></div></div>
-<div class="ttc" id="aclassob_1_1_sensor_list_html_abf74605f6f7429e3811e698035378b41"><div class="ttname"><a href="classob_1_1_sensor_list.html#abf74605f6f7429e3811e698035378b41">ob::SensorList::getSensor</a></div><div class="ttdeci">std::shared_ptr&lt; Sensor &gt; getSensor(uint32_t index) const</div><div class="ttdoc">Get a sensor by index number.</div><div class="ttdef"><b>Definition</b> <a href="#l00204">Sensor.hpp:204</a></div></div>
-<div class="ttc" id="aclassob_1_1_sensor_list_html_ada2dbaba9d20244809f0d9970b267e6c"><div class="ttname"><a href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">ob::SensorList::type</a></div><div class="ttdeci">OBSensorType type(uint32_t index) const</div><div class="ttdef"><b>Definition</b> <a href="#l00230">Sensor.hpp:230</a></div></div>
+<div class="ttc" id="aclassob_1_1_sensor_list_html_a5d9781f3bdc0a63eeb1c1cfb63a764c1"><div class="ttname"><a href="classob_1_1_sensor_list.html#a5d9781f3bdc0a63eeb1c1cfb63a764c1">ob::SensorList::count</a></div><div class="ttdeci">uint32_t count() const</div><div class="ttdef"><b>Definition</b> <a href="#l00229">Sensor.hpp:229</a></div></div>
+<div class="ttc" id="aclassob_1_1_sensor_list_html_a89ecf30f27ce40027131b987afa425cc"><div class="ttname"><a href="classob_1_1_sensor_list.html#a89ecf30f27ce40027131b987afa425cc">ob::SensorList::getSensor</a></div><div class="ttdeci">std::shared_ptr&lt; Sensor &gt; getSensor(OBSensorType sensorType) const</div><div class="ttdoc">Get a sensor by sensor type.</div><div class="ttdef"><b>Definition</b> <a href="#l00220">Sensor.hpp:220</a></div></div>
+<div class="ttc" id="aclassob_1_1_sensor_list_html_ab60dcf1a4c9a72256167fc984553e0c0"><div class="ttname"><a href="classob_1_1_sensor_list.html#ab60dcf1a4c9a72256167fc984553e0c0">ob::SensorList::getSensorType</a></div><div class="ttdeci">OBSensorType getSensorType(uint32_t index) const</div><div class="ttdoc">Get the type of the specified sensor.</div><div class="ttdef"><b>Definition</b> <a href="#l00192">Sensor.hpp:192</a></div></div>
+<div class="ttc" id="aclassob_1_1_sensor_list_html_abf74605f6f7429e3811e698035378b41"><div class="ttname"><a href="classob_1_1_sensor_list.html#abf74605f6f7429e3811e698035378b41">ob::SensorList::getSensor</a></div><div class="ttdeci">std::shared_ptr&lt; Sensor &gt; getSensor(uint32_t index) const</div><div class="ttdoc">Get a sensor by index number.</div><div class="ttdef"><b>Definition</b> <a href="#l00206">Sensor.hpp:206</a></div></div>
+<div class="ttc" id="aclassob_1_1_sensor_list_html_ada2dbaba9d20244809f0d9970b267e6c"><div class="ttname"><a href="classob_1_1_sensor_list.html#ada2dbaba9d20244809f0d9970b267e6c">ob::SensorList::type</a></div><div class="ttdeci">OBSensorType type(uint32_t index) const</div><div class="ttdef"><b>Definition</b> <a href="#l00233">Sensor.hpp:233</a></div></div>
 <div class="ttc" id="aclassob_1_1_sensor_list_html_affde69cc0a85404978091ab875407d32"><div class="ttname"><a href="classob_1_1_sensor_list.html#affde69cc0a85404978091ab875407d32">ob::SensorList::SensorList</a></div><div class="ttdeci">SensorList(ob_sensor_list_t *impl)</div><div class="ttdef"><b>Definition</b> <a href="#l00165">Sensor.hpp:165</a></div></div>
-<div class="ttc" id="anamespaceob_html"><div class="ttname"><a href="namespaceob.html">ob</a></div><div class="ttdef"><b>Definition</b> <a href="_context_8hpp_source.html#l00019">Context.hpp:19</a></div></div>
-<div class="ttc" id="astructob__error_html"><div class="ttname"><a href="structob__error.html">ob_error</a></div><div class="ttdoc">The error class exposed by the SDK, users can get detailed error information according to the error.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00117">ObTypes.h:117</a></div></div>
+<div class="ttc" id="anamespaceob_html"><div class="ttname"><a href="namespaceob.html">ob</a></div><div class="ttdef"><b>Definition</b> <a href="_context_8hpp_source.html#l00022">Context.hpp:22</a></div></div>
+<div class="ttc" id="astructob__error_html"><div class="ttname"><a href="structob__error.html">ob_error</a></div><div class="ttdoc">The error class exposed by the SDK, users can get detailed error information according to the error.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00119">ObTypes.h:119</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

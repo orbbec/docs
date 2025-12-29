@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/h/Pipeline.h File Reference</title>
+<title>OrbbecSDK: Pipeline.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -142,6 +142,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8640942a7eddcc4d854d4ca496f4d0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable accelerometer stream with specified parameters.  <br /></td></tr>
 <tr class="memitem:af447871736388cdac73f3010fdc7d3ce" id="r_af447871736388cdac73f3010fdc7d3ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af447871736388cdac73f3010fdc7d3ce">ob_config_enable_gyro_stream</a> (<a class="el" href="_ob_types_8h.html#a62fa485eec2603c2f1426cd6662cfbca">ob_config</a> *config, <a class="el" href="_ob_types_8h.html#a33ea49496b799b49268f4577d09e73bc">ob_gyro_full_scale_range</a> full_scale_range, <a class="el" href="_ob_types_8h.html#aad5d8b6b56499acb7c10353577c05304">ob_gyro_sample_rate</a> sample_rate, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:af447871736388cdac73f3010fdc7d3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable gyroscope stream with specified parameters.  <br /></td></tr>
+<tr class="memitem:a25ddabc46fdb20fda913fa6a65f29607" id="r_a25ddabc46fdb20fda913fa6a65f29607"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25ddabc46fdb20fda913fa6a65f29607">ob_config_enable_lidar_stream</a> (<a class="el" href="_ob_types_8h.html#a62fa485eec2603c2f1426cd6662cfbca">ob_config</a> *config, <a class="el" href="_ob_types_8h.html#a850c697c5b32ed423382595adba599d9">ob_lidar_scan_rate</a> scan_rate, <a class="el" href="_ob_types_8h.html#a083601614fe96b1ba4106227a4bd72f2">ob_format</a> format, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a25ddabc46fdb20fda913fa6a65f29607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable LiDAR stream with specified parameters.  <br /></td></tr>
 <tr class="memitem:ad4624ef7b814d9313341f022791b61f5" id="r_ad4624ef7b814d9313341f022791b61f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#a3b28b4c7eef966023107efca9e1c30c8">ob_stream_profile_list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4624ef7b814d9313341f022791b61f5">ob_config_get_enabled_stream_profile_list</a> (const <a class="el" href="_ob_types_8h.html#a62fa485eec2603c2f1426cd6662cfbca">ob_config</a> *config, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:ad4624ef7b814d9313341f022791b61f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the enabled stream profile list in the pipeline configuration.  <br /></td></tr>
 <tr class="memitem:a558da9a0525a618938a210de84f4aea9" id="r_a558da9a0525a618938a210de84f4aea9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a558da9a0525a618938a210de84f4aea9">ob_config_disable_stream</a> (<a class="el" href="_ob_types_8h.html#a62fa485eec2603c2f1426cd6662cfbca">ob_config</a> *config, <a class="el" href="_ob_types_8h.html#a849f89cf0aae370ceb08ed7bc77bf0f6">ob_stream_type</a> type, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -178,7 +180,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8h_source.html#l00330">330</a> of file <a class="el" href="_pipeline_8h_source.html">Pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8h_source.html#l00352">352</a> of file <a class="el" href="_pipeline_8h_source.html">Pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -201,13 +203,13 @@ Functions</h2></td></tr>
 <p>Create a pipeline object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_pipeline* return the pipeline object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00268">ob::Pipeline::Pipeline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00284">ob::Pipeline::Pipeline()</a>.</p>
 
 </div>
 </div>
@@ -234,13 +236,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>Device object used to create pipeline </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_pipeline* return the pipeline object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00279">ob::Pipeline::Pipeline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00295">ob::Pipeline::Pipeline()</a>.</p>
 
 </div>
 </div>
@@ -272,7 +274,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00288">ob::Pipeline::~Pipeline()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00304">ob::Pipeline::~Pipeline()</a>.</p>
 
 </div>
 </div>
@@ -340,7 +342,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00299">ob::Pipeline::start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00315">ob::Pipeline::start()</a>.</p>
 
 </div>
 </div>
@@ -379,7 +381,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Start the pipeline and set the frame collection data callback. </p>
-<dl class="section attention"><dt>Attention</dt><dd>After start the pipeline with this interface, the frames will be output to the callback function and cannot be obtained frames by call @ob_pipeline_wait_for_frameset</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>After start the pipeline with this interface, the frames will be output to the callback function and cannot be obtained frames by call <a class="el" href="#a6b04f66d494b0908b5735773496d9d45">ob_pipeline_wait_for_frameset</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pipeline</td><td>pipeline object </td></tr>
@@ -391,7 +393,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00312">ob::Pipeline::start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00328">ob::Pipeline::start()</a>.</p>
 
 </div>
 </div>
@@ -423,7 +425,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00327">ob::Pipeline::stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00343">ob::Pipeline::stop()</a>.</p>
 
 </div>
 </div>
@@ -451,13 +453,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pipeline</td><td>The pipeline object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_config* The configuration object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00339">ob::Pipeline::getConfig()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00355">ob::Pipeline::getConfig()</a>.</p>
 
 </div>
 </div>
@@ -526,13 +528,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pipeline</td><td>The pipeline object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>The timeout for waiting (in milliseconds) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* The frameset that was waited for. A frameset is a special frame that can be used to obtain independent frames from the set. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00352">ob::Pipeline::waitForFrameset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00369">ob::Pipeline::waitForFrameset()</a>.</p>
 
 </div>
 </div>
@@ -559,13 +561,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pipeline</td><td>The pipeline object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_device* The device object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00367">ob::Pipeline::getDevice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00384">ob::Pipeline::getDevice()</a>.</p>
 
 </div>
 </div>
@@ -598,13 +600,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pipeline</td><td>The pipeline object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sensorType</td><td>The sensor type. The supported sensor types can be obtained through the <a class="el" href="_device_8h.html#ac4904ba5142327b33dd2031a404efdc0" title="List all sensors.">ob_device_get_sensor_list()</a> interface. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_stream_profile_list* The stream profile list </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00380">ob::Pipeline::getStreamProfileList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00398">ob::Pipeline::getStreamProfileList()</a>.</p>
 
 </div>
 </div>
@@ -638,7 +640,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00407">ob::Pipeline::enableFrameSync()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00425">ob::Pipeline::enableFrameSync()</a>.</p>
 
 </div>
 </div>
@@ -670,7 +672,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00416">ob::Pipeline::disableFrameSync()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00434">ob::Pipeline::disableFrameSync()</a>.</p>
 
 </div>
 </div>
@@ -709,13 +711,13 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pipeline</td><td>The pipeline object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">color_profile</td><td>The input profile of the color sensor </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">align_mode</td><td>The input align mode </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_stream_profile_list* The list of D2C-enabled depth sensor resolutions </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00397">ob::Pipeline::getD2CDepthProfileList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00415">ob::Pipeline::getD2CDepthProfileList()</a>.</p>
 
 </div>
 </div>
@@ -737,7 +739,7 @@ Functions</h2></td></tr>
 <p>Create the pipeline configuration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -845,7 +847,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00164">ob::Config::enableAllStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00180">ob::Config::enableAllStream()</a>.</p>
 
 </div>
 </div>
@@ -1038,6 +1040,50 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a25ddabc46fdb20fda913fa6a65f29607" name="a25ddabc46fdb20fda913fa6a65f29607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ddabc46fdb20fda913fa6a65f29607">&#9670;&#160;</a></span>ob_config_enable_lidar_stream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void ob_config_enable_lidar_stream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a62fa485eec2603c2f1426cd6662cfbca">ob_config</a> *</td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a850c697c5b32ed423382595adba599d9">ob_lidar_scan_rate</a></td>          <td class="paramname"><span class="paramname"><em>scan_rate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a083601614fe96b1ba4106227a4bd72f2">ob_format</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable LiDAR stream with specified parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>The pipeline configuration object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scan_rate</td><td>The scan rate of LiDAR </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The format of the LiDAR stream </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00170">ob::Config::enableLiDARStream()</a>.</p>
+
+</div>
+</div>
 <a id="ad4624ef7b814d9313341f022791b61f5" name="ad4624ef7b814d9313341f022791b61f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4624ef7b814d9313341f022791b61f5">&#9670;&#160;</a></span>ob_config_get_enabled_stream_profile_list()</h2>
 
@@ -1060,14 +1106,14 @@ Functions</h2></td></tr>
 <p>Get the enabled stream profile list in the pipeline configuration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>The pipeline configuration object </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>The pipeline configuration object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_stream_profile_list* The enabled stream profile list, should be released by <a class="el" href="_stream_profile_8h.html#a86e33e41b94d571f2539b919ed232881">ob_delete_stream_profile_list</a> after use </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00206">ob::Config::getEnabledStreamProfileList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00222">ob::Config::getEnabledStreamProfileList()</a>.</p>
 
 </div>
 </div>
@@ -1105,7 +1151,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00175">ob::Config::disableStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00191">ob::Config::disableStream()</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1183,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00195">ob::Config::disableAllStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00211">ob::Config::disableAllStream()</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1221,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00218">ob::Config::setAlignMode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00234">ob::Config::setAlignMode()</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1260,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00229">ob::Config::setDepthScaleRequire()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00245">ob::Config::setDepthScaleRequire()</a>.</p>
 
 </div>
 </div>
@@ -1253,7 +1299,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00242">ob::Config::setFrameAggregateOutputMode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00258">ob::Config::setFrameAggregateOutputMode()</a>.</p>
 
 </div>
 </div>
@@ -1281,13 +1327,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pipeline</td><td>pipeline object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Log error messages </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Log error messages</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0a9062fd0ef0ed06f67494e3011f40ef">ob_camera_param</a> The camera internal parameters </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00425">ob::Pipeline::getCameraParam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00443">ob::Pipeline::getCameraParam()</a>.</p>
 
 </div>
 </div>
@@ -1338,13 +1384,13 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">colorHeight</td><td>color height </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">depthWidth</td><td>depth width </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">depthHeight</td><td>depth height </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Log error messages </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Log error messages</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0a9062fd0ef0ed06f67494e3011f40ef">ob_camera_param</a> returns camera internal parameters </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00432">ob::Pipeline::getCameraParamWithProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00450">ob::Pipeline::getCameraParamWithProfile()</a>.</p>
 
 </div>
 </div>
@@ -1377,13 +1423,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pipeline</td><td>pipeline object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>The pipeline configuration </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Log error messages </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Log error messages</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a7106176de78deff50c48f0bc9e985175">ob_calibration_param</a> The calibration parameters </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00439">ob::Pipeline::getCalibrationParam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00457">ob::Pipeline::getCalibrationParam()</a>.</p>
 
 </div>
 </div>

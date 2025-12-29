@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/h/TypeHelper.h File Reference</title>
+<title>OrbbecSDK: TypeHelper.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -102,6 +102,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a01ae1383b6b9b7f8bdc65ffd995dba67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8" title="Enumeration of gyroscope ranges.">OBGyroFullScaleRange</a> to " char* " type and then return.  <br /></td></tr>
 <tr class="memitem:ad0d56b7881e6bc100a91db2563053bc0" id="r_ad0d56b7881e6bc100a91db2563053bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0d56b7881e6bc100a91db2563053bc0">ob_accel_range_type_to_string</a> (<a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0">OBAccelFullScaleRange</a> type)</td></tr>
 <tr class="memdesc:ad0d56b7881e6bc100a91db2563053bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0" title="Enumeration of accelerometer ranges.">OBAccelFullScaleRange</a> to " char* " type and then return.  <br /></td></tr>
+<tr class="memitem:ad482d868f8c704b8025a0127bba150dd" id="r_ad482d868f8c704b8025a0127bba150dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad482d868f8c704b8025a0127bba150dd">ob_lidar_scan_rate_type_to_string</a> (<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9">OBLiDARScanRate</a> type)</td></tr>
+<tr class="memdesc:ad482d868f8c704b8025a0127bba150dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9" title="Data structures for LiDAR scan rate.">OBLiDARScanRate</a> to " char* " type and then return.  <br /></td></tr>
 <tr class="memitem:a3b65176b3417cd57cfd2de0d311a3594" id="r_a3b65176b3417cd57cfd2de0d311a3594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b65176b3417cd57cfd2de0d311a3594">ob_meta_data_type_to_string</a> (<a class="el" href="_ob_types_8h.html#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a> type)</td></tr>
 <tr class="memdesc:a3b65176b3417cd57cfd2de0d311a3594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a> to " char* " type and then return.  <br /></td></tr>
 <tr class="memitem:ae5cbe0c27ff41e44ffcbe20c58446d0f" id="r_ae5cbe0c27ff41e44ffcbe20c58446d0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5cbe0c27ff41e44ffcbe20c58446d0f">ob_sensor_type_to_stream_type</a> (<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> type)</td></tr>
@@ -128,13 +130,13 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a" title="Enumeration value describing the pixel format.">OBFormat</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a" title="Enumeration value describing the pixel format.">OBFormat</a> type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a" title="Enumeration value describing the pixel format.">OBFormat</a> type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a" title="Enumeration value describing the pixel format.">OBFormat</a> of "char*" type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00022">ob::TypeHelper::convertOBFormatTypeToString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00023">ob::TypeHelper::convertOBFormatTypeToString()</a>.</p>
 
 </div>
 </div>
@@ -156,13 +158,13 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> of "char*" type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00032">ob::TypeHelper::convertOBFrameTypeToString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00034">ob::TypeHelper::convertOBFrameTypeToString()</a>.</p>
 
 </div>
 </div>
@@ -184,13 +186,13 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> of "char*" type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00042">ob::TypeHelper::convertOBStreamTypeToString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00045">ob::TypeHelper::convertOBStreamTypeToString()</a>.</p>
 
 </div>
 </div>
@@ -212,13 +214,13 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> of "char*" type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00052">ob::TypeHelper::convertOBSensorTypeToString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00056">ob::TypeHelper::convertOBSensorTypeToString()</a>.</p>
 
 </div>
 </div>
@@ -240,13 +242,13 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a> type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a> type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a> of "char*" type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00062">ob::TypeHelper::convertOBIMUSampleRateTypeToString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00067">ob::TypeHelper::convertOBIMUSampleRateTypeToString()</a>.</p>
 
 </div>
 </div>
@@ -268,13 +270,13 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8" title="Enumeration of gyroscope ranges.">OBGyroFullScaleRange</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8" title="Enumeration of gyroscope ranges.">OBGyroFullScaleRange</a> type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8" title="Enumeration of gyroscope ranges.">OBGyroFullScaleRange</a> type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8" title="Enumeration of gyroscope ranges.">OBGyroFullScaleRange</a> of "char*" type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00072">ob::TypeHelper::convertOBGyroFullScaleRangeTypeToString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00078">ob::TypeHelper::convertOBGyroFullScaleRangeTypeToString()</a>.</p>
 
 </div>
 </div>
@@ -296,13 +298,41 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0" title="Enumeration of accelerometer ranges.">OBAccelFullScaleRange</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0" title="Enumeration of accelerometer ranges.">OBAccelFullScaleRange</a> type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0" title="Enumeration of accelerometer ranges.">OBAccelFullScaleRange</a> type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0" title="Enumeration of accelerometer ranges.">OBAccelFullScaleRange</a> of "char*" type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00082">ob::TypeHelper::convertOBAccelFullScaleRangeTypeToString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00089">ob::TypeHelper::convertOBAccelFullScaleRangeTypeToString()</a>.</p>
+
+</div>
+</div>
+<a id="ad482d868f8c704b8025a0127bba150dd" name="ad482d868f8c704b8025a0127bba150dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad482d868f8c704b8025a0127bba150dd">&#9670;&#160;</a></span>ob_lidar_scan_rate_type_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> const char * ob_lidar_scan_rate_type_to_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9">OBLiDARScanRate</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert <a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9" title="Data structures for LiDAR scan rate.">OBLiDARScanRate</a> to " char* " type and then return. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9" title="Data structures for LiDAR scan rate.">OBLiDARScanRate</a> type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9" title="Data structures for LiDAR scan rate.">OBLiDARScanRate</a> of "char*" type. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00099">ob::TypeHelper::convertOBLiDARScanRateTypeToString()</a>.</p>
 
 </div>
 </div>
@@ -324,13 +354,13 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a> type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a> type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a> of "char*" type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00092">ob::TypeHelper::convertOBFrameMetadataTypeToString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00110">ob::TypeHelper::convertOBFrameMetadataTypeToString()</a>.</p>
 
 </div>
 </div>
@@ -352,13 +382,13 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> to <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The sensor type to convert. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The sensor type to convert.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> The corresponding stream type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00102">ob::TypeHelper::convertSensorTypeToStreamType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00121">ob::TypeHelper::convertSensorTypeToStreamType()</a>.</p>
 
 </div>
 </div>
@@ -380,7 +410,7 @@ Functions</h2></td></tr>
 <p>Convert <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a" title="Enumeration value describing the pixel format.">OBFormat</a> to " char* " type and then return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">format</td><td>The <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a" title="Enumeration value describing the pixel format.">OBFormat</a> to convert. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a" title="Enumeration value describing the pixel format.">OBFormat</a> to convert.</td></tr>
   </table>
   </dd>
 </dl>

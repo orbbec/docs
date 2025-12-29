@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -111,6 +111,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8cbcd3f82a5179770191bf6f51c3ac33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a frame at a specific index from the <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a>.  <br /></td></tr>
 <tr class="memitem:ab3b88c8210219e96689c090ef3805f6e" id="r_ab3b88c8210219e96689c090ef3805f6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3b88c8210219e96689c090ef3805f6e">pushFrame</a> (std::shared_ptr&lt; const <a class="el" href="classob_1_1_frame.html">Frame</a> &gt; frame) const</td></tr>
 <tr class="memdesc:ab3b88c8210219e96689c090ef3805f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a frame to the <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a>.  <br /></td></tr>
+<tr class="memitem:afdb68562d3af1f8ca2472d4360f91b43" id="r_afdb68562d3af1f8ca2472d4360f91b43"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_depth_frame.html">DepthFrame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdb68562d3af1f8ca2472d4360f91b43">getDepthFrame</a> () const</td></tr>
+<tr class="memdesc:afdb68562d3af1f8ca2472d4360f91b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the depth frame from the frameset.  <br /></td></tr>
+<tr class="memitem:ae9a813501aee3de032c261286cd0aaf1" id="r_ae9a813501aee3de032c261286cd0aaf1"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_color_frame.html">ColorFrame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9a813501aee3de032c261286cd0aaf1">getColorFrame</a> () const</td></tr>
+<tr class="memdesc:ae9a813501aee3de032c261286cd0aaf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the color frame from the frameset.  <br /></td></tr>
+<tr class="memitem:a554cb98b09a3e5006d88ab7d7869fb3b" id="r_a554cb98b09a3e5006d88ab7d7869fb3b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_i_r_frame.html">IRFrame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a554cb98b09a3e5006d88ab7d7869fb3b">getIrFrame</a> () const</td></tr>
+<tr class="memdesc:a554cb98b09a3e5006d88ab7d7869fb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the infrared frame from the frameset.  <br /></td></tr>
+<tr class="memitem:afc1a87fdfec890aa6940b2fbf0f9dad0" id="r_afc1a87fdfec890aa6940b2fbf0f9dad0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_points_frame.html">PointsFrame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc1a87fdfec890aa6940b2fbf0f9dad0">getPointsFrame</a> () const</td></tr>
+<tr class="memdesc:afc1a87fdfec890aa6940b2fbf0f9dad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the point cloud frame from the frameset.  <br /></td></tr>
 <tr class="memitem:ac11a760fb844f2049a5b5bc97030a607" id="r_ac11a760fb844f2049a5b5bc97030a607"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac11a760fb844f2049a5b5bc97030a607">frameCount</a> () const</td></tr>
 <tr class="memitem:a692b38c99cf2a2da873fa9d7ca06589e" id="r_a692b38c99cf2a2da873fa9d7ca06589e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_depth_frame.html">DepthFrame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a692b38c99cf2a2da873fa9d7ca06589e">depthFrame</a> () const</td></tr>
 <tr class="memitem:a01f6805097606a7fd1f918efe835dbdb" id="r_a01f6805097606a7fd1f918efe835dbdb"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_color_frame.html">ColorFrame</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01f6805097606a7fd1f918efe835dbdb">colorFrame</a> () const</td></tr>
@@ -163,6 +171,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5482efb4023f46b9e028284021194da inherit pub_methods_classob_1_1_frame" id="r_ab5482efb4023f46b9e028284021194da"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:ab5482efb4023f46b9e028284021194da inherit pub_methods_classob_1_1_frame template"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#ab5482efb4023f46b9e028284021194da">as</a> () const</td></tr>
 <tr class="memdesc:ab5482efb4023f46b9e028284021194da inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the frame object to a target type.  <br /></td></tr>
+<tr class="memitem:a541a23e15ef2976fdb40c2dd02a8abbd inherit pub_methods_classob_1_1_frame" id="r_a541a23e15ef2976fdb40c2dd02a8abbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a541a23e15ef2976fdb40c2dd02a8abbd">copyFrameInfo</a> (std::shared_ptr&lt; const <a class="el" href="classob_1_1_frame.html">Frame</a> &gt; srcFrame)</td></tr>
+<tr class="memdesc:a541a23e15ef2976fdb40c2dd02a8abbd inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the information of the source frame object to the destination frame object.  <br /></td></tr>
+<tr class="memitem:a51d99c27dc87926cb2f474a69d7d12ba inherit pub_methods_classob_1_1_frame" id="r_a51d99c27dc87926cb2f474a69d7d12ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a51d99c27dc87926cb2f474a69d7d12ba">setSystemTimestampUs</a> (uint64_t systemTimestampUs)</td></tr>
+<tr class="memdesc:a51d99c27dc87926cb2f474a69d7d12ba inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the system timestamp of the frame in microseconds.  <br /></td></tr>
+<tr class="memitem:acf62173c172fb3212997a0dbbb9c0238 inherit pub_methods_classob_1_1_frame" id="r_acf62173c172fb3212997a0dbbb9c0238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#acf62173c172fb3212997a0dbbb9c0238">updateData</a> (const uint8_t *<a class="el" href="classob_1_1_frame.html#ab10dedaedfb7437c1b43ab7d2ee20260">data</a>, uint32_t <a class="el" href="classob_1_1_frame.html#ab9967d9a65e3f0a4320324b2c48de48f">dataSize</a>)</td></tr>
+<tr class="memdesc:acf62173c172fb3212997a0dbbb9c0238 inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the data of a frame.  <br /></td></tr>
+<tr class="memitem:a2be5f2fd4a49bad3366fb118073bef19 inherit pub_methods_classob_1_1_frame" id="r_a2be5f2fd4a49bad3366fb118073bef19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a2be5f2fd4a49bad3366fb118073bef19">updateMetadata</a> (const uint8_t *<a class="el" href="classob_1_1_frame.html#aa6555ff95a0755f54973dbaf64a8c21c">metadata</a>, uint32_t <a class="el" href="classob_1_1_frame.html#a56408f07e8df01db6aafc85a6ddeabad">metadataSize</a>)</td></tr>
+<tr class="memdesc:a2be5f2fd4a49bad3366fb118073bef19 inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the metadata of the frame.  <br /></td></tr>
+<tr class="memitem:afc5f9405d1f4ef5d300691786a2c668b inherit pub_methods_classob_1_1_frame" id="r_afc5f9405d1f4ef5d300691786a2c668b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#afc5f9405d1f4ef5d300691786a2c668b">setStreamProfile</a> (std::shared_ptr&lt; const <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> &gt; profile)</td></tr>
+<tr class="memdesc:afc5f9405d1f4ef5d300691786a2c668b inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set (override) the stream profile of the frame.  <br /></td></tr>
 <tr class="memitem:a6b0a22e552fa4f044d03f18e25f7c709 inherit pub_methods_classob_1_1_frame" id="r_a6b0a22e552fa4f044d03f18e25f7c709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345">OBFrameType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a6b0a22e552fa4f044d03f18e25f7c709">type</a> () const</td></tr>
 <tr class="memitem:ac02381cb60d381d3156566791f5e547f inherit pub_methods_classob_1_1_frame" id="r_ac02381cb60d381d3156566791f5e547f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a">OBFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#ac02381cb60d381d3156566791f5e547f">format</a> () const</td></tr>
 <tr class="memitem:a9a0dc3ad34f20047b75581966ba47f04 inherit pub_methods_classob_1_1_frame" id="r_a9a0dc3ad34f20047b75581966ba47f04"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a9a0dc3ad34f20047b75581966ba47f04">index</a> () const</td></tr>
@@ -186,7 +204,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Define the <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a> class, which inherits from the <a class="el" href="classob_1_1_frame.html" title="Define the frame class, which is the base class of all frame types.">Frame</a> class. </p>
 <p>A <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a> is a container for multiple frames of different types. </p>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00749">749</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00905">905</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6b30ac9e825e3bfb28b920498eb8990e" name="a6b30ac9e825e3bfb28b920498eb8990e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b30ac9e825e3bfb28b920498eb8990e">&#9670;&#160;</a></span>FrameSet()</h2>
@@ -211,7 +229,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00752">752</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00908">908</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -267,9 +285,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the number of frames in the <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The number of frames </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00761">761</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00917">917</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00821">frameCount()</a>, and <a class="el" href="_frame_8hpp_source.html#l00761">getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01039">frameCount()</a>, and <a class="el" href="_frame_8hpp_source.html#l00917">getCount()</a>.</p>
 
 </div>
 </div>
@@ -299,15 +317,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Get a frame of a specific type from the <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frameType</td><td>The type of sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frameType</td><td>The type of sensor</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Frame&gt; The corresponding type of frame </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00774">774</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00931">931</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00834">colorFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00825">depthFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00843">irFrame()</a>, and <a class="el" href="_frame_8hpp_source.html#l00854">pointsFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01052">colorFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l01043">depthFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l01061">irFrame()</a>, and <a class="el" href="_frame_8hpp_source.html#l01072">pointsFrame()</a>.</p>
 
 </div>
 </div>
@@ -337,15 +355,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Get a frame at a specific index from the <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The index of the frame </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the frame</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Frame&gt; The frame at the specified index </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00790">790</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00948">948</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00863">getFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01081">getFrame()</a>.</p>
 
 </div>
 </div>
@@ -376,12 +394,132 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>If the <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a> contains the same type of frame, the new frame will replace the old one.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td>The frame to be pushed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>The frame to be pushed </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00807">807</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00965">965</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afdb68562d3af1f8ca2472d4360f91b43" name="afdb68562d3af1f8ca2472d4360f91b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb68562d3af1f8ca2472d4360f91b43">&#9670;&#160;</a></span>getDepthFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classob_1_1_depth_frame.html">DepthFrame</a> &gt; ob::FrameSet::getDepthFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the depth frame from the frameset. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;DepthFrame&gt; Return the depth frame. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00982">982</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae9a813501aee3de032c261286cd0aaf1" name="ae9a813501aee3de032c261286cd0aaf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a813501aee3de032c261286cd0aaf1">&#9670;&#160;</a></span>getColorFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classob_1_1_color_frame.html">ColorFrame</a> &gt; ob::FrameSet::getColorFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the color frame from the frameset. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;ColorFrame&gt; Return the color frame. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00997">997</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a554cb98b09a3e5006d88ab7d7869fb3b" name="a554cb98b09a3e5006d88ab7d7869fb3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554cb98b09a3e5006d88ab7d7869fb3b">&#9670;&#160;</a></span>getIrFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classob_1_1_i_r_frame.html">IRFrame</a> &gt; ob::FrameSet::getIrFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the infrared frame from the frameset. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;IRFrame&gt; Return the infrared frame. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01012">1012</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afc1a87fdfec890aa6940b2fbf0f9dad0" name="afc1a87fdfec890aa6940b2fbf0f9dad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1a87fdfec890aa6940b2fbf0f9dad0">&#9670;&#160;</a></span>getPointsFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classob_1_1_points_frame.html">PointsFrame</a> &gt; ob::FrameSet::getPointsFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the point cloud frame from the frameset. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;PointsFrame&gt; Return the point cloud frame. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01027">1027</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -408,7 +546,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00821">821</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01039">1039</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,9 +573,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00825">825</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01043">1043</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00825">depthFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01043">depthFrame()</a>.</p>
 
 </div>
 </div>
@@ -464,9 +602,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00834">834</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01052">1052</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00834">colorFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01052">colorFrame()</a>.</p>
 
 </div>
 </div>
@@ -493,9 +631,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00843">843</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01061">1061</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00843">irFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01061">irFrame()</a>.</p>
 
 </div>
 </div>
@@ -522,9 +660,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00854">854</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01072">1072</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00854">pointsFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01072">pointsFrame()</a>.</p>
 
 </div>
 </div>
@@ -551,12 +689,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00863">863</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01081">1081</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_frame_8hpp_source.html">Frame.hpp</a></li>
+<li><a class="el" href="_frame_8hpp_source.html">Frame.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

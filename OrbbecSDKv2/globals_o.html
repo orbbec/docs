@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -113,6 +113,7 @@ $(function() {
 <li>ob_calibration_3d_to_2d()&#160;:&#160;<a class="el" href="_utils_8h.html#ac3c897696cc9439d677dfb08a04c14fe">Utils.h</a></li>
 <li>ob_calibration_3d_to_3d()&#160;:&#160;<a class="el" href="_utils_8h.html#a30a49d61b27f756b3894d4662111540b">Utils.h</a></li>
 <li>ob_calibration_param&#160;:&#160;<a class="el" href="_ob_types_8h.html#a7106176de78deff50c48f0bc9e985175">ObTypes.h</a></li>
+<li>ob_callback_id&#160;:&#160;<a class="el" href="_ob_types_8h.html#aa80ee972e5786c11fcb32625528b3a45">ObTypes.h</a></li>
 <li>ob_camera_distortion&#160;:&#160;<a class="el" href="_ob_types_8h.html#a5e6d6d874d837970c38dbf6cbe679b02">ObTypes.h</a></li>
 <li>ob_camera_distortion_model&#160;:&#160;<a class="el" href="_ob_types_8h.html#ac75e6655c7ec404ae195c60e11574ad5">ObTypes.h</a></li>
 <li>ob_camera_intrinsic&#160;:&#160;<a class="el" href="_ob_types_8h.html#affc559cfa18a81ca80f1f2fb1abb40e7">ObTypes.h</a></li>
@@ -147,6 +148,7 @@ $(function() {
 <li>ob_config_enable_accel_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a8640942a7eddcc4d854d4ca496f4d0aa">Pipeline.h</a></li>
 <li>ob_config_enable_all_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#ac268bf351c5d02a2b312d7d3a4ba2870">Pipeline.h</a></li>
 <li>ob_config_enable_gyro_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#af447871736388cdac73f3010fdc7d3ce">Pipeline.h</a></li>
+<li>ob_config_enable_lidar_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a25ddabc46fdb20fda913fa6a65f29607">Pipeline.h</a></li>
 <li>ob_config_enable_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a31db09ea44e225065faae62559916360">Pipeline.h</a></li>
 <li>ob_config_enable_stream_with_stream_profile()&#160;:&#160;<a class="el" href="_pipeline_8h.html#acb7c3ab61e973e89a5e85dc4c2b5b635">Pipeline.h</a></li>
 <li>ob_config_enable_video_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a4eaf940f59fafc601c07be820053dd9a">Pipeline.h</a></li>
@@ -171,7 +173,9 @@ $(function() {
 <li>ob_create_frame_from_stream_profile()&#160;:&#160;<a class="el" href="_frame_8h.html#a2692ec36ae68d8e51f424f4698579bda">Frame.h</a></li>
 <li>ob_create_frameset()&#160;:&#160;<a class="el" href="_frame_8h.html#a3365320c97013323d916289ca21153c1">Frame.h</a></li>
 <li>ob_create_gyro_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#ae3c2c8228cb3930056ad9ebd4b53528f">StreamProfile.h</a></li>
+<li>ob_create_lidar_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a75641736709fcbf2273bae3e3c7348e7">StreamProfile.h</a></li>
 <li>ob_create_net_device()&#160;:&#160;<a class="el" href="_context_8h.html#ab42a96256a413aae128106a18bce1e65">Context.h</a></li>
+<li>ob_create_net_device_ex()&#160;:&#160;<a class="el" href="_context_8h.html#a5a7b428d772be1092622ca9c11a704c5">Context.h</a></li>
 <li>ob_create_pipeline()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a0ade1440f7844dd6f8b204a22010a5de">Pipeline.h</a></li>
 <li>ob_create_pipeline_with_device()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a09309bb4d68fdfd4450fbc1543bac3ea">Pipeline.h</a></li>
 <li>ob_create_playback_device()&#160;:&#160;<a class="el" href="_record_playback_8h.html#a53f0c49a551030e76900dafa16c50d8b">RecordPlayback.h</a></li>
@@ -233,14 +237,19 @@ $(function() {
 <li>ob_depth_work_mode_tag&#160;:&#160;<a class="el" href="_ob_types_8h.html#aaa1505ed2375fd9207a2c31997a8c9ca">ObTypes.h</a></li>
 <li>OB_DEVELOPER_MODE&#160;:&#160;<a class="el" href="_ob_types_8h.html#aa4e1c7899e4f4b08d3019c2fe87af9eaa4eb872e63fb03eff71a98f6497b9028d">ObTypes.h</a></li>
 <li>ob_device&#160;:&#160;<a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ObTypes.h</a></li>
+<li>OB_DEVICE_ACCESS_DENIED&#160;:&#160;<a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cda993bc69e29c5cb32c09fbc5c0a6cd91a">ObTypes.h</a></li>
+<li>ob_device_access_mode&#160;:&#160;<a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cd">ObTypes.h</a></li>
 <li>OB_DEVICE_AUTO_CAPTURE_ENABLE_BOOL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba21a86d6891d5e6cb996628577339606c">Property.h</a></li>
 <li>OB_DEVICE_AUTO_CAPTURE_INTERVAL_TIME_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba6b54927a00cd61ae58421c9c32d64895">Property.h</a></li>
 <li>ob_device_changed_callback&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0e6f8b80b87aec989df49ff0e5465e86">ObTypes.h</a></li>
+<li>OB_DEVICE_CONTROL_ACCESS&#160;:&#160;<a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cdadb1b4e3487e1dc45640d22ffedc55f94">ObTypes.h</a></li>
+<li>OB_DEVICE_DEFAULT_ACCESS&#160;:&#160;<a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cda4b094b841187898fdc444c306faedb17">ObTypes.h</a></li>
 <li>OB_DEVICE_DEPTH_WORK_MODE&#160;:&#160;<a class="el" href="_ob_types_8h.html#a9ea211c7f341f248ac76a56ad38b18faa96ae717f2c22d1c6451428c761879ce9">ObTypes.h</a></li>
 <li>OB_DEVICE_DEVELOPMENT_MODE&#160;:&#160;<a class="el" href="_ob_types_8h.html#aa4e1c7899e4f4b08d3019c2fe87af9ea">ObTypes.h</a></li>
 <li>ob_device_development_mode&#160;:&#160;<a class="el" href="_ob_types_8h.html#a4e7e3403d912adb53b27d547c8dbb164">ObTypes.h</a></li>
 <li>ob_device_enable_global_timestamp()&#160;:&#160;<a class="el" href="_device_8h.html#aa05acf9e4a6245cca6f949f0cea1355f">Device.h</a></li>
 <li>ob_device_enable_heartbeat()&#160;:&#160;<a class="el" href="_device_8h.html#a23df8c949f43711b34ab518d9f3256c3">Device.h</a></li>
+<li>OB_DEVICE_EXCLUSIVE_ACCESS&#160;:&#160;<a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cdacfc44799802b5ec4074d9eba181ed2ba">ObTypes.h</a></li>
 <li>ob_device_export_current_settings_as_preset_json_data()&#160;:&#160;<a class="el" href="_advanced_8h.html#a39f00cded397e9cd1dca14dfb12d9624">Advanced.h</a></li>
 <li>ob_device_export_current_settings_as_preset_json_file()&#160;:&#160;<a class="el" href="_advanced_8h.html#a511c6f36baf806de5f5662356eee5e3d">Advanced.h</a></li>
 <li>ob_device_frame_interleave_list&#160;:&#160;<a class="el" href="_ob_types_8h.html#abb8990bf0c100d437cbfdf3744f91cdb">ObTypes.h</a></li>
@@ -312,9 +321,12 @@ $(function() {
 <li>ob_device_list_get_count()&#160;:&#160;<a class="el" href="_device_8h.html#a1aa07d75b6b60b83400c36f0411f1fbe">Device.h</a></li>
 <li>ob_device_list_get_device()&#160;:&#160;<a class="el" href="_device_8h.html#a0fdefcfc90ee002eb00fe457af3917b6">Device.h</a></li>
 <li>ob_device_list_get_device_by_serial_number()&#160;:&#160;<a class="el" href="_device_8h.html#a19970621802f095270e35a34f1141cde">Device.h</a></li>
+<li>ob_device_list_get_device_by_serial_number_ex()&#160;:&#160;<a class="el" href="_device_8h.html#a1a1155ad495bb96b983bd2d98c91e582">Device.h</a></li>
 <li>ob_device_list_get_device_by_uid()&#160;:&#160;<a class="el" href="_device_8h.html#ab5274846f6d326817e9ceae01c4c2fe9">Device.h</a></li>
+<li>ob_device_list_get_device_by_uid_ex()&#160;:&#160;<a class="el" href="_device_8h.html#a623d8bf35db18258c5e631b92fe9c362">Device.h</a></li>
 <li>ob_device_list_get_device_connection_type()&#160;:&#160;<a class="el" href="_device_8h.html#af3de5f0cfaee716b3fce5a6039c918e5">Device.h</a></li>
 <li>ob_device_list_get_device_count&#160;:&#160;<a class="el" href="_device_8h.html#a2a5aacdfb0d97d434f72ab23e7b5a698">Device.h</a></li>
+<li>ob_device_list_get_device_ex()&#160;:&#160;<a class="el" href="_device_8h.html#ab511f6cbc9e14bd8e0ba4b77e99e9276">Device.h</a></li>
 <li>ob_device_list_get_device_gateway()&#160;:&#160;<a class="el" href="_device_8h.html#afc0945d8cdad132b4e019f2106cb67df">Device.h</a></li>
 <li>ob_device_list_get_device_ip_address()&#160;:&#160;<a class="el" href="_device_8h.html#aa52c2e18d35b0f33a710ca36dfd2a025">Device.h</a></li>
 <li>ob_device_list_get_device_local_gateway()&#160;:&#160;<a class="el" href="_device_8h.html#aa831f2fc49dd97f5a7a0ef33c04a6195">Device.h</a></li>
@@ -333,6 +345,7 @@ $(function() {
 <li>ob_device_load_preset_from_json_data()&#160;:&#160;<a class="el" href="_advanced_8h.html#ad0e357a963f6880dc7d2b2682f84f459">Advanced.h</a></li>
 <li>ob_device_load_preset_from_json_file()&#160;:&#160;<a class="el" href="_advanced_8h.html#a423000e4640cf0989789402b5d612035">Advanced.h</a></li>
 <li>ob_device_log_severity_level&#160;:&#160;<a class="el" href="_ob_types_8h.html#a73f1109cab1a75e1fa93a7ee4c90e602">ObTypes.h</a></li>
+<li>OB_DEVICE_MONITOR_ACCESS&#160;:&#160;<a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cda7cd793d8f67a5dac6e7b4272b66b21f5">ObTypes.h</a></li>
 <li>ob_device_preset_list&#160;:&#160;<a class="el" href="_ob_types_8h.html#ac25ddd623c0e87f0adce70c0a5890801">ObTypes.h</a></li>
 <li>ob_device_preset_list_count&#160;:&#160;<a class="el" href="_advanced_8h.html#a520aa16d78f34547f91e00c257991f36">Advanced.h</a></li>
 <li>ob_device_preset_list_get_count()&#160;:&#160;<a class="el" href="_advanced_8h.html#a2c4545e869ad7998ed002f3cd4e7add4">Advanced.h</a></li>
@@ -389,6 +402,7 @@ $(function() {
 <li>ob_enable_device_clock_sync()&#160;:&#160;<a class="el" href="_context_8h.html#a061abf0b7a16e75bd278b817ad71d3b2">Context.h</a></li>
 <li>ob_enable_multi_device_sync&#160;:&#160;<a class="el" href="_context_8h.html#a10d632e4c78c959a38ab9d924340bb7c">Context.h</a></li>
 <li>ob_enable_net_device_enumeration()&#160;:&#160;<a class="el" href="_context_8h.html#af23fe6e535802357d30da073596a958a">Context.h</a></li>
+<li>OB_END_OF_EXPOSURE&#160;:&#160;<a class="el" href="_ob_types_8h.html#ab55581f4b14bc49ec8a4b41d5fc043e3a3f35ad6e4f537b127ff765bca4413c6b">ObTypes.h</a></li>
 <li>ob_error&#160;:&#160;<a class="el" href="_ob_types_8h.html#ac9b3d3500c6a906b3c516647aaabd487">ObTypes.h</a></li>
 <li>ob_error_args&#160;:&#160;<a class="el" href="_error_8h.html#ab6982aacc30e5e6a3dcf45176a456438">Error.h</a></li>
 <li>ob_error_exception_type&#160;:&#160;<a class="el" href="_error_8h.html#a187bbd69729824d1031befae10436a81">Error.h</a></li>
@@ -402,6 +416,7 @@ $(function() {
 <li>ob_error_status&#160;:&#160;<a class="el" href="_error_8h.html#a3869a5b43de3998ae3dce41b7d0a046c">Error.h</a></li>
 <li>OB_EXCEPTION_STD_EXCEPTION&#160;:&#160;<a class="el" href="_ob_types_8h.html#a63a34c60e68bddb4fd5fe26b54aaa7f3ad1a3eff34dd8b2e282c300779de85ed8">ObTypes.h</a></li>
 <li>ob_exception_type&#160;:&#160;<a class="el" href="_ob_types_8h.html#a2697989a80fa86aa0774aa518a414334">ObTypes.h</a></li>
+<li>OB_EXCEPTION_TYPE_ACCESS_DENIED&#160;:&#160;<a class="el" href="_ob_types_8h.html#a63a34c60e68bddb4fd5fe26b54aaa7f3a8fd41726cc96d25df1597f99030ee0ba">ObTypes.h</a></li>
 <li>OB_EXCEPTION_TYPE_CAMERA_DISCONNECTED&#160;:&#160;<a class="el" href="_ob_types_8h.html#a63a34c60e68bddb4fd5fe26b54aaa7f3aee5761f9f0fe2501386212fae0d2b95c">ObTypes.h</a></li>
 <li>OB_EXCEPTION_TYPE_INVALID_VALUE&#160;:&#160;<a class="el" href="_ob_types_8h.html#a63a34c60e68bddb4fd5fe26b54aaa7f3a604379432bd3b63e2df8d0a1b3a800c7">ObTypes.h</a></li>
 <li>OB_EXCEPTION_TYPE_IO&#160;:&#160;<a class="el" href="_ob_types_8h.html#a63a34c60e68bddb4fd5fe26b54aaa7f3a6b23a1632692b176394189ff0faa8d92">ObTypes.h</a></li>
@@ -445,7 +460,7 @@ $(function() {
 <li>ob_float_3d&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0ee642ca2ed0ccbd3a34fa1577e69cf9">ObTypes.h</a></li>
 <li>OB_FLOAT_PROPERTY&#160;:&#160;<a class="el" href="_property_8h.html#a8bd3bd70ba66f9f966e9d23b9442fcfbacca1f2a45b93ec3925e99a8d9fcbc54f">Property.h</a></li>
 <li>ob_float_property_range&#160;:&#160;<a class="el" href="_ob_types_8h.html#a9d694a68fdc10ce800b7b874a53d115c">ObTypes.h</a></li>
-<li>ob_force_ip_config()&#160;:&#160;<a class="el" href="_context_8h.html#af4bd664bfd769b6daf7db73d6854cade">Context.h</a></li>
+<li>ob_force_ip_config()&#160;:&#160;<a class="el" href="_context_8h.html#a2ad7b690a92603140b17544c10a7644f">Context.h</a></li>
 <li>ob_format&#160;:&#160;<a class="el" href="_ob_types_8h.html#a083601614fe96b1ba4106227a4bd72f2">ObTypes.h</a></li>
 <li>OB_FORMAT_ACCEL&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aa182ac8e462a03afbbe7e4c1217426a82">ObTypes.h</a></li>
 <li>OB_FORMAT_ANY&#160;:&#160;<a class="el" href="_ob_types_8h.html#ab4517bcbc296d6ff427db1eea50b7070">ObTypes.h</a></li>
@@ -460,6 +475,10 @@ $(function() {
 <li>OB_FORMAT_H265&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aa6ccf762a9da0c7ba7fbd26016c56f88e">ObTypes.h</a></li>
 <li>OB_FORMAT_HEVC&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aad93fc36ac7a87cf20360312339f25ba9">ObTypes.h</a></li>
 <li>OB_FORMAT_I420&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aa8a76302677d4eb556869db8e9b347b07">ObTypes.h</a></li>
+<li>OB_FORMAT_LIDAR_CALIBRATION&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aa5126f65f59c45d529e92645f67ae87f7">ObTypes.h</a></li>
+<li>OB_FORMAT_LIDAR_POINT&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aa9ab9f9cbbf7bc26f533a5768bcbc1649">ObTypes.h</a></li>
+<li>OB_FORMAT_LIDAR_SCAN&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aab5cf1078dc327fd97f7ffc8ebb086eb7">ObTypes.h</a></li>
+<li>OB_FORMAT_LIDAR_SPHERE_POINT&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aaf8ffd582ca1f364f5a46023ac9b3fc8e">ObTypes.h</a></li>
 <li>OB_FORMAT_MJPEG&#160;:&#160;<a class="el" href="_ob_types_8h.html#ab5f6923555d25c57807d4b8f8f7706fd">ObTypes.h</a></li>
 <li>OB_FORMAT_MJPG&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aa9a2d23bbdbb3fda2395206f45761a6fa">ObTypes.h</a></li>
 <li>OB_FORMAT_NV12&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36aad8b34fa5a56b9553c7d70f4cbe18203c">ObTypes.h</a></li>
@@ -528,6 +547,7 @@ $(function() {
 <li>OB_FRAME_IR&#160;:&#160;<a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345af12ee95e3a3735b7fe1b8edac31f1cb5">ObTypes.h</a></li>
 <li>OB_FRAME_IR_LEFT&#160;:&#160;<a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345a6ba1bbc1b9427f2c67e2acc4b282112c">ObTypes.h</a></li>
 <li>OB_FRAME_IR_RIGHT&#160;:&#160;<a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345a04652540e40f05d30c2480c198c404c8">ObTypes.h</a></li>
+<li>OB_FRAME_LIDAR_POINTS&#160;:&#160;<a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345a76a1695a9a1add63b0acae90f307089b">ObTypes.h</a></li>
 <li>ob_frame_metadata&#160;:&#160;<a class="el" href="_frame_8h.html#a5b5293d65d382d72f6f897ed2a1111b1">Frame.h</a></li>
 <li>ob_frame_metadata_size&#160;:&#160;<a class="el" href="_frame_8h.html#a3ce061850157d96b0a5e281087ce26ae">Frame.h</a></li>
 <li>ob_frame_metadata_type&#160;:&#160;<a class="el" href="_ob_types_8h.html#ae080b7e9d4916ffd1d6493aae7ec0c94">ObTypes.h</a></li>
@@ -653,11 +673,27 @@ $(function() {
 <li>OB_INT_PROPERTY&#160;:&#160;<a class="el" href="_property_8h.html#a8bd3bd70ba66f9f966e9d23b9442fcfba2e08941a77c3dffdac9f0bf239a9b04d">Property.h</a></li>
 <li>ob_int_property_range&#160;:&#160;<a class="el" href="_ob_types_8h.html#ab8f7deac8add1458ff75d8574bf4d2f0">ObTypes.h</a></li>
 <li>ob_intra_camera_sync_reference&#160;:&#160;<a class="el" href="_ob_types_8h.html#ab55581f4b14bc49ec8a4b41d5fc043e3">ObTypes.h</a></li>
-<li>ob_ir_frame_get_source_sensor_type()&#160;:&#160;<a class="el" href="_frame_8h.html#ab30238c41f15ef20905fc063e073a679">Frame.h</a></li>
 <li>ob_is_video_sensor_type&#160;:&#160;<a class="el" href="_ob_types_8h.html#acb0ccb92e4d1ac03c9b3aa21a2abbc03">ObTypes.h</a></li>
 <li>ob_is_video_stream_type&#160;:&#160;<a class="el" href="_ob_types_8h.html#a072fa4bdbc8c135b32d95040242026c6">ObTypes.h</a></li>
 <li>OB_LEFT_HAND_COORDINATE_SYSTEM&#160;:&#160;<a class="el" href="_ob_types_8h.html#afbb016a9143a1d2978e849338d98b7d3a7180f648386dc2b37e1d674987bc24cf">ObTypes.h</a></li>
+<li>ob_lidar_point&#160;:&#160;<a class="el" href="_ob_types_8h.html#a19a3c2cec1bdbda9b9f9ea46c83ecfb5">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_10HZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9a986e0da5502c9a02dce2392a9bf5f87f">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_15HZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9aaa5a0295017f41de4af845d3c5949006">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_20HZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9a102c5c05097add847ea6a1065b922ecd">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_25HZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9a0ac17388f09cf2220abd33e7cf1d98fc">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_30HZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9a351c3f40ba1d9dcbb6606f3c52f51950">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_40HZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9af7886d9a6e1810f4bcf134a986a8179f">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_5HZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9adbc8164ddfb16eb2c373f7e3ac41b853">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_ANY&#160;:&#160;<a class="el" href="_ob_types_8h.html#a775d15ae7b0c54bc9ab51c79223c5ba1">ObTypes.h</a></li>
+<li>ob_lidar_scan_point&#160;:&#160;<a class="el" href="_ob_types_8h.html#a6c3776fc1b935414174158895c4a51d5">ObTypes.h</a></li>
+<li>OB_LIDAR_SCAN_RATE&#160;:&#160;<a class="el" href="_ob_types_8h.html#a6fdbe7947471fc0bfdc379d7f316607a">ObTypes.h</a></li>
+<li>ob_lidar_scan_rate&#160;:&#160;<a class="el" href="_ob_types_8h.html#a850c697c5b32ed423382595adba599d9">ObTypes.h</a></li>
+<li>ob_lidar_scan_rate_type_to_string()&#160;:&#160;<a class="el" href="_type_helper_8h.html#ad482d868f8c704b8025a0127bba150dd">TypeHelper.h</a></li>
+<li>OB_LIDAR_SCAN_UNKNOWN&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9aa3fd9ee2954a6a8df51d71c4cf7c02d1">ObTypes.h</a></li>
+<li>ob_lidar_sphere_point&#160;:&#160;<a class="el" href="_ob_types_8h.html#ad3d5ad90459bc9929e61021df96e8f14">ObTypes.h</a></li>
+<li>ob_lidar_stream_profile_get_scan_rate()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a127a537b6680b315dee4274c5636dcac">StreamProfile.h</a></li>
 <li>ob_log_callback&#160;:&#160;<a class="el" href="_ob_types_8h.html#a714caf1674fb4b7d1b082b0a102a93cb">ObTypes.h</a></li>
+<li>ob_log_external_message()&#160;:&#160;<a class="el" href="_context_8h.html#ac35715d1a754ab8635cc2393f4a68d77">Context.h</a></li>
 <li>ob_log_severity&#160;:&#160;<a class="el" href="_ob_types_8h.html#a634280495d30c01bd120bbbf38a9b614">ObTypes.h</a></li>
 <li>OB_LOG_SEVERITY_DEBUG&#160;:&#160;<a class="el" href="_ob_types_8h.html#af3552b30cb452c3065783e55bf0a6f42a1a109226512814183c0cc3a137aabae1">ObTypes.h</a></li>
 <li>OB_LOG_SEVERITY_ERROR&#160;:&#160;<a class="el" href="_ob_types_8h.html#af3552b30cb452c3065783e55bf0a6f42a254350b347f1b75a942b4ca333f174d5">ObTypes.h</a></li>
@@ -692,6 +728,7 @@ $(function() {
 <li>OB_MGC_FILTER&#160;:&#160;<a class="el" href="_ob_types_8h.html#aa40fbed357ce1aa345d7ad958b591816a546c20caf0a5fa6d62108d99deb9523b">ObTypes.h</a></li>
 <li>ob_mgc_filter_config&#160;:&#160;<a class="el" href="_ob_types_8h.html#affc36ee811289644f0f1994c74533255">ObTypes.h</a></li>
 <li>OB_MGH_FILTER&#160;:&#160;<a class="el" href="_ob_types_8h.html#aa40fbed357ce1aa345d7ad958b591816a6cb0d96d65f295ac2167e44cb5381ac5">ObTypes.h</a></li>
+<li>OB_MIDDLE_OF_EXPOSURE&#160;:&#160;<a class="el" href="_ob_types_8h.html#ab55581f4b14bc49ec8a4b41d5fc043e3a328d3afc762066e8c5b12705eb1e67d1">ObTypes.h</a></li>
 <li>ob_multi_device_sync_mode&#160;:&#160;<a class="el" href="_ob_types_8h.html#aabad929b67059752029c3374594ac63b">ObTypes.h</a></li>
 <li>OB_MULTI_DEVICE_SYNC_MODE_FREE_RUN&#160;:&#160;<a class="el" href="_ob_types_8h.html#aabad929b67059752029c3374594ac63bad662690d57f70c078659e39b4e4b1a89">ObTypes.h</a></li>
 <li>OB_MULTI_DEVICE_SYNC_MODE_HARDWARE_TRIGGERING&#160;:&#160;<a class="el" href="_ob_types_8h.html#aabad929b67059752029c3374594ac63ba39ca63ef583695c083588ae28ea22ad9">ObTypes.h</a></li>
@@ -802,6 +839,7 @@ $(function() {
 <li>OB_PROP_COLOR_MAXIMAL_SHUTTER_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba24450874f07f1a5dfb69124b6402945b">Property.h</a></li>
 <li>OB_PROP_COLOR_MIRROR_BOOL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabafa2195bdb102c48c5b00a806dc0763fc">Property.h</a></li>
 <li>OB_PROP_COLOR_POWER_LINE_FREQUENCY_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba8c742234f530e76daa23da65fab1621e">Property.h</a></li>
+<li>OB_PROP_COLOR_ROI_BRIGHTNESS_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba8ca506dc938af3f778e23eed73d35b81">Property.h</a></li>
 <li>OB_PROP_COLOR_ROLL_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba415c12a50603d1a402c3f2410c025e87">Property.h</a></li>
 <li>OB_PROP_COLOR_ROTATE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba75cb380e2d2eafb1fbf4b0b6ac471853">Property.h</a></li>
 <li>OB_PROP_COLOR_SATURATION_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabafd1d14da3c54e51fb7be1be5f43c4943">Property.h</a></li>
@@ -813,6 +851,7 @@ $(function() {
 <li>OB_PROP_CONFIDENCE_ROTATE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba916742b0b9b326a94cdc3d287364d5ad">Property.h</a></li>
 <li>OB_PROP_CONFIDENCE_STREAM_FILTER_BOOL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabad7c070bee7c77f7ff67252ca35905f24">Property.h</a></li>
 <li>OB_PROP_CONFIDENCE_STREAM_FILTER_THRESHOLD_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba1eaed5f169491acb8879164208851a45">Property.h</a></li>
+<li>OB_PROP_CPU_TEMPERATURE_CALIBRATION_BOOL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabaed8266867787e526ddc681f24cbaec85">Property.h</a></li>
 <li>OB_PROP_D2C_PREPROCESS_BOOL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba32e2483ccc160823a3534c0970de8af5">Property.h</a></li>
 <li>OB_PROP_DC_POWER_STATE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba821d2a0d3cf1a41df5f7b00056b78760">Property.h</a></li>
 <li>OB_PROP_DEBUG_ESGM_CONFIDENCE_FLOAT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabad752401853bee04286d77419b42a5b82">Property.h</a></li>
@@ -899,6 +938,18 @@ $(function() {
 <li>OB_PROP_LDP_BOOL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba9aa3f46c3db6cb3e597f986957489748">Property.h</a></li>
 <li>OB_PROP_LDP_MEASURE_DISTANCE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba73b910e2ab33301a6a2572d61ffee1e3">Property.h</a></li>
 <li>OB_PROP_LDP_STATUS_BOOL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba852840412c59763b0ed63e26c342e7e2">Property.h</a></li>
+<li>OB_PROP_LIDAR_APD_TEMPERATURE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabacdfacbb445f03c6d835147705cf145d2">Property.h</a></li>
+<li>OB_PROP_LIDAR_APPLY_CONFIGS_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabacc0618141846992e6436f33a57cacb0d">Property.h</a></li>
+<li>OB_PROP_LIDAR_MCU_TEMPERATURE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba63d92dc07bca804527d7c08738554019">Property.h</a></li>
+<li>OB_PROP_LIDAR_MEMS_FOV_SIZE_FLOAT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba27cc3dc3cd797aac1d49b010bdff23e2">Property.h</a></li>
+<li>OB_PROP_LIDAR_MEMS_FRENQUENCY_FLOAT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba9b144f52a91a948e1ece475d08a71a6a">Property.h</a></li>
+<li>OB_PROP_LIDAR_MOTOR_SPIN_SPEED_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba6b3e2e62b317e664c71f4bdd2b2a1b00">Property.h</a></li>
+<li>OB_PROP_LIDAR_PORT_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba2ec37a42ec7695261d67eb627bc32470">Property.h</a></li>
+<li>OB_PROP_LIDAR_REPETITIVE_SCAN_MODE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabaafd19111989472ec6b9af37c3fcb5c88">Property.h</a></li>
+<li>OB_PROP_LIDAR_SPECIFIC_MODE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabaf7bbcfc9bc6ea057219ca9ca71fb6bee">Property.h</a></li>
+<li>OB_PROP_LIDAR_TAIL_FILTER_LEVEL_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabae47c590e55bf151031e2163f8f3b4a6a">Property.h</a></li>
+<li>OB_PROP_LIDAR_WARNING_INFO_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabaccfac72bcfbb2bf9052696d5b57f148c">Property.h</a></li>
+<li>OB_PROP_LIDAR_WORK_MODE_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba07ae2a61afb568c950ae134a871523f8">Property.h</a></li>
 <li>OB_PROP_LOW_EXPOSURE_LASER_CONTROL_BOOL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabaa1572bea8407864b820d034b3f8a48b7">Property.h</a></li>
 <li>OB_PROP_MAX_DEPTH_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba5fcc2f589b4de6a35fea969b3aedddc9">Property.h</a></li>
 <li>OB_PROP_MIN_DEPTH_INT&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba03bf7f2e8ed752719444413ec31d1f5a">Property.h</a></li>
@@ -935,11 +986,18 @@ $(function() {
 <li>ob_protocol_version&#160;:&#160;<a class="el" href="_ob_types_8h.html#ada3b6b7e2952112ebb7f9b3c7acacef7">ObTypes.h</a></li>
 <li>ob_query_device_list()&#160;:&#160;<a class="el" href="_context_8h.html#ae74e461932cf1f45d7ed734fff37c222">Context.h</a></li>
 <li>OB_RAW_DATA_CAMERA_CALIB_JSON_FILE&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbababe21a5d5336201ea9131c4c7d2b705b7">Property.h</a></li>
+<li>OB_RAW_DATA_LIDAR_FIRMWARE_VERSION&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba550fb5c4b32d1f967fce5af3919b50ab">Property.h</a></li>
+<li>OB_RAW_DATA_LIDAR_FPGA_VERSION&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabadab82a28a6d8f814246060720986d93e">Property.h</a></li>
+<li>OB_RAW_DATA_LIDAR_IP_ADDRESS&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba16dd61eb78d630d3509a9572668bbc29">Property.h</a></li>
+<li>OB_RAW_DATA_LIDAR_MAC_ADDRESS&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba04680edf1555a925fbd5ed2b219645db">Property.h</a></li>
+<li>OB_RAW_DATA_LIDAR_PRODUCT_MODEL&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbaba8558361176a41b196a3d44a5780ad0fd">Property.h</a></li>
+<li>OB_RAW_DATA_LIDAR_SUBNET_MASK&#160;:&#160;<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbabad1629db82e537eef42b2dfa69abb7749">Property.h</a></li>
 <li>ob_record_device&#160;:&#160;<a class="el" href="_ob_types_8h.html#ae35496e84014269591ae8942838f30c3">ObTypes.h</a></li>
 <li>ob_record_device_pause()&#160;:&#160;<a class="el" href="_record_playback_8h.html#afb8b8919bcb021381a44aa69a7255df2">RecordPlayback.h</a></li>
 <li>ob_record_device_resume()&#160;:&#160;<a class="el" href="_record_playback_8h.html#affa565a08e653511fbaa1fb3c1ae51e2">RecordPlayback.h</a></li>
 <li>ob_rect&#160;:&#160;<a class="el" href="_ob_types_8h.html#a30e19824c53330eab0ddb7a30e445624">ObTypes.h</a></li>
 <li>ob_region_of_interest&#160;:&#160;<a class="el" href="_ob_types_8h.html#a596b4b12d7f836481b527abf2bed9844">ObTypes.h</a></li>
+<li>ob_register_device_changed_callback()&#160;:&#160;<a class="el" href="_context_8h.html#acb8071d58e4de89fde80119725090a47">Context.h</a></li>
 <li>OB_RIGHT_HAND_COORDINATE_SYSTEM&#160;:&#160;<a class="el" href="_ob_types_8h.html#afbb016a9143a1d2978e849338d98b7d3a6e4c689ff6ece7bf7f2cfc0d4e76dc2f">ObTypes.h</a></li>
 <li>OB_ROTATE_DEGREE_0&#160;:&#160;<a class="el" href="_ob_types_8h.html#ae0d7750444d131ad8d013ea09178dbfaa024e6fce17c7da523574940750401d17">ObTypes.h</a></li>
 <li>OB_ROTATE_DEGREE_180&#160;:&#160;<a class="el" href="_ob_types_8h.html#ae0d7750444d131ad8d013ea09178dbfaa2879fe88a0651bb07fe52fc51494d4f8">ObTypes.h</a></li>
@@ -965,6 +1023,7 @@ $(function() {
 <li>OB_SAMPLE_RATE_800_HZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276ea337aab179609821a41693f0adb808b7a">ObTypes.h</a></li>
 <li>OB_SAMPLE_RATE_8_KHZ&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276eaec83d5adbb1d3f83ce02fa1b46be9fd9">ObTypes.h</a></li>
 <li>OB_SAMPLE_RATE_UNKNOWN&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276ea4a49bb754f0ee3811716926e87ef5188">ObTypes.h</a></li>
+<li>ob_save_lidar_pointcloud_to_ply()&#160;:&#160;<a class="el" href="_utils_8h.html#ac733087d58d3e1d13457a3a2415a61ee">Utils.h</a></li>
 <li>ob_save_pointcloud_to_ply()&#160;:&#160;<a class="el" href="_utils_8h.html#ae96e0ef6555da20d43b71853b8e36e85">Utils.h</a></li>
 <li>ob_sensor&#160;:&#160;<a class="el" href="_ob_types_8h.html#a023b8d97d9582900107d6b1ea8d459f2">ObTypes.h</a></li>
 <li>OB_SENSOR_ACCEL&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8ae5ac7db840a4be92a2303fe251b730fd">ObTypes.h</a></li>
@@ -979,6 +1038,7 @@ $(function() {
 <li>OB_SENSOR_IR&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8a8c06a0f1352652c85b3f8f990a1cb632">ObTypes.h</a></li>
 <li>OB_SENSOR_IR_LEFT&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8ac6adfa3af6c768496a1851684985f067">ObTypes.h</a></li>
 <li>OB_SENSOR_IR_RIGHT&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8a0424821276529822aae2d8b0fff286c3">ObTypes.h</a></li>
+<li>OB_SENSOR_LIDAR&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8a36c23c245803394a4512a4cbf002b050">ObTypes.h</a></li>
 <li>ob_sensor_list&#160;:&#160;<a class="el" href="_ob_types_8h.html#ad986c454283fc8221aa5db4a60bff5a0">ObTypes.h</a></li>
 <li>ob_sensor_list_get_count()&#160;:&#160;<a class="el" href="_sensor_8h.html#a6cc9a5826618ece9f878ac6467619705">Sensor.h</a></li>
 <li>ob_sensor_list_get_sensor()&#160;:&#160;<a class="el" href="_sensor_8h.html#a014284d315c1a3eecf61c159ab55eb63">Sensor.h</a></li>
@@ -1000,6 +1060,7 @@ $(function() {
 <li>ob_set_device_changed_callback()&#160;:&#160;<a class="el" href="_context_8h.html#a5eb9911641d9213fb763c76f088f77e5">Context.h</a></li>
 <li>ob_set_extensions_directory()&#160;:&#160;<a class="el" href="_context_8h.html#afc2f7d22fafb176bb406d7a651df26b0">Context.h</a></li>
 <li>ob_set_logger_callback&#160;:&#160;<a class="el" href="_context_8h.html#a559c527843cd4a7a7ded6e40665f1a1f">Context.h</a></li>
+<li>ob_set_logger_file_name()&#160;:&#160;<a class="el" href="_context_8h.html#af791ac687a9997ab5df93c6a47c34da3">Context.h</a></li>
 <li>ob_set_logger_severity()&#160;:&#160;<a class="el" href="_context_8h.html#aa98b8506f7a859bdd69744e54b77b895">Context.h</a></li>
 <li>ob_set_logger_to_callback()&#160;:&#160;<a class="el" href="_context_8h.html#a078090449f12caaa377d3e85b8a0f465">Context.h</a></li>
 <li>ob_set_logger_to_console()&#160;:&#160;<a class="el" href="_context_8h.html#ac33e993ce39828563596490e5fb01cf3">Context.h</a></li>
@@ -1008,6 +1069,7 @@ $(function() {
 <li>ob_spatial_advanced_filter_params&#160;:&#160;<a class="el" href="_ob_types_8h.html#a909efbf162777beb9faad49c5b221284">ObTypes.h</a></li>
 <li>ob_spatial_fast_filter_params&#160;:&#160;<a class="el" href="_ob_types_8h.html#ac6583802dca0af8c0242d662c22fece6">ObTypes.h</a></li>
 <li>ob_spatial_moderate_filter_params&#160;:&#160;<a class="el" href="_ob_types_8h.html#aad3478781e8515ffbd01f2dea828ea4e">ObTypes.h</a></li>
+<li>OB_START_OF_EXPOSURE&#160;:&#160;<a class="el" href="_ob_types_8h.html#ab55581f4b14bc49ec8a4b41d5fc043e3ae9083b0edc200e6b4159cc247223e06c">ObTypes.h</a></li>
 <li>ob_status&#160;:&#160;<a class="el" href="_ob_types_8h.html#ae3112683a2851e0ffa24eafeec872e21">ObTypes.h</a></li>
 <li>OB_STATUS_ERROR&#160;:&#160;<a class="el" href="_ob_types_8h.html#a16946a0e76e54d58fe6a945fccc3190bab8edcb2e0db81ab1386bb5b9148e03d8">ObTypes.h</a></li>
 <li>OB_STATUS_OK&#160;:&#160;<a class="el" href="_ob_types_8h.html#a16946a0e76e54d58fe6a945fccc3190baaf280111834ad3f707e3bfe88bfb3419">ObTypes.h</a></li>
@@ -1019,6 +1081,7 @@ $(function() {
 <li>OB_STREAM_IR&#160;:&#160;<a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2a3eb56907f2dcdc0903fdf1dcd37cfef9">ObTypes.h</a></li>
 <li>OB_STREAM_IR_LEFT&#160;:&#160;<a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2a7a5bab4b3de70fafcb2706379b5db403">ObTypes.h</a></li>
 <li>OB_STREAM_IR_RIGHT&#160;:&#160;<a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2a7544eb1f07101bb35e7c521c6cce7db1">ObTypes.h</a></li>
+<li>OB_STREAM_LIDAR&#160;:&#160;<a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2ad362f1207ea0b5a2e771b1a24e929cee">ObTypes.h</a></li>
 <li>ob_stream_profile&#160;:&#160;<a class="el" href="_ob_types_8h.html#a225b1286277651ac5eb4258bac0f3d05">ObTypes.h</a></li>
 <li>ob_stream_profile_format&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a3ebfc3d08e32c24cdc7dc5452f9481a1">StreamProfile.h</a></li>
 <li>ob_stream_profile_get_extrinsic_to()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#ae9ab5a75ccc36f1e8d95994b61a3a574">StreamProfile.h</a></li>
@@ -1029,6 +1092,7 @@ $(function() {
 <li>ob_stream_profile_list_get_accel_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a46a560d733810d25f450ddf37a51d99c">StreamProfile.h</a></li>
 <li>ob_stream_profile_list_get_count()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a4e6b91a0802dfc9991d9716f7a32c572">StreamProfile.h</a></li>
 <li>ob_stream_profile_list_get_gyro_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#ac2834590a9878985f246d8578b802390">StreamProfile.h</a></li>
+<li>ob_stream_profile_list_get_lidar_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#abf7294451996ca2a135201d07f19d159">StreamProfile.h</a></li>
 <li>ob_stream_profile_list_get_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a523982c9d7eb5b3772093448079cf889">StreamProfile.h</a></li>
 <li>ob_stream_profile_list_get_video_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a1f0e38f68cac40263aa260ab1ea2016e">StreamProfile.h</a></li>
 <li>ob_stream_profile_set_extrinsic_to()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#ac6c4700f086b4bce189333e1a76d37f4">StreamProfile.h</a></li>
@@ -1088,6 +1152,7 @@ $(function() {
 <li>ob_transformation_3d_to_3d()&#160;:&#160;<a class="el" href="_utils_8h.html#ab374a6f109dfa3de818174777bc0aea9">Utils.h</a></li>
 <li>ob_uint16_property_range&#160;:&#160;<a class="el" href="_ob_types_8h.html#ae83143c7cadfddddcd642e00b731d460">ObTypes.h</a></li>
 <li>ob_uint8_property_range&#160;:&#160;<a class="el" href="_ob_types_8h.html#a801c289ab7f02702deda3194c69e2d8e">ObTypes.h</a></li>
+<li>ob_unregister_device_changed_callback()&#160;:&#160;<a class="el" href="_context_8h.html#aa9cec7258643952302e2679da6770e20">Context.h</a></li>
 <li>ob_upgrade_state&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0e3709c80db8ec6e1f568ee6480309d4">ObTypes.h</a></li>
 <li>OB_USB_POWER_5V_0A9&#160;:&#160;<a class="el" href="_ob_types_8h.html#abcaa12738036a2a9bc67cc81e6ea1376a6577d2e8fb25870550d6c87d0b22f0a5">ObTypes.h</a></li>
 <li>OB_USB_POWER_5V_1A5&#160;:&#160;<a class="el" href="_ob_types_8h.html#abcaa12738036a2a9bc67cc81e6ea1376a0bc91e1dd889cdc43b3e0dc1d2527b32">ObTypes.h</a></li>
@@ -1129,6 +1194,7 @@ $(function() {
 <li>OBAccelSampleRate&#160;:&#160;<a class="el" href="_ob_types_8h.html#a84479ef0a406c954741b62307e484896">ObTypes.h</a></li>
 <li>OBAlignMode&#160;:&#160;<a class="el" href="_ob_types_8h.html#ade914070120de80d4338ee74e73dc9d5">ObTypes.h</a></li>
 <li>OBBaselineCalibrationParam&#160;:&#160;<a class="el" href="_ob_types_8h.html#a5172c15d206afaa8f56c3a24758309a2">ObTypes.h</a></li>
+<li>OBCallbackId&#160;:&#160;<a class="el" href="_ob_types_8h.html#ac7d644c9696d5f69759555511dd42459">ObTypes.h</a></li>
 <li>OBCameraDistortionModel&#160;:&#160;<a class="el" href="_ob_types_8h.html#a31fd2cee3c0fcf66a7a366fbce735a1f">ObTypes.h</a></li>
 <li>OBCameraPerformanceMode&#160;:&#160;<a class="el" href="_ob_types_8h.html#acfc0823b936dbdf55b12c78891b2b77b">ObTypes.h</a></li>
 <li>OBCmdVersion&#160;:&#160;<a class="el" href="_ob_types_8h.html#abeace58aaf1ef003cd8d72b10a16d1f6">ObTypes.h</a></li>
@@ -1143,6 +1209,7 @@ $(function() {
 <li>OBDepthPrecisionLevel&#160;:&#160;<a class="el" href="_ob_types_8h.html#ae08e57428df0ebafd9949b1a6e6c4e0d">ObTypes.h</a></li>
 <li>OBDepthUnit&#160;:&#160;<a class="el" href="_ob_types_8h.html#a03b28e56170cc39dfd7858c83f47bc8c">ObTypes.h</a></li>
 <li>OBDepthWorkModeTag&#160;:&#160;<a class="el" href="_ob_types_8h.html#a9ea211c7f341f248ac76a56ad38b18fa">ObTypes.h</a></li>
+<li>OBDeviceAccessMode&#160;:&#160;<a class="el" href="_ob_types_8h.html#aaa2dcaaca94daecc9215716ea8038227">ObTypes.h</a></li>
 <li>OBDeviceDevelopmentMode&#160;:&#160;<a class="el" href="_ob_types_8h.html#a889daf0c26bafa089c8c9de864b1c697">ObTypes.h</a></li>
 <li>OBDeviceIpAddrConfig&#160;:&#160;<a class="el" href="_ob_types_8h.html#a098613a4e606ad5988fe3d81a9e4799e">ObTypes.h</a></li>
 <li>OBDeviceLogSeverityLevel&#160;:&#160;<a class="el" href="_ob_types_8h.html#a2170595120659238f7e9dceb4826a763">ObTypes.h</a></li>
@@ -1167,6 +1234,7 @@ $(function() {
 <li>OBHoleFillingMode&#160;:&#160;<a class="el" href="_ob_types_8h.html#aca4d3784bb197741d9a7c564ad846396">ObTypes.h</a></li>
 <li>OBIMUSampleRate&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e">ObTypes.h</a></li>
 <li>OBIntraCameraSyncReference&#160;:&#160;<a class="el" href="_ob_types_8h.html#aa542b44daabb9d1aaf3f92d331c4e01b">ObTypes.h</a></li>
+<li>OBLiDARScanRate&#160;:&#160;<a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9">ObTypes.h</a></li>
 <li>OBLogSeverity&#160;:&#160;<a class="el" href="_ob_types_8h.html#af3552b30cb452c3065783e55bf0a6f42">ObTypes.h</a></li>
 <li>OBMarginFilterConfig&#160;:&#160;<a class="el" href="_ob_types_8h.html#a6cd68aa1e27bb14ac6748fe1920c03b8">ObTypes.h</a></li>
 <li>OBMediaState&#160;:&#160;<a class="el" href="_ob_types_8h.html#a305ef4d284b8f87682d7c8a6727a812a">ObTypes.h</a></li>

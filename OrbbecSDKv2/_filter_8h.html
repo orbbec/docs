@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/h/Filter.h File Reference</title>
+<title>OrbbecSDK: Filter.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -161,7 +161,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8h_source.html#l00259">259</a> of file <a class="el" href="_filter_8h_source.html">Filter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8h_source.html#l00267">267</a> of file <a class="el" href="_filter_8h_source.html">Filter.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +177,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8h_source.html#l00260">260</a> of file <a class="el" href="_filter_8h_source.html">Filter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8h_source.html#l00268">268</a> of file <a class="el" href="_filter_8h_source.html">Filter.h</a>.</p>
 
 </div>
 </div>
@@ -205,13 +205,13 @@ Functions</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>If the filter of the specified name is a private filter, and the creator of the filter have not been activated, the function will return NULL.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the filter. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the filter. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00415">ob::Align::Align()</a>, <a class="el" href="_filter_8hpp_source.html#l00302">ob::FilterFactory::createFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00571">ob::DecimationFilter::DecimationFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00462">ob::FormatConvertFilter::FormatConvertFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00488">ob::HdrMerge::HdrMerge()</a>, <a class="el" href="_filter_8hpp_source.html#l00343">ob::PointCloudFilter::PointCloudFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00519">ob::SequenceIdFilter::SequenceIdFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l00615">ob::ThresholdFilter::ThresholdFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00442">ob::Align::Align()</a>, <a class="el" href="_filter_8hpp_source.html#l00306">ob::FilterFactory::createFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00598">ob::DecimationFilter::DecimationFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00489">ob::FormatConvertFilter::FormatConvertFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00515">ob::HdrMerge::HdrMerge()</a>, <a class="el" href="_filter_8hpp_source.html#l00348">ob::PointCloudFilter::PointCloudFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00546">ob::SequenceIdFilter::SequenceIdFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l00642">ob::ThresholdFilter::ThresholdFilter()</a>.</p>
 
 </div>
 </div>
@@ -237,8 +237,8 @@ Functions</h2></td></tr>
 <p>Get the name of <a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filter</td><td><a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> object </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td><a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -271,14 +271,14 @@ Functions</h2></td></tr>
 <p>A private filter can define its own vendor specific code for specific purposes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the filter. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the filter. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* Return the vendor specific code of the filter. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00330">ob::FilterFactory::getFilterVendorSpecificCode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00335">ob::FilterFactory::getFilterVendorSpecificCode()</a>.</p>
 
 </div>
 </div>
@@ -310,15 +310,15 @@ Functions</h2></td></tr>
 <p>Some private filters require an activation key to be activated, its depends on the vendor of the filter.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the filter. </td></tr>
-    <tr><td class="paramname">activation_key</td><td>The activation key of the filter. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the filter. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">activation_key</td><td>The activation key of the filter. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_filter* Return the private filter object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00316">ob::FilterFactory::createPrivateFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01102">ob::DisparityTransform::DisparityTransform()</a>, <a class="el" href="_filter_8hpp_source.html#l00931">ob::HoleFillingFilter::HoleFillingFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00964">ob::NoiseRemovalFilter::NoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00678">ob::SpatialAdvancedFilter::SpatialAdvancedFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00788">ob::SpatialFastFilter::SpatialFastFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00841">ob::SpatialModerateFilter::SpatialModerateFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l01035">ob::TemporalFilter::TemporalFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00320">ob::FilterFactory::createPrivateFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01129">ob::DisparityTransform::DisparityTransform()</a>, <a class="el" href="_filter_8hpp_source.html#l00958">ob::HoleFillingFilter::HoleFillingFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00991">ob::NoiseRemovalFilter::NoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00705">ob::SpatialAdvancedFilter::SpatialAdvancedFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00815">ob::SpatialFastFilter::SpatialFastFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00868">ob::SpatialModerateFilter::SpatialModerateFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l01062">ob::TemporalFilter::TemporalFilter()</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get config schema of the filter. </p>
-<p>The returned string is a csv format string representing the configuration schema of the filter. The format of the string is: &lt;parameter_name&gt;, &lt;parameter_type: "int", "float", "bool"&gt;, &lt;minimum_value&gt;, &lt;maximum_value&gt;, &lt;value_step&gt;, &lt;default_value&gt;, &lt;parameter_description&gt;</p>
+<p>The returned string is a csv format string representing the configuration schema of the filter. The format of the string is: <span class="tt">&lt;parameter_name&gt;</span>, <span class="tt">&lt;parameter_type: "int", "float", "bool"&gt;</span>, <span class="tt">&lt;minimum_value&gt;</span>, <span class="tt">&lt;maximum_value&gt;</span>, <span class="tt">&lt;value_step&gt;</span>, <span class="tt">&lt;default_value&gt;</span>, <span class="tt">&lt;parameter_description&gt;</span></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter object to get the configuration schema for </td></tr>
@@ -384,7 +384,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A csv format string representing the configuration schema of the filter </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00217">ob::Filter::getConfigSchema()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00219">ob::Filter::getConfigSchema()</a>.</p>
 
 </div>
 </div>
@@ -412,8 +412,8 @@ Functions</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>The returned list should be deleted by calling <a class="el" href="#afebf0e1dc7e21c3a88239d52542cea7a">ob_delete_filter_config_schema_list</a> when it is no longer needed.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filter</td><td>The filter object to get the configuration schema for </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The filter object to get the configuration schema for </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs</td></tr>
   </table>
   </dd>
 </dl>
@@ -445,8 +445,8 @@ Functions</h2></td></tr>
 <p>Delete a list of filter config schema items. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config_schema_list</td><td>The list of filter config schema items to delete. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config_schema_list</td><td>The list of filter config schema items to delete. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
 </dl>
@@ -528,13 +528,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>A filter object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">config_name</td><td>config name </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double The value of the config. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00258">ob::Filter::getConfigValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00261">ob::Filter::getConfigValue()</a>.</p>
 
 </div>
 </div>
@@ -579,7 +579,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00243">ob::Filter::setConfigValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00245">ob::Filter::setConfigValue()</a>.</p>
 
 </div>
 </div>
@@ -724,7 +724,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The frame object processed by the filter. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00177">ob::Filter::process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00178">ob::Filter::process()</a>.</p>
 
 </div>
 </div>
@@ -768,7 +768,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00203">ob::Filter::setCallBack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00204">ob::Filter::setCallBack()</a>.</p>
 
 </div>
 </div>
@@ -808,7 +808,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00192">ob::Filter::pushFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00193">ob::Filter::pushFrame()</a>.</p>
 
 </div>
 </div>
@@ -835,13 +835,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filter_list</td><td>filter list </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The number of list </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01130">ob::OBFilterList::getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01157">ob::OBFilterList::getCount()</a>.</p>
 
 </div>
 </div>
@@ -874,13 +874,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">filter_list</td><td>Filter list </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Filter index </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> The index of <a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01143">ob::OBFilterList::getFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01171">ob::OBFilterList::getFilter()</a>.</p>
 
 </div>
 </div>
@@ -912,7 +912,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01119">ob::OBFilterList::~OBFilterList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01146">ob::OBFilterList::~OBFilterList()</a>.</p>
 
 </div>
 </div>
@@ -938,8 +938,8 @@ Functions</h2></td></tr>
 <p>Get the number of config schema items in the config schema list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config_schema_list</td><td>Filter config schema list </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config_schema_list</td><td>Filter config schema list </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -976,9 +976,9 @@ Functions</h2></td></tr>
 <p>Get the config schema item by index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config_schema_list</td><td>Filter config schema list </td></tr>
-    <tr><td class="paramname">index</td><td>Config schema item index </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config_schema_list</td><td>Filter config schema list </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Config schema item index </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1016,14 +1016,14 @@ Functions</h2></td></tr>
 <p>It is useful when the align target stream dose not started (without any frame to get intrinsics and extrinsics).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filter</td><td>A filter object. </td></tr>
-    <tr><td class="paramname">align_to_stream_profile</td><td>The align target stream profile. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>A filter object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">align_to_stream_profile</td><td>The align target stream profile. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00450">ob::Align::setAlignToStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00477">ob::Align::setAlignToStreamProfile()</a>.</p>
 
 </div>
 </div>

@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -95,6 +95,7 @@ $(function() {
 <li>ob_config_enable_accel_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a8640942a7eddcc4d854d4ca496f4d0aa">Pipeline.h</a></li>
 <li>ob_config_enable_all_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#ac268bf351c5d02a2b312d7d3a4ba2870">Pipeline.h</a></li>
 <li>ob_config_enable_gyro_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#af447871736388cdac73f3010fdc7d3ce">Pipeline.h</a></li>
+<li>ob_config_enable_lidar_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a25ddabc46fdb20fda913fa6a65f29607">Pipeline.h</a></li>
 <li>ob_config_enable_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a31db09ea44e225065faae62559916360">Pipeline.h</a></li>
 <li>ob_config_enable_stream_with_stream_profile()&#160;:&#160;<a class="el" href="_pipeline_8h.html#acb7c3ab61e973e89a5e85dc4c2b5b635">Pipeline.h</a></li>
 <li>ob_config_enable_video_stream()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a4eaf940f59fafc601c07be820053dd9a">Pipeline.h</a></li>
@@ -114,7 +115,9 @@ $(function() {
 <li>ob_create_frame_from_stream_profile()&#160;:&#160;<a class="el" href="_frame_8h.html#a2692ec36ae68d8e51f424f4698579bda">Frame.h</a></li>
 <li>ob_create_frameset()&#160;:&#160;<a class="el" href="_frame_8h.html#a3365320c97013323d916289ca21153c1">Frame.h</a></li>
 <li>ob_create_gyro_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#ae3c2c8228cb3930056ad9ebd4b53528f">StreamProfile.h</a></li>
+<li>ob_create_lidar_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a75641736709fcbf2273bae3e3c7348e7">StreamProfile.h</a></li>
 <li>ob_create_net_device()&#160;:&#160;<a class="el" href="_context_8h.html#ab42a96256a413aae128106a18bce1e65">Context.h</a></li>
+<li>ob_create_net_device_ex()&#160;:&#160;<a class="el" href="_context_8h.html#a5a7b428d772be1092622ca9c11a704c5">Context.h</a></li>
 <li>ob_create_pipeline()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a0ade1440f7844dd6f8b204a22010a5de">Pipeline.h</a></li>
 <li>ob_create_pipeline_with_device()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a09309bb4d68fdfd4450fbc1543bac3ea">Pipeline.h</a></li>
 <li>ob_create_playback_device()&#160;:&#160;<a class="el" href="_record_playback_8h.html#a53f0c49a551030e76900dafa16c50d8b">RecordPlayback.h</a></li>
@@ -205,8 +208,11 @@ $(function() {
 <li>ob_device_list_get_count()&#160;:&#160;<a class="el" href="_device_8h.html#a1aa07d75b6b60b83400c36f0411f1fbe">Device.h</a></li>
 <li>ob_device_list_get_device()&#160;:&#160;<a class="el" href="_device_8h.html#a0fdefcfc90ee002eb00fe457af3917b6">Device.h</a></li>
 <li>ob_device_list_get_device_by_serial_number()&#160;:&#160;<a class="el" href="_device_8h.html#a19970621802f095270e35a34f1141cde">Device.h</a></li>
+<li>ob_device_list_get_device_by_serial_number_ex()&#160;:&#160;<a class="el" href="_device_8h.html#a1a1155ad495bb96b983bd2d98c91e582">Device.h</a></li>
 <li>ob_device_list_get_device_by_uid()&#160;:&#160;<a class="el" href="_device_8h.html#ab5274846f6d326817e9ceae01c4c2fe9">Device.h</a></li>
+<li>ob_device_list_get_device_by_uid_ex()&#160;:&#160;<a class="el" href="_device_8h.html#a623d8bf35db18258c5e631b92fe9c362">Device.h</a></li>
 <li>ob_device_list_get_device_connection_type()&#160;:&#160;<a class="el" href="_device_8h.html#af3de5f0cfaee716b3fce5a6039c918e5">Device.h</a></li>
+<li>ob_device_list_get_device_ex()&#160;:&#160;<a class="el" href="_device_8h.html#ab511f6cbc9e14bd8e0ba4b77e99e9276">Device.h</a></li>
 <li>ob_device_list_get_device_gateway()&#160;:&#160;<a class="el" href="_device_8h.html#afc0945d8cdad132b4e019f2106cb67df">Device.h</a></li>
 <li>ob_device_list_get_device_ip_address()&#160;:&#160;<a class="el" href="_device_8h.html#aa52c2e18d35b0f33a710ca36dfd2a025">Device.h</a></li>
 <li>ob_device_list_get_device_local_gateway()&#160;:&#160;<a class="el" href="_device_8h.html#aa831f2fc49dd97f5a7a0ef33c04a6195">Device.h</a></li>
@@ -273,7 +279,7 @@ $(function() {
 <li>ob_filter_set_callback()&#160;:&#160;<a class="el" href="_filter_8h.html#a8275463776e356da3b8cb84d011d944d">Filter.h</a></li>
 <li>ob_filter_set_config_value()&#160;:&#160;<a class="el" href="_filter_8h.html#aeb1f2fa5aaa84ee1f4d562c069e62a06">Filter.h</a></li>
 <li>ob_filter_update_config()&#160;:&#160;<a class="el" href="_filter_8h.html#a0f84c3f76f43e19ee73ace4bbcc17782">Filter.h</a></li>
-<li>ob_force_ip_config()&#160;:&#160;<a class="el" href="_context_8h.html#af4bd664bfd769b6daf7db73d6854cade">Context.h</a></li>
+<li>ob_force_ip_config()&#160;:&#160;<a class="el" href="_context_8h.html#a2ad7b690a92603140b17544c10a7644f">Context.h</a></li>
 <li>ob_format_to_string()&#160;:&#160;<a class="el" href="_type_helper_8h.html#a9c2d44d976e421e2498c9905d330dde9">TypeHelper.h</a></li>
 <li>ob_format_type_to_string()&#160;:&#160;<a class="el" href="_type_helper_8h.html#ab25f28a26efb4c03b3a73e67184f5731">TypeHelper.h</a></li>
 <li>ob_frame_add_ref()&#160;:&#160;<a class="el" href="_frame_8h.html#ac06c9f5340d55423ac317309f6fd8747">Frame.h</a></li>
@@ -322,7 +328,9 @@ $(function() {
 <li>ob_gyro_stream_profile_get_sample_rate()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a102e7f7aa734a77eca7ff7933b02a536">StreamProfile.h</a></li>
 <li>ob_gyro_stream_set_intrinsic()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#aa6109a5b098fe2ed54ef822858700da0">StreamProfile.h</a></li>
 <li>ob_imu_rate_type_to_string()&#160;:&#160;<a class="el" href="_type_helper_8h.html#acfda3fb01555e2e678e915d919f2ff98">TypeHelper.h</a></li>
-<li>ob_ir_frame_get_source_sensor_type()&#160;:&#160;<a class="el" href="_frame_8h.html#ab30238c41f15ef20905fc063e073a679">Frame.h</a></li>
+<li>ob_lidar_scan_rate_type_to_string()&#160;:&#160;<a class="el" href="_type_helper_8h.html#ad482d868f8c704b8025a0127bba150dd">TypeHelper.h</a></li>
+<li>ob_lidar_stream_profile_get_scan_rate()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a127a537b6680b315dee4274c5636dcac">StreamProfile.h</a></li>
+<li>ob_log_external_message()&#160;:&#160;<a class="el" href="_context_8h.html#ac35715d1a754ab8635cc2393f4a68d77">Context.h</a></li>
 <li>ob_meta_data_type_to_string()&#160;:&#160;<a class="el" href="_type_helper_8h.html#a3b65176b3417cd57cfd2de0d311a3594">TypeHelper.h</a></li>
 <li>ob_pipeline_disable_frame_sync()&#160;:&#160;<a class="el" href="_pipeline_8h.html#ae143441c35ec9c2632836a8ce9d53241">Pipeline.h</a></li>
 <li>ob_pipeline_enable_frame_sync()&#160;:&#160;<a class="el" href="_pipeline_8h.html#a127832c183d9f6a19bcb67b7d550e088">Pipeline.h</a></li>
@@ -352,6 +360,8 @@ $(function() {
 <li>ob_query_device_list()&#160;:&#160;<a class="el" href="_context_8h.html#ae74e461932cf1f45d7ed734fff37c222">Context.h</a></li>
 <li>ob_record_device_pause()&#160;:&#160;<a class="el" href="_record_playback_8h.html#afb8b8919bcb021381a44aa69a7255df2">RecordPlayback.h</a></li>
 <li>ob_record_device_resume()&#160;:&#160;<a class="el" href="_record_playback_8h.html#affa565a08e653511fbaa1fb3c1ae51e2">RecordPlayback.h</a></li>
+<li>ob_register_device_changed_callback()&#160;:&#160;<a class="el" href="_context_8h.html#acb8071d58e4de89fde80119725090a47">Context.h</a></li>
+<li>ob_save_lidar_pointcloud_to_ply()&#160;:&#160;<a class="el" href="_utils_8h.html#ac733087d58d3e1d13457a3a2415a61ee">Utils.h</a></li>
 <li>ob_save_pointcloud_to_ply()&#160;:&#160;<a class="el" href="_utils_8h.html#ae96e0ef6555da20d43b71853b8e36e85">Utils.h</a></li>
 <li>ob_sensor_create_recommended_filter_list()&#160;:&#160;<a class="el" href="_sensor_8h.html#ab6d304dca20878abf3466368b2ed6596">Sensor.h</a></li>
 <li>ob_sensor_get_stream_profile_list()&#160;:&#160;<a class="el" href="_sensor_8h.html#a8265e9092f012a29c9d1bb17856f36c8">Sensor.h</a></li>
@@ -367,6 +377,7 @@ $(function() {
 <li>ob_sensor_type_to_string()&#160;:&#160;<a class="el" href="_type_helper_8h.html#a23794704dc70a3f671cfe57ecf1af078">TypeHelper.h</a></li>
 <li>ob_set_device_changed_callback()&#160;:&#160;<a class="el" href="_context_8h.html#a5eb9911641d9213fb763c76f088f77e5">Context.h</a></li>
 <li>ob_set_extensions_directory()&#160;:&#160;<a class="el" href="_context_8h.html#afc2f7d22fafb176bb406d7a651df26b0">Context.h</a></li>
+<li>ob_set_logger_file_name()&#160;:&#160;<a class="el" href="_context_8h.html#af791ac687a9997ab5df93c6a47c34da3">Context.h</a></li>
 <li>ob_set_logger_severity()&#160;:&#160;<a class="el" href="_context_8h.html#aa98b8506f7a859bdd69744e54b77b895">Context.h</a></li>
 <li>ob_set_logger_to_callback()&#160;:&#160;<a class="el" href="_context_8h.html#a078090449f12caaa377d3e85b8a0f465">Context.h</a></li>
 <li>ob_set_logger_to_console()&#160;:&#160;<a class="el" href="_context_8h.html#ac33e993ce39828563596490e5fb01cf3">Context.h</a></li>
@@ -378,6 +389,7 @@ $(function() {
 <li>ob_stream_profile_list_get_accel_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a46a560d733810d25f450ddf37a51d99c">StreamProfile.h</a></li>
 <li>ob_stream_profile_list_get_count()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a4e6b91a0802dfc9991d9716f7a32c572">StreamProfile.h</a></li>
 <li>ob_stream_profile_list_get_gyro_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#ac2834590a9878985f246d8578b802390">StreamProfile.h</a></li>
+<li>ob_stream_profile_list_get_lidar_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#abf7294451996ca2a135201d07f19d159">StreamProfile.h</a></li>
 <li>ob_stream_profile_list_get_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a523982c9d7eb5b3772093448079cf889">StreamProfile.h</a></li>
 <li>ob_stream_profile_list_get_video_stream_profile()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#a1f0e38f68cac40263aa260ab1ea2016e">StreamProfile.h</a></li>
 <li>ob_stream_profile_set_extrinsic_to()&#160;:&#160;<a class="el" href="_stream_profile_8h.html#ac6c4700f086b4bce189333e1a76d37f4">StreamProfile.h</a></li>
@@ -389,6 +401,7 @@ $(function() {
 <li>ob_transformation_2d_to_3d()&#160;:&#160;<a class="el" href="_utils_8h.html#ae64fbddab597a25b919d6d770d724ce4">Utils.h</a></li>
 <li>ob_transformation_3d_to_2d()&#160;:&#160;<a class="el" href="_utils_8h.html#a1b0ac985d28498c18506128d38d72e25">Utils.h</a></li>
 <li>ob_transformation_3d_to_3d()&#160;:&#160;<a class="el" href="_utils_8h.html#ab374a6f109dfa3de818174777bc0aea9">Utils.h</a></li>
+<li>ob_unregister_device_changed_callback()&#160;:&#160;<a class="el" href="_context_8h.html#aa9cec7258643952302e2679da6770e20">Context.h</a></li>
 <li>ob_video_frame_get_height()&#160;:&#160;<a class="el" href="_frame_8h.html#af5f4a0896ec7c1a3f481f5b1800e239e">Frame.h</a></li>
 <li>ob_video_frame_get_pixel_available_bit_size()&#160;:&#160;<a class="el" href="_frame_8h.html#a405e345972dbc29028fd19627b0e2727">Frame.h</a></li>
 <li>ob_video_frame_get_pixel_type()&#160;:&#160;<a class="el" href="_frame_8h.html#ad7845d79d5a63eea3a00724fe47ceaab">Frame.h</a></li>

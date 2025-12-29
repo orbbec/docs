@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/h/Frame.h File Reference</title>
+<title>OrbbecSDK: Frame.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -197,8 +197,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:a405e345972dbc29028fd19627b0e2727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the effective number of pixels (such as Y16 format frame, but only the lower 10 bits are effective bits, and the upper 6 bits are filled with 0)  <br /></td></tr>
 <tr class="memitem:ad230c3d160da339517f91bc42ea42956" id="r_ad230c3d160da339517f91bc42ea42956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad230c3d160da339517f91bc42ea42956">ob_video_frame_set_pixel_available_bit_size</a> (<a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, uint8_t bit_size, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:ad230c3d160da339517f91bc42ea42956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the effective number of pixels (such as Y16 format frame, but only the lower 10 bits are effective bits, and the upper 6 bits are filled with 0)  <br /></td></tr>
-<tr class="memitem:ab30238c41f15ef20905fc063e073a679" id="r_ab30238c41f15ef20905fc063e073a679"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#aca9dc7e0b11a78f00fa8a2ffd8b9ca1b">ob_sensor_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab30238c41f15ef20905fc063e073a679">ob_ir_frame_get_source_sensor_type</a> (const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, <a class="el" href="structob__error.html">ob_error</a> **<a class="el" href="structob__error.html">ob_error</a>)</td></tr>
-<tr class="memdesc:ab30238c41f15ef20905fc063e073a679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the source sensor type of the ir frame (left or right for dual camera)  <br /></td></tr>
 <tr class="memitem:a5565eeb32e1657c3cb151ff1a7748cb0" id="r_a5565eeb32e1657c3cb151ff1a7748cb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5565eeb32e1657c3cb151ff1a7748cb0">ob_depth_frame_get_value_scale</a> (const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a5565eeb32e1657c3cb151ff1a7748cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value scale of the depth frame. The pixel value of the depth frame is multiplied by the scale to give a depth value in millimeters. For example, if valueScale=0.1 and a certain coordinate pixel value is pixelValue=10000, then the depth value = pixelValue*valueScale = 10000*0.1=1000mm.  <br /></td></tr>
 <tr class="memitem:a83d1c95e6d651bbb2c67631a9f958310" id="r_a83d1c95e6d651bbb2c67631a9f958310"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83d1c95e6d651bbb2c67631a9f958310">ob_depth_frame_set_value_scale</a> (<a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, float value_scale, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -251,7 +249,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00292">292</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00307">307</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +265,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00302">302</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00318">318</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -283,7 +281,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00625">625</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00654">654</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +297,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00626">626</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00655">655</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +313,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00627">627</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00656">656</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -331,7 +329,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00628">628</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00657">657</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +345,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00629">629</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00658">658</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +361,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00630">630</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00659">659</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +377,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00631">631</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00660">660</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +393,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00632">632</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00661">661</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +409,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00633">633</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00662">662</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +425,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00634">634</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00663">663</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +441,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00635">635</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00664">664</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +457,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00636">636</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00665">665</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -475,7 +473,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00637">637</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00666">666</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -491,7 +489,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00638">638</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00667">667</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -507,7 +505,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00639">639</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00668">668</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -523,7 +521,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00640">640</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00669">669</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +537,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00641">641</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00670">670</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -555,7 +553,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00642">642</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00671">671</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +569,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00643">643</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00672">672</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -587,7 +585,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00644">644</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00673">673</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +601,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00645">645</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00674">674</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +617,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00646">646</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00675">675</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +633,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00647">647</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00676">676</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -651,7 +649,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00648">648</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00677">677</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +674,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_function" href="#a2e6073da74fb0b2b6173a705b5ddfeff">ob_frame_get_timestamp_us</a>(frame, err) / 1000)</div>
 <div class="ttc" id="a_frame_8h_html_a2e6073da74fb0b2b6173a705b5ddfeff"><div class="ttname"><a href="#a2e6073da74fb0b2b6173a705b5ddfeff">ob_frame_get_timestamp_us</a></div><div class="ttdeci">OB_EXPORT uint64_t ob_frame_get_timestamp_us(const ob_frame *frame, ob_error **error)</div><div class="ttdoc">Get the frame timestamp (also known as device timestamp, hardware timestamp) of the frame in microsec...</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00650">650</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00679">679</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -701,7 +699,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_function" href="#aafe85197a1646dbf1e4cec67c086a763">ob_frame_get_system_timestamp_us</a>(frame, err))</div>
 <div class="ttc" id="a_frame_8h_html_aafe85197a1646dbf1e4cec67c086a763"><div class="ttname"><a href="#aafe85197a1646dbf1e4cec67c086a763">ob_frame_get_system_timestamp_us</a></div><div class="ttdeci">OB_EXPORT uint64_t ob_frame_get_system_timestamp_us(const ob_frame *frame, ob_error **error)</div><div class="ttdoc">Get the system timestamp of the frame in microseconds.</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00651">651</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00680">680</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -731,7 +729,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_function" href="#a27e8ba31745861296d1d787f80c66b8b">ob_frame_set_system_timestamp_us</a>(frame, system_timestamp * 1000, err))</div>
 <div class="ttc" id="a_frame_8h_html_a27e8ba31745861296d1d787f80c66b8b"><div class="ttname"><a href="#a27e8ba31745861296d1d787f80c66b8b">ob_frame_set_system_timestamp_us</a></div><div class="ttdeci">OB_EXPORT void ob_frame_set_system_timestamp_us(ob_frame *frame, uint64_t system_timestamp_us, ob_error **error)</div><div class="ttdoc">Set the system timestamp of the frame in microseconds.</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00652">652</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00681">681</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +759,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_function" href="#a9b4de8b08fdafd4a44e0fbf099368c9f">ob_frame_set_timestamp_us</a>(frame, device_timestamp * 1000, err))</div>
 <div class="ttc" id="a_frame_8h_html_a9b4de8b08fdafd4a44e0fbf099368c9f"><div class="ttname"><a href="#a9b4de8b08fdafd4a44e0fbf099368c9f">ob_frame_set_timestamp_us</a></div><div class="ttdeci">OB_EXPORT void ob_frame_set_timestamp_us(ob_frame *frame, uint64_t timestamp_us, ob_error **error)</div><div class="ttdoc">Set the frame timestamp (also known as the device timestamp, hardware timestamp) of a frame object.</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00653">653</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00682">682</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -799,16 +797,16 @@ Functions</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>The frame object is created with a reference count of 1, and the reference count should be decreased by calling <a class="el" href="#ad89bad5de949d39dc4ec0b81e23cf1f6">ob_delete_frame()</a> when it is no longer needed.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame_type</td><td>The frame object type. </td></tr>
-    <tr><td class="paramname">format</td><td>The frame object format. </td></tr>
-    <tr><td class="paramname">data_size</td><td>The size of the frame object data. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame_type</td><td>The frame object type. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The frame object format. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_size</td><td>The size of the frame object data. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00881">ob::FrameFactory::createFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01100">ob::FrameFactory::createFrame()</a>.</p>
 
 </div>
 </div>
@@ -843,13 +841,13 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">other_frame</td><td>The frame object to create the new frame object according to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">should_copy_data</td><td>If true, the data of the source frame object will be copied to the new frame object. If false, the new frame object will have a data buffer with random data. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the new frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00919">ob::FrameFactory::createFrameFromOtherFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01139">ob::FrameFactory::createFrameFromOtherFrame()</a>.</p>
 
 </div>
 </div>
@@ -876,14 +874,14 @@ Functions</h2></td></tr>
 <dl class="section attention"><dt>Attention</dt><dd>The frame object is created with a reference count of 1, and the reference count should be decreased by calling <a class="el" href="#ad89bad5de949d39dc4ec0b81e23cf1f6">ob_delete_frame()</a> when it is no logger needed.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stream_profile</td><td>The stream profile to create the new frame object according to. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_profile</td><td>The stream profile to create the new frame object according to. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the new frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00935">ob::FrameFactory::createFrameFromStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01155">ob::FrameFactory::createFrameFromStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -935,13 +933,13 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Frame object width. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Frame object height. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">stride_bytes</td><td>Row span in bytes. If 0, the stride is calculated based on the width and format. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return an empty frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00901">ob::FrameFactory::createVideoFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01120">ob::FrameFactory::createVideoFrame()</a>.</p>
 
 </div>
 </div>
@@ -1001,13 +999,13 @@ The frame object is created with a reference count of 1, and the reference count
     <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Frame object buffer size. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buffer_destroy_cb</td><td>Destroy callback, will be called when the frame object is destroyed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buffer_destroy_context</td><td>Destroy context, user-defined context to be passed to the destroy callback. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00962">ob::FrameFactory::createFrameFromBuffer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01182">ob::FrameFactory::createFrameFromBuffer()</a>.</p>
 
 </div>
 </div>
@@ -1085,13 +1083,13 @@ The frame object is created with a reference count of 1, and the reference count
     <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Frame object buffer size. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buffer_destroy_cb</td><td>Destroy callback, user-defined function to destroy the buffer. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buffer_destroy_context</td><td>Destroy context, user-defined context to be passed to the destroy callback. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00991">ob::FrameFactory::createVideoFrameFromBuffer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01211">ob::FrameFactory::createVideoFrameFromBuffer()</a>.</p>
 
 </div>
 </div>
@@ -1121,7 +1119,7 @@ The frame object is created with a reference count of 1, and the reference count
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frameset object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01011">ob::FrameFactory::createFrameSet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01231">ob::FrameFactory::createFrameSet()</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1153,7 @@ The frame object is created with a reference count of 1, and the reference count
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00307">ob::Frame::as()</a>, and <a class="el" href="_frame_8hpp_source.html#l00325">ob::Frame::as()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00311">ob::Frame::as()</a>, and <a class="el" href="_frame_8hpp_source.html#l00330">ob::Frame::as()</a>.</p>
 
 </div>
 </div>
@@ -1227,6 +1225,8 @@ The frame object is created with a reference count of 1, and the reference count
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00348">ob::Frame::copyFrameInfo()</a>.</p>
+
 </div>
 </div>
 <a id="abd78a72fff2abfe56d6acc38dec097a0" name="abd78a72fff2abfe56d6acc38dec097a0"></a>
@@ -1252,7 +1252,7 @@ The frame object is created with a reference count of 1, and the reference count
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Log wrong message </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Log wrong message</td></tr>
   </table>
   </dd>
 </dl>
@@ -1285,7 +1285,7 @@ The frame object is created with a reference count of 1, and the reference count
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1318,7 +1318,7 @@ The frame object is created with a reference count of 1, and the reference count
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1352,7 +1352,7 @@ The frame object is created with a reference count of 1, and the reference count
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1396,7 +1396,7 @@ The frame object is created with a reference count of 1, and the reference count
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01044">ob::FrameHelper::setFrameDeviceTimestampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01264">ob::FrameHelper::setFrameDeviceTimestampUs()</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1424,7 @@ The frame object is created with a reference count of 1, and the reference count
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1461,12 +1461,14 @@ The frame object is created with a reference count of 1, and the reference count
 <p>Set the system timestamp of the frame in microseconds. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramname">system_timestamp_us</td><td>frame system timestamp to set in microseconds. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">system_timestamp_us</td><td>frame system timestamp to set in microseconds. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00361">ob::Frame::setSystemTimestampUs()</a>.</p>
 
 </div>
 </div>
@@ -1497,7 +1499,7 @@ Only some models of device support getting the global timestamp. Check the devic
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1531,7 +1533,7 @@ Only some models of device support getting the global timestamp. Check the devic
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>The frame object from which to retrieve the data. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1586,6 +1588,8 @@ The size of the new data should be equal to or less than the current data size o
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00382">ob::Frame::updateData()</a>.</p>
+
 </div>
 </div>
 <a id="a9f21d9c1220f65c048fb0eedc96e0fb2" name="a9f21d9c1220f65c048fb0eedc96e0fb2"></a>
@@ -1611,7 +1615,7 @@ The size of the new data should be equal to or less than the current data size o
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1645,7 +1649,7 @@ The size of the new data should be equal to or less than the current data size o
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1678,7 +1682,7 @@ The size of the new data should be equal to or less than the current data size o
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1733,6 +1737,8 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00402">ob::Frame::updateMetadata()</a>.</p>
+
 </div>
 </div>
 <a id="a79daa8c7030396eb3f6adf0969f7df1d" name="a79daa8c7030396eb3f6adf0969f7df1d"></a>
@@ -1769,7 +1775,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00233">ob::Frame::hasMetadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00234">ob::Frame::hasMetadata()</a>.</p>
 
 </div>
 </div>
@@ -1802,13 +1808,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>frame object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>metadata type, refer to <a class="el" href="_ob_types_8h.html#ae080b7e9d4916ffd1d6493aae7ec0c94">ob_frame_metadata_type</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int64_t return the metadata value of the frame </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00247">ob::Frame::getMetadataValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00249">ob::Frame::getMetadataValue()</a>.</p>
 
 </div>
 </div>
@@ -1835,14 +1841,14 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="section attention"><dt>Attention</dt><dd>Require <a class="el" href="_stream_profile_8h.html#a7d06c861c11f6e30ef498e717ecb8bb1">ob_delete_stream_profile()</a> to release the return stream profile.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td>frame object </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>frame object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_stream_profile* Return the stream profile of the frame, if the frame is not captured by a sensor stream, it will return NULL </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00260">ob::Frame::getStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00262">ob::Frame::getStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -1873,12 +1879,14 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <p>Set (override) the stream profile of the frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td>frame object </td></tr>
-    <tr><td class="paramname">stream_profile</td><td>The stream profile to set for the frame. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>frame object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream_profile</td><td>The stream profile to set for the frame. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00415">ob::Frame::setStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -1906,13 +1914,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_sensor* return the sensor of the frame, if the frame is not captured by a sensor or the sensor stream has been destroyed, it will return NULL </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00272">ob::Frame::getSensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00274">ob::Frame::getSensor()</a>.</p>
 
 </div>
 </div>
@@ -1939,14 +1947,14 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="section attention"><dt>Attention</dt><dd>Require <a class="el" href="_device_8h.html#abc6eb89d0fb534d3eadf257a91c36fc4">ob_delete_device()</a> to release the return device.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">frame</td><td>frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>frame object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_device* return the device of the frame, if the frame is not captured by a sensor stream or the device has been destroyed, it will return NULL </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00285">ob::Frame::getDevice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00287">ob::Frame::getDevice()</a>.</p>
 
 </div>
 </div>
@@ -1973,13 +1981,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the frame width </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00412">ob::VideoFrame::getWidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00498">ob::VideoFrame::getWidth()</a>.</p>
 
 </div>
 </div>
@@ -2006,13 +2014,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the frame height </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00425">ob::VideoFrame::getHeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00511">ob::VideoFrame::getHeight()</a>.</p>
 
 </div>
 </div>
@@ -2040,14 +2048,14 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="section attention"><dt>Attention</dt><dd>Always return OB_PIXEL_UNKNOWN for non-depth frame currently if user has not set the pixel type by <a class="el" href="#a1770ed52140d7443f14a7a4db0877149">ob_video_frame_set_pixel_type()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#af63360bbcecae8f2fd4479fc1b795b9b">ob_pixel_type</a> return the pixel format of the frame. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00441">ob::VideoFrame::getPixelType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00527">ob::VideoFrame::getPixelType()</a>.</p>
 
 </div>
 </div>
@@ -2078,12 +2086,14 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <p>Set video frame pixel format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramname">pixel_type</td><td>the pixel format of the frame </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixel_type</td><td>the pixel format of the frame </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00554">ob::VideoFrame::setPixelType()</a>.</p>
 
 </div>
 </div>
@@ -2111,13 +2121,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>video frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint8_t return the effective number of pixels in the pixel, or 0 if it is an unsupported format </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00455">ob::VideoFrame::getPixelAvailableBitSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00541">ob::VideoFrame::getPixelAvailableBitSize()</a>.</p>
 
 </div>
 </div>
@@ -2156,36 +2166,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-</div>
-</div>
-<a id="ab30238c41f15ef20905fc063e073a679" name="ab30238c41f15ef20905fc063e073a679"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab30238c41f15ef20905fc063e073a679">&#9670;&#160;</a></span>ob_ir_frame_get_source_sensor_type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#aca9dc7e0b11a78f00fa8a2ffd8b9ca1b">ob_sensor_type</a> ob_ir_frame_get_source_sensor_type </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>ob_error</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the source sensor type of the ir frame (left or right for dual camera) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramname"><a class="el" href="structob__error.html" title="The error class exposed by the SDK, users can get detailed error information according to the error.">ob_error</a></td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#aca9dc7e0b11a78f00fa8a2ffd8b9ca1b">ob_sensor_type</a> return the source sensor type of the ir frame </dd></dl>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00569">ob::VideoFrame::setPixelAvailableBitSize()</a>.</p>
 
 </div>
 </div>
@@ -2212,13 +2193,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float The value scale of the depth frame </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00525">ob::DepthFrame::getValueScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00639">ob::DepthFrame::getValueScale()</a>.</p>
 
 </div>
 </div>
@@ -2256,6 +2237,8 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00653">ob::DepthFrame::setValueScale()</a>.</p>
+
 </div>
 </div>
 <a id="a5de5573ce37da533b8cb534a8f34ef59" name="a5de5573ce37da533b8cb534a8f34ef59"></a>
@@ -2281,13 +2264,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float The coordinate value scale of the points frame </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00610">ob::PointsFrame::getCoordinateValueScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00738">ob::PointsFrame::getCoordinateValueScale()</a>.</p>
 
 </div>
 </div>
@@ -2314,13 +2297,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Accelerometer frame. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a6492e9923b828aee716db40004db9b4b">ob_accel_value</a> Return the accelerometer data. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00666">ob::AccelFrame::getValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00794">ob::AccelFrame::getValue()</a>.</p>
 
 </div>
 </div>
@@ -2347,13 +2330,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Accelerometer frame. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float Return the temperature value. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00679">ob::AccelFrame::getTemperature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00807">ob::AccelFrame::getTemperature()</a>.</p>
 
 </div>
 </div>
@@ -2380,13 +2363,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Gyroscope frame. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a8785ff80bb1ac60427ff8e75d7b58761">ob_gyro_value</a> Return the gyroscope data. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00713">ob::GyroFrame::getValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00841">ob::GyroFrame::getValue()</a>.</p>
 
 </div>
 </div>
@@ -2413,13 +2396,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Gyroscope frame. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float Return the temperature value. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00726">ob::GyroFrame::getTemperature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00854">ob::GyroFrame::getTemperature()</a>.</p>
 
 </div>
 </div>
@@ -2447,13 +2430,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frameset</td><td>frameset object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the number of frames </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00761">ob::FrameSet::getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00917">ob::FrameSet::getCount()</a>.</p>
 
 </div>
 </div>
@@ -2481,11 +2464,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frameset</td><td>Frameset object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the depth frame. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00982">ob::FrameSet::getDepthFrame()</a>.</p>
 
 </div>
 </div>
@@ -2513,11 +2498,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frameset</td><td>Frameset object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the color frame. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00997">ob::FrameSet::getColorFrame()</a>.</p>
 
 </div>
 </div>
@@ -2545,11 +2532,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frameset</td><td>Frameset object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the infrared frame. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01012">ob::FrameSet::getIrFrame()</a>.</p>
 
 </div>
 </div>
@@ -2577,11 +2566,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frameset</td><td>Frameset object. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the point cloud frame. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01027">ob::FrameSet::getPointsFrame()</a>.</p>
 
 </div>
 </div>
@@ -2615,13 +2606,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frameset</td><td>Frameset object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">frame_type</td><td>Frame type. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame of the specified type, or nullptr if it does not exist. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00774">ob::FrameSet::getFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00931">ob::FrameSet::getFrame()</a>.</p>
 
 </div>
 </div>
@@ -2654,13 +2645,13 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frameset</td><td>Frameset object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the frame. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame at the specified index, or nullptr if it does not exist. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00790">ob::FrameSet::getFrameByIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00948">ob::FrameSet::getFrameByIndex()</a>.</p>
 
 </div>
 </div>
@@ -2701,7 +2692,7 @@ The frame push to the frameset will be add reference count, so you still need to
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00807">ob::FrameSet::pushFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00965">ob::FrameSet::pushFrame()</a>.</p>
 
 </div>
 </div>
@@ -2728,13 +2719,13 @@ The frame push to the frameset will be add reference count, so you still need to
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>point cloud Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the point cloud frame width </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00623">ob::PointsFrame::getWidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00751">ob::PointsFrame::getWidth()</a>.</p>
 
 </div>
 </div>
@@ -2761,13 +2752,13 @@ The frame push to the frameset will be add reference count, so you still need to
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>point cloud Frame object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the point cloud frame height </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00637">ob::PointsFrame::getHeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00765">ob::PointsFrame::getHeight()</a>.</p>
 
 </div>
 </div>

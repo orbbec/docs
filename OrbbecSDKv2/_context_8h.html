@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OrbbecSDK: E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/h/Context.h File Reference</title>
+<title>OrbbecSDK: Context.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -107,12 +107,18 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae74e461932cf1f45d7ed734fff37c222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of enumerated devices.  <br /></td></tr>
 <tr class="memitem:af23fe6e535802357d30da073596a958a" id="r_af23fe6e535802357d30da073596a958a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af23fe6e535802357d30da073596a958a">ob_enable_net_device_enumeration</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, bool enable, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:af23fe6e535802357d30da073596a958a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable network device enumeration.  <br /></td></tr>
-<tr class="memitem:af4bd664bfd769b6daf7db73d6854cade" id="r_af4bd664bfd769b6daf7db73d6854cade"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4bd664bfd769b6daf7db73d6854cade">ob_force_ip_config</a> (const char *deviceUid, <a class="el" href="_ob_types_8h.html#a62c129472752e5796005c17cc81dd03b">ob_net_ip_config</a> config, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
-<tr class="memdesc:af4bd664bfd769b6daf7db73d6854cade"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Force" a static IP address configuration in a device identified by its MAC Address.  <br /></td></tr>
+<tr class="memitem:a2ad7b690a92603140b17544c10a7644f" id="r_a2ad7b690a92603140b17544c10a7644f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ad7b690a92603140b17544c10a7644f">ob_force_ip_config</a> (const char *macAddress, <a class="el" href="_ob_types_8h.html#a62c129472752e5796005c17cc81dd03b">ob_net_ip_config</a> config, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a2ad7b690a92603140b17544c10a7644f"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Force" a static IP address configuration in a device identified by its MAC Address.  <br /></td></tr>
 <tr class="memitem:ab42a96256a413aae128106a18bce1e65" id="r_ab42a96256a413aae128106a18bce1e65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab42a96256a413aae128106a18bce1e65">ob_create_net_device</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, const char *address, uint16_t port, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:ab42a96256a413aae128106a18bce1e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a network device object.  <br /></td></tr>
+<tr class="memitem:a5a7b428d772be1092622ca9c11a704c5" id="r_a5a7b428d772be1092622ca9c11a704c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a7b428d772be1092622ca9c11a704c5">ob_create_net_device_ex</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, const char *address, uint16_t port, <a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cd">ob_device_access_mode</a> accessMode, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a5a7b428d772be1092622ca9c11a704c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a network device object.  <br /></td></tr>
 <tr class="memitem:a5eb9911641d9213fb763c76f088f77e5" id="r_a5eb9911641d9213fb763c76f088f77e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5eb9911641d9213fb763c76f088f77e5">ob_set_device_changed_callback</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="_ob_types_8h.html#a0e6f8b80b87aec989df49ff0e5465e86">ob_device_changed_callback</a> callback, void *user_data, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a5eb9911641d9213fb763c76f088f77e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a device plug-in callback function.  <br /></td></tr>
+<tr class="memitem:acb8071d58e4de89fde80119725090a47" id="r_acb8071d58e4de89fde80119725090a47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#aa80ee972e5786c11fcb32625528b3a45">ob_callback_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb8071d58e4de89fde80119725090a47">ob_register_device_changed_callback</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="_ob_types_8h.html#a0e6f8b80b87aec989df49ff0e5465e86">ob_device_changed_callback</a> callback, void *user_data, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:acb8071d58e4de89fde80119725090a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a device plug-in callback function.  <br /></td></tr>
+<tr class="memitem:aa9cec7258643952302e2679da6770e20" id="r_aa9cec7258643952302e2679da6770e20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9cec7258643952302e2679da6770e20">ob_unregister_device_changed_callback</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="_ob_types_8h.html#aa80ee972e5786c11fcb32625528b3a45">ob_callback_id</a> callback_id, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:aa9cec7258643952302e2679da6770e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a previously registered device plug-in callback function.  <br /></td></tr>
 <tr class="memitem:a061abf0b7a16e75bd278b817ad71d3b2" id="r_a061abf0b7a16e75bd278b817ad71d3b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a061abf0b7a16e75bd278b817ad71d3b2">ob_enable_device_clock_sync</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, uint64_t repeat_interval_msec, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a061abf0b7a16e75bd278b817ad71d3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates device clock synchronization to synchronize the clock of the host and all created devices (if supported).  <br /></td></tr>
 <tr class="memitem:a921951dd84d01a0a11781af9253b18ad" id="r_a921951dd84d01a0a11781af9253b18ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a921951dd84d01a0a11781af9253b18ad">ob_free_idle_memory</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -123,10 +129,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa98b8506f7a859bdd69744e54b77b895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global log level.  <br /></td></tr>
 <tr class="memitem:a96a9f45e22e91a18ba2dfdb9c4b41e54" id="r_a96a9f45e22e91a18ba2dfdb9c4b41e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96a9f45e22e91a18ba2dfdb9c4b41e54">ob_set_logger_to_file</a> (<a class="el" href="_ob_types_8h.html#a634280495d30c01bd120bbbf38a9b614">ob_log_severity</a> severity, const char *directory, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a96a9f45e22e91a18ba2dfdb9c4b41e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log output to a file.  <br /></td></tr>
+<tr class="memitem:af791ac687a9997ab5df93c6a47c34da3" id="r_af791ac687a9997ab5df93c6a47c34da3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af791ac687a9997ab5df93c6a47c34da3">ob_set_logger_file_name</a> (const char *file_name, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:af791ac687a9997ab5df93c6a47c34da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log file name for file output.  <br /></td></tr>
 <tr class="memitem:a078090449f12caaa377d3e85b8a0f465" id="r_a078090449f12caaa377d3e85b8a0f465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a078090449f12caaa377d3e85b8a0f465">ob_set_logger_to_callback</a> (<a class="el" href="_ob_types_8h.html#a634280495d30c01bd120bbbf38a9b614">ob_log_severity</a> severity, <a class="el" href="_ob_types_8h.html#a714caf1674fb4b7d1b082b0a102a93cb">ob_log_callback</a> callback, void *user_data, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a078090449f12caaa377d3e85b8a0f465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log callback function.  <br /></td></tr>
 <tr class="memitem:ac33e993ce39828563596490e5fb01cf3" id="r_ac33e993ce39828563596490e5fb01cf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac33e993ce39828563596490e5fb01cf3">ob_set_logger_to_console</a> (<a class="el" href="_ob_types_8h.html#a634280495d30c01bd120bbbf38a9b614">ob_log_severity</a> severity, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:ac33e993ce39828563596490e5fb01cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log output to the console.  <br /></td></tr>
+<tr class="memitem:ac35715d1a754ab8635cc2393f4a68d77" id="r_ac35715d1a754ab8635cc2393f4a68d77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac35715d1a754ab8635cc2393f4a68d77">ob_log_external_message</a> (<a class="el" href="_ob_types_8h.html#a634280495d30c01bd120bbbf38a9b614">ob_log_severity</a> severity, const char *module, const char *message, const char *file, const char *func, int line, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:ac35715d1a754ab8635cc2393f4a68d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message with severity, file, function, and line info.  <br /></td></tr>
 <tr class="memitem:afc2f7d22fafb176bb406d7a651df26b0" id="r_afc2f7d22fafb176bb406d7a651df26b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc2f7d22fafb176bb406d7a651df26b0">ob_set_extensions_directory</a> (const char *directory, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:afc2f7d22fafb176bb406d7a651df26b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the extensions directory.  <br /></td></tr>
 </table>
@@ -147,7 +157,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00182">182</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00263">263</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
 
 </div>
 </div>
@@ -163,7 +173,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00183">183</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00264">264</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
 
 </div>
 </div>
@@ -186,7 +196,7 @@ Functions</h2></td></tr>
 <p>Create a context object with the default configuration file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during context creation </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during context creation</td></tr>
   </table>
   </dd>
 </dl>
@@ -217,13 +227,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">config_file_path</td><td>Path to the configuration file. If NULL, the default configuration file will be used. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during context creation </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during context creation</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the created context object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00058">ob::Context::Context()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00072">ob::Context::Context()</a>.</p>
 
 </div>
 </div>
@@ -255,7 +265,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00067">ob::Context::~Context()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00081">ob::Context::~Context()</a>.</p>
 
 </div>
 </div>
@@ -282,13 +292,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during device enumeration </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during device enumeration</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the device list object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00078">ob::Context::queryDeviceList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00093">ob::Context::queryDeviceList()</a>.</p>
 
 </div>
 </div>
@@ -328,12 +338,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00094">ob::Context::enableNetDeviceEnumeration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00109">ob::Context::enableNetDeviceEnumeration()</a>.</p>
 
 </div>
 </div>
-<a id="af4bd664bfd769b6daf7db73d6854cade" name="af4bd664bfd769b6daf7db73d6854cade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4bd664bfd769b6daf7db73d6854cade">&#9670;&#160;</a></span>ob_force_ip_config()</h2>
+<a id="a2ad7b690a92603140b17544c10a7644f" name="a2ad7b690a92603140b17544c10a7644f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad7b690a92603140b17544c10a7644f">&#9670;&#160;</a></span>ob_force_ip_config()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +351,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> bool ob_force_ip_config </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>deviceUid</em></span>, </td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>macAddress</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -359,16 +369,16 @@ Functions</h2></td></tr>
 <p>"Force" a static IP address configuration in a device identified by its MAC Address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">macAddress</td><td>MAC address of the network device. You can obtain it from DeviceList::uid(), or specify it manually in the format xx:xx:xx:xx:xx:xx, where each xx is a two-digit hexadecimal value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">macAddress</td><td>MAC address of the network device. You can obtain it from <a class="el" href="_device_8h.html#a10888a8fba486fc4f51d33dbd49b9121">ob_device_info_get_uid</a>, or specify it manually in the format xx:xx:xx:xx:xx:xx, where each xx is a two-digit hexadecimal value. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>The new IP configuration. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool true if the configuration command was processed successfully, false otherwise.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This applies to all Orbbec GigE Vision devices </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This applies to all GigE Vision devices </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00111">ob::Context::forceIp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00126">ob::Context::forceIp()</a>.</p>
 
 </div>
 </div>
@@ -407,13 +417,62 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>IP address of the device </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>Port number of the device </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during device creation </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during device creation</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the created device object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00125">ob::Context::createNetDevice()</a>.</p>
+</div>
+</div>
+<a id="a5a7b428d772be1092622ca9c11a704c5" name="a5a7b428d772be1092622ca9c11a704c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a7b428d772be1092622ca9c11a704c5">&#9670;&#160;</a></span>ob_create_net_device_ex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> * ob_create_net_device_ex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>address</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cd">ob_device_access_mode</a></td>          <td class="paramname"><span class="paramname"><em>accessMode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a network device object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>IP address of the device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>Port number of the device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">accessMode</td><td>Device access mode. <a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cd">ob_device_access_mode</a>. If the device does not support setting the Access Mode, the default OB_DEVICE_DEFAULT_ACCESS is used. Applies only on first device creation or after release and re-creation; subsequent calls ignore it. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during device creation</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the created device object </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00144">ob::Context::createNetDevice()</a>.</p>
 
 </div>
 </div>
@@ -447,6 +506,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set a device plug-in callback function. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>This function is deprecated. Please use <a class="el" href="#acb8071d58e4de89fde80119725090a47" title="Register a device plug-in callback function.">ob_register_device_changed_callback()</a> instead.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>The added and removed device lists returned through the callback interface need to be released manually </dd>
 <dd>
 This function supports multiple callbacks. Each call to this function adds a new callback to an internal list.</dd></dl>
@@ -460,7 +520,93 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00138">ob::Context::setDeviceChangedCallback()</a>.</p>
+</div>
+</div>
+<a id="acb8071d58e4de89fde80119725090a47" name="acb8071d58e4de89fde80119725090a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8071d58e4de89fde80119725090a47">&#9670;&#160;</a></span>ob_register_device_changed_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> <a class="el" href="_ob_types_8h.html#aa80ee972e5786c11fcb32625528b3a45">ob_callback_id</a> ob_register_device_changed_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a0e6f8b80b87aec989df49ff0e5465e86">ob_device_changed_callback</a></td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>user_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a device plug-in callback function. </p>
+<p>This function registers a callback that will be triggered whenever a device is plugged in or unplugged.</p>
+<dl class="section attention"><dt>Attention</dt><dd>The added and removed device lists returned through the callback interface need to be released manually. </dd>
+<dd>
+This function supports multiple callbacks. Each call to this function adds a new callback to an internal list.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Pointer to the callback function triggered when a device is plugged or unplugged. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>Pointer to user data that can be passed to and retrieved from the callback function. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during callback function setting.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="_ob_types_8h.html#aa80ee972e5786c11fcb32625528b3a45">ob_callback_id</a> that uniquely identifies the registered callback. This ID can be used later to unregister the callback with <a class="el" href="#aa9cec7258643952302e2679da6770e20" title="Unregister a previously registered device plug-in callback function.">ob_unregister_device_changed_callback()</a>. Returns INVALID_DEVICE_CHANGED_CALLBACK_ID if the registration fails. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00170">ob::Context::registerDeviceChangedCallback()</a>.</p>
+
+</div>
+</div>
+<a id="aa9cec7258643952302e2679da6770e20" name="aa9cec7258643952302e2679da6770e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9cec7258643952302e2679da6770e20">&#9670;&#160;</a></span>ob_unregister_device_changed_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void ob_unregister_device_changed_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#aa80ee972e5786c11fcb32625528b3a45">ob_callback_id</a></td>          <td class="paramname"><span class="paramname"><em>callback_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a previously registered device plug-in callback function. </p>
+<p>This function removes a callback that was registered by <a class="el" href="#acb8071d58e4de89fde80119725090a47" title="Register a device plug-in callback function.">ob_register_device_changed_callback()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback_id</td><td>The callback ID returned by <a class="el" href="#acb8071d58e4de89fde80119725090a47" title="Register a device plug-in callback function.">ob_register_device_changed_callback()</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during callback function setting. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00185">ob::Context::unregisterDeviceChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +644,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00150">ob::Context::enableDeviceClockSync()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00202">ob::Context::enableDeviceClockSync()</a>.</p>
 
 </div>
 </div>
@@ -530,7 +676,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00160">ob::Context::freeIdleMemory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00212">ob::Context::freeIdleMemory()</a>.</p>
 
 </div>
 </div>
@@ -570,7 +716,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00174">ob::Context::setUvcBackendType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00226">ob::Context::setUvcBackendType()</a>.</p>
 
 </div>
 </div>
@@ -603,7 +749,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00186">ob::Context::setLoggerSeverity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00238">ob::Context::setLoggerSeverity()</a>.</p>
 
 </div>
 </div>
@@ -635,13 +781,47 @@ This function supports multiple callbacks. Each call to this function adds a new
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">severity</td><td>Log level to output to file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">directory</td><td>Path to the log file output directory. If the path is empty, the existing settings will continue to be used (if the existing configuration is also empty, the log will not be output to the file) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during log output setting </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">directory</td><td>Path to the log file output directory. If empty, the existing configuration is used; if the existing configuration is also empty, the value from the config file or the default configuration will be used. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during log output setting</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>Other settings, such as log file name, remain unchanged. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00199">ob::Context::setLoggerToFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00251">ob::Context::setLoggerToFile()</a>.</p>
+
+</div>
+</div>
+<a id="af791ac687a9997ab5df93c6a47c34da3" name="af791ac687a9997ab5df93c6a47c34da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af791ac687a9997ab5df93c6a47c34da3">&#9670;&#160;</a></span>ob_set_logger_file_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void ob_set_logger_file_name </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>file_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the log file name for file output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>Log file name. Must not be empty. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Other settings, such as log level and output directory, remain unchanged. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00264">ob::Context::setLoggerFileName()</a>.</p>
 
 </div>
 </div>
@@ -685,7 +865,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00222">ob::Context::setLoggerToCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00287">ob::Context::setLoggerToCallback()</a>.</p>
 
 </div>
 </div>
@@ -717,7 +897,69 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00210">ob::Context::setLoggerToConsole()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00275">ob::Context::setLoggerToConsole()</a>.</p>
+
+</div>
+</div>
+<a id="ac35715d1a754ab8635cc2393f4a68d77" name="ac35715d1a754ab8635cc2393f4a68d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35715d1a754ab8635cc2393f4a68d77">&#9670;&#160;</a></span>ob_log_external_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_export_8h.html#aba754f689f40c5d6a3723fda8190f8dc">OB_EXPORT</a> void ob_log_external_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a634280495d30c01bd120bbbf38a9b614">ob_log_severity</a></td>          <td class="paramname"><span class="paramname"><em>severity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>module</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>func</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs a message with severity, file, function, and line info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">severity</td><td>Log level, see <a class="el" href="_ob_types_8h.html#a634280495d30c01bd120bbbf38a9b614">ob_log_severity</a> for details </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>The module or component the log belongs to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>Message string to log </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>Source file name, e.g., <b>FILE</b> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>Function name, e.g., <b>func</b> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>Line number, e.g., <b>LINE</b> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during log output setting </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00304">ob::Context::logExternalMessage()</a>.</p>
 
 </div>
 </div>
@@ -745,13 +987,13 @@ This function supports multiple callbacks. Each call to this function adds a new
 <dl class="section attention"><dt>Attention</dt><dd>Should be called before creating the context and pipeline, otherwise the default extensions directory (./extensions) will be used.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">directory</td><td>Path to the extensions directory. If the path is empty, extensions path will be set to the current working directory. </td></tr>
-    <tr><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during extensions directory setting </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">directory</td><td>Path to the extensions directory. If the path is empty, extensions path will be set to the current working directory. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during extensions directory setting </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00237">ob::Context::setExtensionsDirectory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00319">ob::Context::setExtensionsDirectory()</a>.</p>
 
 </div>
 </div>

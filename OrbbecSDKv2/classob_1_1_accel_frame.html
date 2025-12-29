@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -155,6 +155,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5482efb4023f46b9e028284021194da inherit pub_methods_classob_1_1_frame" id="r_ab5482efb4023f46b9e028284021194da"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:ab5482efb4023f46b9e028284021194da inherit pub_methods_classob_1_1_frame template"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#ab5482efb4023f46b9e028284021194da">as</a> () const</td></tr>
 <tr class="memdesc:ab5482efb4023f46b9e028284021194da inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the frame object to a target type.  <br /></td></tr>
+<tr class="memitem:a541a23e15ef2976fdb40c2dd02a8abbd inherit pub_methods_classob_1_1_frame" id="r_a541a23e15ef2976fdb40c2dd02a8abbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a541a23e15ef2976fdb40c2dd02a8abbd">copyFrameInfo</a> (std::shared_ptr&lt; const <a class="el" href="classob_1_1_frame.html">Frame</a> &gt; srcFrame)</td></tr>
+<tr class="memdesc:a541a23e15ef2976fdb40c2dd02a8abbd inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the information of the source frame object to the destination frame object.  <br /></td></tr>
+<tr class="memitem:a51d99c27dc87926cb2f474a69d7d12ba inherit pub_methods_classob_1_1_frame" id="r_a51d99c27dc87926cb2f474a69d7d12ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a51d99c27dc87926cb2f474a69d7d12ba">setSystemTimestampUs</a> (uint64_t systemTimestampUs)</td></tr>
+<tr class="memdesc:a51d99c27dc87926cb2f474a69d7d12ba inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the system timestamp of the frame in microseconds.  <br /></td></tr>
+<tr class="memitem:acf62173c172fb3212997a0dbbb9c0238 inherit pub_methods_classob_1_1_frame" id="r_acf62173c172fb3212997a0dbbb9c0238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#acf62173c172fb3212997a0dbbb9c0238">updateData</a> (const uint8_t *<a class="el" href="classob_1_1_frame.html#ab10dedaedfb7437c1b43ab7d2ee20260">data</a>, uint32_t <a class="el" href="classob_1_1_frame.html#ab9967d9a65e3f0a4320324b2c48de48f">dataSize</a>)</td></tr>
+<tr class="memdesc:acf62173c172fb3212997a0dbbb9c0238 inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the data of a frame.  <br /></td></tr>
+<tr class="memitem:a2be5f2fd4a49bad3366fb118073bef19 inherit pub_methods_classob_1_1_frame" id="r_a2be5f2fd4a49bad3366fb118073bef19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a2be5f2fd4a49bad3366fb118073bef19">updateMetadata</a> (const uint8_t *<a class="el" href="classob_1_1_frame.html#aa6555ff95a0755f54973dbaf64a8c21c">metadata</a>, uint32_t <a class="el" href="classob_1_1_frame.html#a56408f07e8df01db6aafc85a6ddeabad">metadataSize</a>)</td></tr>
+<tr class="memdesc:a2be5f2fd4a49bad3366fb118073bef19 inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the metadata of the frame.  <br /></td></tr>
+<tr class="memitem:afc5f9405d1f4ef5d300691786a2c668b inherit pub_methods_classob_1_1_frame" id="r_afc5f9405d1f4ef5d300691786a2c668b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#afc5f9405d1f4ef5d300691786a2c668b">setStreamProfile</a> (std::shared_ptr&lt; const <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> &gt; profile)</td></tr>
+<tr class="memdesc:afc5f9405d1f4ef5d300691786a2c668b inherit pub_methods_classob_1_1_frame"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set (override) the stream profile of the frame.  <br /></td></tr>
 <tr class="memitem:a6b0a22e552fa4f044d03f18e25f7c709 inherit pub_methods_classob_1_1_frame" id="r_a6b0a22e552fa4f044d03f18e25f7c709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345">OBFrameType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a6b0a22e552fa4f044d03f18e25f7c709">type</a> () const</td></tr>
 <tr class="memitem:ac02381cb60d381d3156566791f5e547f inherit pub_methods_classob_1_1_frame" id="r_ac02381cb60d381d3156566791f5e547f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a">OBFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#ac02381cb60d381d3156566791f5e547f">format</a> () const</td></tr>
 <tr class="memitem:a9a0dc3ad34f20047b75581966ba47f04 inherit pub_methods_classob_1_1_frame" id="r_a9a0dc3ad34f20047b75581966ba47f04"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_frame.html#a9a0dc3ad34f20047b75581966ba47f04">index</a> () const</td></tr>
@@ -177,7 +187,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Define the <a class="el" href="classob_1_1_accel_frame.html" title="Define the AccelFrame class, which inherits from the Frame class.">AccelFrame</a> class, which inherits from the <a class="el" href="classob_1_1_frame.html" title="Define the frame class, which is the base class of all frame types.">Frame</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00654">654</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00782">782</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abc0d26ce9f7ee46ed824efe899737eac" name="abc0d26ce9f7ee46ed824efe899737eac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc0d26ce9f7ee46ed824efe899737eac">&#9670;&#160;</a></span>AccelFrame()</h2>
@@ -202,7 +212,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00657">657</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00785">785</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -258,9 +268,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the accelerometer frame data. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_o_b_accel_value.html" title="Data structures for accelerometers and gyroscopes.">OBAccelValue</a> The accelerometer frame data </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00666">666</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00794">794</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00666">getValue()</a>, and <a class="el" href="_frame_8hpp_source.html#l00689">value()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00794">getValue()</a>, and <a class="el" href="_frame_8hpp_source.html#l00817">value()</a>.</p>
 
 </div>
 </div>
@@ -290,9 +300,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the temperature when the frame was sampled. </p>
 <dl class="section return"><dt>Returns</dt><dd>float The temperature value in celsius </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00679">679</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00807">807</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00693">temperature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00821">temperature()</a>.</p>
 
 </div>
 </div>
@@ -319,9 +329,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00689">689</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00817">817</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00666">getValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00794">getValue()</a>.</p>
 
 </div>
 </div>
@@ -348,12 +358,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00693">693</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00821">821</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_frame_8hpp_source.html">Frame.hpp</a></li>
+<li><a class="el" href="_frame_8hpp_source.html">Frame.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

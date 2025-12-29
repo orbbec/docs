@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -125,7 +125,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classob_1_1_frame_factory.html" title="FrameFactory class, which provides some static functions to create frame objects.">FrameFactory</a> class, which provides some static functions to create frame objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00871">871</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01089">1089</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a912f3b39265f820ef1ce3b2b279dbfab" name="a912f3b39265f820ef1ce3b2b279dbfab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a912f3b39265f820ef1ce3b2b279dbfab">&#9670;&#160;</a></span>BufferDestroyCallback</h2>
@@ -141,7 +141,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>The callback function to destroy the buffer when the frame is destroyed. </p>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00946">946</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01166">1166</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -181,15 +181,15 @@ Static Public Member Functions</h2></td></tr>
 <p>Create a <a class="el" href="classob_1_1_frame.html" title="Define the frame class, which is the base class of all frame types.">Frame</a> object of a specific type with a given format and data size. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frameType</td><td>The type of the frame. </td></tr>
-    <tr><td class="paramname">format</td><td>The format of the frame. </td></tr>
-    <tr><td class="paramname">dataSize</td><td>The size of the data in bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frameType</td><td>The type of the frame. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The format of the frame. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataSize</td><td>The size of the data in bytes.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Frame&gt; The created frame object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00881">881</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01100">1100</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -239,17 +239,17 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>If stride is not specified, it will be calculated based on the width and format.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frameType</td><td>The type of the frame. </td></tr>
-    <tr><td class="paramname">format</td><td>The format of the frame. </td></tr>
-    <tr><td class="paramname">width</td><td>The width of the frame. </td></tr>
-    <tr><td class="paramname">height</td><td>The height of the frame. </td></tr>
-    <tr><td class="paramname">stride</td><td>The stride of the frame.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frameType</td><td>The type of the frame. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The format of the frame. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>The width of the frame. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>The height of the frame. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stride</td><td>The stride of the frame.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;VideoFrame&gt; The created video frame object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00901">901</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01120">1120</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -284,13 +284,14 @@ Static Public Member Functions</h2></td></tr>
 <p>The new frame object will have the same properties as the other frame object, but the data buffer is newly allocated.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">shouldCopyData</td><td>If true, the data of the source frame object will be copied to the new frame object. If false, the new frame object will have a data buffer with random data. The default value is true.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">otherFrame</td><td>The source frame to be copied. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shouldCopyData</td><td>If true, the data of the source frame object will be copied to the new frame object. If false, the new frame object will have a data buffer with random data. The default value is true.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Frame&gt; The new frame object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00919">919</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01139">1139</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -320,13 +321,13 @@ Static Public Member Functions</h2></td></tr>
 <p>Create a <a class="el" href="classob_1_1_frame.html" title="Define the frame class, which is the base class of all frame types.">Frame</a> From (according to)Stream Profile object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">profile</td><td>The stream profile object to create the frame from.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">profile</td><td>The stream profile object to create the frame from.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Frame&gt; The created frame object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00935">935</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01155">1155</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -386,7 +387,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Frame&gt; The created frame object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00962">962</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01182">1182</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +467,7 @@ The frame object is created with a reference count of 1, and the reference count
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;VideoFrame&gt; The created video frame object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00991">991</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01211">1211</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -497,12 +498,12 @@ The frame object is created with a reference count of 1, and the reference count
 <p>This function creates a new <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a> instance by internally calling the native C API. The returned <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a> is managed by a std::shared_ptr, and its lifetime will be automatically managed. When no references remain, the underlying native resources will be released.</p>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;FrameSet&gt; The created <a class="el" href="classob_1_1_frame_set.html" title="Define the FrameSet class, which inherits from the Frame class.">FrameSet</a> object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01011">1011</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01231">1231</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_frame_8hpp_source.html">Frame.hpp</a></li>
+<li><a class="el" href="_frame_8hpp_source.html">Frame.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

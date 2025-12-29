@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -96,7 +96,8 @@ $(function() {
   <map id="ob_3A_3AStreamProfile_map" name="ob_3A_3AStreamProfile_map">
 <area href="classob_1_1_accel_stream_profile.html" title="Class representing an accelerometer stream profile." alt="ob::AccelStreamProfile" shape="rect" coords="0,112,276,136"/>
 <area href="classob_1_1_gyro_stream_profile.html" title="Class representing a gyroscope stream profile." alt="ob::GyroStreamProfile" shape="rect" coords="286,112,562,136"/>
-<area href="classob_1_1_video_stream_profile.html" title="Class representing a video stream profile." alt="ob::VideoStreamProfile" shape="rect" coords="572,112,848,136"/>
+<area href="classob_1_1_li_d_a_r_stream_profile.html" title="Class representing a LiDAR stream profile." alt="ob::LiDARStreamProfile" shape="rect" coords="572,112,848,136"/>
+<area href="classob_1_1_video_stream_profile.html" title="Class representing a video stream profile." alt="ob::VideoStreamProfile" shape="rect" coords="858,112,1134,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -165,7 +166,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00274">ob::AccelStreamProfile::AccelStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00330">ob::GyroStreamProfile::GyroStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00030">operator=()</a>, <a class="el" href="#a77e7cf38bf5dc34730d596825c059681">operator=()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00026">StreamProfile()</a>, <a class="el" href="#a90417f9c6761bb065674a34c5ad81558">StreamProfile()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00167">ob::VideoStreamProfile::VideoStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00277">ob::AccelStreamProfile::AccelStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00333">ob::GyroStreamProfile::GyroStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00390">ob::LiDARStreamProfile::LiDARStreamProfile()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00030">operator=()</a>, <a class="el" href="#a77e7cf38bf5dc34730d596825c059681">operator=()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00026">StreamProfile()</a>, <a class="el" href="#a90417f9c6761bb065674a34c5ad81558">StreamProfile()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00170">ob::VideoStreamProfile::VideoStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -246,7 +247,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00159">159</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00162">162</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -358,7 +359,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00058">58</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00150">format()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00153">format()</a>.</p>
 
 </div>
 </div>
@@ -390,7 +391,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00070">70</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00381">is()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00154">type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00402">is()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00157">type()</a>.</p>
 
 </div>
 </div>
@@ -524,15 +525,15 @@ template&lt;typename T&gt; </div>
 <p>Check if frame object is compatible with the given type. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Given type. </td></tr>
+    <tr><td class="paramname">T</td><td>Given type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool return result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00381">381</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00402">402</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00127">as()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00141">as()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00129">as()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00144">as()</a>.</p>
 
 </div>
 </div>
@@ -564,13 +565,13 @@ template&lt;typename T&gt; </div>
 <p>Converts object type to target type. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Target type. </td></tr>
+    <tr><td class="paramname">T</td><td>Target type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;T&gt; Return the result. Throws an exception if conversion is not possible. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00127">127</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00129">129</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -602,13 +603,13 @@ template&lt;typename T&gt; </div>
 <p>Converts object type to target type (const version). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Target type. </td></tr>
+    <tr><td class="paramname">T</td><td>Target type.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;T&gt; Return the result. Throws an exception if conversion is not possible. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00141">141</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00144">144</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +636,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00150">150</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00153">153</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00058">getFormat()</a>.</p>
 
@@ -664,7 +665,7 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00154">154</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00157">157</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00070">getType()</a>.</p>
 
@@ -693,12 +694,12 @@ template&lt;typename T&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_stream_profile_8hpp_source.html#l00020">20</a> of file <a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00107">bindExtrinsicTo()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00095">bindExtrinsicTo()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00236">ob::VideoStreamProfile::getDistortion()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00082">getExtrinsicTo()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00058">getFormat()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00176">ob::VideoStreamProfile::getFps()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00283">ob::AccelStreamProfile::getFullScaleRange()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00339">ob::GyroStreamProfile::getFullScaleRange()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00200">ob::VideoStreamProfile::getHeight()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00049">getImpl()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00307">ob::AccelStreamProfile::getIntrinsic()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00363">ob::GyroStreamProfile::getIntrinsic()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00212">ob::VideoStreamProfile::getIntrinsic()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00295">ob::AccelStreamProfile::getSampleRate()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00351">ob::GyroStreamProfile::getSampleRate()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00070">getType()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00188">ob::VideoStreamProfile::getWidth()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00030">operator=()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00248">ob::VideoStreamProfile::setDistortion()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00224">ob::VideoStreamProfile::setIntrinsic()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00159">StreamProfile()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00041">~StreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_stream_profile_8hpp_source.html#l00107">bindExtrinsicTo()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00095">bindExtrinsicTo()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00239">ob::VideoStreamProfile::getDistortion()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00082">getExtrinsicTo()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00058">getFormat()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00179">ob::VideoStreamProfile::getFps()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00286">ob::AccelStreamProfile::getFullScaleRange()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00342">ob::GyroStreamProfile::getFullScaleRange()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00203">ob::VideoStreamProfile::getHeight()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00049">getImpl()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00310">ob::AccelStreamProfile::getIntrinsic()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00366">ob::GyroStreamProfile::getIntrinsic()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00215">ob::VideoStreamProfile::getIntrinsic()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00298">ob::AccelStreamProfile::getSampleRate()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00354">ob::GyroStreamProfile::getSampleRate()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00394">ob::LiDARStreamProfile::getScanRate()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00070">getType()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00191">ob::VideoStreamProfile::getWidth()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00030">operator=()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00251">ob::VideoStreamProfile::setDistortion()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00227">ob::VideoStreamProfile::setIntrinsic()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00162">StreamProfile()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00041">~StreamProfile()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a></li>
+<li><a class="el" href="_stream_profile_8hpp_source.html">StreamProfile.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

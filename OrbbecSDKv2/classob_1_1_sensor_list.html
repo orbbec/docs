@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.5.5</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -188,7 +188,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00178">178</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00226">count()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00229">count()</a>.</p>
 
 </div>
 </div>
@@ -218,15 +218,15 @@ Public Member Functions</h2></td></tr>
 <p>Get the type of the specified sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The sensor index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The sensor index.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> The sensor type. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00191">191</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00192">192</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00230">type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00233">type()</a>.</p>
 
 </div>
 </div>
@@ -256,13 +256,13 @@ Public Member Functions</h2></td></tr>
 <p>Get a sensor by index number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>The sensor index. The range is [0, count-1]. If the index exceeds the range, an exception will be thrown. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The sensor index. The range is [0, count-1]. If the index exceeds the range, an exception will be thrown.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Sensor&gt; The sensor object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00204">204</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00206">206</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
 
 </div>
 </div>
@@ -292,13 +292,13 @@ Public Member Functions</h2></td></tr>
 <p>Get a sensor by sensor type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sensorType</td><td>The sensor type to obtain. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensorType</td><td>The sensor type to obtain.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Sensor&gt; A sensor object. If the specified sensor type does not exist, it will return empty. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00217">217</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00220">220</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
 
 </div>
 </div>
@@ -325,7 +325,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00226">226</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00229">229</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00178">getCount()</a>.</p>
 
@@ -354,14 +354,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00230">230</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sensor_8hpp_source.html#l00233">233</a> of file <a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00191">getSensorType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00192">getSensorType()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/jenkins/workspace/OrbbecSDK/build_sdk/OpenOrbbecSDK/include/libobsensor/hpp/<a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a></li>
+<li><a class="el" href="_sensor_8hpp_source.html">Sensor.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
