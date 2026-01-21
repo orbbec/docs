@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.7.2</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -252,7 +252,17 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba916742b0b9b326a94cdc3d287364d5ad">OB_PROP_CONFIDENCE_ROTATE_INT</a> = 231
 , <br />
 &#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba11c2166589f86cd1793dbfb9c0eca4f3">OB_PROP_INTRA_CAMERA_SYNC_REFERENCE_INT</a> = 236
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba0d87d28e90c4aa49ea163c982f133288">OB_PROP_COLOR_RIGHT_ROTATE_INT</a> = 242
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba47effd208cac557aa0b16db7c56dc94c">OB_PROP_COLOR_RIGHT_MIRROR_BOOL</a> = 243
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8f86c239d9105696f052b680d38c4534">OB_PROP_COLOR_RIGHT_FLIP_BOOL</a> = 244
+, <br />
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba0c2545fce423eb3095990d993e0e971f">OB_PROP_DEVICE_AE_REFERENCE_INT</a> = 247
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba28ad602684bea932d2899254452abbae">OB_PROP_DEVICE_AE_STRATEGY_INT</a> = 248
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8ca506dc938af3f778e23eed73d35b81">OB_PROP_COLOR_ROI_BRIGHTNESS_INT</a> = 249
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba47ce4b6a87ca052274ea8947cbf76bc5">OB_PROP_COLOR_LEFT_ROTATE_INT</a> = 251
+, <br />
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba162be441147f1bef9bfb689cf1ec9d6f">OB_PROP_COLOR_LEFT_MIRROR_BOOL</a> = 252
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba65504d9d632e40bd49f1cdf6b0772517">OB_PROP_COLOR_LEFT_FLIP_BOOL</a> = 253
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabad5d4191f8738853ba279aad12d13aaa1">OB_STRUCT_BASELINE_CALIBRATION_PARAM</a> = 1002
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac6f97352c9f3d2ef9838227d168ff05d">OB_STRUCT_DEVICE_TEMPERATURE</a> = 1003
 , <br />
@@ -274,87 +284,89 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac9b652f69e1e105150a15b21ba98909d">OB_STRUCT_ASIC_SERIAL_NUMBER</a> = 1063
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba742d3279870cadef85505d03a82c23de">OB_STRUCT_DISP_OFFSET_CONFIG</a> = 1064
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaad9eb73a0f8fd97b51d1c6ba2c3b30f7">OB_STRUCT_PRESET_RESOLUTION_CONFIG</a> = 1069
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabad079a2535d5c99bedc93f368cfa47d38">OB_PROP_COLOR_AUTO_EXPOSURE_BOOL</a> = 2000
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababd0b9e85558d2a721a71b688c56fe09f">OB_STRUCT_COLOR_SYNCED_EXPOSURE_PARAM</a> = 1077
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba85f29e393214ce11b46e32f3363289b5">OB_PROP_COLOR_EXPOSURE_INT</a> = 2001
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabad079a2535d5c99bedc93f368cfa47d38">OB_PROP_COLOR_AUTO_EXPOSURE_BOOL</a> = 2000
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba85f29e393214ce11b46e32f3363289b5">OB_PROP_COLOR_EXPOSURE_INT</a> = 2001
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba926125aea97f1601a2213f9dab37eaa5">OB_PROP_COLOR_GAIN_INT</a> = 2002
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababda9cd3eec29877c35eb8484201cf76b">OB_PROP_COLOR_AUTO_WHITE_BALANCE_BOOL</a> = 2003
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba5ca8f197256333201044efdfb8596c2e">OB_PROP_COLOR_WHITE_BALANCE_INT</a> = 2004
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaaeab84ace968acdb565ff117247e2ba2">OB_PROP_COLOR_BRIGHTNESS_INT</a> = 2005
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba5ca8f197256333201044efdfb8596c2e">OB_PROP_COLOR_WHITE_BALANCE_INT</a> = 2004
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaaeab84ace968acdb565ff117247e2ba2">OB_PROP_COLOR_BRIGHTNESS_INT</a> = 2005
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababd2021ed7e3df757382eb5455dc18259">OB_PROP_COLOR_SHARPNESS_INT</a> = 2006
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba092569c30725be70a1654bc34ca67048">OB_PROP_COLOR_SHUTTER_INT</a> = 2007
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafd1d14da3c54e51fb7be1be5f43c4943">OB_PROP_COLOR_SATURATION_INT</a> = 2008
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba48c936f148ef52313d18b1846cf91abc">OB_PROP_COLOR_CONTRAST_INT</a> = 2009
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafd1d14da3c54e51fb7be1be5f43c4943">OB_PROP_COLOR_SATURATION_INT</a> = 2008
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba48c936f148ef52313d18b1846cf91abc">OB_PROP_COLOR_CONTRAST_INT</a> = 2009
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3718ede42b015f81cf429d0e1579b4e6">OB_PROP_COLOR_GAMMA_INT</a> = 2010
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba415c12a50603d1a402c3f2410c025e87">OB_PROP_COLOR_ROLL_INT</a> = 2011
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac1faca8ca531e3aeb10f8e9af3da966c">OB_PROP_COLOR_AUTO_EXPOSURE_PRIORITY_INT</a> = 2012
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba33d29649465ee7b5f341447094cd27f4">OB_PROP_COLOR_BACKLIGHT_COMPENSATION_INT</a> = 2013
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabac1faca8ca531e3aeb10f8e9af3da966c">OB_PROP_COLOR_AUTO_EXPOSURE_PRIORITY_INT</a> = 2012
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba33d29649465ee7b5f341447094cd27f4">OB_PROP_COLOR_BACKLIGHT_COMPENSATION_INT</a> = 2013
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba19ea7f7c905c3afcf8d5c2e43abd33c3">OB_PROP_COLOR_HUE_INT</a> = 2014
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8c742234f530e76daa23da65fab1621e">OB_PROP_COLOR_POWER_LINE_FREQUENCY_INT</a> = 2015
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababba227494de0b246f3faba208b4878e3">OB_PROP_DEPTH_AUTO_EXPOSURE_BOOL</a> = 2016
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba770da9cd29f4e71444f2d335c36893f4">OB_PROP_DEPTH_EXPOSURE_INT</a> = 2017
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababba227494de0b246f3faba208b4878e3">OB_PROP_DEPTH_AUTO_EXPOSURE_BOOL</a> = 2016
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba770da9cd29f4e71444f2d335c36893f4">OB_PROP_DEPTH_EXPOSURE_INT</a> = 2017
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba4c8e11c63e1bfa4c6ffbcb2ac996d85f">OB_PROP_DEPTH_GAIN_INT</a> = 2018
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba61f5084fdd2444bb1227090ec0fe7ce5">OB_PROP_IR_AUTO_EXPOSURE_BOOL</a> = 2025
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba63ada6d6d7d8d35b0eb364e661fcfbf2">OB_PROP_IR_EXPOSURE_INT</a> = 2026
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3c2a6a781a5582cdb7d40be1339fe193">OB_PROP_IR_GAIN_INT</a> = 2027
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba63ada6d6d7d8d35b0eb364e661fcfbf2">OB_PROP_IR_EXPOSURE_INT</a> = 2026
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3c2a6a781a5582cdb7d40be1339fe193">OB_PROP_IR_GAIN_INT</a> = 2027
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabab041e2a493240734c6fc490608cf1c6c">OB_PROP_IR_CHANNEL_DATA_SOURCE_INT</a> = 2028
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafde74455cca9d681622204c4d9bf1ca1">OB_PROP_DEPTH_RM_FILTER_BOOL</a> = 2029
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba101cee369c0630d8d07a9adcd7c5ac22">OB_PROP_COLOR_MAXIMAL_GAIN_INT</a> = 2030
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba24450874f07f1a5dfb69124b6402945b">OB_PROP_COLOR_MAXIMAL_SHUTTER_INT</a> = 2031
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba101cee369c0630d8d07a9adcd7c5ac22">OB_PROP_COLOR_MAXIMAL_GAIN_INT</a> = 2030
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba24450874f07f1a5dfb69124b6402945b">OB_PROP_COLOR_MAXIMAL_SHUTTER_INT</a> = 2031
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba1fb102a92334fc347e117c220b69655f">OB_PROP_IR_SHORT_EXPOSURE_BOOL</a> = 2032
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba203ef64ff04a7a576f485cde163dc9de">OB_PROP_COLOR_HDR_BOOL</a> = 2034
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba922fb146cc1fb960713d84843d37ab76">OB_PROP_IR_LONG_EXPOSURE_BOOL</a> = 2035
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba848a1de51d70107cd991b01713796a0e">OB_PROP_SKIP_FRAME_BOOL</a> = 2036
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba922fb146cc1fb960713d84843d37ab76">OB_PROP_IR_LONG_EXPOSURE_BOOL</a> = 2035
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba848a1de51d70107cd991b01713796a0e">OB_PROP_SKIP_FRAME_BOOL</a> = 2036
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba6475fd2ec30bbb097454e1f2066ccc78">OB_PROP_HDR_MERGE_BOOL</a> = 2037
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba48c1a03e092b74ed999692cd594a14a3">OB_PROP_COLOR_FOCUS_INT</a> = 2038
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba4cfd1df4fc87b264cd0e1d2053ef268a">OB_PROP_IR_RECTIFY_BOOL</a> = 2040
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba9bb676b7c938ec29c92b6f4597135494">OB_PROP_DEPTH_AUTO_EXPOSURE_PRIORITY_INT</a> = 2052
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba4cfd1df4fc87b264cd0e1d2053ef268a">OB_PROP_IR_RECTIFY_BOOL</a> = 2040
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba9bb676b7c938ec29c92b6f4597135494">OB_PROP_DEPTH_AUTO_EXPOSURE_PRIORITY_INT</a> = 2052
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8d1e1aa5988ccd64ca3609894725f547">OB_PROP_SDK_DISPARITY_TO_DEPTH_BOOL</a> = 3004
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba34ce08223b8b6703d8be3ba2628aa33e">OB_PROP_SDK_DEPTH_FRAME_UNPACK_BOOL</a> = 3007
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba552c6c020ef86f487abffb08c4e97eb8">OB_PROP_SDK_IR_FRAME_UNPACK_BOOL</a> = 3008
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba7b3d82e2970079c83f92dc05bbbf8250">OB_PROP_SDK_ACCEL_FRAME_TRANSFORMED_BOOL</a> = 3009
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba552c6c020ef86f487abffb08c4e97eb8">OB_PROP_SDK_IR_FRAME_UNPACK_BOOL</a> = 3008
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba7b3d82e2970079c83f92dc05bbbf8250">OB_PROP_SDK_ACCEL_FRAME_TRANSFORMED_BOOL</a> = 3009
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabada43ade44a5e9930e186e42be4da6525">OB_PROP_SDK_GYRO_FRAME_TRANSFORMED_BOOL</a> = 3010
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba6047e09286d84cc540a4386a9804e44f">OB_PROP_SDK_IR_LEFT_FRAME_UNPACK_BOOL</a> = 3011
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3a93fe185b0296e90cf8961985158c42">OB_PROP_SDK_IR_RIGHT_FRAME_UNPACK_BOOL</a> = 3012
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaca54beb0db8cf3e2fab92bb2776a0335">OB_PROP_DEPTH_INDUSTRY_MODE_INT</a> = 3024
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba3a93fe185b0296e90cf8961985158c42">OB_PROP_SDK_IR_RIGHT_FRAME_UNPACK_BOOL</a> = 3012
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaca54beb0db8cf3e2fab92bb2776a0335">OB_PROP_DEPTH_INDUSTRY_MODE_INT</a> = 3024
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba70b359730187e3c11aa8da671390096a">OB_PROP_NETWORK_BANDWIDTH_TYPE_INT</a> = 3027
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabafb4ee0ab39307024e7f11029971712b5">OB_PROP_DEVICE_PERFORMANCE_MODE_INT</a> = 3028
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababe21a5d5336201ea9131c4c7d2b705b7">OB_RAW_DATA_CAMERA_CALIB_JSON_FILE</a> = 4029
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabad752401853bee04286d77419b42a5b82">OB_PROP_DEBUG_ESGM_CONFIDENCE_FLOAT</a> = 5013
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbababe21a5d5336201ea9131c4c7d2b705b7">OB_RAW_DATA_CAMERA_CALIB_JSON_FILE</a> = 4029
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabad752401853bee04286d77419b42a5b82">OB_PROP_DEBUG_ESGM_CONFIDENCE_FLOAT</a> = 5013
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba4526c8ae2a0dc1b9e82345903116bed9">OB_PROP_COLOR_DENOISING_LEVEL_INT</a> = 5525
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba16dd61eb78d630d3509a9572668bbc29">OB_RAW_DATA_LIDAR_IP_ADDRESS</a> = 8000
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba2ec37a42ec7695261d67eb627bc32470">OB_PROP_LIDAR_PORT_INT</a> = 8001
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba04680edf1555a925fbd5ed2b219645db">OB_RAW_DATA_LIDAR_MAC_ADDRESS</a> = 8002
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba2ec37a42ec7695261d67eb627bc32470">OB_PROP_LIDAR_PORT_INT</a> = 8001
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba04680edf1555a925fbd5ed2b219645db">OB_RAW_DATA_LIDAR_MAC_ADDRESS</a> = 8002
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabad1629db82e537eef42b2dfa69abb7749">OB_RAW_DATA_LIDAR_SUBNET_MASK</a> = 8003
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba07ae2a61afb568c950ae134a871523f8">OB_PROP_LIDAR_WORK_MODE_INT</a> = 8004
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabacc0618141846992e6436f33a57cacb0d">OB_PROP_LIDAR_APPLY_CONFIGS_INT</a> = 8005
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabae47c590e55bf151031e2163f8f3b4a6a">OB_PROP_LIDAR_TAIL_FILTER_LEVEL_INT</a> = 8006
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabacc0618141846992e6436f33a57cacb0d">OB_PROP_LIDAR_APPLY_CONFIGS_INT</a> = 8005
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabae47c590e55bf151031e2163f8f3b4a6a">OB_PROP_LIDAR_TAIL_FILTER_LEVEL_INT</a> = 8006
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba27cc3dc3cd797aac1d49b010bdff23e2">OB_PROP_LIDAR_MEMS_FOV_SIZE_FLOAT</a> = 8007
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba9b144f52a91a948e1ece475d08a71a6a">OB_PROP_LIDAR_MEMS_FRENQUENCY_FLOAT</a> = 8008
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8558361176a41b196a3d44a5780ad0fd">OB_RAW_DATA_LIDAR_PRODUCT_MODEL</a> = 8009
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba550fb5c4b32d1f967fce5af3919b50ab">OB_RAW_DATA_LIDAR_FIRMWARE_VERSION</a> = 8010
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba8558361176a41b196a3d44a5780ad0fd">OB_RAW_DATA_LIDAR_PRODUCT_MODEL</a> = 8009
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba550fb5c4b32d1f967fce5af3919b50ab">OB_RAW_DATA_LIDAR_FIRMWARE_VERSION</a> = 8010
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabadab82a28a6d8f814246060720986d93e">OB_RAW_DATA_LIDAR_FPGA_VERSION</a> = 8011
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaccfac72bcfbb2bf9052696d5b57f148c">OB_PROP_LIDAR_WARNING_INFO_INT</a> = 8012
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba6b3e2e62b317e664c71f4bdd2b2a1b00">OB_PROP_LIDAR_MOTOR_SPIN_SPEED_INT</a> = 8013
 , <br />
-&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba63d92dc07bca804527d7c08738554019">OB_PROP_LIDAR_MCU_TEMPERATURE_INT</a> = 8014
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba6b3e2e62b317e664c71f4bdd2b2a1b00">OB_PROP_LIDAR_MOTOR_SPIN_SPEED_INT</a> = 8013
+, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbaba63d92dc07bca804527d7c08738554019">OB_PROP_LIDAR_MCU_TEMPERATURE_INT</a> = 8014
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabacdfacbb445f03c6d835147705cf145d2">OB_PROP_LIDAR_APD_TEMPERATURE_INT</a> = 8015
 , <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaf7bbcfc9bc6ea057219ca9ca71fb6bee">OB_PROP_LIDAR_SPECIFIC_MODE_INT</a> = 8016
-, <a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaafd19111989472ec6b9af37c3fcb5c88">OB_PROP_LIDAR_REPETITIVE_SCAN_MODE_INT</a> = 8017
+, <br />
+&#160;&#160;<a class="el" href="#a9e7aac1ea041c8958ea8c6e3aa53bbabaafd19111989472ec6b9af37c3fcb5c88">OB_PROP_LIDAR_REPETITIVE_SCAN_MODE_INT</a> = 8017
 <br />
  }</td></tr>
 <tr class="memdesc:a9e7aac1ea041c8958ea8c6e3aa53bbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration value describing all attribute control commands of the device.  <a href="#a9e7aac1ea041c8958ea8c6e3aa53bbab">More...</a><br /></td></tr>
@@ -382,7 +394,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00987">987</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01036">1036</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +410,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00988">988</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01037">1037</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -414,7 +426,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00989">989</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01038">1038</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +442,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00990">990</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01039">1039</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +458,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00991">991</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01040">1040</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +474,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00992">992</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01041">1041</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -478,7 +490,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00993">993</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01042">1042</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +506,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00994">994</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01043">1043</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>
@@ -805,7 +817,31 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba11c2166589f86cd1793dbfb9c0eca4f3" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba11c2166589f86cd1793dbfb9c0eca4f3"></a>OB_PROP_INTRA_CAMERA_SYNC_REFERENCE_INT&#160;</td><td class="fielddoc"><p>Intra-camera Sync Reference based on the exposure start time, the exposure middle time, or the exposure end time. the definition in <a class="el" href="_ob_types_8h.html#aa542b44daabb9d1aaf3f92d331c4e01b">OBIntraCameraSyncReference</a>. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba0d87d28e90c4aa49ea163c982f133288" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba0d87d28e90c4aa49ea163c982f133288"></a>OB_PROP_COLOR_RIGHT_ROTATE_INT&#160;</td><td class="fielddoc"><p>Right Color sensor rotation, angle{0, 90, 180, 270}. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba47effd208cac557aa0b16db7c56dc94c" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba47effd208cac557aa0b16db7c56dc94c"></a>OB_PROP_COLOR_RIGHT_MIRROR_BOOL&#160;</td><td class="fielddoc"><p>Right Color mirror. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba8f86c239d9105696f052b680d38c4534" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba8f86c239d9105696f052b680d38c4534"></a>OB_PROP_COLOR_RIGHT_FLIP_BOOL&#160;</td><td class="fielddoc"><p>Right Color flip. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba0c2545fce423eb3095990d993e0e971f" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba0c2545fce423eb3095990d993e0e971f"></a>OB_PROP_DEVICE_AE_REFERENCE_INT&#160;</td><td class="fielddoc"><p>Device AE reference source. </p>
+<ul>
+<li>0: Depth based</li>
+<li>1: Color based </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba28ad602684bea932d2899254452abbae" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba28ad602684bea932d2899254452abbae"></a>OB_PROP_DEVICE_AE_STRATEGY_INT&#160;</td><td class="fielddoc"><p>Device AE strategy. </p>
+<ul>
+<li>0: Default</li>
+<li>1: Motion </li>
+</ul>
+</td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba8ca506dc938af3f778e23eed73d35b81" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba8ca506dc938af3f778e23eed73d35b81"></a>OB_PROP_COLOR_ROI_BRIGHTNESS_INT&#160;</td><td class="fielddoc"><p>Color camera ROI brightness adjustment. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba47ce4b6a87ca052274ea8947cbf76bc5" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba47ce4b6a87ca052274ea8947cbf76bc5"></a>OB_PROP_COLOR_LEFT_ROTATE_INT&#160;</td><td class="fielddoc"><p>Left Color sensor rotation, angle{0, 90, 180, 270}. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba162be441147f1bef9bfb689cf1ec9d6f" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba162be441147f1bef9bfb689cf1ec9d6f"></a>OB_PROP_COLOR_LEFT_MIRROR_BOOL&#160;</td><td class="fielddoc"><p>Left Color mirror. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba65504d9d632e40bd49f1cdf6b0772517" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba65504d9d632e40bd49f1cdf6b0772517"></a>OB_PROP_COLOR_LEFT_FLIP_BOOL&#160;</td><td class="fielddoc"><p>Left Color flip. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabad5d4191f8738853ba279aad12d13aaa1" name="a9e7aac1ea041c8958ea8c6e3aa53bbabad5d4191f8738853ba279aad12d13aaa1"></a>OB_STRUCT_BASELINE_CALIBRATION_PARAM&#160;</td><td class="fielddoc"><p>Baseline calibration parameters. </p>
 </td></tr>
@@ -847,6 +883,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbaba742d3279870cadef85505d03a82c23de" name="a9e7aac1ea041c8958ea8c6e3aa53bbaba742d3279870cadef85505d03a82c23de"></a>OB_STRUCT_DISP_OFFSET_CONFIG&#160;</td><td class="fielddoc"><p>Disparity offset interleaving. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabaad9eb73a0f8fd97b51d1c6ba2c3b30f7" name="a9e7aac1ea041c8958ea8c6e3aa53bbabaad9eb73a0f8fd97b51d1c6ba2c3b30f7"></a>OB_STRUCT_PRESET_RESOLUTION_CONFIG&#160;</td><td class="fielddoc"><p>Preset resolution ratio configuration. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbababd0b9e85558d2a721a71b688c56fe09f" name="a9e7aac1ea041c8958ea8c6e3aa53bbababd0b9e85558d2a721a71b688c56fe09f"></a>OB_STRUCT_COLOR_SYNCED_EXPOSURE_PARAM&#160;</td><td class="fielddoc"><p>Color sensor synchronized exposure parameter structure. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e7aac1ea041c8958ea8c6e3aa53bbabad079a2535d5c99bedc93f368cfa47d38" name="a9e7aac1ea041c8958ea8c6e3aa53bbabad079a2535d5c99bedc93f368cfa47d38"></a>OB_PROP_COLOR_AUTO_EXPOSURE_BOOL&#160;</td><td class="fielddoc"><p>Color camera auto exposure. </p>
 </td></tr>
@@ -1008,7 +1046,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l00999">999</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_property_8h_source.html#l01048">1048</a> of file <a class="el" href="_property_8h_source.html">Property.h</a>.</p>
 
 </div>
 </div>

@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.7.2</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -184,6 +184,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct of serial number  <a href="struct_o_b_device_serial_number.html#details">More...</a><br /></td></tr>
 <tr class="memitem:OBDispOffsetConfig" id="r_OBDispOffsetConfig"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_o_b_disp_offset_config.html">OBDispOffsetConfig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disparity offset interleaving configuration.  <a href="struct_o_b_disp_offset_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:OBHardwareDecimationConfig" id="r_OBHardwareDecimationConfig"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_o_b_hardware_decimation_config.html">OBHardwareDecimationConfig</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -236,12 +237,21 @@ Macros</h2></td></tr>
 <tr class="memitem:ac1b4daef79e8a8397f52a942f498cd83" id="r_ac1b4daef79e8a8397f52a942f498cd83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1b4daef79e8a8397f52a942f498cd83">is_ir_sensor</a>(sensor_type)</td></tr>
 <tr class="memdesc:ac1b4daef79e8a8397f52a942f498cd83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if sensor_type is an IR sensor.  <br /></td></tr>
 <tr class="memitem:a042d71df32e7c35791f4ea02c2b39b74" id="r_a042d71df32e7c35791f4ea02c2b39b74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a042d71df32e7c35791f4ea02c2b39b74">isIRSensor</a>&#160;&#160;&#160;<a class="el" href="#ac1b4daef79e8a8397f52a942f498cd83">is_ir_sensor</a></td></tr>
+<tr class="memitem:a0437fb2772b7519e07383a7a4e2ea35b" id="r_a0437fb2772b7519e07383a7a4e2ea35b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0437fb2772b7519e07383a7a4e2ea35b">is_color_sensor</a>(sensor_type)</td></tr>
+<tr class="memdesc:a0437fb2772b7519e07383a7a4e2ea35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if sensor_type is an Color sensor.  <br /></td></tr>
+<tr class="memitem:a083d9ae451552c1fef0217ad9d56ab12" id="r_a083d9ae451552c1fef0217ad9d56ab12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a083d9ae451552c1fef0217ad9d56ab12">isColorSensor</a>&#160;&#160;&#160;<a class="el" href="#a0437fb2772b7519e07383a7a4e2ea35b">is_color_sensor</a></td></tr>
 <tr class="memitem:a5435c1aa7d509966d116971db508f303" id="r_a5435c1aa7d509966d116971db508f303"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5435c1aa7d509966d116971db508f303">is_ir_stream</a>(stream_type)</td></tr>
 <tr class="memdesc:a5435c1aa7d509966d116971db508f303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if stream_type is an IR stream.  <br /></td></tr>
 <tr class="memitem:aef6685c44da8eac31e856f397de1afd3" id="r_aef6685c44da8eac31e856f397de1afd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef6685c44da8eac31e856f397de1afd3">isIRStream</a>&#160;&#160;&#160;<a class="el" href="#a5435c1aa7d509966d116971db508f303">is_ir_stream</a></td></tr>
+<tr class="memitem:aec7be8300e52bbbd70b97f9afc5e68dc" id="r_aec7be8300e52bbbd70b97f9afc5e68dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec7be8300e52bbbd70b97f9afc5e68dc">is_color_stream</a>(stream_type)</td></tr>
+<tr class="memdesc:aec7be8300e52bbbd70b97f9afc5e68dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if stream_type is an Color stream.  <br /></td></tr>
+<tr class="memitem:af4512dce1efddf7a6584e5d72ea233a0" id="r_af4512dce1efddf7a6584e5d72ea233a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4512dce1efddf7a6584e5d72ea233a0">isColorStream</a>&#160;&#160;&#160;<a class="el" href="#aec7be8300e52bbbd70b97f9afc5e68dc">is_color_stream</a></td></tr>
 <tr class="memitem:a52307266a1ca005dea6d7bfdb3ccfbb1" id="r_a52307266a1ca005dea6d7bfdb3ccfbb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52307266a1ca005dea6d7bfdb3ccfbb1">is_ir_frame</a>(frame_type)</td></tr>
 <tr class="memdesc:a52307266a1ca005dea6d7bfdb3ccfbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if frame_type is an IR frame.  <br /></td></tr>
 <tr class="memitem:aabb66472b1e9671d71c8485b939fabb1" id="r_aabb66472b1e9671d71c8485b939fabb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabb66472b1e9671d71c8485b939fabb1">isIRFrame</a>&#160;&#160;&#160;<a class="el" href="#a52307266a1ca005dea6d7bfdb3ccfbb1">is_ir_frame</a></td></tr>
+<tr class="memitem:a351c829d8638d896deefb74b4648df00" id="r_a351c829d8638d896deefb74b4648df00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a351c829d8638d896deefb74b4648df00">is_color_frame</a>(frame_type)</td></tr>
+<tr class="memdesc:a351c829d8638d896deefb74b4648df00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if frame_type is an Color frame.  <br /></td></tr>
+<tr class="memitem:a87ede719ee0461ae06fa5d8e81c6ac3c" id="r_a87ede719ee0461ae06fa5d8e81c6ac3c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87ede719ee0461ae06fa5d8e81c6ac3c">isColorFrame</a>&#160;&#160;&#160;<a class="el" href="#a351c829d8638d896deefb74b4648df00">is_color_frame</a></td></tr>
 <tr class="memitem:a5eeadb4cea31961aab689e5d7a225e9c" id="r_a5eeadb4cea31961aab689e5d7a225e9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5eeadb4cea31961aab689e5d7a225e9c">OB_DEFAULT_DECRYPT_KEY</a>&#160;&#160;&#160;(nullptr)</td></tr>
 <tr class="memdesc:a5eeadb4cea31961aab689e5d7a225e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default Decrypt Key.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -413,6 +423,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a563c402d16aef7217b3d9ec646252e59" id="r_a563c402d16aef7217b3d9ec646252e59"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_o_b_device_serial_number.html">OBDeviceSerialNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a563c402d16aef7217b3d9ec646252e59">OBSerialNumber</a></td></tr>
 <tr class="memitem:a3462fbc2dc1c3c7a4db4c19fe72ca663" id="r_a3462fbc2dc1c3c7a4db4c19fe72ca663"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_o_b_device_serial_number.html">OBDeviceSerialNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3462fbc2dc1c3c7a4db4c19fe72ca663">ob_serial_number</a></td></tr>
 <tr class="memitem:ad6c92edb1742bb05e07378a7f46b3afc" id="r_ad6c92edb1742bb05e07378a7f46b3afc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_o_b_disp_offset_config.html">OBDispOffsetConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6c92edb1742bb05e07378a7f46b3afc">ob_disp_offset_config</a></td></tr>
+<tr class="memitem:a1bf6144f445a6a326612293685241f17" id="r_a1bf6144f445a6a326612293685241f17"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_o_b_hardware_decimation_config.html">OBHardwareDecimationConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bf6144f445a6a326612293685241f17">ob_hardware_decimation_config</a></td></tr>
 <tr class="memitem:a414c49b425147fdad7373d38d98d8392" id="r_a414c49b425147fdad7373d38d98d8392"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#ae080b7e9d4916ffd1d6493aae7ec0c94">ob_frame_metadata_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a></td></tr>
 <tr class="memitem:abb0e29489221368f6a07c2735c144a2a" id="r_abb0e29489221368f6a07c2735c144a2a"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#a440b959ade7fb196cff8677e506a5ad9">ob_uvc_backend_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb0e29489221368f6a07c2735c144a2a">OBUvcBackendType</a></td></tr>
 <tr class="memitem:ac71535dec2ff2e41cb58347d4e501568" id="r_ac71535dec2ff2e41cb58347d4e501568"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#a8e0e1d7456a1140d0b45a049eb9dd1e6">ob_playback_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac71535dec2ff2e41cb58347d4e501568">OBPlaybackStatus</a></td></tr>
@@ -503,6 +514,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8af4771efbbfe6e99c3e8b119387a6492b">OB_SENSOR_RAW_PHASE</a> = 8
 , <a class="el" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0327314ecb7c71fcd6183c5a36100a10">OB_SENSOR_CONFIDENCE</a> = 9
 , <a class="el" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a36c23c245803394a4512a4cbf002b050">OB_SENSOR_LIDAR</a> = 10
+, <a class="el" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8af51f2641671bdacc992d8a12df74ed22">OB_SENSOR_COLOR_LEFT</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0fe1351f111fbe5eeb93b7fa2065cf40">OB_SENSOR_COLOR_RIGHT</a> = 12
 , <a class="el" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a2a0bb179eedea926e63ebb0e24c8f64c">OB_SENSOR_TYPE_COUNT</a>
 <br />
  }</td></tr>
@@ -523,7 +537,9 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a4372502297ded5d6e6ee8db1d71d69d2a0dc1321f75e8c21b57a55475797a86cb">OB_STREAM_CONFIDENCE</a> = 9
 , <a class="el" href="#a4372502297ded5d6e6ee8db1d71d69d2ad362f1207ea0b5a2e771b1a24e929cee">OB_STREAM_LIDAR</a> = 10
 , <br />
-&#160;&#160;<a class="el" href="#a4372502297ded5d6e6ee8db1d71d69d2a45f633ab6872b5e91139c7d17633e82d">OB_STREAM_TYPE_COUNT</a>
+&#160;&#160;<a class="el" href="#a4372502297ded5d6e6ee8db1d71d69d2aa39775d13735b5a6fb88824c8428c70d">OB_STREAM_COLOR_LEFT</a> = 11
+, <a class="el" href="#a4372502297ded5d6e6ee8db1d71d69d2a5fd33762558ebf66b5ae7c8649e333bb">OB_STREAM_COLOR_RIGHT</a> = 12
+, <a class="el" href="#a4372502297ded5d6e6ee8db1d71d69d2a45f633ab6872b5e91139c7d17633e82d">OB_STREAM_TYPE_COUNT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a4372502297ded5d6e6ee8db1d71d69d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration value describing the type of data stream.  <a href="#a4372502297ded5d6e6ee8db1d71d69d2">More...</a><br /></td></tr>
@@ -545,7 +561,10 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#a42b4219d92627d3cf51af225ec58a345ac16893b932b323c100e7a75314d93c78">OB_FRAME_CONFIDENCE</a> = 11
 , <a class="el" href="#a42b4219d92627d3cf51af225ec58a345a76a1695a9a1add63b0acae90f307089b">OB_FRAME_LIDAR_POINTS</a> = 12
-, <a class="el" href="#a42b4219d92627d3cf51af225ec58a345a9184781ccafd95ca7e73b9314906b379">OB_FRAME_TYPE_COUNT</a>
+, <a class="el" href="#a42b4219d92627d3cf51af225ec58a345a863ec2b1dc0b9566b4c0b0c5e27315ad">OB_FRAME_COLOR_LEFT</a> = 13
+, <a class="el" href="#a42b4219d92627d3cf51af225ec58a345a46ad55eb39368a2f753b150eaeb33f5c">OB_FRAME_COLOR_RIGHT</a> = 14
+, <br />
+&#160;&#160;<a class="el" href="#a42b4219d92627d3cf51af225ec58a345a9184781ccafd95ca7e73b9314906b379">OB_FRAME_TYPE_COUNT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a42b4219d92627d3cf51af225ec58a345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration value describing the type of frame.  <a href="#a42b4219d92627d3cf51af225ec58a345">More...</a><br /></td></tr>
@@ -947,6 +966,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#aabad929b67059752029c3374594ac63ba2fe8400ffd77e63929e69bb0f0ab1da6">OB_MULTI_DEVICE_SYNC_MODE_SOFTWARE_TRIGGERING</a> = 1 &lt;&lt; 5
 , <a class="el" href="#aabad929b67059752029c3374594ac63ba39ca63ef583695c083588ae28ea22ad9">OB_MULTI_DEVICE_SYNC_MODE_HARDWARE_TRIGGERING</a> = 1 &lt;&lt; 6
 , <a class="el" href="#aabad929b67059752029c3374594ac63ba03479c4688914a61a0f49c158f205bed">OB_MULTI_DEVICE_SYNC_MODE_IR_IMU_SYNC</a> = 1 &lt;&lt; 7
+, <br />
+&#160;&#160;<a class="el" href="#aabad929b67059752029c3374594ac63babfeae67a9b7d05752c5372ae2a3d9b66">OB_MULTI_DEVICE_SYNC_MODE_SOFTWARE_SYNCED</a> = 1 &lt;&lt; 8
 <br />
  }</td></tr>
 <tr class="memdesc:aabad929b67059752029c3374594ac63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The synchronization mode of the device.  <a href="#aabad929b67059752029c3374594ac63b">More...</a><br /></td></tr>
@@ -1053,7 +1074,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00044">44</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00104">ob::Config::enableVideoStream()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00505">ob::StreamProfileList::getVideoStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00104">ob::Config::enableVideoStream()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00523">ob::StreamProfileList::getVideoStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1092,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00045">45</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00104">ob::Config::enableVideoStream()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00505">ob::StreamProfileList::getVideoStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00104">ob::Config::enableVideoStream()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00523">ob::StreamProfileList::getVideoStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1110,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00046">46</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00104">ob::Config::enableVideoStream()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00505">ob::StreamProfileList::getVideoStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00136">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00104">ob::Config::enableVideoStream()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00523">ob::StreamProfileList::getVideoStreamProfile()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00542">ob::StreamProfileList::getVideoStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1128,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00047">47</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00170">ob::Config::enableLiDARStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00104">ob::Config::enableVideoStream()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00505">ob::StreamProfileList::getVideoStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00187">ob::Config::enableLiDARStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00136">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00104">ob::Config::enableVideoStream()</a>, <a class="el" href="_stream_profile_8hpp_source.html#l00523">ob::StreamProfileList::getVideoStreamProfile()</a>, and <a class="el" href="_stream_profile_8hpp_source.html#l00542">ob::StreamProfileList::getVideoStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1178,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00050">50</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00137">ob::Config::enableAccelStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00154">ob::Config::enableAccelStream()</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1196,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00051">51</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00137">ob::Config::enableAccelStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00154">ob::Config::enableAccelStream()</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1214,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00052">52</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00154">ob::Config::enableGyroStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00171">ob::Config::enableGyroStream()</a>.</p>
 
 </div>
 </div>
@@ -1211,7 +1232,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00053">53</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00154">ob::Config::enableGyroStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00171">ob::Config::enableGyroStream()</a>.</p>
 
 </div>
 </div>
@@ -1229,7 +1250,7 @@ Enumerations</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00054">54</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00170">ob::Config::enableLiDARStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00187">ob::Config::enableLiDARStream()</a>.</p>
 
 </div>
 </div>
@@ -1281,7 +1302,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00247">247</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00253">253</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1318,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00248">248</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00254">254</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1317,14 +1338,14 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    (format != <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aa9a2d23bbdbb3fda2395206f45761a6fa">OB_FORMAT_MJPG</a> &amp;&amp; format != <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aaa79e506d67238382c93b1c25cf03673a">OB_FORMAT_H264</a> &amp;&amp; format != <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aa6ccf762a9da0c7ba7fbd26016c56f88e">OB_FORMAT_H265</a> &amp;&amp; format != <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aad93fc36ac7a87cf20360312339f25ba9">OB_FORMAT_HEVC</a> &amp;&amp; format != <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aa954d77d159a86ffdc3cef383c5873f21">OB_FORMAT_RLE</a> \</div>
 <div class="line">     &amp;&amp; format != <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aaaca7ff3a34e844a4d4543314be60e4da">OB_FORMAT_RVL</a>)</div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa6ccf762a9da0c7ba7fbd26016c56f88e"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa6ccf762a9da0c7ba7fbd26016c56f88e">OB_FORMAT_H265</a></div><div class="ttdeci">@ OB_FORMAT_H265</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00213">ObTypes.h:213</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa954d77d159a86ffdc3cef383c5873f21"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa954d77d159a86ffdc3cef383c5873f21">OB_FORMAT_RLE</a></div><div class="ttdeci">@ OB_FORMAT_RLE</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00226">ObTypes.h:226</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa9a2d23bbdbb3fda2395206f45761a6fa"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa9a2d23bbdbb3fda2395206f45761a6fa">OB_FORMAT_MJPG</a></div><div class="ttdeci">@ OB_FORMAT_MJPG</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00211">ObTypes.h:211</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aaa79e506d67238382c93b1c25cf03673a"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aaa79e506d67238382c93b1c25cf03673a">OB_FORMAT_H264</a></div><div class="ttdeci">@ OB_FORMAT_H264</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00212">ObTypes.h:212</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aaaca7ff3a34e844a4d4543314be60e4da"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aaaca7ff3a34e844a4d4543314be60e4da">OB_FORMAT_RVL</a></div><div class="ttdeci">@ OB_FORMAT_RVL</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00232">ObTypes.h:232</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aad93fc36ac7a87cf20360312339f25ba9"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aad93fc36ac7a87cf20360312339f25ba9">OB_FORMAT_HEVC</a></div><div class="ttdeci">@ OB_FORMAT_HEVC</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00220">ObTypes.h:220</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa6ccf762a9da0c7ba7fbd26016c56f88e"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa6ccf762a9da0c7ba7fbd26016c56f88e">OB_FORMAT_H265</a></div><div class="ttdeci">@ OB_FORMAT_H265</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00219">ObTypes.h:219</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa954d77d159a86ffdc3cef383c5873f21"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa954d77d159a86ffdc3cef383c5873f21">OB_FORMAT_RLE</a></div><div class="ttdeci">@ OB_FORMAT_RLE</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00232">ObTypes.h:232</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa9a2d23bbdbb3fda2395206f45761a6fa"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa9a2d23bbdbb3fda2395206f45761a6fa">OB_FORMAT_MJPG</a></div><div class="ttdeci">@ OB_FORMAT_MJPG</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00217">ObTypes.h:217</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aaa79e506d67238382c93b1c25cf03673a"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aaa79e506d67238382c93b1c25cf03673a">OB_FORMAT_H264</a></div><div class="ttdeci">@ OB_FORMAT_H264</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00218">ObTypes.h:218</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aaaca7ff3a34e844a4d4543314be60e4da"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aaaca7ff3a34e844a4d4543314be60e4da">OB_FORMAT_RVL</a></div><div class="ttdeci">@ OB_FORMAT_RVL</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00238">ObTypes.h:238</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aad93fc36ac7a87cf20360312339f25ba9"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aad93fc36ac7a87cf20360312339f25ba9">OB_FORMAT_HEVC</a></div><div class="ttdeci">@ OB_FORMAT_HEVC</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00226">ObTypes.h:226</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00251">251</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00257">257</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1343,12 +1364,12 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    (format == <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aa6c7b74af34b2fe81ee9cca68dc66d44b">OB_FORMAT_Y10</a> || format == <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aa16831149206fa0118fb5f2d454ce440f">OB_FORMAT_Y11</a> || format == <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aa4a15a04ac69f99a92a1f68731a33b627">OB_FORMAT_Y12</a> || format == <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aa7c8c200abeb83e91bafd645c5a86899f">OB_FORMAT_Y14</a> || format == <a class="code hl_enumvalue" href="#a30904eab1a667b797e7ce1099ba7c36aa954d77d159a86ffdc3cef383c5873f21">OB_FORMAT_RLE</a>)</div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa16831149206fa0118fb5f2d454ce440f"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa16831149206fa0118fb5f2d454ce440f">OB_FORMAT_Y11</a></div><div class="ttdeci">@ OB_FORMAT_Y11</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00217">ObTypes.h:217</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa4a15a04ac69f99a92a1f68731a33b627"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa4a15a04ac69f99a92a1f68731a33b627">OB_FORMAT_Y12</a></div><div class="ttdeci">@ OB_FORMAT_Y12</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00218">ObTypes.h:218</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa6c7b74af34b2fe81ee9cca68dc66d44b"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa6c7b74af34b2fe81ee9cca68dc66d44b">OB_FORMAT_Y10</a></div><div class="ttdeci">@ OB_FORMAT_Y10</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00216">ObTypes.h:216</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa7c8c200abeb83e91bafd645c5a86899f"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa7c8c200abeb83e91bafd645c5a86899f">OB_FORMAT_Y14</a></div><div class="ttdeci">@ OB_FORMAT_Y14</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00229">ObTypes.h:229</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa16831149206fa0118fb5f2d454ce440f"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa16831149206fa0118fb5f2d454ce440f">OB_FORMAT_Y11</a></div><div class="ttdeci">@ OB_FORMAT_Y11</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00223">ObTypes.h:223</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa4a15a04ac69f99a92a1f68731a33b627"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa4a15a04ac69f99a92a1f68731a33b627">OB_FORMAT_Y12</a></div><div class="ttdeci">@ OB_FORMAT_Y12</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00224">ObTypes.h:224</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa6c7b74af34b2fe81ee9cca68dc66d44b"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa6c7b74af34b2fe81ee9cca68dc66d44b">OB_FORMAT_Y10</a></div><div class="ttdeci">@ OB_FORMAT_Y10</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00222">ObTypes.h:222</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a30904eab1a667b797e7ce1099ba7c36aa7c8c200abeb83e91bafd645c5a86899f"><div class="ttname"><a href="#a30904eab1a667b797e7ce1099ba7c36aa7c8c200abeb83e91bafd645c5a86899f">OB_FORMAT_Y14</a></div><div class="ttdeci">@ OB_FORMAT_Y14</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00235">ObTypes.h:235</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00256">256</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00262">262</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1364,7 +1385,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00574">574</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00580">580</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1401,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00575">575</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00581">581</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1417,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00576">576</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00582">582</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1412,7 +1433,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00577">577</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00583">583</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1428,7 +1449,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00578">578</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00584">584</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1444,7 +1465,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00579">579</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00585">585</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1460,7 +1481,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00580">580</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00586">586</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1497,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00581">581</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00587">587</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1492,7 +1513,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00582">582</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00588">588</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1529,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00583">583</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00589">589</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1524,7 +1545,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00584">584</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00590">590</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1540,7 +1561,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00585">585</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00591">591</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1556,7 +1577,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00586">586</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00592">592</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1572,7 +1593,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01180">1180</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01186">1186</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1609,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01181">1181</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01187">1187</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1604,7 +1625,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01264">1264</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01270">1270</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1620,7 +1641,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01808">1808</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01827">1827</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1636,7 +1657,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01809">1809</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01828">1828</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1652,7 +1673,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01810">1810</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01829">1829</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1668,7 +1689,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01811">1811</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01830">1830</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1684,7 +1705,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01812">1812</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01831">1831</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1700,7 +1721,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01900">1900</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01919">1919</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_filter_8h.html#a8275463776e356da3b8cb84d011d944d">ob_filter_set_callback()</a>.</p>
 
@@ -1718,7 +1739,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01901">1901</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01920">1920</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1734,7 +1755,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01934">1934</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01953">1953</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00160">ob::Context::setDeviceChangedCallback()</a>.</p>
 
@@ -1754,14 +1775,16 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    (sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a238477bb8485f66c4ba00c59d16543eb">OB_SENSOR_COLOR</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8ab53fa838c168972947dbb3cdb337dbd5">OB_SENSOR_DEPTH</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a8c06a0f1352652c85b3f8f990a1cb632">OB_SENSOR_IR</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8ac6adfa3af6c768496a1851684985f067">OB_SENSOR_IR_LEFT</a> \</div>
-<div class="line">     || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0424821276529822aae2d8b0fff286c3">OB_SENSOR_IR_RIGHT</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0327314ecb7c71fcd6183c5a36100a10">OB_SENSOR_CONFIDENCE</a>)</div>
+<b>Value:</b><div class="fragment"><div class="line">    (sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a238477bb8485f66c4ba00c59d16543eb">OB_SENSOR_COLOR</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8af51f2641671bdacc992d8a12df74ed22">OB_SENSOR_COLOR_LEFT</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0fe1351f111fbe5eeb93b7fa2065cf40">OB_SENSOR_COLOR_RIGHT</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8ab53fa838c168972947dbb3cdb337dbd5">OB_SENSOR_DEPTH</a> \</div>
+<div class="line">     || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a8c06a0f1352652c85b3f8f990a1cb632">OB_SENSOR_IR</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8ac6adfa3af6c768496a1851684985f067">OB_SENSOR_IR_LEFT</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0424821276529822aae2d8b0fff286c3">OB_SENSOR_IR_RIGHT</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0327314ecb7c71fcd6183c5a36100a10">OB_SENSOR_CONFIDENCE</a>)</div>
 <div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8a0327314ecb7c71fcd6183c5a36100a10"><div class="ttname"><a href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0327314ecb7c71fcd6183c5a36100a10">OB_SENSOR_CONFIDENCE</a></div><div class="ttdeci">@ OB_SENSOR_CONFIDENCE</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00140">ObTypes.h:140</a></div></div>
 <div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8a0424821276529822aae2d8b0fff286c3"><div class="ttname"><a href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0424821276529822aae2d8b0fff286c3">OB_SENSOR_IR_RIGHT</a></div><div class="ttdeci">@ OB_SENSOR_IR_RIGHT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00138">ObTypes.h:138</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8a0fe1351f111fbe5eeb93b7fa2065cf40"><div class="ttname"><a href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0fe1351f111fbe5eeb93b7fa2065cf40">OB_SENSOR_COLOR_RIGHT</a></div><div class="ttdeci">@ OB_SENSOR_COLOR_RIGHT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00143">ObTypes.h:143</a></div></div>
 <div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8a238477bb8485f66c4ba00c59d16543eb"><div class="ttname"><a href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a238477bb8485f66c4ba00c59d16543eb">OB_SENSOR_COLOR</a></div><div class="ttdeci">@ OB_SENSOR_COLOR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00133">ObTypes.h:133</a></div></div>
 <div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8a8c06a0f1352652c85b3f8f990a1cb632"><div class="ttname"><a href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a8c06a0f1352652c85b3f8f990a1cb632">OB_SENSOR_IR</a></div><div class="ttdeci">@ OB_SENSOR_IR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00132">ObTypes.h:132</a></div></div>
 <div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8ab53fa838c168972947dbb3cdb337dbd5"><div class="ttname"><a href="#a0bf6f74f3eaabbf4a71720b9363b2aa8ab53fa838c168972947dbb3cdb337dbd5">OB_SENSOR_DEPTH</a></div><div class="ttdeci">@ OB_SENSOR_DEPTH</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00134">ObTypes.h:134</a></div></div>
 <div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8ac6adfa3af6c768496a1851684985f067"><div class="ttname"><a href="#a0bf6f74f3eaabbf4a71720b9363b2aa8ac6adfa3af6c768496a1851684985f067">OB_SENSOR_IR_LEFT</a></div><div class="ttdeci">@ OB_SENSOR_IR_LEFT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00137">ObTypes.h:137</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a0bf6f74f3eaabbf4a71720b9363b2aa8af51f2641671bdacc992d8a12df74ed22"><div class="ttname"><a href="#a0bf6f74f3eaabbf4a71720b9363b2aa8af51f2641671bdacc992d8a12df74ed22">OB_SENSOR_COLOR_LEFT</a></div><div class="ttdeci">@ OB_SENSOR_COLOR_LEFT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00142">ObTypes.h:142</a></div></div>
 </div><!-- fragment -->
 <p>Check if the sensor_type is a video sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1772,9 +1795,9 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if sensor_type is a video sensor, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01942">1942</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01961">1961</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00140">ob::TypeHelper::isVideoSensorType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00142">ob::TypeHelper::isVideoSensorType()</a>.</p>
 
 </div>
 </div>
@@ -1792,15 +1815,18 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    (stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2ae01ce256e8968173f704e412e3b3b1c9">OB_STREAM_COLOR</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a5d97aafd168437dc66978ee682d1bf21">OB_STREAM_DEPTH</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a3eb56907f2dcdc0903fdf1dcd37cfef9">OB_STREAM_IR</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a7a5bab4b3de70fafcb2706379b5db403">OB_STREAM_IR_LEFT</a> \</div>
-<div class="line">     || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a7544eb1f07101bb35e7c521c6cce7db1">OB_STREAM_IR_RIGHT</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a9cba11fd750635cf57279fb5ecb49cb3">OB_STREAM_VIDEO</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a0dc1321f75e8c21b57a55475797a86cb">OB_STREAM_CONFIDENCE</a>)</div>
-<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a0dc1321f75e8c21b57a55475797a86cb"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a0dc1321f75e8c21b57a55475797a86cb">OB_STREAM_CONFIDENCE</a></div><div class="ttdeci">@ OB_STREAM_CONFIDENCE</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00160">ObTypes.h:160</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a3eb56907f2dcdc0903fdf1dcd37cfef9"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a3eb56907f2dcdc0903fdf1dcd37cfef9">OB_STREAM_IR</a></div><div class="ttdeci">@ OB_STREAM_IR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00152">ObTypes.h:152</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a5d97aafd168437dc66978ee682d1bf21"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a5d97aafd168437dc66978ee682d1bf21">OB_STREAM_DEPTH</a></div><div class="ttdeci">@ OB_STREAM_DEPTH</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00154">ObTypes.h:154</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a7544eb1f07101bb35e7c521c6cce7db1"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a7544eb1f07101bb35e7c521c6cce7db1">OB_STREAM_IR_RIGHT</a></div><div class="ttdeci">@ OB_STREAM_IR_RIGHT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00158">ObTypes.h:158</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a7a5bab4b3de70fafcb2706379b5db403"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a7a5bab4b3de70fafcb2706379b5db403">OB_STREAM_IR_LEFT</a></div><div class="ttdeci">@ OB_STREAM_IR_LEFT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00157">ObTypes.h:157</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a9cba11fd750635cf57279fb5ecb49cb3"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a9cba11fd750635cf57279fb5ecb49cb3">OB_STREAM_VIDEO</a></div><div class="ttdeci">@ OB_STREAM_VIDEO</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00151">ObTypes.h:151</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2ae01ce256e8968173f704e412e3b3b1c9"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2ae01ce256e8968173f704e412e3b3b1c9">OB_STREAM_COLOR</a></div><div class="ttdeci">@ OB_STREAM_COLOR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00153">ObTypes.h:153</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">    (stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2ae01ce256e8968173f704e412e3b3b1c9">OB_STREAM_COLOR</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2aa39775d13735b5a6fb88824c8428c70d">OB_STREAM_COLOR_LEFT</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a5fd33762558ebf66b5ae7c8649e333bb">OB_STREAM_COLOR_RIGHT</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a5d97aafd168437dc66978ee682d1bf21">OB_STREAM_DEPTH</a> \</div>
+<div class="line">     || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a3eb56907f2dcdc0903fdf1dcd37cfef9">OB_STREAM_IR</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a7a5bab4b3de70fafcb2706379b5db403">OB_STREAM_IR_LEFT</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a7544eb1f07101bb35e7c521c6cce7db1">OB_STREAM_IR_RIGHT</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a9cba11fd750635cf57279fb5ecb49cb3">OB_STREAM_VIDEO</a>       \</div>
+<div class="line">     || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a0dc1321f75e8c21b57a55475797a86cb">OB_STREAM_CONFIDENCE</a>)</div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a0dc1321f75e8c21b57a55475797a86cb"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a0dc1321f75e8c21b57a55475797a86cb">OB_STREAM_CONFIDENCE</a></div><div class="ttdeci">@ OB_STREAM_CONFIDENCE</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00162">ObTypes.h:162</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a3eb56907f2dcdc0903fdf1dcd37cfef9"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a3eb56907f2dcdc0903fdf1dcd37cfef9">OB_STREAM_IR</a></div><div class="ttdeci">@ OB_STREAM_IR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00154">ObTypes.h:154</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a5d97aafd168437dc66978ee682d1bf21"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a5d97aafd168437dc66978ee682d1bf21">OB_STREAM_DEPTH</a></div><div class="ttdeci">@ OB_STREAM_DEPTH</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00156">ObTypes.h:156</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a5fd33762558ebf66b5ae7c8649e333bb"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a5fd33762558ebf66b5ae7c8649e333bb">OB_STREAM_COLOR_RIGHT</a></div><div class="ttdeci">@ OB_STREAM_COLOR_RIGHT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00165">ObTypes.h:165</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a7544eb1f07101bb35e7c521c6cce7db1"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a7544eb1f07101bb35e7c521c6cce7db1">OB_STREAM_IR_RIGHT</a></div><div class="ttdeci">@ OB_STREAM_IR_RIGHT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00160">ObTypes.h:160</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a7a5bab4b3de70fafcb2706379b5db403"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a7a5bab4b3de70fafcb2706379b5db403">OB_STREAM_IR_LEFT</a></div><div class="ttdeci">@ OB_STREAM_IR_LEFT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00159">ObTypes.h:159</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2a9cba11fd750635cf57279fb5ecb49cb3"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2a9cba11fd750635cf57279fb5ecb49cb3">OB_STREAM_VIDEO</a></div><div class="ttdeci">@ OB_STREAM_VIDEO</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00153">ObTypes.h:153</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2aa39775d13735b5a6fb88824c8428c70d"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2aa39775d13735b5a6fb88824c8428c70d">OB_STREAM_COLOR_LEFT</a></div><div class="ttdeci">@ OB_STREAM_COLOR_LEFT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00164">ObTypes.h:164</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a4372502297ded5d6e6ee8db1d71d69d2ae01ce256e8968173f704e412e3b3b1c9"><div class="ttname"><a href="#a4372502297ded5d6e6ee8db1d71d69d2ae01ce256e8968173f704e412e3b3b1c9">OB_STREAM_COLOR</a></div><div class="ttdeci">@ OB_STREAM_COLOR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00155">ObTypes.h:155</a></div></div>
 </div><!-- fragment -->
 <p>check if the stream_type is a video stream </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1811,9 +1837,9 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if stream_type is a video stream, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01952">1952</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01971">1971</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00160">ob::TypeHelper::isVideoStreamType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_type_helper_8hpp_source.html#l00164">ob::TypeHelper::isVideoStreamType()</a>.</p>
 
 </div>
 </div>
@@ -1842,7 +1868,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if sensor_type is an IR sensor, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01962">1962</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01982">1982</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1858,7 +1884,52 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01963">1963</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01983">1983</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+
+</div>
+</div>
+<a id="a0437fb2772b7519e07383a7a4e2ea35b" name="a0437fb2772b7519e07383a7a4e2ea35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0437fb2772b7519e07383a7a4e2ea35b">&#9670;&#160;</a></span>is_color_sensor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define is_color_sensor</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>sensor_type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">(sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a238477bb8485f66c4ba00c59d16543eb">OB_SENSOR_COLOR</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8af51f2641671bdacc992d8a12df74ed22">OB_SENSOR_COLOR_LEFT</a> || sensor_type == <a class="code hl_enumvalue" href="#a0bf6f74f3eaabbf4a71720b9363b2aa8a0fe1351f111fbe5eeb93b7fa2065cf40">OB_SENSOR_COLOR_RIGHT</a>)</div>
+</div><!-- fragment -->
+<p>Check if sensor_type is an Color sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor_type</td><td>Sensor type to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if sensor_type is an Color sensor, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01991">1991</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+
+</div>
+</div>
+<a id="a083d9ae451552c1fef0217ad9d56ab12" name="a083d9ae451552c1fef0217ad9d56ab12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083d9ae451552c1fef0217ad9d56ab12">&#9670;&#160;</a></span>isColorSensor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define isColorSensor&#160;&#160;&#160;<a class="el" href="#a0437fb2772b7519e07383a7a4e2ea35b">is_color_sensor</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01992">1992</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1887,7 +1958,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if stream_type is an IR stream, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01971">1971</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02000">2000</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1903,7 +1974,52 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01972">1972</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02001">2001</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+
+</div>
+</div>
+<a id="aec7be8300e52bbbd70b97f9afc5e68dc" name="aec7be8300e52bbbd70b97f9afc5e68dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7be8300e52bbbd70b97f9afc5e68dc">&#9670;&#160;</a></span>is_color_stream</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define is_color_stream</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>stream_type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">(stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2ae01ce256e8968173f704e412e3b3b1c9">OB_STREAM_COLOR</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2aa39775d13735b5a6fb88824c8428c70d">OB_STREAM_COLOR_LEFT</a> || stream_type == <a class="code hl_enumvalue" href="#a4372502297ded5d6e6ee8db1d71d69d2a5fd33762558ebf66b5ae7c8649e333bb">OB_STREAM_COLOR_RIGHT</a>)</div>
+</div><!-- fragment -->
+<p>Check if stream_type is an Color stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream_type</td><td>Stream type to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if stream_type is an Color stream, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02009">2009</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+
+</div>
+</div>
+<a id="af4512dce1efddf7a6584e5d72ea233a0" name="af4512dce1efddf7a6584e5d72ea233a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4512dce1efddf7a6584e5d72ea233a0">&#9670;&#160;</a></span>isColorStream</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define isColorStream&#160;&#160;&#160;<a class="el" href="#aec7be8300e52bbbd70b97f9afc5e68dc">is_color_stream</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02010">2010</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1922,9 +2038,9 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(frame_type == <a class="code hl_enumvalue" href="#a42b4219d92627d3cf51af225ec58a345af12ee95e3a3735b7fe1b8edac31f1cb5">OB_FRAME_IR</a> || frame_type == <a class="code hl_enumvalue" href="#a42b4219d92627d3cf51af225ec58a345a6ba1bbc1b9427f2c67e2acc4b282112c">OB_FRAME_IR_LEFT</a> || frame_type == <a class="code hl_enumvalue" href="#a42b4219d92627d3cf51af225ec58a345a04652540e40f05d30c2480c198c404c8">OB_FRAME_IR_RIGHT</a>)</div>
-<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345a04652540e40f05d30c2480c198c404c8"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345a04652540e40f05d30c2480c198c404c8">OB_FRAME_IR_RIGHT</a></div><div class="ttdeci">@ OB_FRAME_IR_RIGHT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00180">ObTypes.h:180</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345a6ba1bbc1b9427f2c67e2acc4b282112c"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345a6ba1bbc1b9427f2c67e2acc4b282112c">OB_FRAME_IR_LEFT</a></div><div class="ttdeci">@ OB_FRAME_IR_LEFT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00179">ObTypes.h:179</a></div></div>
-<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345af12ee95e3a3735b7fe1b8edac31f1cb5"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345af12ee95e3a3735b7fe1b8edac31f1cb5">OB_FRAME_IR</a></div><div class="ttdeci">@ OB_FRAME_IR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00172">ObTypes.h:172</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345a04652540e40f05d30c2480c198c404c8"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345a04652540e40f05d30c2480c198c404c8">OB_FRAME_IR_RIGHT</a></div><div class="ttdeci">@ OB_FRAME_IR_RIGHT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00184">ObTypes.h:184</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345a6ba1bbc1b9427f2c67e2acc4b282112c"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345a6ba1bbc1b9427f2c67e2acc4b282112c">OB_FRAME_IR_LEFT</a></div><div class="ttdeci">@ OB_FRAME_IR_LEFT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00183">ObTypes.h:183</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345af12ee95e3a3735b7fe1b8edac31f1cb5"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345af12ee95e3a3735b7fe1b8edac31f1cb5">OB_FRAME_IR</a></div><div class="ttdeci">@ OB_FRAME_IR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00176">ObTypes.h:176</a></div></div>
 </div><!-- fragment -->
 <p>Check if frame_type is an IR frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1935,7 +2051,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if frame_type is an IR frame, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01980">1980</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02018">2018</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1951,7 +2067,55 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01981">1981</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02019">2019</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+
+</div>
+</div>
+<a id="a351c829d8638d896deefb74b4648df00" name="a351c829d8638d896deefb74b4648df00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351c829d8638d896deefb74b4648df00">&#9670;&#160;</a></span>is_color_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define is_color_frame</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>frame_type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">(frame_type == <a class="code hl_enumvalue" href="#a42b4219d92627d3cf51af225ec58a345a95a48824dfa906c01912a603237dd33f">OB_FRAME_COLOR</a> || frame_type == <a class="code hl_enumvalue" href="#a42b4219d92627d3cf51af225ec58a345a863ec2b1dc0b9566b4c0b0c5e27315ad">OB_FRAME_COLOR_LEFT</a> || frame_type == <a class="code hl_enumvalue" href="#a42b4219d92627d3cf51af225ec58a345a46ad55eb39368a2f753b150eaeb33f5c">OB_FRAME_COLOR_RIGHT</a>)</div>
+<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345a46ad55eb39368a2f753b150eaeb33f5c"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345a46ad55eb39368a2f753b150eaeb33f5c">OB_FRAME_COLOR_RIGHT</a></div><div class="ttdeci">@ OB_FRAME_COLOR_RIGHT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00189">ObTypes.h:189</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345a863ec2b1dc0b9566b4c0b0c5e27315ad"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345a863ec2b1dc0b9566b4c0b0c5e27315ad">OB_FRAME_COLOR_LEFT</a></div><div class="ttdeci">@ OB_FRAME_COLOR_LEFT</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00188">ObTypes.h:188</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a42b4219d92627d3cf51af225ec58a345a95a48824dfa906c01912a603237dd33f"><div class="ttname"><a href="#a42b4219d92627d3cf51af225ec58a345a95a48824dfa906c01912a603237dd33f">OB_FRAME_COLOR</a></div><div class="ttdeci">@ OB_FRAME_COLOR</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00177">ObTypes.h:177</a></div></div>
+</div><!-- fragment -->
+<p>Check if frame_type is an Color frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame_type</td><td>Frame type to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if frame_type is an Color frame, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02027">2027</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+
+</div>
+</div>
+<a id="a87ede719ee0461ae06fa5d8e81c6ac3c" name="a87ede719ee0461ae06fa5d8e81c6ac3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ede719ee0461ae06fa5d8e81c6ac3c">&#9670;&#160;</a></span>isColorFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define isColorFrame&#160;&#160;&#160;<a class="el" href="#a351c829d8638d896deefb74b4648df00">is_color_frame</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02028">2028</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -1969,7 +2133,7 @@ Enumerations</h2></td></tr>
 
 <p>The default Decrypt Key. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01986">1986</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l02033">2033</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3152,7 +3316,7 @@ Enumerations</h2></td></tr>
 
 <p>Device state. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00674">674</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00680">680</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -3168,7 +3332,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00674">674</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00680">680</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4308,6 +4472,20 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a1bf6144f445a6a326612293685241f17" name="a1bf6144f445a6a326612293685241f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf6144f445a6a326612293685241f17">&#9670;&#160;</a></span>ob_hardware_decimation_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="struct_o_b_hardware_decimation_config.html">OBHardwareDecimationConfig</a> <a class="el" href="#a1bf6144f445a6a326612293685241f17">ob_hardware_decimation_config</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a414c49b425147fdad7373d38d98d8392" name="a414c49b425147fdad7373d38d98d8392"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a414c49b425147fdad7373d38d98d8392">&#9670;&#160;</a></span>OBFrameMetadataType</h2>
 
@@ -4401,7 +4579,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01834">1834</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01853">1853</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4428,7 +4606,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01844">1844</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01863">1863</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4454,7 +4632,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01853">1853</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01872">1872</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4480,7 +4658,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01862">1862</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01881">1881</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4506,7 +4684,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01871">1871</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01890">1890</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4531,7 +4709,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01879">1879</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01898">1898</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4557,7 +4735,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01888">1888</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01907">1907</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4582,7 +4760,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01899">1899</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01918">1918</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4607,7 +4785,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01909">1909</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01928">1928</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4632,7 +4810,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01917">1917</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01936">1936</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4658,7 +4836,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01926">1926</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01945">1945</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4674,7 +4852,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01928">1928</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01947">1947</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4692,7 +4870,7 @@ Enumerations</h2></td></tr>
 
 <p>Callback Id. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01933">1933</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01952">1952</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4708,7 +4886,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01933">1933</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01952">1952</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4876,6 +5054,10 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a0bf6f74f3eaabbf4a71720b9363b2aa8a36c23c245803394a4512a4cbf002b050" name="a0bf6f74f3eaabbf4a71720b9363b2aa8a36c23c245803394a4512a4cbf002b050"></a>OB_SENSOR_LIDAR&#160;</td><td class="fielddoc"><p>LiDAR </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a0bf6f74f3eaabbf4a71720b9363b2aa8af51f2641671bdacc992d8a12df74ed22" name="a0bf6f74f3eaabbf4a71720b9363b2aa8af51f2641671bdacc992d8a12df74ed22"></a>OB_SENSOR_COLOR_LEFT&#160;</td><td class="fielddoc"><p>Left Color </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0bf6f74f3eaabbf4a71720b9363b2aa8a0fe1351f111fbe5eeb93b7fa2065cf40" name="a0bf6f74f3eaabbf4a71720b9363b2aa8a0fe1351f111fbe5eeb93b7fa2065cf40"></a>OB_SENSOR_COLOR_RIGHT&#160;</td><td class="fielddoc"><p>Right Color </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a0bf6f74f3eaabbf4a71720b9363b2aa8a2a0bb179eedea926e63ebb0e24c8f64c" name="a0bf6f74f3eaabbf4a71720b9363b2aa8a2a0bb179eedea926e63ebb0e24c8f64c"></a>OB_SENSOR_TYPE_COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -4921,11 +5103,15 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a4372502297ded5d6e6ee8db1d71d69d2ad362f1207ea0b5a2e771b1a24e929cee" name="a4372502297ded5d6e6ee8db1d71d69d2ad362f1207ea0b5a2e771b1a24e929cee"></a>OB_STREAM_LIDAR&#160;</td><td class="fielddoc"><p>LiDAR Stream for LiDAR device </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a4372502297ded5d6e6ee8db1d71d69d2aa39775d13735b5a6fb88824c8428c70d" name="a4372502297ded5d6e6ee8db1d71d69d2aa39775d13735b5a6fb88824c8428c70d"></a>OB_STREAM_COLOR_LEFT&#160;</td><td class="fielddoc"><p>Left Color stream </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4372502297ded5d6e6ee8db1d71d69d2a5fd33762558ebf66b5ae7c8649e333bb" name="a4372502297ded5d6e6ee8db1d71d69d2a5fd33762558ebf66b5ae7c8649e333bb"></a>OB_STREAM_COLOR_RIGHT&#160;</td><td class="fielddoc"><p>Right Color stream </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a4372502297ded5d6e6ee8db1d71d69d2a45f633ab6872b5e91139c7d17633e82d" name="a4372502297ded5d6e6ee8db1d71d69d2a45f633ab6872b5e91139c7d17633e82d"></a>OB_STREAM_TYPE_COUNT&#160;</td><td class="fielddoc"><p>The total number of stream type,is not a valid stream type </p>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00149">149</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00151">151</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -4971,11 +5157,15 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a42b4219d92627d3cf51af225ec58a345a76a1695a9a1add63b0acae90f307089b" name="a42b4219d92627d3cf51af225ec58a345a76a1695a9a1add63b0acae90f307089b"></a>OB_FRAME_LIDAR_POINTS&#160;</td><td class="fielddoc"><p>LiDAR point3d cloud frame </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a42b4219d92627d3cf51af225ec58a345a863ec2b1dc0b9566b4c0b0c5e27315ad" name="a42b4219d92627d3cf51af225ec58a345a863ec2b1dc0b9566b4c0b0c5e27315ad"></a>OB_FRAME_COLOR_LEFT&#160;</td><td class="fielddoc"><p>Left Color frame </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a42b4219d92627d3cf51af225ec58a345a46ad55eb39368a2f753b150eaeb33f5c" name="a42b4219d92627d3cf51af225ec58a345a46ad55eb39368a2f753b150eaeb33f5c"></a>OB_FRAME_COLOR_RIGHT&#160;</td><td class="fielddoc"><p>Right Color frame </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a42b4219d92627d3cf51af225ec58a345a9184781ccafd95ca7e73b9314906b379" name="a42b4219d92627d3cf51af225ec58a345a9184781ccafd95ca7e73b9314906b379"></a>OB_FRAME_TYPE_COUNT&#160;</td><td class="fielddoc"><p>The total number of frame types, is not a valid frame type </p>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00169">169</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00173">173</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5000,7 +5190,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ac20f061da2bcea09f7205d7f540a73f5ac6148c807258e1dac9786ceb47cae1ff" name="ac20f061da2bcea09f7205d7f540a73f5ac6148c807258e1dac9786ceb47cae1ff"></a>OB_PIXEL_TOF_DEPTH&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00192">192</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00198">198</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5098,7 +5288,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00204">204</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00210">210</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5160,7 +5350,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00262">262</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00268">268</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5198,7 +5388,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00290">290</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00296">296</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5238,7 +5428,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00306">306</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00312">312</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5270,7 +5460,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00386">386</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00392">392</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5296,7 +5486,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00518">518</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00524">524</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5320,7 +5510,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00528">528</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00534">534</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5384,7 +5574,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00547">547</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00553">553</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5439,7 +5629,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00591">591</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00597">597</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5480,7 +5670,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00616">616</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00622">622</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5517,7 +5707,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00634">634</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00640">640</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5545,7 +5735,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a0b7836c86904c3fbe87add2da0b487d9af7886d9a6e1810f4bcf134a986a8179f" name="a0b7836c86904c3fbe87add2da0b487d9af7886d9a6e1810f4bcf134a986a8179f"></a>OB_LIDAR_SCAN_40HZ&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00659">659</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00665">665</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5571,7 +5761,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00696">696</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00702">702</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5599,7 +5789,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00706">706</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00712">712</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5641,7 +5831,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00717">717</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00723">723</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5669,7 +5859,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00737">737</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00743">743</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5706,7 +5896,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ae08e57428df0ebafd9949b1a6e6c4e0dab5153da86dcf7159a662e00b35a1a881" name="ae08e57428df0ebafd9949b1a6e6c4e0dab5153da86dcf7159a662e00b35a1a881"></a>OB_PRECISION_COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00750">750</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00756">756</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5734,7 +5924,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00785">785</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00791">791</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5758,7 +5948,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00862">862</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00868">868</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5817,7 +6007,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00890">890</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l00896">896</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5839,7 +6029,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a9ea211c7f341f248ac76a56ad38b18faabf9f0fc3c034eb119905caf4cd917404" name="a9ea211c7f341f248ac76a56ad38b18faabf9f0fc3c034eb119905caf4cd917404"></a>OB_CUSTOM_DEPTH_WORK_MODE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01027">1027</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01033">1033</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5862,7 +6052,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="aca4d3784bb197741d9a7c564ad846396a764d50a0c173874cb4d3bb8731da58af" name="aca4d3784bb197741d9a7c564ad846396a764d50a0c173874cb4d3bb8731da58af"></a>OB_HOLE_FILL_FAREST&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01064">1064</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01070">1070</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5884,7 +6074,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="aa40fbed357ce1aa345d7ad958b591816a546c20caf0a5fa6d62108d99deb9523b" name="aa40fbed357ce1aa345d7ad958b591816a546c20caf0a5fa6d62108d99deb9523b"></a>OB_MGC_FILTER&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01088">1088</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01094">1094</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5906,7 +6096,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="aa7e2630d65e2ffcc533bbed2413c38caa5b70b3dff2bef948e5189bd0d34fcf04" name="aa7e2630d65e2ffcc533bbed2413c38caa5b70b3dff2bef948e5189bd0d34fcf04"></a>OB_NR_OVERALL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01107">1107</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01113">1113</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5937,7 +6127,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01142">1142</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01148">1148</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5961,7 +6151,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01186">1186</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01192">1192</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -5989,7 +6179,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01195">1195</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01201">1201</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6013,7 +6203,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01206">1206</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01212">1212</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6041,7 +6231,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01215">1215</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01221">1221</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6067,7 +6257,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01226">1226</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01232">1232</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6099,7 +6289,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01236">1236</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01242">1242</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6121,7 +6311,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="afbb016a9143a1d2978e849338d98b7d3a6e4c689ff6ece7bf7f2cfc0d4e76dc2f" name="afbb016a9143a1d2978e849338d98b7d3a6e4c689ff6ece7bf7f2cfc0d4e76dc2f"></a>OB_RIGHT_HAND_COORDINATE_SYSTEM&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01269">1269</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01275">1275</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6145,7 +6335,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01278">1278</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01284">1284</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6203,9 +6393,11 @@ Due to different models may have different signal input requirements, please do 
 </td></tr>
 <tr><td class="fieldname"><a id="aabad929b67059752029c3374594ac63ba03479c4688914a61a0f49c158f205bed" name="aabad929b67059752029c3374594ac63ba03479c4688914a61a0f49c158f205bed"></a>OB_MULTI_DEVICE_SYNC_MODE_IR_IMU_SYNC&#160;</td><td class="fielddoc"><p>IR and IMU sync mode. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="aabad929b67059752029c3374594ac63babfeae67a9b7d05752c5372ae2a3d9b66" name="aabad929b67059752029c3374594ac63babfeae67a9b7d05752c5372ae2a3d9b66"></a>OB_MULTI_DEVICE_SYNC_MODE_SOFTWARE_SYNCED&#160;</td><td class="fielddoc"><p>The device captures data in software synchronization mode, starting acquisition based on the system time. </p>
+</td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01294">1294</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01300">1300</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6227,7 +6419,7 @@ Due to different models may have different signal input requirements, please do 
 <tr><td class="fieldname"><a id="af84586f5be6faa951a45da3abe6aa942ab86a962cb0426a4e113c24c435f9829f" name="af84586f5be6faa951a45da3abe6aa942ab86a962cb0426a4e113c24c435f9829f"></a>OB_FILTER_CONFIG_VALUE_TYPE_BOOLEAN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01517">1517</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01527">1527</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6331,7 +6523,7 @@ Due to different models may have different signal input requirements, please do 
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01558">1558</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01577">1577</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6359,7 +6551,7 @@ Due to different models may have different signal input requirements, please do 
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01759">1759</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01778">1778</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6387,7 +6579,7 @@ Due to different models may have different signal input requirements, please do 
 <tr><td class="fieldname"><a id="a8e0e1d7456a1140d0b45a049eb9dd1e6a35808c239844e8bba937acc32a2034ed" name="a8e0e1d7456a1140d0b45a049eb9dd1e6a35808c239844e8bba937acc32a2034ed"></a>OB_PLAYBACK_COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01788">1788</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01807">1807</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6413,7 +6605,7 @@ Due to different models may have different signal input requirements, please do 
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01800">1800</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01819">1819</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>
@@ -6443,7 +6635,7 @@ Due to different models may have different signal input requirements, please do 
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01817">1817</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ob_types_8h_source.html#l01836">1836</a> of file <a class="el" href="_ob_types_8h_source.html">ObTypes.h</a>.</p>
 
 </div>
 </div>

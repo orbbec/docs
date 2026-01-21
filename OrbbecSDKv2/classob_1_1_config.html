@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.6.3</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.7.2</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aefb52cc87d6f1814c226de401a8ffd12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a video stream to be used in the pipeline.  <br /></td></tr>
 <tr class="memitem:a5f350cd84a931c67319c5f4f3793e981" id="r_a5f350cd84a931c67319c5f4f3793e981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f350cd84a931c67319c5f4f3793e981">enableVideoStream</a> (<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> sensorType, uint32_t width=<a class="el" href="_ob_types_8h.html#a9b361dc99aceea67424ab913937a5f68">OB_WIDTH_ANY</a>, uint32_t height=<a class="el" href="_ob_types_8h.html#ab2a356174680c09f5afda003b724f116">OB_HEIGHT_ANY</a>, uint32_t fps=<a class="el" href="_ob_types_8h.html#aae0778156fa30d9e595a6150d603b62e">OB_FPS_ANY</a>, <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a">OBFormat</a> format=<a class="el" href="_ob_types_8h.html#ab4517bcbc296d6ff427db1eea50b7070">OB_FORMAT_ANY</a>) const</td></tr>
 <tr class="memdesc:a5f350cd84a931c67319c5f4f3793e981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a video stream to be used in the pipeline.  <br /></td></tr>
+<tr class="memitem:a79638e3d052955f87f655e45d7ea19b4" id="r_a79638e3d052955f87f655e45d7ea19b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79638e3d052955f87f655e45d7ea19b4">enableVideoStream</a> (<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> sensorType, <a class="el" href="struct_o_b_hardware_decimation_config.html">OBHardwareDecimationConfig</a> decimationConfig, uint32_t fps=<a class="el" href="_ob_types_8h.html#aae0778156fa30d9e595a6150d603b62e">OB_FPS_ANY</a>, <a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a">OBFormat</a> format=<a class="el" href="_ob_types_8h.html#ab4517bcbc296d6ff427db1eea50b7070">OB_FORMAT_ANY</a>) const</td></tr>
+<tr class="memdesc:a79638e3d052955f87f655e45d7ea19b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a video stream to be used in the pipeline with decimation configuration.  <br /></td></tr>
 <tr class="memitem:aedd1af0cadf61b31b7ee21cc416dcc62" id="r_aedd1af0cadf61b31b7ee21cc416dcc62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedd1af0cadf61b31b7ee21cc416dcc62">enableAccelStream</a> (<a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0">OBAccelFullScaleRange</a> fullScaleRange=<a class="el" href="_ob_types_8h.html#a04dc77c83b1bfd3fa8edd44e8e092a6d">OB_ACCEL_FULL_SCALE_RANGE_ANY</a>, <a class="el" href="_ob_types_8h.html#a84479ef0a406c954741b62307e484896">OBAccelSampleRate</a> sampleRate=<a class="el" href="_ob_types_8h.html#a21f6d0160ea24f28b6b0fd53bd593baa">OB_ACCEL_SAMPLE_RATE_ANY</a>) const</td></tr>
 <tr class="memdesc:aedd1af0cadf61b31b7ee21cc416dcc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable an accelerometer stream to be used in the pipeline.  <br /></td></tr>
 <tr class="memitem:aec6140b0563f0e628e14a657612317be" id="r_aec6140b0563f0e628e14a657612317be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec6140b0563f0e628e14a657612317be">enableGyroStream</a> (<a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8">OBGyroFullScaleRange</a> fullScaleRange=<a class="el" href="_ob_types_8h.html#a3ae73ccd9bdc7da128cf9dcb9dc9fff2">OB_GYRO_FULL_SCALE_RANGE_ANY</a>, <a class="el" href="_ob_types_8h.html#a6064351d7d7b83d544742746259e4133">OBGyroSampleRate</a> sampleRate=<a class="el" href="_ob_types_8h.html#a6c87af0fbf2f1ae6fb4dd2ab0170cae8">OB_GYRO_SAMPLE_RATE_ANY</a>) const</td></tr>
@@ -358,7 +360,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aefb52cc87d6f1814c226de401a8ffd12" name="aefb52cc87d6f1814c226de401a8ffd12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefb52cc87d6f1814c226de401a8ffd12">&#9670;&#160;</a></span>enableVideoStream() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb52cc87d6f1814c226de401a8ffd12">&#9670;&#160;</a></span>enableVideoStream() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,7 +421,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5f350cd84a931c67319c5f4f3793e981" name="a5f350cd84a931c67319c5f4f3793e981"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f350cd84a931c67319c5f4f3793e981">&#9670;&#160;</a></span>enableVideoStream() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f350cd84a931c67319c5f4f3793e981">&#9670;&#160;</a></span>enableVideoStream() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -477,6 +479,59 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a79638e3d052955f87f655e45d7ea19b4" name="a79638e3d052955f87f655e45d7ea19b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79638e3d052955f87f655e45d7ea19b4">&#9670;&#160;</a></span>enableVideoStream() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ob::Config::enableVideoStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a></td>          <td class="paramname"><span class="paramname"><em>sensorType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_o_b_hardware_decimation_config.html">OBHardwareDecimationConfig</a></td>          <td class="paramname"><span class="paramname"><em>decimationConfig</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>fps</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="_ob_types_8h.html#aae0778156fa30d9e595a6150d603b62e">OB_FPS_ANY</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a30904eab1a667b797e7ce1099ba7c36a">OBFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="_ob_types_8h.html#ab4517bcbc296d6ff427db1eea50b7070">OB_FORMAT_ANY</a></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable a video stream to be used in the pipeline with decimation configuration. </p>
+<p>Will convert sensor type to stream type automatically.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensorType</td><td>The sensor type to be enabled. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decimationConfig</td><td>The decimation configuration for this stream. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps</td><td>The video stream frame rate (default is OB_FPS_ANY, which selects the default frame rate). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The video stream format (default is OB_FORMAT_ANY, which selects the default format). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00136">136</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+
+</div>
+</div>
 <a id="aedd1af0cadf61b31b7ee21cc416dcc62" name="aedd1af0cadf61b31b7ee21cc416dcc62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedd1af0cadf61b31b7ee21cc416dcc62">&#9670;&#160;</a></span>enableAccelStream()</h2>
 
@@ -514,7 +569,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00137">137</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00154">154</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -555,7 +610,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00154">154</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00171">171</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -596,7 +651,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00170">170</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00187">187</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -626,7 +681,7 @@ Public Member Functions</h2></td></tr>
 <p>Enable all streams to be used in the pipeline. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated</a></b></dt><dd>Use enableStream(std::shared_ptr&lt;StreamProfile&gt; streamProfile) instead </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00180">180</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00197">197</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -661,9 +716,9 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00191">191</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00208">208</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00203">disableStream()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00220">disableStream()</a>.</p>
 
 </div>
 </div>
@@ -699,7 +754,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00203">203</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00220">220</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -728,7 +783,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Disable all streams to be used in the pipeline. </p>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00211">211</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00228">228</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -758,7 +813,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the Enabled Stream Profile List. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;StreamProfileList&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00222">222</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00239">239</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -793,7 +848,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00234">234</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00251">251</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -828,7 +883,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00245">245</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00262">262</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
@@ -864,7 +919,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00258">258</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_pipeline_8hpp_source.html#l00275">275</a> of file <a class="el" href="_pipeline_8hpp_source.html">Pipeline.hpp</a>.</p>
 
 </div>
 </div>
