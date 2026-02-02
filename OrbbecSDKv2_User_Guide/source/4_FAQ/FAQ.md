@@ -32,15 +32,14 @@ On Linux (x64/ARM64), the log path is as follows
 
 ![image](../Images/windows_sdk_level.png)
 
-- To enable firmware logging, set DefaultHeartBeat to 1 in the corresponding device section.
-Example for Gemini 335LE:
+- To enable firmware logging, set DefaultHeartBeat to 1 in the corresponding device section. Example for Gemini 335LE:
 ```
     <Gemini335Le>
         <!-- Whether to enable heartbeat by default -->
             <DefaultHeartBeat>1</DefaultHeartBeat>
     </Gemini335Le>
 ``` 
-- Logs are stored in the Log folder alongside the application. Example
+- Logs are stored in the Log folder alongside the application. For example:
 
 ![image](../Images/windows_sdk_log.png)
 
@@ -52,14 +51,14 @@ Example for Gemini 335LE:
 - Set File Log level to 0 (Debug).
 
 ![image](../Images/linux_log_level.png)
-- Enable firmware logging by setting DefaultHeartBeat to 1 in the device section.Example for Gemini 335LE:
+- Enable firmware logging by setting DefaultHeartBeat to 1 in the device section. Example for Gemini 335LE:
 ```
     <Gemini335Le>
         <!-- Whether to enable heartbeat by default -->
             <DefaultHeartBeat>1</DefaultHeartBeat>
     </Gemini335Le>
 ``` 
-- Logs are stored in the Log folder alongside the application. Example:
+- Logs are stored in the Log folder alongside the application. For example::
 ![image](../Images/linux_sdk_log.png)
 
 

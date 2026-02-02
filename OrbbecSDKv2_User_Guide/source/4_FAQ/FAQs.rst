@@ -3,8 +3,8 @@
 
 FAQ
 ======================================================
-The following section contains frequently asked questions (FAQs) and will be continuously updated.
 
+The following section contains frequently asked questions (FAQs) and will be continuously updated.
 
 ======================================================
 

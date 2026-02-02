@@ -16,5 +16,5 @@ Orbbec SDK V2 C++ API User Guide
     source/1_overview/overview.rst
     source/2_QuickStarts/QuickStarts.rst
     source/3_Application_Guide/Application_Guide.rst
-    source/4_FAQ/FAQ.rst
+    source/4_FAQ/FAQs.rst
     source/license.md
