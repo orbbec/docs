@@ -9,6 +9,7 @@ First, set the log level to Debug. To enable device firmware logs,check the He
 ![image](../Images/OrbbecViewer_setLog.png)
 
 Logs are saved in the Log folder located in the same directory as OrbbecViewer.
+- Note: If the SDK is installed via the installer, the logs are saved in the Log directory alongside OrbbecViewer in the installation path.
 
 ### windows
 
@@ -18,11 +19,10 @@ On Windows, the log path is as follows:
 
 
 ### Linux (x64/ARM64)
-On Linux (x64/ARM64), the log path is as follows
+On Linux (x64/ARM64), the log path is as follows:
 ![image](../Images/OrbbecViewer_linux_log.png)
 
 
-- Note:If the SDK is installed via the installer, the logs are saved in the Log directory alongside OrbbecViewer in the installation path.
 
 ## How to save logs in an Orbbec SDK v2 application
 
