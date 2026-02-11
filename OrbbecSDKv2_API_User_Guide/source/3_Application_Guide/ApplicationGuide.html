@@ -1309,9 +1309,9 @@ removedList indicates that the SDK has detected a device disconnection (offline)
 <span class="k">auto</span><span class="w"> </span><span class="n">depthProfiles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pipe</span><span class="p">.</span><span class="n">getStreamProfileList</span><span class="p">(</span><span class="n">OB_SENSOR_DEPTH</span><span class="p">);</span>
 
 <span class="c1">// Get the color stream profile</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">colorProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colorProfiles</span><span class="o">-&gt;</span><span class="n">getVideoStreamProfile</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_MJPG</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">colorVideoProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colorProfiles</span><span class="o">-&gt;</span><span class="n">getVideoStreamProfile</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_MJPG</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
 <span class="c1">// Get the depth stream profile</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">depthProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">depthProfiles</span><span class="o">-&gt;</span><span class="n">getVideoStreamProfile</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_Y16</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">depthVideoProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">depthProfiles</span><span class="o">-&gt;</span><span class="n">getVideoStreamProfile</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="n">OB_FORMAT_Y16</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -1330,6 +1330,7 @@ removedList indicates that the SDK has detected a device disconnection (offline)
 <span class="k">auto</span><span class="w"> </span><span class="n">colorVideoProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">colorProfile</span><span class="o">-&gt;</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ob</span><span class="o">::</span><span class="n">VideoStreamProfile</span><span class="o">&gt;</span><span class="p">();</span>
 </pre></div>
 </div>
+<p><strong>Note: After a Depth, IR, or Color image has been mirrored, flipped, or rotated, the StreamProfile must be retrieved from the Frame, as the original image geometry has changed and only the Frame contains the correct intrinsics.</strong></p>
 </section>
 <section id="obtain-imu-streamprofile">
 <h2><span class="section-number">3.17.11. </span>Obtain IMU StreamProfile<a class="headerlink" href="#obtain-imu-streamprofile" title="Link to this heading"></a></h2>
@@ -1354,8 +1355,8 @@ removedList indicates that the SDK has detected a device disconnection (offline)
 <h2><span class="section-number">3.17.12. </span>Obtain Intrinsic and Extrinsic Parameters<a class="headerlink" href="#obtain-intrinsic-and-extrinsic-parameters" title="Link to this heading"></a></h2>
 <p>Intrinsic and extrinsic parameters can be obtained via the StreamProfile.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Get the depth intrinsic</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">depthIntrinsic</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">depthStreamProfile</span><span class="o">-&gt;</span><span class="n">getIntrinsic</span><span class="p">();</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">depthDistortion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">depthStreamProfile</span><span class="o">-&gt;</span><span class="n">getDistortion</span><span class="p">();</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">depthIntrinsic</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">depthVideoProfile</span><span class="o">-&gt;</span><span class="n">getIntrinsic</span><span class="p">();</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">depthDistortion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">depthVideoProfile</span><span class="o">-&gt;</span><span class="n">getDistortion</span><span class="p">();</span>
 
 <span class="c1">// Get the color intrinsic</span>
 <span class="k">auto</span><span class="w"> </span><span class="n">colorIntrinsic</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">colorVideoProfile</span><span class="o">-&gt;</span><span class="n">getIntrinsic</span><span class="p">();</span>
@@ -1389,9 +1390,9 @@ removedList indicates that the SDK has detected a device disconnection (offline)
 <section id="obtain-the-extrinsic-parameters-between-video-frames-and-imu">
 <h2><span class="section-number">3.17.14. </span>Obtain the Extrinsic Parameters Between Video Frames and IMU<a class="headerlink" href="#obtain-the-extrinsic-parameters-between-video-frames-and-imu" title="Link to this heading"></a></h2>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// depth to gyro extrinsic</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">depthToGyroExtrinsic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">depthStreamProfile</span><span class="o">-&gt;</span><span class="n">getExtrinsicTo</span><span class="p">(</span><span class="n">gyroStreamProfile</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">depthToGyroExtrinsic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">depthVideoProfile</span><span class="o">-&gt;</span><span class="n">getExtrinsicTo</span><span class="p">(</span><span class="n">gyroStreamProfile</span><span class="p">);</span>
 <span class="c1">// depth to accel extrinsic</span>
-<span class="k">auto</span><span class="w"> </span><span class="n">depthToAccelExtrinsic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">depthStreamProfile</span><span class="o">-&gt;</span><span class="n">getExtrinsicTo</span><span class="p">(</span><span class="n">accelStreamProfile</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">depthToAccelExtrinsic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">depthVideoProfile</span><span class="o">-&gt;</span><span class="n">getExtrinsicTo</span><span class="p">(</span><span class="n">accelStreamProfile</span><span class="p">);</span>
 </pre></div>
 </div>
 </section>
@@ -2360,7 +2361,7 @@ The following three log output methods are independent and setting one will not 
 
   <div role="contentinfo">
     <p>&#169; Copyright 2024-2025,Orbbec Inc. All Rights Reserved.
-      <span class="lastupdated">Last updated on 2026-02-04 22:27:35.
+      <span class="lastupdated">Last updated on 2026-02-11 15:22:33.
       </span></p>
   </div>
 

@@ -1147,9 +1147,9 @@ auto colorProfiles = pipe.getStreamProfileList(OB_SENSOR_COLOR);
 auto depthProfiles = pipe.getStreamProfileList(OB_SENSOR_DEPTH);
 
 // Get the color stream profile
-auto colorProfile = colorProfiles->getVideoStreamProfile(640, 480, OB_FORMAT_MJPG, 30);
+auto colorVideoProfile = colorProfiles->getVideoStreamProfile(640, 480, OB_FORMAT_MJPG, 30);
 // Get the depth stream profile
-auto depthProfile = depthProfiles->getVideoStreamProfile(640, 480, OB_FORMAT_Y16, 30);
+auto depthVideoProfile = depthProfiles->getVideoStreamProfile(640, 480, OB_FORMAT_Y16, 30);
 ```
 
 - Obtain StreamProfile via Frame
@@ -1167,6 +1167,7 @@ auto colorFrame        = frameSet->getFrame(OB_FRAME_COLOR);
 auto colorProfile      = colorFrame->getStreamProfile();
 auto colorVideoProfile = colorProfile->as<ob::VideoStreamProfile>();
 ```
+**Note: After a Depth, IR, or Color image has been mirrored, flipped, or rotated, the StreamProfile must be retrieved from the Frame, as the original image geometry has changed and only the Frame contains the correct intrinsics.**
 
 ## Obtain IMU StreamProfile
 
@@ -1193,8 +1194,8 @@ Intrinsic and extrinsic parameters can be obtained via the StreamProfile.
 ```c++
 
 // Get the depth intrinsic
-auto depthIntrinsic  = depthStreamProfile->getIntrinsic();
-auto depthDistortion = depthStreamProfile->getDistortion();
+auto depthIntrinsic  = depthVideoProfile->getIntrinsic();
+auto depthDistortion = depthVideoProfile->getDistortion();
 
 // Get the color intrinsic
 auto colorIntrinsic  = colorVideoProfile->getIntrinsic();
@@ -1228,9 +1229,9 @@ auto gyroIntrinsic = gyroProfile->getIntrinsic();
 
 ```c++
 // depth to gyro extrinsic
-auto depthToGyroExtrinsic = depthStreamProfile->getExtrinsicTo(gyroStreamProfile);
+auto depthToGyroExtrinsic = depthVideoProfile->getExtrinsicTo(gyroStreamProfile);
 // depth to accel extrinsic
-auto depthToAccelExtrinsic = depthStreamProfile->getExtrinsicTo(accelStreamProfile);
+auto depthToAccelExtrinsic = depthVideoProfile->getExtrinsicTo(accelStreamProfile);
 ```
 
 ## Set Depth AE
