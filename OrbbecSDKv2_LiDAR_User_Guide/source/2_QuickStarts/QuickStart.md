@@ -50,7 +50,7 @@ Use the `ob_lidar_quick_start` sample as an introductory example to understand a
 
 
 # How to Use install package
-If you do not want to compile the Orbbec SDK, you can use the SDK installation package. Taking [v2.4.8](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.4.8) as an example, first download the corresponding installation package for your platform.
+If you do not want to compile the Orbbec SDK, you can use the SDK installation package. Taking [v2.6.3](https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.6.3) as an example, first download the corresponding installation package for your platform.
 
 
 - The file OrbbecSDK_vx.x.x_win64.exe serves as the installation package for the Orbbec SDK and Orbbec Viewer tools on Windows.
