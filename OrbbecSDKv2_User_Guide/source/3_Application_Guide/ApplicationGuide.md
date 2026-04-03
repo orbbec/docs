@@ -1048,8 +1048,14 @@ The LDP (Laser Distance Protection) module is capable of detecting objects in cl
 device->setBoolProperty(OB_PROP_LDP_BOOL, true);
 ```
 
+## LRM Switch
+The LRM (Laser Ranging Module) utilizes the same control interface as the LDP switch. This feature is supported on the Gemini 330 series, Gemini 435Le, and Gemini 305/305g. Note that these devices do not support the LDP function itself.
+```c++
+device->setBoolProperty(OB_PROP_LDP_BOOL, true);
+```
+
 ## Obtain LDP Measurement Value
-To obtain the LDP (Laser Distance Protection) measurement values when the LDP switch is enabled.
+Used to obtain measurement values when the LDP (Laser Distance Protection) or LRM (Laser Ranging Module) is enabled.
 
 ```c++
 int32_t value = device->getIntProperty(OB_PROP_LDP_MEASURE_DISTANCE_INT);
