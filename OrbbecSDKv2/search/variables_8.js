@@ -12,5 +12,6 @@ var searchData=
   ['irtemp_9',['irTemp',['../struct_o_b_device_temperature.html#a2a3a4d01b0e9e354fec9bb7378359d02',1,'OBDeviceTemperature']]],
   ['irtriggersignalindelay_10',['irTriggerSignalInDelay',['../struct_o_b_device_sync_config.html#a9a26f092fcd880d683a7ee39d11b1645',1,'OBDeviceSyncConfig']]],
   ['isdualcamera_11',['isDualCamera',['../struct_o_b_disparity_param.html#a900b07e1aa3fb66552e4ca410e5ea437',1,'OBDisparityParam']]],
-  ['ismirrored_12',['isMirrored',['../struct_o_b_camera_param.html#a214e4a8c69cf4d6e7f50c0ebe9772efb',1,'OBCameraParam']]]
+  ['ismirrored_12',['isMirrored',['../struct_o_b_camera_param.html#a214e4a8c69cf4d6e7f50c0ebe9772efb',1,'OBCameraParam']]],
+  ['issue_13',['issue',['../struct_o_b_pipeline_status.html#ac4018ae50013bd6ec1c821d882eb7b3b',1,'OBPipelineStatus']]]
 ];

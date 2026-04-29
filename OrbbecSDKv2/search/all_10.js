@@ -16,7 +16,7 @@ var searchData=
   ['referencetemp_13',['referenceTemp',['../struct_o_b_accel_intrinsic.html#ab2685e781b607c920c96a4dc38cada3f',1,'OBAccelIntrinsic::referenceTemp'],['../struct_o_b_gyro_intrinsic.html#ae5313bbaa4af7e397d15f877e28a720b',1,'OBGyroIntrinsic::referenceTemp']]],
   ['reflectivity_14',['reflectivity',['../struct_o_b_li_d_a_r_point.html#a8204e1edc1d10694b3510890082a91f5',1,'OBLiDARPoint::reflectivity'],['../struct_o_b_li_d_a_r_sphere_point.html#af170e534b7fbaa67a32d58ba54949686',1,'OBLiDARSpherePoint::reflectivity']]],
   ['registerdevicechangedcallback_15',['registerDeviceChangedCallback',['../classob_1_1_context.html#acc54909f965ed8f6b08c48fd6ade436a',1,'ob::Context']]],
-  ['reserved_16',['reserved',['../struct_o_b_disp_offset_config.html#a97275ac5d5139f7f1b63a6f54b973778',1,'OBDispOffsetConfig']]],
+  ['reserved_16',['reserved',['../struct_o_b_pipeline_status.html#a1f90fc6a1e0ef088dc8c545d8d9ff5dc',1,'OBPipelineStatus::reserved'],['../struct_o_b_disp_offset_config.html#a97275ac5d5139f7f1b63a6f54b973778',1,'OBDispOffsetConfig::reserved']]],
   ['reset_17',['reset',['../classob_1_1_filter.html#ab1e19a53ca875de32693531e2c6cdfea',1,'ob::Filter']]],
   ['resume_18',['resume',['../classob_1_1_record_device.html#afa9d8b6c5298289f0c4d6ad953bbc89c',1,'ob::RecordDevice::resume()'],['../classob_1_1_playback_device.html#a71860329f982968bd6618976b1794f2f',1,'ob::PlaybackDevice::resume()']]],
   ['rgbdistortion_19',['rgbDistortion',['../struct_o_b_camera_param.html#a0629e0ee848fc0b6a1ded5ac64166235',1,'OBCameraParam']]],

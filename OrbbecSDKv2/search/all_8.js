@@ -39,6 +39,7 @@ var searchData=
   ['isirstream_36',['isIRStream',['../_ob_types_8h.html#aef6685c44da8eac31e856f397de1afd3',1,'ObTypes.h']]],
   ['ismirrored_37',['isMirrored',['../struct_o_b_camera_param.html#a214e4a8c69cf4d6e7f50c0ebe9772efb',1,'OBCameraParam']]],
   ['ispropertysupported_38',['isPropertySupported',['../classob_1_1_device.html#aa9969c677148d7f2b45cb174ecdce899',1,'ob::Device']]],
-  ['isvideosensortype_39',['isVideoSensorType',['../classob_1_1_type_helper.html#a601f214c3c63635d19ad702e2bb0d916',1,'ob::TypeHelper']]],
-  ['isvideostreamtype_40',['isVideoStreamType',['../classob_1_1_type_helper.html#a5c5cc585043ab35441e63c3a7b1bb9d5',1,'ob::TypeHelper']]]
+  ['issue_39',['issue',['../struct_o_b_pipeline_status.html#ac4018ae50013bd6ec1c821d882eb7b3b',1,'OBPipelineStatus']]],
+  ['isvideosensortype_40',['isVideoSensorType',['../classob_1_1_type_helper.html#a601f214c3c63635d19ad702e2bb0d916',1,'ob::TypeHelper']]],
+  ['isvideostreamtype_41',['isVideoStreamType',['../classob_1_1_type_helper.html#a5c5cc585043ab35441e63c3a7b1bb9d5',1,'ob::TypeHelper']]]
 ];

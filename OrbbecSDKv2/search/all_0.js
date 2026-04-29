@@ -3,7 +3,7 @@ var searchData=
   ['accelframe_0',['AccelFrame',['../classob_1_1_accel_frame.html',1,'ob::AccelFrame'],['../classob_1_1_accel_frame.html#abc0d26ce9f7ee46ed824efe899737eac',1,'ob::AccelFrame::AccelFrame()']]],
   ['accelstreamprofile_1',['AccelStreamProfile',['../classob_1_1_accel_stream_profile.html',1,'ob::AccelStreamProfile'],['../classob_1_1_accel_stream_profile.html#a0ed9e686eb4605a60f2a35bf13a2b714',1,'ob::AccelStreamProfile::AccelStreamProfile()']]],
   ['adaptive_5fperformance_5fmode_2',['ADAPTIVE_PERFORMANCE_MODE',['../_ob_types_8h.html#acfc0823b936dbdf55b12c78891b2b77ba0e4a379d8ed2e3dd6afe9cd49baa742d',1,'ObTypes.h']]],
-  ['address_3',['address',['../struct_o_b_net_ip_config.html#a89cfcf57f564cb6f7a20b2a26284e11b',1,'OBNetIpConfig']]],
+  ['address_3',['address',['../struct_o_b_net_ip_config.html#a89cfcf57f564cb6f7a20b2a26284e11b',1,'OBNetIpConfig::address'],['../struct_o_b_net_ip_config_v2.html#a00ca83004e896711c9844c54859cff25',1,'OBNetIpConfigV2::address']]],
   ['advanced_2eh_4',['Advanced.h',['../_advanced_8h.html',1,'']]],
   ['ae_5froi_5',['AE_ROI',['../struct_a_e___r_o_i.html',1,'']]],
   ['align_6',['Align',['../classob_1_1_align.html',1,'ob::Align'],['../classob_1_1_align.html#a34665c21fbabbe2fe1eea11aebd51a55',1,'ob::Align::Align()']]],

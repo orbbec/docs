@@ -7,5 +7,6 @@ var searchData=
   ['loadpreset_4',['loadPreset',['../classob_1_1_device.html#aed35d6144d598a3a0bde14bc8c87717f',1,'ob::Device']]],
   ['loadpresetfromjsondata_5',['loadPresetFromJsonData',['../classob_1_1_device.html#a253fc2d87309ba3c1cbc0d37ea6fc77d',1,'ob::Device']]],
   ['loadpresetfromjsonfile_6',['loadPresetFromJsonFile',['../classob_1_1_device.html#aa986cb51f5eaad4815ddd4fff7f2e422',1,'ob::Device']]],
-  ['logexternalmessage_7',['logExternalMessage',['../classob_1_1_context.html#a5fd1616ea14d491cec4c93cdab08da6e',1,'ob::Context']]]
+  ['logexternalmessage_7',['logExternalMessage',['../classob_1_1_context.html#a5fd1616ea14d491cec4c93cdab08da6e',1,'ob::Context']]],
+  ['lutnoiseremovalfilter_8',['LutNoiseRemovalFilter',['../classob_1_1_lut_noise_removal_filter.html#ad2e29dfe420e306a592590bc6caf8b53',1,'ob::LutNoiseRemovalFilter']]]
 ];

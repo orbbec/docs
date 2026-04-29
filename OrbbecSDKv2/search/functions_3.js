@@ -17,6 +17,7 @@ var searchData=
   ['deviceupgradefromdata_14',['deviceUpgradeFromData',['../classob_1_1_device.html#a0e6617b719a3dcdaeb843d5ebf7de9da',1,'ob::Device']]],
   ['disableallstream_15',['disableAllStream',['../classob_1_1_config.html#a6ba7528eef5ccf7a2ac1fc5e5b7fa4fe',1,'ob::Config']]],
   ['disableframesync_16',['disableFrameSync',['../classob_1_1_pipeline.html#aec4ec7a5763f3d5c982e00cadfda4d97',1,'ob::Pipeline']]],
-  ['disablestream_17',['disableStream',['../classob_1_1_config.html#a3502f0aa94ed882ef3430e695961f6d6',1,'ob::Config::disableStream(OBStreamType streamType) const'],['../classob_1_1_config.html#a7fe150ad31422d1600c4c3685008e227',1,'ob::Config::disableStream(OBSensorType sensorType) const']]],
-  ['disparitytransform_18',['DisparityTransform',['../classob_1_1_disparity_transform.html#a5d2e7df57efe2c8663d4fda4c1978996',1,'ob::DisparityTransform']]]
+  ['disablehealthmonitor_17',['disableHealthMonitor',['../classob_1_1_pipeline.html#a3d8d4c9f2925df81d1d8f7397dbff0e0',1,'ob::Pipeline']]],
+  ['disablestream_18',['disableStream',['../classob_1_1_config.html#a3502f0aa94ed882ef3430e695961f6d6',1,'ob::Config::disableStream(OBStreamType streamType) const'],['../classob_1_1_config.html#a7fe150ad31422d1600c4c3685008e227',1,'ob::Config::disableStream(OBSensorType sensorType) const']]],
+  ['disparitytransform_19',['DisparityTransform',['../classob_1_1_disparity_transform.html#a5d2e7df57efe2c8663d4fda4c1978996',1,'ob::DisparityTransform']]]
 ];

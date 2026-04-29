@@ -12,5 +12,5 @@ var searchData=
   ['trigger2imagedelayus_9',['trigger2ImageDelayUs',['../structob__multi__device__sync__config.html#a6c855a8eed5304c1fc6561a02834575b',1,'ob_multi_device_sync_config']]],
   ['triggeroutdelayus_10',['triggerOutDelayUs',['../structob__multi__device__sync__config.html#a795f1464f91aa518eda82ca7a2b5536d',1,'ob_multi_device_sync_config']]],
   ['triggeroutenable_11',['triggerOutEnable',['../structob__multi__device__sync__config.html#acf58447721d8b16d6b16d726c98a38ec',1,'ob_multi_device_sync_config']]],
-  ['type_12',['type',['../struct_o_b_edge_noise_removal_filter_params.html#a0a04a1aa376686eb3550d4e489515bb7',1,'OBEdgeNoiseRemovalFilterParams::type'],['../struct_o_b_noise_removal_filter_params.html#ad8d0bb9c8116b22c440fa36d206f8cae',1,'OBNoiseRemovalFilterParams::type'],['../struct_o_b_filter_config_schema_item.html#a38a66a2cc1e960b18281c896b97dc0d9',1,'OBFilterConfigSchemaItem::type'],['../struct_o_b_property_item.html#ab776230cd4b8de227ccc2a4b1191bf90',1,'OBPropertyItem::type']]]
+  ['type_12',['type',['../struct_o_b_noise_removal_filter_params.html#ad8d0bb9c8116b22c440fa36d206f8cae',1,'OBNoiseRemovalFilterParams::type'],['../struct_o_b_filter_config_schema_item.html#a38a66a2cc1e960b18281c896b97dc0d9',1,'OBFilterConfigSchemaItem::type'],['../struct_o_b_property_item.html#ab776230cd4b8de227ccc2a4b1191bf90',1,'OBPropertyItem::type']]]
 ];

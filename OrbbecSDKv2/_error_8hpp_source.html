@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.7.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">explicit</span> Error(<a class="code hl_struct" href="structob__error.html">ob_error</a> *error) : impl_(error) {};</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Error&amp; operator=(<span class="keyword">const</span> Error&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Error &amp;operator=(<span class="keyword">const</span> Error &amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
 <div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
@@ -154,32 +154,39 @@ $(function() {
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span> impl_-&gt;message;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// The following interfaces are deprecated and are retained here for compatibility purposes.</span></div>
-<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classob_1_1_error.html#a31ce8b52e798f5ae8208c55acd4fc2fc">  111</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="classob_1_1_error.html#a31ce8b52e798f5ae8208c55acd4fc2fc">getName</a>() const noexcept {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">return</span> impl_-&gt;function;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classob_1_1_error.html#abad0560dc5ee12cdf2a04e6316f048cf">  114</a></span>    <a class="code hl_enumeration" href="_ob_types_8h.html#a16946a0e76e54d58fe6a945fccc3190b">OBStatus</a> <a class="code hl_function" href="classob_1_1_error.html#abad0560dc5ee12cdf2a04e6316f048cf">getStatus</a>() const noexcept {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">return</span> impl_-&gt;status;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
 </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="comment">// The following interfaces are deprecated and are retained here for compatibility purposes.</span></div>
+<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classob_1_1_error.html#a31ce8b52e798f5ae8208c55acd4fc2fc">  120</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="classob_1_1_error.html#a31ce8b52e798f5ae8208c55acd4fc2fc">getName</a>() const noexcept {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">return</span> impl_-&gt;function;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
 </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}  <span class="comment">// namespace ob</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}  <span class="comment">// namespace ob</span></div>
 <div class="ttc" id="a_error_8h_html"><div class="ttname"><a href="_error_8h.html">Error.h</a></div><div class="ttdoc">Functions for handling errors, mainly used for obtaining error messages.</div></div>
 <div class="ttc" id="a_error_8h_html_a414ddcef0e9f53f8f04bed0b4ec26423"><div class="ttname"><a href="_error_8h.html#a414ddcef0e9f53f8f04bed0b4ec26423">ob_delete_error</a></div><div class="ttdeci">OB_EXPORT void ob_delete_error(ob_error *error)</div><div class="ttdoc">Delete the error object.</div></div>
-<div class="ttc" id="a_ob_types_8h_html_a63a34c60e68bddb4fd5fe26b54aaa7f3"><div class="ttname"><a href="_ob_types_8h.html#a63a34c60e68bddb4fd5fe26b54aaa7f3">OBExceptionType</a></div><div class="ttdeci">OBExceptionType</div><div class="ttdoc">The exception types in the SDK, through the exception type, you can easily determine the specific typ...</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00100">ObTypes.h:100</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a16946a0e76e54d58fe6a945fccc3190b"><div class="ttname"><a href="_ob_types_8h.html#a16946a0e76e54d58fe6a945fccc3190b">OBStatus</a></div><div class="ttdeci">OBStatus</div><div class="ttdoc">error code</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00076">ObTypes.h:76</a></div></div>
+<div class="ttc" id="a_ob_types_8h_html_a63a34c60e68bddb4fd5fe26b54aaa7f3"><div class="ttname"><a href="_ob_types_8h.html#a63a34c60e68bddb4fd5fe26b54aaa7f3">OBExceptionType</a></div><div class="ttdeci">OBExceptionType</div><div class="ttdoc">The exception types in the SDK, through the exception type, you can easily determine the specific typ...</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00136">ObTypes.h:136</a></div></div>
 <div class="ttc" id="a_types_8hpp_html"><div class="ttname"><a href="_types_8hpp.html">Types.hpp</a></div></div>
-<div class="ttc" id="aclassob_1_1_error_html_a31ce8b52e798f5ae8208c55acd4fc2fc"><div class="ttname"><a href="classob_1_1_error.html#a31ce8b52e798f5ae8208c55acd4fc2fc">ob::Error::getName</a></div><div class="ttdeci">const char * getName() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00111">Error.hpp:111</a></div></div>
+<div class="ttc" id="aclassob_1_1_error_html_a31ce8b52e798f5ae8208c55acd4fc2fc"><div class="ttname"><a href="classob_1_1_error.html#a31ce8b52e798f5ae8208c55acd4fc2fc">ob::Error::getName</a></div><div class="ttdeci">const char * getName() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00120">Error.hpp:120</a></div></div>
 <div class="ttc" id="aclassob_1_1_error_html_a3543af36cfcfced25924eb638a27efdc"><div class="ttname"><a href="classob_1_1_error.html#a3543af36cfcfced25924eb638a27efdc">ob::Error::what</a></div><div class="ttdeci">const char * what() const noexcept override</div><div class="ttdoc">Returns the error message of the exception.</div><div class="ttdef"><b>Definition</b> <a href="#l00067">Error.hpp:67</a></div></div>
 <div class="ttc" id="aclassob_1_1_error_html_a3c2546bfe816ca7dd9cce0c78a8230d5"><div class="ttname"><a href="classob_1_1_error.html#a3c2546bfe816ca7dd9cce0c78a8230d5">ob::Error::getMessage</a></div><div class="ttdeci">const char * getMessage() const noexcept</div><div class="ttdoc">Returns the error message of the exception.</div><div class="ttdef"><b>Definition</b> <a href="#l00105">Error.hpp:105</a></div></div>
 <div class="ttc" id="aclassob_1_1_error_html_a48c3fdb2a327ee247e00813d4fb8d725"><div class="ttname"><a href="classob_1_1_error.html#a48c3fdb2a327ee247e00813d4fb8d725">ob::Error::~Error</a></div><div class="ttdeci">~Error() override</div><div class="ttdoc">Destroy the Error object.</div><div class="ttdef"><b>Definition</b> <a href="#l00055">Error.hpp:55</a></div></div>
 <div class="ttc" id="aclassob_1_1_error_html_a7a43ac7c0cedc711e68099000963369a"><div class="ttname"><a href="classob_1_1_error.html#a7a43ac7c0cedc711e68099000963369a">ob::Error::getFunction</a></div><div class="ttdeci">const char * getFunction() const noexcept</div><div class="ttdoc">Returns the name of the function where the exception occurred.</div><div class="ttdef"><b>Definition</b> <a href="#l00086">Error.hpp:86</a></div></div>
 <div class="ttc" id="aclassob_1_1_error_html_a8382cb528f3ad5ebba2557fb86ed983b"><div class="ttname"><a href="classob_1_1_error.html#a8382cb528f3ad5ebba2557fb86ed983b">ob::Error::getArgs</a></div><div class="ttdeci">const char * getArgs() const noexcept</div><div class="ttdoc">Returns the arguments of the function where the exception occurred.</div><div class="ttdef"><b>Definition</b> <a href="#l00095">Error.hpp:95</a></div></div>
+<div class="ttc" id="aclassob_1_1_error_html_abad0560dc5ee12cdf2a04e6316f048cf"><div class="ttname"><a href="classob_1_1_error.html#abad0560dc5ee12cdf2a04e6316f048cf">ob::Error::getStatus</a></div><div class="ttdeci">OBStatus getStatus() const noexcept</div><div class="ttdoc">Returns the error status code of the exception.</div><div class="ttdef"><b>Definition</b> <a href="#l00114">Error.hpp:114</a></div></div>
 <div class="ttc" id="aclassob_1_1_error_html_acfa46889311fce0bbe56f46ec2d0dbb1"><div class="ttname"><a href="classob_1_1_error.html#acfa46889311fce0bbe56f46ec2d0dbb1">ob::Error::getExceptionType</a></div><div class="ttdeci">OBExceptionType getExceptionType() const noexcept</div><div class="ttdoc">Returns the exception type of the exception.</div><div class="ttdef"><b>Definition</b> <a href="#l00077">Error.hpp:77</a></div></div>
 <div class="ttc" id="aclassob_1_1_error_html_aec4fbdda20bf042ebd301b5f723e6cb6"><div class="ttname"><a href="classob_1_1_error.html#aec4fbdda20bf042ebd301b5f723e6cb6">ob::Error::handle</a></div><div class="ttdeci">static void handle(ob_error **error, bool throw_exception=true)</div><div class="ttdoc">A static function to handle the ob_error and throw an exception if needed.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">Error.hpp:38</a></div></div>
 <div class="ttc" id="anamespaceob_html"><div class="ttname"><a href="namespaceob.html">ob</a></div><div class="ttdef"><b>Definition</b> <a href="_context_8hpp_source.html#l00022">Context.hpp:22</a></div></div>
-<div class="ttc" id="astructob__error_html"><div class="ttname"><a href="structob__error.html">ob_error</a></div><div class="ttdoc">The error class exposed by the SDK, users can get detailed error information according to the error.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00119">ObTypes.h:119</a></div></div>
+<div class="ttc" id="astructob__error_html"><div class="ttname"><a href="structob__error.html">ob_error</a></div><div class="ttdoc">The error class exposed by the SDK, users can get detailed error information according to the error.</div><div class="ttdef"><b>Definition</b> <a href="_ob_types_8h_source.html#l00159">ObTypes.h:159</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

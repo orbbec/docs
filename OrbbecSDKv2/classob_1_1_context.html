@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.7.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -112,6 +112,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a00f2f7c3fb07dc96b22e248e38c1ef8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable or disable net device enumeration.  <br /></td></tr>
 <tr class="memitem:a2610b0f957e942df11e32c95d674a138" id="r_a2610b0f957e942df11e32c95d674a138"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2610b0f957e942df11e32c95d674a138">forceIp</a> (const char *macAddress, const <a class="el" href="struct_o_b_net_ip_config.html">OBNetIpConfig</a> &amp;config)</td></tr>
 <tr class="memdesc:a2610b0f957e942df11e32c95d674a138"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Force" a static IP address configuration in a device identified by its MAC Address.  <br /></td></tr>
+<tr class="memitem:ae9281d8fdfbd7711f85a0684ef4f7d2e" id="r_ae9281d8fdfbd7711f85a0684ef4f7d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9281d8fdfbd7711f85a0684ef4f7d2e">setGvcpPortScheme</a> (<a class="el" href="_ob_types_8h.html#a2eef4aaadbc9ca50ca3ef91762779af5">OBGvcpPortScheme</a> scheme)</td></tr>
+<tr class="memdesc:ae9281d8fdfbd7711f85a0684ef4f7d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the GVCP port scheme used for network device discovery and control.  <br /></td></tr>
+<tr class="memitem:aaea7a451e40147040f60add51ebdef85" id="r_aaea7a451e40147040f60add51ebdef85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_ob_types_8h.html#a2eef4aaadbc9ca50ca3ef91762779af5">OBGvcpPortScheme</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaea7a451e40147040f60add51ebdef85">getGvcpPortScheme</a> () const</td></tr>
+<tr class="memdesc:aaea7a451e40147040f60add51ebdef85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current GVCP port scheme.  <br /></td></tr>
 <tr class="memitem:ae7d1085c7b3e0edd558c8ffa0075ffcd" id="r_ae7d1085c7b3e0edd558c8ffa0075ffcd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7d1085c7b3e0edd558c8ffa0075ffcd">createNetDevice</a> (const char *address, uint16_t port, <a class="el" href="_ob_types_8h.html#aaa2dcaaca94daecc9215716ea8038227">OBDeviceAccessMode</a> accessMode=<a class="el" href="_ob_types_8h.html#a19a440a7ab780df5888e67db1ae475cda4b094b841187898fdc444c306faedb17">OB_DEVICE_DEFAULT_ACCESS</a>) const</td></tr>
 <tr class="memdesc:ae7d1085c7b3e0edd558c8ffa0075ffcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a network device with the specified IP address and port.  <br /></td></tr>
 <tr class="memitem:a1dcc95b63547ba0ec763206a81ef8f40" id="r_a1dcc95b63547ba0ec763206a81ef8f40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dcc95b63547ba0ec763206a81ef8f40">setDeviceChangedCallback</a> (<a class="el" href="#a049eab85977896212d1ca133e36ccb21">DeviceChangedCallback</a> callback)</td></tr>
@@ -366,9 +370,77 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool true if the configuration command was processed successfully, false otherwise.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This applies to all GigE Vision devices </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This applies to all GVCP devices </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00126">126</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae9281d8fdfbd7711f85a0684ef4f7d2e" name="ae9281d8fdfbd7711f85a0684ef4f7d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9281d8fdfbd7711f85a0684ef4f7d2e">&#9670;&#160;</a></span>setGvcpPortScheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ob::Context::setGvcpPortScheme </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a2eef4aaadbc9ca50ca3ef91762779af5">OBGvcpPortScheme</a></td>          <td class="paramname"><span class="paramname"><em>scheme</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the GVCP port scheme used for network device discovery and control. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheme</td><td>Target GVCP port scheme. Thrown exception if the specified scheme is invalid or unsupported.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This change affects only the current session and is not persisted. </dd>
+<dd>
+Switching to a different scheme will force disconnection of all currently connected network devices. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00142">142</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaea7a451e40147040f60add51ebdef85" name="aaea7a451e40147040f60add51ebdef85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea7a451e40147040f60add51ebdef85">&#9670;&#160;</a></span>getGvcpPortScheme()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_ob_types_8h.html#a2eef4aaadbc9ca50ca3ef91762779af5">OBGvcpPortScheme</a> ob::Context::getGvcpPortScheme </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current GVCP port scheme. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current GVCP port scheme. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00153">153</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +487,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Device&gt; The created device object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00144">144</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00171">171</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +515,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the device plug-in callback function. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>This function is deprecated. Please use <a class="el" href="#acc54909f965ed8f6b08c48fd6ade436a">registerDeviceChangedCallback()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated</a></b></dt><dd>This function is deprecated. Please use <a class="el" href="#acc54909f965ed8f6b08c48fd6ade436a">registerDeviceChangedCallback()</a> instead.</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>This function supports multiple callbacks. Each call to this function adds a new callback to an internal list.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -452,7 +524,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00160">160</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00187">187</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -479,9 +551,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00170">170</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00197">197</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00160">setDeviceChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00187">setDeviceChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -508,9 +580,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00185">185</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00212">212</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00160">setDeviceChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00187">setDeviceChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -545,7 +617,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00202">202</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00229">229</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -575,7 +647,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Frees idle memory from the internal frame memory pool. </p>
 <p>The SDK includes an internal frame memory pool that caches memory allocated for frames received from devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00212">212</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00239">239</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -612,7 +684,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00226">226</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00253">253</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -647,7 +719,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00238">238</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00265">265</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -687,7 +759,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00251">251</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00278">278</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -723,7 +795,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Other settings, such as log level and output directory, remain unchanged. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00264">264</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00291">291</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -758,7 +830,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00275">275</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00302">302</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -798,7 +870,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00287">287</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00314">314</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -862,7 +934,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00304">304</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00331">331</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -899,7 +971,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00319">319</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00346">346</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
