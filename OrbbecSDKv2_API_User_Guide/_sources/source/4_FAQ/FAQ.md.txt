@@ -62,6 +62,35 @@ On Linux (x64/ARM64), the log path is as follows:
 ![image](../Images/linux_sdk_log.png)
 
 
+# How to increase the usbfs memory limit
+
+Linux Computer: USB Buffer Configuration on Ubuntu: By default, Linux-based hosts allocate only 16 MB of kernel memory for USB controller operations. This allocation may be insufficient for handling high-resolution images or multiple streams and devices. To support multiple devices, the USB controller requires more memory. Follow these steps to increase the memory allocation:
+```
+echo 128 | sudo tee /sys/module/usbcore/parameters/usbfs_memory_mb
+```
+
+For making this change permanent:
+- Open `/etc/default/grub` file,Find and replace
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+```
+
+with this
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash usbcore.usbfs_memory_mb=128"
+```
+
+- Update grub
+```
+sudo update-grub
+```
+
+- Reboot and check
+
+```
+cat /sys/module/usbcore/parameters/usbfs_memory_mb
+```
+
 
 
 
