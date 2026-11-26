@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.10.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -98,7 +98,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a37b7490d059611e58d8d610ed2b4721b" id="r_a37b7490d059611e58d8d610ed2b4721b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37b7490d059611e58d8d610ed2b4721b">PlaybackDevice</a> (const std::string &amp;file)</td></tr>
+<tr class="memitem:ac2378314538f22c8353b83de40789a8f" id="r_ac2378314538f22c8353b83de40789a8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2378314538f22c8353b83de40789a8f">PlaybackDevice</a> (const std::string &amp;file, const std::string &amp;presetPath=&quot;&quot;)</td></tr>
+<tr class="memdesc:ac2378314538f22c8353b83de40789a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classob_1_1_playback_device.html">PlaybackDevice</a> for playing back recorded device data.  <br /></td></tr>
 <tr class="memitem:a04632e4053ae1dda11f9b8258b602426" id="r_a04632e4053ae1dda11f9b8258b602426"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04632e4053ae1dda11f9b8258b602426">~PlaybackDevice</a> () noexcept override=default</td></tr>
 <tr class="memitem:a293ca809e739fed256216d23b0054017" id="r_a293ca809e739fed256216d23b0054017"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a293ca809e739fed256216d23b0054017">PlaybackDevice</a> (<a class="el" href="classob_1_1_playback_device.html">PlaybackDevice</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="memitem:ac5d44c6e1647498495c02f1f62a33948" id="r_ac5d44c6e1647498495c02f1f62a33948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classob_1_1_playback_device.html">PlaybackDevice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5d44c6e1647498495c02f1f62a33948">operator=</a> (<a class="el" href="classob_1_1_playback_device.html">PlaybackDevice</a> &amp;&amp;other) noexcept</td></tr>
@@ -161,6 +162,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4157ab58cd491132f410d04d32f5beec inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the structured data type of a device property.  <br /></td></tr>
 <tr class="memitem:a521ef3838b631e772c9506455bf9a337 inherit pub_methods_classob_1_1_device" id="r_a521ef3838b631e772c9506455bf9a337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a521ef3838b631e772c9506455bf9a337">getStructuredData</a> (<a class="el" href="_property_8h.html#a9e7aac1ea041c8958ea8c6e3aa53bbab">OBPropertyID</a> propertyId, uint8_t *data, uint32_t *dataSize) const</td></tr>
 <tr class="memdesc:a521ef3838b631e772c9506455bf9a337 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the structured data type of a device property.  <br /></td></tr>
+<tr class="memitem:ac1e8f3edf9468a30668e10d5f56d53bb inherit pub_methods_classob_1_1_device" id="r_ac1e8f3edf9468a30668e10d5f56d53bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ac1e8f3edf9468a30668e10d5f56d53bb">isLicenseAuthorizationSupported</a> () const</td></tr>
+<tr class="memdesc:ac1e8f3edf9468a30668e10d5f56d53bb inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the device supports license authorization.  <br /></td></tr>
+<tr class="memitem:aaaa304108b9ef304827b9f577f9beeef inherit pub_methods_classob_1_1_device" id="r_aaaa304108b9ef304827b9f577f9beeef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#aaaa304108b9ef304827b9f577f9beeef">writeLicenseInfo</a> (const std::string &amp;licenseInfo) const</td></tr>
+<tr class="memdesc:aaaa304108b9ef304827b9f577f9beeef inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write signed device license information.  <br /></td></tr>
+<tr class="memitem:a56a24eb31ba21925c7c28e7bedd52e88 inherit pub_methods_classob_1_1_device" id="r_a56a24eb31ba21925c7c28e7bedd52e88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a56a24eb31ba21925c7c28e7bedd52e88">clearLicenseInfo</a> () const</td></tr>
+<tr class="memdesc:a56a24eb31ba21925c7c28e7bedd52e88 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear license information stored on the device.  <br /></td></tr>
+<tr class="memitem:ade68662099140cf4d45e855632ab8a5f inherit pub_methods_classob_1_1_device" id="r_ade68662099140cf4d45e855632ab8a5f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ade68662099140cf4d45e855632ab8a5f">readLicenseInfo</a> () const</td></tr>
+<tr class="memdesc:ade68662099140cf4d45e855632ab8a5f inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read signed device license information as SDK license_info JSON.  <br /></td></tr>
 <tr class="memitem:ab691352346a2f3c9b3244b9013eb3516 inherit pub_methods_classob_1_1_device" id="r_ab691352346a2f3c9b3244b9013eb3516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ab691352346a2f3c9b3244b9013eb3516">writeCustomerData</a> (const void *data, uint32_t dataSize)</td></tr>
 <tr class="memdesc:ab691352346a2f3c9b3244b9013eb3516 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the customer data type of a device property.  <br /></td></tr>
 <tr class="memitem:a33ea10323fe7e482fa58fa8925aa6eeb inherit pub_methods_classob_1_1_device" id="r_a33ea10323fe7e482fa58fa8925aa6eeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a33ea10323fe7e482fa58fa8925aa6eeb">readCustomerData</a> (void *data, uint32_t *dataSize)</td></tr>
@@ -181,6 +190,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a113a244f2f48ee7ac0313920169fb56e inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the device firmware from data.  <br /></td></tr>
 <tr class="memitem:a5a671441d101dad4537a183b457d335a inherit pub_methods_classob_1_1_device" id="r_a5a671441d101dad4537a183b457d335a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a5a671441d101dad4537a183b457d335a">updateOptionalDepthPresets</a> (const char filePathList[][<a class="el" href="_ob_types_8h.html#abea930dfe20a819a2b33cfea8244a1e1">OB_PATH_MAX</a>], uint8_t pathCount, <a class="el" href="classob_1_1_device.html#ac68b115add6d1bbfb2a781ce07ceb807">DeviceFwUpdateCallback</a> callback)</td></tr>
 <tr class="memdesc:a5a671441d101dad4537a183b457d335a inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the device optional depth presets.  <br /></td></tr>
+<tr class="memitem:aa5613f41dbe4283d13e63519a420fcff inherit pub_methods_classob_1_1_device" id="r_aa5613f41dbe4283d13e63519a420fcff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#aa5613f41dbe4283d13e63519a420fcff">updateOptionalDepthPresets</a> (const std::vector&lt; std::vector&lt; uint8_t &gt; &gt; &amp;dataList, <a class="el" href="classob_1_1_device.html#ac68b115add6d1bbfb2a781ce07ceb807">DeviceFwUpdateCallback</a> callback)</td></tr>
+<tr class="memdesc:aa5613f41dbe4283d13e63519a420fcff inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the device optional depth presets from data loaded in memory.  <br /></td></tr>
 <tr class="memitem:acb598f9726aafc210c7fb01774065172 inherit pub_methods_classob_1_1_device" id="r_acb598f9726aafc210c7fb01774065172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#acb598f9726aafc210c7fb01774065172">setDeviceStateChangedCallback</a> (<a class="el" href="classob_1_1_device.html#a5e9afd2d56dcb1af5a8a8b88774f0fb6">DeviceStateChangedCallback</a> callback)</td></tr>
 <tr class="memdesc:acb598f9726aafc210c7fb01774065172 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device state changed callbacks.  <br /></td></tr>
 <tr class="memitem:ac4e51bf916437aa192bbf8a7f301f6aa inherit pub_methods_classob_1_1_device" id="r_ac4e51bf916437aa192bbf8a7f301f6aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_o_b_depth_work_mode.html">OBDepthWorkMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ac4e51bf916437aa192bbf8a7f301f6aa">getCurrentDepthWorkMode</a> () const</td></tr>
@@ -193,14 +204,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a24b4e2bd96e21772a629bbe3c17633c4 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch depth work mode by work mode name.  <br /></td></tr>
 <tr class="memitem:a59f3511ad743c62edc82c5ba61b10031 inherit pub_methods_classob_1_1_device" id="r_a59f3511ad743c62edc82c5ba61b10031"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_o_b_depth_work_mode_list.html">OBDepthWorkModeList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a59f3511ad743c62edc82c5ba61b10031">getDepthWorkModeList</a> () const</td></tr>
 <tr class="memdesc:a59f3511ad743c62edc82c5ba61b10031 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request support depth work mode list.  <br /></td></tr>
+<tr class="memitem:a7c2219e1155f885c7ca4e2e15c87ad9b inherit pub_methods_classob_1_1_device" id="r_a7c2219e1155f885c7ca4e2e15c87ad9b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a7c2219e1155f885c7ca4e2e15c87ad9b">isColorPresetSupported</a> () const</td></tr>
+<tr class="memdesc:a7c2219e1155f885c7ca4e2e15c87ad9b inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the device supports color preset.  <br /></td></tr>
+<tr class="memitem:aefcccdf631742d53331dd95e1451daad inherit pub_methods_classob_1_1_device" id="r_aefcccdf631742d53331dd95e1451daad"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#aefcccdf631742d53331dd95e1451daad">getCurrentColorPresetName</a> () const</td></tr>
+<tr class="memdesc:aefcccdf631742d53331dd95e1451daad inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current color preset name.  <br /></td></tr>
+<tr class="memitem:a788ac1f6fafdfe9ede4beeeacc8c419b inherit pub_methods_classob_1_1_device" id="r_a788ac1f6fafdfe9ede4beeeacc8c419b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a788ac1f6fafdfe9ede4beeeacc8c419b">switchColorPreset</a> (const char *presetName) const</td></tr>
+<tr class="memdesc:a788ac1f6fafdfe9ede4beeeacc8c419b inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch the color preset by name.  <br /></td></tr>
+<tr class="memitem:ad019e890fbeedba60c5502461b19a3d0 inherit pub_methods_classob_1_1_device" id="r_ad019e890fbeedba60c5502461b19a3d0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_color_preset_list.html">ColorPresetList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ad019e890fbeedba60c5502461b19a3d0">getColorPresetList</a> () const</td></tr>
+<tr class="memdesc:ad019e890fbeedba60c5502461b19a3d0 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the available color preset list.  <br /></td></tr>
 <tr class="memitem:ab1159168feecb526dcdf87b3976130be inherit pub_methods_classob_1_1_device" id="r_ab1159168feecb526dcdf87b3976130be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ab1159168feecb526dcdf87b3976130be">reboot</a> () const</td></tr>
 <tr class="memdesc:ab1159168feecb526dcdf87b3976130be inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classob_1_1_device.html">Device</a> restart.  <br /></td></tr>
 <tr class="memitem:a7f8078edc2e3544cd8699e94339265d7 inherit pub_methods_classob_1_1_device" id="r_a7f8078edc2e3544cd8699e94339265d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a7f8078edc2e3544cd8699e94339265d7">reboot</a> (uint32_t delayMs) const</td></tr>
 <tr class="memdesc:a7f8078edc2e3544cd8699e94339265d7 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classob_1_1_device.html">Device</a> restart delay mode.  <br /></td></tr>
+<tr class="memitem:ad2084ca77872324df6e4ef100f176020 inherit pub_methods_classob_1_1_device" id="r_ad2084ca77872324df6e4ef100f176020"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ad2084ca77872324df6e4ef100f176020">syncDeviceHardwarePPSTime</a> (uint64_t hardwarePPSTime) const</td></tr>
+<tr class="memdesc:ad2084ca77872324df6e4ef100f176020 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">synchronization the device time (synchronize hardwarePPS time to device)  <br /></td></tr>
 <tr class="memitem:aba0e98f4fb94e117f1bdb264c2b2384d inherit pub_methods_classob_1_1_device" id="r_aba0e98f4fb94e117f1bdb264c2b2384d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#aba0e98f4fb94e117f1bdb264c2b2384d">enableHeartbeat</a> (bool enable) const</td></tr>
 <tr class="memdesc:aba0e98f4fb94e117f1bdb264c2b2384d inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the device heartbeat.  <br /></td></tr>
 <tr class="memitem:ace98a93e605a6d01b82c460052df4f34 inherit pub_methods_classob_1_1_device" id="r_ace98a93e605a6d01b82c460052df4f34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ace98a93e605a6d01b82c460052df4f34">enableFirmwareLog</a> (bool enable) const</td></tr>
-<tr class="memdesc:ace98a93e605a6d01b82c460052df4f34 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the device firmware log.  <br /></td></tr>
+<tr class="memdesc:ace98a93e605a6d01b82c460052df4f34 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the device firmware log. If the device does not support firmware log, an exception is thrown.  <br /></td></tr>
+<tr class="memitem:ab309c8e2ab4bead24c7cc08086c65953 inherit pub_methods_classob_1_1_device" id="r_ab309c8e2ab4bead24c7cc08086c65953"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ab309c8e2ab4bead24c7cc08086c65953">isFirmwareLogEnabled</a> () const</td></tr>
+<tr class="memdesc:ab309c8e2ab4bead24c7cc08086c65953 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the device firmware log is enabled.  <br /></td></tr>
+<tr class="memitem:a0550514c434701a92adf71b16e731f0b inherit pub_methods_classob_1_1_device" id="r_a0550514c434701a92adf71b16e731f0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a0550514c434701a92adf71b16e731f0b">setMonitorPollInterval</a> (uint32_t intervalMs) const</td></tr>
+<tr class="memdesc:a0550514c434701a92adf71b16e731f0b inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device monitor polling interval.  <br /></td></tr>
+<tr class="memitem:a86ea65a08a0f3900a1b7f7ef4f3d57b5 inherit pub_methods_classob_1_1_device" id="r_a86ea65a08a0f3900a1b7f7ef4f3d57b5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a86ea65a08a0f3900a1b7f7ef4f3d57b5">getMonitorPollInterval</a> () const</td></tr>
+<tr class="memdesc:a86ea65a08a0f3900a1b7f7ef4f3d57b5 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device monitor polling interval.  <br /></td></tr>
 <tr class="memitem:abda43bb229c26d752bfe3e79affe7e38 inherit pub_methods_classob_1_1_device" id="r_abda43bb229c26d752bfe3e79affe7e38"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#abda43bb229c26d752bfe3e79affe7e38">getSupportedMultiDeviceSyncModeBitmap</a> () const</td></tr>
 <tr class="memdesc:abda43bb229c26d752bfe3e79affe7e38 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the supported multi device sync mode bitmap of the device.  <br /></td></tr>
 <tr class="memitem:ad63f12c2582258c829535c438d69dbff inherit pub_methods_classob_1_1_device" id="r_ad63f12c2582258c829535c438d69dbff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ad63f12c2582258c829535c438d69dbff">setMultiDeviceSyncConfig</a> (const <a class="el" href="_ob_types_8h.html#aa60bbe3ef0941d0470eb1f2ae42614bd">OBMultiDeviceSyncConfig</a> &amp;config) const</td></tr>
@@ -223,6 +250,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2308daef2c79687d9a0bce3814ed678d inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current preset name.  <br /></td></tr>
 <tr class="memitem:aed35d6144d598a3a0bde14bc8c87717f inherit pub_methods_classob_1_1_device" id="r_aed35d6144d598a3a0bde14bc8c87717f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#aed35d6144d598a3a0bde14bc8c87717f">loadPreset</a> (const char *presetName) const</td></tr>
 <tr class="memdesc:aed35d6144d598a3a0bde14bc8c87717f inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">load the preset according to the preset name.  <br /></td></tr>
+<tr class="memitem:a02cc0715b1350ff2a4aa9254f4a80b21 inherit pub_methods_classob_1_1_device" id="r_a02cc0715b1350ff2a4aa9254f4a80b21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a02cc0715b1350ff2a4aa9254f4a80b21">loadPreset</a> (const char *presetName, const char *version) const</td></tr>
+<tr class="memdesc:a02cc0715b1350ff2a4aa9254f4a80b21 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">load the preset by preset name and the target depth work mode version. The version is forwarded to the depth work mode switch when loading the preset.  <br /></td></tr>
+<tr class="memitem:a376d28721ca558e1ee2b0e1436fb9fe1 inherit pub_methods_classob_1_1_device" id="r_a376d28721ca558e1ee2b0e1436fb9fe1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a376d28721ca558e1ee2b0e1436fb9fe1">getCurrentPresetDepthWorkModeVersion</a> () const</td></tr>
+<tr class="memdesc:a376d28721ca558e1ee2b0e1436fb9fe1 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the version of the current depth work mode.  <br /></td></tr>
 <tr class="memitem:aaee8649dbbd205925430e48f816b5391 inherit pub_methods_classob_1_1_device" id="r_aaee8649dbbd205925430e48f816b5391"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_device_preset_list.html">DevicePresetList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#aaee8649dbbd205925430e48f816b5391">getAvailablePresetList</a> () const</td></tr>
 <tr class="memdesc:aaee8649dbbd205925430e48f816b5391 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get available preset list.  <br /></td></tr>
 <tr class="memitem:aa986cb51f5eaad4815ddd4fff7f2e422 inherit pub_methods_classob_1_1_device" id="r_aa986cb51f5eaad4815ddd4fff7f2e422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#aa986cb51f5eaad4815ddd4fff7f2e422">loadPresetFromJsonFile</a> (const char *filePath) const</td></tr>
@@ -241,6 +272,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a36d34d7265c9e8b3c2dcc7c3afccf424 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the device supports the frame interleave feature.  <br /></td></tr>
 <tr class="memitem:a5a6828397b975e3d99d17247547b19c5 inherit pub_methods_classob_1_1_device" id="r_a5a6828397b975e3d99d17247547b19c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#a5a6828397b975e3d99d17247547b19c5">loadFrameInterleave</a> (const char *frameInterleaveName) const</td></tr>
 <tr class="memdesc:a5a6828397b975e3d99d17247547b19c5 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">load the frame interleave according to frame interleave name.  <br /></td></tr>
+<tr class="memitem:abe8035f34ba0321043c7f56537c98101 inherit pub_methods_classob_1_1_device" id="r_abe8035f34ba0321043c7f56537c98101"><td class="memItemLeft" align="right" valign="top">OB_EXPORT const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#abe8035f34ba0321043c7f56537c98101">getCurrentFrameInterleaveName</a> () const</td></tr>
+<tr class="memdesc:abe8035f34ba0321043c7f56537c98101 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current frame interleave name.  <br /></td></tr>
 <tr class="memitem:ac1311488fcf731e5f0bd48a6af1ae8d6 inherit pub_methods_classob_1_1_device" id="r_ac1311488fcf731e5f0bd48a6af1ae8d6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_device_frame_interleave_list.html">DeviceFrameInterleaveList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#ac1311488fcf731e5f0bd48a6af1ae8d6">getAvailableFrameInterleaveList</a> () const</td></tr>
 <tr class="memdesc:ac1311488fcf731e5f0bd48a6af1ae8d6 inherit pub_methods_classob_1_1_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get available frame interleave list.  <br /></td></tr>
 <tr class="memitem:afce62eaa1f979520e999fa6ed11c6bd4 inherit pub_methods_classob_1_1_device" id="r_afce62eaa1f979520e999fa6ed11c6bd4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_preset_resolution_config_list.html">PresetResolutionConfigList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classob_1_1_device.html#afce62eaa1f979520e999fa6ed11c6bd4">getAvailablePresetResolutionConfigList</a> () const</td></tr>
@@ -268,8 +301,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00071">71</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a37b7490d059611e58d8d610ed2b4721b" name="a37b7490d059611e58d8d610ed2b4721b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37b7490d059611e58d8d610ed2b4721b">&#9670;&#160;</a></span>PlaybackDevice() <span class="overload">[1/3]</span></h2>
+<a id="ac2378314538f22c8353b83de40789a8f" name="ac2378314538f22c8353b83de40789a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2378314538f22c8353b83de40789a8f">&#9670;&#160;</a></span>PlaybackDevice() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,8 +313,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">ob::PlaybackDevice::PlaybackDevice </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>file</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>presetPath</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -291,9 +328,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00073">73</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p>Constructs a <a class="el" href="classob_1_1_playback_device.html">PlaybackDevice</a> for playing back recorded device data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>Path to the playback file. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">presetPath</td><td>Path to a preset JSON file to load after device creation. If empty, no preset is loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">Referenced by <a class="el" href="#a249799618583f2f9282890f6ebd91a72">operator=()</a>, <a class="el" href="_record_playback_8hpp_source.html#l00083">operator=()</a>, <a class="el" href="#aa2bfaf7e3b1ef51bdcfb340ad6c569db">PlaybackDevice()</a>, and <a class="el" href="_record_playback_8hpp_source.html#l00081">PlaybackDevice()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00078">78</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#a249799618583f2f9282890f6ebd91a72">operator=()</a>, <a class="el" href="_record_playback_8hpp_source.html#l00092">operator=()</a>, <a class="el" href="#aa2bfaf7e3b1ef51bdcfb340ad6c569db">PlaybackDevice()</a>, and <a class="el" href="_record_playback_8hpp_source.html#l00090">PlaybackDevice()</a>.</p>
 
 </div>
 </div>
@@ -345,7 +391,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00081">81</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00090">90</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +444,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00083">83</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00092">92</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -452,7 +498,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pause the streaming data from the playback device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00095">95</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00104">104</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -481,7 +527,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Resume the streaming data from the playback device. </p>
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00104">104</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00113">113</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -516,7 +562,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00114">114</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00123">123</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +597,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00124">124</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00133">133</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -586,7 +632,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00134">134</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00143">143</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -616,7 +662,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the current playback status of the playback device. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current playback status. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00145">145</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00154">154</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -646,7 +692,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the current position of the playback device. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current position of the playback device, in milliseconds. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00157">157</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00166">166</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>
@@ -676,7 +722,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the duration of the playback device. </p>
 <dl class="section return"><dt>Returns</dt><dd>The duration of the playback device, in milliseconds. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00169">169</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_record_playback_8hpp_source.html#l00178">178</a> of file <a class="el" href="_record_playback_8hpp_source.html">RecordPlayback.hpp</a>.</p>
 
 </div>
 </div>

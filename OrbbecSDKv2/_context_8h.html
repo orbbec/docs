@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.10.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -109,6 +109,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:af23fe6e535802357d30da073596a958a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable network device enumeration.  <br /></td></tr>
 <tr class="memitem:a2ad7b690a92603140b17544c10a7644f" id="r_a2ad7b690a92603140b17544c10a7644f"><td class="memItemLeft" align="right" valign="top">OB_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ad7b690a92603140b17544c10a7644f">ob_force_ip_config</a> (const char *macAddress, <a class="el" href="_ob_types_8h.html#a62c129472752e5796005c17cc81dd03b">ob_net_ip_config</a> config, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a2ad7b690a92603140b17544c10a7644f"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Force" a static IP address configuration in a device identified by its MAC Address.  <br /></td></tr>
+<tr class="memitem:a48a04f2091d5fc90d55e672bc960c59c" id="r_a48a04f2091d5fc90d55e672bc960c59c"><td class="memItemLeft" align="right" valign="top">OB_EXPORT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a04f2091d5fc90d55e672bc960c59c">ob_send_action_command</a> (uint32_t deviceKey, uint32_t groupKey, uint32_t groupMask, const char *destIp, uint64_t scheduledTime, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a48a04f2091d5fc90d55e672bc960c59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an Action Command to GVCP devices.  <br /></td></tr>
 <tr class="memitem:a05182a0b99a87955202d85c2cec2a878" id="r_a05182a0b99a87955202d85c2cec2a878"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05182a0b99a87955202d85c2cec2a878">ob_set_gvcp_port_scheme</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="_ob_types_8h.html#ab27a383b90497c78de40bb3d9f6fb6fe">ob_gvcp_port_scheme</a> scheme, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a05182a0b99a87955202d85c2cec2a878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the GVCP port scheme used for network device discovery and control.  <br /></td></tr>
 <tr class="memitem:a584960f824ff91b6a1acea826bcf1d10" id="r_a584960f824ff91b6a1acea826bcf1d10"><td class="memItemLeft" align="right" valign="top">OB_EXPORT <a class="el" href="_ob_types_8h.html#ab27a383b90497c78de40bb3d9f6fb6fe">ob_gvcp_port_scheme</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a584960f824ff91b6a1acea826bcf1d10">ob_get_gvcp_port_scheme</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -125,6 +127,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa9cec7258643952302e2679da6770e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a previously registered device plug-in callback function.  <br /></td></tr>
 <tr class="memitem:a061abf0b7a16e75bd278b817ad71d3b2" id="r_a061abf0b7a16e75bd278b817ad71d3b2"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a061abf0b7a16e75bd278b817ad71d3b2">ob_enable_device_clock_sync</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, uint64_t repeat_interval_msec, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a061abf0b7a16e75bd278b817ad71d3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates device clock synchronization to synchronize the clock of the host and all created devices (if supported).  <br /></td></tr>
+<tr class="memitem:acb5a2ad95a1142fe8cc08bf93efc4f61" id="r_acb5a2ad95a1142fe8cc08bf93efc4f61"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb5a2ad95a1142fe8cc08bf93efc4f61">ob_sync_device_hardware_pps_time</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, uint64_t hardware_pps_time, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:acb5a2ad95a1142fe8cc08bf93efc4f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the device time (synchronize hardwarePPS time to all created devices)  <br /></td></tr>
 <tr class="memitem:a921951dd84d01a0a11781af9253b18ad" id="r_a921951dd84d01a0a11781af9253b18ad"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a921951dd84d01a0a11781af9253b18ad">ob_free_idle_memory</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a921951dd84d01a0a11781af9253b18ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free idle memory from the internal frame memory pool.  <br /></td></tr>
 <tr class="memitem:a3415a2823c0dad8ed88ae701b39df55f" id="r_a3415a2823c0dad8ed88ae701b39df55f"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3415a2823c0dad8ed88ae701b39df55f">ob_set_uvc_backend_type</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="_ob_types_8h.html#a440b959ade7fb196cff8677e506a5ad9">ob_uvc_backend_type</a> backend_type, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -143,6 +147,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac35715d1a754ab8635cc2393f4a68d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message with severity, file, function, and line info.  <br /></td></tr>
 <tr class="memitem:afc2f7d22fafb176bb406d7a651df26b0" id="r_afc2f7d22fafb176bb406d7a651df26b0"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc2f7d22fafb176bb406d7a651df26b0">ob_set_extensions_directory</a> (const char *directory, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:afc2f7d22fafb176bb406d7a651df26b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the extensions directory.  <br /></td></tr>
+<tr class="memitem:a99704765e9845959facd74b26deb40bf" id="r_a99704765e9845959facd74b26deb40bf"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99704765e9845959facd74b26deb40bf">ob_context_set_timestamp_clock_type</a> (<a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="_ob_types_8h.html#a3a547e35aa9bc61dc6d60d4001b2c822">ob_clock_type</a> clock_type, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a99704765e9845959facd74b26deb40bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the host-side timestamp clock type for the current context.  <br /></td></tr>
+<tr class="memitem:a1103be7d3d88154ab9885bd0caa03b55" id="r_a1103be7d3d88154ab9885bd0caa03b55"><td class="memItemLeft" align="right" valign="top">OB_EXPORT <a class="el" href="_ob_types_8h.html#a3a547e35aa9bc61dc6d60d4001b2c822">ob_clock_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1103be7d3d88154ab9885bd0caa03b55">ob_context_get_timestamp_clock_type</a> (const <a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *context, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a1103be7d3d88154ab9885bd0caa03b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current host-side timestamp clock type for the context.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Context is a management class that describes the runtime of the SDK and is responsible for resource allocation and release of the SDK. Context has the ability to manage multiple devices. It is responsible for enumerating devices, monitoring device callbacks, and enabling multi-device synchronization. </p>
@@ -161,7 +169,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00285">285</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00332">332</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +185,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00286">286</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8h_source.html#l00333">333</a> of file <a class="el" href="_context_8h_source.html">Context.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +310,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the device list object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00093">ob::Context::queryDeviceList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00120">ob::Context::queryDeviceList()</a>.</p>
 
 </div>
 </div>
@@ -342,7 +350,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00109">ob::Context::enableNetDeviceEnumeration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00136">ob::Context::enableNetDeviceEnumeration()</a>.</p>
 
 </div>
 </div>
@@ -382,7 +390,64 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>bool true if the configuration command was processed successfully, false otherwise. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This applies to all GVCP devices </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00126">ob::Context::forceIp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00153">ob::Context::forceIp()</a>.</p>
+
+</div>
+</div>
+<a id="a48a04f2091d5fc90d55e672bc960c59c" name="a48a04f2091d5fc90d55e672bc960c59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a04f2091d5fc90d55e672bc960c59c">&#9670;&#160;</a></span>ob_send_action_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OB_EXPORT bool ob_send_action_command </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>deviceKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>groupKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>destIp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>scheduledTime</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send an Action Command to GVCP devices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviceKey</td><td>Device key to match. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">groupKey</td><td>Group key to match against the camera's Action blocks. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">groupMask</td><td>Group mask, bitwise-ANDed with each Action block's mask. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">destIp</td><td>Destination IPv4 address. NULL or "255.255.255.255" uses broadcast. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheduledTime</td><td>PTP absolute timestamp. 0 = immediate trigger, non-zero = scheduled. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool true on success. Fire-and-forget; does not wait for camera ACK. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00171">ob::Context::sendActionCommand()</a>.</p>
 
 </div>
 </div>
@@ -423,7 +488,7 @@ Functions</h2></td></tr>
 <dd>
 Switching to a different scheme will force disconnection of all currently connected network devices. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00142">ob::Context::setGvcpPortScheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00187">ob::Context::setGvcpPortScheme()</a>.</p>
 
 </div>
 </div>
@@ -456,7 +521,7 @@ Switching to a different scheme will force disconnection of all currently connec
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current GVCP port scheme. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00153">ob::Context::getGvcpPortScheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00198">ob::Context::getGvcpPortScheme()</a>.</p>
 
 </div>
 </div>
@@ -550,7 +615,7 @@ Switching to a different scheme will force disconnection of all currently connec
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the created device object </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00171">ob::Context::createNetDevice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00216">ob::Context::createNetDevice()</a>.</p>
 
 </div>
 </div>
@@ -645,7 +710,7 @@ This function supports multiple callbacks. Each call to this function adds a new
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="_ob_types_8h.html#aa80ee972e5786c11fcb32625528b3a45">ob_callback_id</a> that uniquely identifies the registered callback. This ID can be used later to unregister the callback with <a class="el" href="#aa9cec7258643952302e2679da6770e20" title="Unregister a previously registered device plug-in callback function.">ob_unregister_device_changed_callback()</a>. Returns INVALID_DEVICE_CHANGED_CALLBACK_ID if the registration fails. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00197">ob::Context::registerDeviceChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00242">ob::Context::registerDeviceChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -684,7 +749,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00212">ob::Context::unregisterDeviceChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00257">ob::Context::unregisterDeviceChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -722,7 +787,45 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00229">ob::Context::enableDeviceClockSync()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00274">ob::Context::enableDeviceClockSync()</a>.</p>
+
+</div>
+</div>
+<a id="acb5a2ad95a1142fe8cc08bf93efc4f61" name="acb5a2ad95a1142fe8cc08bf93efc4f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb5a2ad95a1142fe8cc08bf93efc4f61">&#9670;&#160;</a></span>ob_sync_device_hardware_pps_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OB_EXPORT void ob_sync_device_hardware_pps_time </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>hardware_pps_time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronize the device time (synchronize hardwarePPS time to all created devices) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hardware_pps_time</td><td>unit: ms. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs during execution </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00285">ob::Context::syncDeviceHardwarePPSTime()</a>.</p>
 
 </div>
 </div>
@@ -754,7 +857,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00239">ob::Context::freeIdleMemory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00295">ob::Context::freeIdleMemory()</a>.</p>
 
 </div>
 </div>
@@ -794,7 +897,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00253">ob::Context::setUvcBackendType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00309">ob::Context::setUvcBackendType()</a>.</p>
 
 </div>
 </div>
@@ -827,7 +930,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00265">ob::Context::setLoggerSeverity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00321">ob::Context::setLoggerSeverity()</a>.</p>
 
 </div>
 </div>
@@ -866,7 +969,7 @@ This function supports multiple callbacks. Each call to this function adds a new
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Other settings, such as log file name, remain unchanged. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00278">ob::Context::setLoggerToFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00334">ob::Context::setLoggerToFile()</a>.</p>
 
 </div>
 </div>
@@ -899,7 +1002,7 @@ This function supports multiple callbacks. Each call to this function adds a new
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Other settings, such as log level and output directory, remain unchanged. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00291">ob::Context::setLoggerFileName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00347">ob::Context::setLoggerFileName()</a>.</p>
 
 </div>
 </div>
@@ -943,7 +1046,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00314">ob::Context::setLoggerToCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00370">ob::Context::setLoggerToCallback()</a>.</p>
 
 </div>
 </div>
@@ -975,7 +1078,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00302">ob::Context::setLoggerToConsole()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00358">ob::Context::setLoggerToConsole()</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1140,7 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00331">ob::Context::logExternalMessage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00387">ob::Context::logExternalMessage()</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1174,83 @@ This function supports multiple callbacks. Each call to this function adds a new
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00346">ob::Context::setExtensionsDirectory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00402">ob::Context::setExtensionsDirectory()</a>.</p>
+
+</div>
+</div>
+<a id="a99704765e9845959facd74b26deb40bf" name="a99704765e9845959facd74b26deb40bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99704765e9845959facd74b26deb40bf">&#9670;&#160;</a></span>ob_context_set_timestamp_clock_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OB_EXPORT void ob_context_set_timestamp_clock_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a3a547e35aa9bc61dc6d60d4001b2c822">ob_clock_type</a></td>          <td class="paramname"><span class="paramname"><em>clock_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the host-side timestamp clock type for the current context. </p>
+<dl class="section attention"><dt>Attention</dt><dd>All <a class="el" href="classob_1_1_context.html">ob::Context</a> instances share the same underlying SDK runtime and clock type. </dd>
+<dd>
+Switching affects frame system and global timestamps; avoid switching during streaming. </dd>
+<dd>
+It is recommended to synchronize device timestamps after switching.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clock_type</td><td>The clock type to use for host-side timestamps </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00097">ob::Context::setTimestampClockType()</a>.</p>
+
+</div>
+</div>
+<a id="a1103be7d3d88154ab9885bd0caa03b55" name="a1103be7d3d88154ab9885bd0caa03b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1103be7d3d88154ab9885bd0caa03b55">&#9670;&#160;</a></span>ob_context_get_timestamp_clock_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OB_EXPORT <a class="el" href="_ob_types_8h.html#a3a547e35aa9bc61dc6d60d4001b2c822">ob_clock_type</a> ob_context_get_timestamp_clock_type </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#a20d0126ae1fcbc223d1ab74673bb1a0b">ob_context</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current host-side timestamp clock type for the context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Pointer to the context object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be populated if an error occurs</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a3a547e35aa9bc61dc6d60d4001b2c822">ob_clock_type</a> The current clock type </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00108">ob::Context::getTimestampClockType()</a>.</p>
 
 </div>
 </div>

@@ -18,5 +18,6 @@ var searchData=
   ['min_5fdiff_15',['min_diff',['../struct_o_b_lut_noise_removal_filter_params.html#abfb91f59ab4f5ab60694d3e5bfb48a83',1,'OBLutNoiseRemovalFilterParams']]],
   ['mindisparity_16',['minDisparity',['../struct_o_b_disparity_param.html#a384186467d00aaa0302f4993831ebe72',1,'OBDisparityParam']]],
   ['minor_17',['minor',['../struct_o_b_protocol_version.html#a5fc843e1e3540175110fc52531d58cff',1,'OBProtocolVersion']]],
-  ['model_18',['model',['../struct_o_b_camera_distortion.html#ac1a58c23893438eb48be602e5fd52633',1,'OBCameraDistortion']]]
+  ['model_18',['model',['../struct_o_b_camera_distortion.html#ac1a58c23893438eb48be602e5fd52633',1,'OBCameraDistortion']]],
+  ['model_5fpath_19',['model_path',['../structob__priv__filter__activate__options.html#af0cd1407f6969a5481c6174b5fd16578',1,'ob_priv_filter_activate_options']]]
 ];

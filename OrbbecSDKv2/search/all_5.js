@@ -19,7 +19,7 @@ var searchData=
   ['firmwareversion_16',['firmwareVersion',['../classob_1_1_device_info.html#a68b56a5a8f68d9b7d27799fde807bb1e',1,'ob::DeviceInfo']]],
   ['flags_17',['flags',['../struct_o_b_net_ip_config_v2.html#a776a833784f73ee5e65eca9181df9389',1,'OBNetIpConfigV2']]],
   ['forceip_18',['forceIp',['../classob_1_1_context.html#a2610b0f957e942df11e32c95d674a138',1,'ob::Context']]],
-  ['format_19',['format',['../classob_1_1_frame.html#ac02381cb60d381d3156566791f5e547f',1,'ob::Frame::format()'],['../classob_1_1_stream_profile.html#a857b2d48ed65fe1f8c8e525c621c70c1',1,'ob::StreamProfile::format()']]],
+  ['format_19',['format',['../classob_1_1_application_point_cloud_config.html#a8e5b5ef15d8bbb9c7ef6502e323b644e',1,'ob::ApplicationPointCloudConfig::format()'],['../classob_1_1_frame.html#ac02381cb60d381d3156566791f5e547f',1,'ob::Frame::format()'],['../classob_1_1_stream_profile.html#a857b2d48ed65fe1f8c8e525c621c70c1',1,'ob::StreamProfile::format()']]],
   ['format_5fbgr_5fto_5frgb_20',['FORMAT_BGR_TO_RGB',['../_ob_types_8h.html#ae57f11b2621f5e3b74a3983ad647133aa99799f4f2ef03ad0f4e1ab13022ecd73',1,'ObTypes.h']]],
   ['format_5fbgra_5fto_5fbgr_21',['FORMAT_BGRA_TO_BGR',['../_ob_types_8h.html#ae57f11b2621f5e3b74a3983ad647133aa0c15bf70e871c9ff5de79ca5fd423dec',1,'ObTypes.h']]],
   ['format_5fi420_5fto_5frgb_22',['FORMAT_I420_TO_RGB',['../_ob_types_8h.html#ae57f11b2621f5e3b74a3983ad647133aac9359e79ec62939d76890aa22500fcc2',1,'ObTypes.h']]],

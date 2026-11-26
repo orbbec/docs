@@ -8,7 +8,7 @@ var searchData=
   ['list_5',['Deprecated List',['../deprecated.html',1,'']]],
   ['loaddepthfilterconfig_6',['loadDepthFilterConfig',['../classob_1_1_device.html#aae1b8c76518bbd92b0e0b8b6e1ef8e35',1,'ob::Device']]],
   ['loadframeinterleave_7',['loadFrameInterleave',['../classob_1_1_device.html#a5a6828397b975e3d99d17247547b19c5',1,'ob::Device']]],
-  ['loadpreset_8',['loadPreset',['../classob_1_1_device.html#aed35d6144d598a3a0bde14bc8c87717f',1,'ob::Device']]],
+  ['loadpreset_8',['loadPreset',['../classob_1_1_device.html#aed35d6144d598a3a0bde14bc8c87717f',1,'ob::Device::loadPreset(const char *presetName) const'],['../classob_1_1_device.html#a02cc0715b1350ff2a4aa9254f4a80b21',1,'ob::Device::loadPreset(const char *presetName, const char *version) const']]],
   ['loadpresetfromjsondata_9',['loadPresetFromJsonData',['../classob_1_1_device.html#a253fc2d87309ba3c1cbc0d37ea6fc77d',1,'ob::Device']]],
   ['loadpresetfromjsonfile_10',['loadPresetFromJsonFile',['../classob_1_1_device.html#aa986cb51f5eaad4815ddd4fff7f2e422',1,'ob::Device']]],
   ['logcallback_11',['LogCallback',['../classob_1_1_context.html#a36e269687a2a5fda1171b0a71e27dd67',1,'ob::Context']]],

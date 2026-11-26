@@ -23,5 +23,6 @@ var searchData=
   ['mindisparity_20',['minDisparity',['../struct_o_b_disparity_param.html#a384186467d00aaa0302f4993831ebe72',1,'OBDisparityParam']]],
   ['minor_21',['minor',['../struct_o_b_protocol_version.html#a5fc843e1e3540175110fc52531d58cff',1,'OBProtocolVersion']]],
   ['model_22',['model',['../struct_o_b_camera_distortion.html#ac1a58c23893438eb48be602e5fd52633',1,'OBCameraDistortion']]],
-  ['multipledevices_2eh_23',['MultipleDevices.h',['../_multiple_devices_8h.html',1,'']]]
+  ['model_5fpath_23',['model_path',['../structob__priv__filter__activate__options.html#af0cd1407f6969a5481c6174b5fd16578',1,'ob_priv_filter_activate_options']]],
+  ['multipledevices_2eh_24',['MultipleDevices.h',['../_multiple_devices_8h.html',1,'']]]
 ];

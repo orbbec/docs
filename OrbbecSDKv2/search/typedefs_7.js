@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['valuetype_0',['valueType',['../structob_1_1_range_traits.html#ab46088f13c1f6d1e49ae5655c5f9f270',1,'ob::RangeTraits::valueType'],['../structob_1_1_range_traits_3_01_o_b_uint8_property_range_01_4.html#a3bf7d0c14f34da1e9b7f7bb66dc4d607',1,'ob::RangeTraits&lt; OBUint8PropertyRange &gt;::valueType'],['../structob_1_1_range_traits_3_01_o_b_uint16_property_range_01_4.html#a0760c6f82fafc6e2636113ff6559f599',1,'ob::RangeTraits&lt; OBUint16PropertyRange &gt;::valueType'],['../structob_1_1_range_traits_3_01_o_b_int_property_range_01_4.html#af7e795d8b54d570ca13dac7828364b80',1,'ob::RangeTraits&lt; OBIntPropertyRange &gt;::valueType'],['../structob_1_1_range_traits_3_01_o_b_float_property_range_01_4.html#a89ab2a71f3ada09bb919bf673b1f996f',1,'ob::RangeTraits&lt; OBFloatPropertyRange &gt;::valueType']]]
+  ['tof_5fexposure_5fthreshold_5fcontrol_0',['TOF_EXPOSURE_THRESHOLD_CONTROL',['../_ob_types_8h.html#adfeca2238eac37d7af37739b809dab7c',1,'ObTypes.h']]],
+  ['tof_5ffilter_5frange_1',['TOF_FILTER_RANGE',['../_ob_types_8h.html#a626d4bb43871e60deab25d777bddb57a',1,'ObTypes.h']]]
 ];

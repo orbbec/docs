@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.10.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -185,6 +185,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae436ef057b20323584d47352047937f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sensor of the frame.  <br /></td></tr>
 <tr class="memitem:aabfb4910bb75f2cbbd2b8ccb3abaca7f" id="r_aabfb4910bb75f2cbbd2b8ccb3abaca7f"><td class="memItemLeft" align="right" valign="top">OB_EXPORT <a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabfb4910bb75f2cbbd2b8ccb3abaca7f">ob_frame_get_device</a> (const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:aabfb4910bb75f2cbbd2b8ccb3abaca7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device of the frame.  <br /></td></tr>
+<tr class="memitem:a98ab7fe8a950cd3f683680d07282dc9f" id="r_a98ab7fe8a950cd3f683680d07282dc9f"><td class="memItemLeft" align="right" valign="top">OB_EXPORT uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98ab7fe8a950cd3f683680d07282dc9f">ob_frame_get_token</a> (const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a98ab7fe8a950cd3f683680d07282dc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the auth token carried by the frame.  <br /></td></tr>
+<tr class="memitem:aa2e174052cd80526113f39cb0dbf5c55" id="r_aa2e174052cd80526113f39cb0dbf5c55"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2e174052cd80526113f39cb0dbf5c55">ob_frame_set_token</a> (<a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, uint64_t token, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:aa2e174052cd80526113f39cb0dbf5c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the auth token carried by the frame.  <br /></td></tr>
+<tr class="memitem:a02bc27a7f41d52f8410a82c73839538a" id="r_a02bc27a7f41d52f8410a82c73839538a"><td class="memItemLeft" align="right" valign="top">OB_EXPORT <a class="el" href="_ob_types_8h.html#a1bf2bdaa2815d538912cc22bc5cc6720">ob_device_info</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02bc27a7f41d52f8410a82c73839538a">ob_frame_get_device_info</a> (const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a02bc27a7f41d52f8410a82c73839538a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device information attached to the frame.  <br /></td></tr>
 <tr class="memitem:a3978c8a26a0572000f774b9a2a045a8d" id="r_a3978c8a26a0572000f774b9a2a045a8d"><td class="memItemLeft" align="right" valign="top">OB_EXPORT uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3978c8a26a0572000f774b9a2a045a8d">ob_video_frame_get_width</a> (const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a3978c8a26a0572000f774b9a2a045a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get video frame width.  <br /></td></tr>
 <tr class="memitem:af5f4a0896ec7c1a3f481f5b1800e239e" id="r_af5f4a0896ec7c1a3f481f5b1800e239e"><td class="memItemLeft" align="right" valign="top">OB_EXPORT uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5f4a0896ec7c1a3f481f5b1800e239e">ob_video_frame_get_height</a> (const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *frame, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -281,7 +287,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00654">654</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00683">683</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +303,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00655">655</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00684">684</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -313,7 +319,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00656">656</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00685">685</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +335,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00657">657</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00686">686</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +351,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00658">658</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00687">687</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +367,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00659">659</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00688">688</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +383,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00660">660</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00689">689</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +399,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00661">661</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00690">690</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +415,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00662">662</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00691">691</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +431,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00663">663</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00692">692</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -441,7 +447,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00664">664</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00693">693</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +463,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00665">665</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00694">694</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -473,7 +479,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00666">666</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00695">695</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +495,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00667">667</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00696">696</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -505,7 +511,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00668">668</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00697">697</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +527,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00669">669</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00698">698</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -537,7 +543,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00670">670</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00699">699</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -553,7 +559,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00671">671</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00700">700</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -569,7 +575,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00672">672</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00701">701</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +591,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00673">673</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00702">702</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -601,7 +607,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00674">674</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00703">703</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -617,7 +623,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00675">675</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00704">704</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -633,7 +639,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00676">676</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00705">705</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -649,7 +655,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00677">677</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00706">706</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -674,7 +680,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_function" href="#a2e6073da74fb0b2b6173a705b5ddfeff">ob_frame_get_timestamp_us</a>(frame, err) / 1000)</div>
 <div class="ttc" id="a_frame_8h_html_a2e6073da74fb0b2b6173a705b5ddfeff"><div class="ttname"><a href="#a2e6073da74fb0b2b6173a705b5ddfeff">ob_frame_get_timestamp_us</a></div><div class="ttdeci">OB_EXPORT uint64_t ob_frame_get_timestamp_us(const ob_frame *frame, ob_error **error)</div><div class="ttdoc">Get the frame timestamp (also known as device timestamp, hardware timestamp) of the frame in microsec...</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00679">679</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00708">708</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -699,7 +705,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_function" href="#aafe85197a1646dbf1e4cec67c086a763">ob_frame_get_system_timestamp_us</a>(frame, err))</div>
 <div class="ttc" id="a_frame_8h_html_aafe85197a1646dbf1e4cec67c086a763"><div class="ttname"><a href="#aafe85197a1646dbf1e4cec67c086a763">ob_frame_get_system_timestamp_us</a></div><div class="ttdeci">OB_EXPORT uint64_t ob_frame_get_system_timestamp_us(const ob_frame *frame, ob_error **error)</div><div class="ttdoc">Get the system timestamp of the frame in microseconds.</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00680">680</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00709">709</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -729,7 +735,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_function" href="#a27e8ba31745861296d1d787f80c66b8b">ob_frame_set_system_timestamp_us</a>(frame, system_timestamp * 1000, err))</div>
 <div class="ttc" id="a_frame_8h_html_a27e8ba31745861296d1d787f80c66b8b"><div class="ttname"><a href="#a27e8ba31745861296d1d787f80c66b8b">ob_frame_set_system_timestamp_us</a></div><div class="ttdeci">OB_EXPORT void ob_frame_set_system_timestamp_us(ob_frame *frame, uint64_t system_timestamp_us, ob_error **error)</div><div class="ttdoc">Set the system timestamp of the frame in microseconds.</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00681">681</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00710">710</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +765,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code hl_function" href="#a9b4de8b08fdafd4a44e0fbf099368c9f">ob_frame_set_timestamp_us</a>(frame, device_timestamp * 1000, err))</div>
 <div class="ttc" id="a_frame_8h_html_a9b4de8b08fdafd4a44e0fbf099368c9f"><div class="ttname"><a href="#a9b4de8b08fdafd4a44e0fbf099368c9f">ob_frame_set_timestamp_us</a></div><div class="ttdeci">OB_EXPORT void ob_frame_set_timestamp_us(ob_frame *frame, uint64_t timestamp_us, ob_error **error)</div><div class="ttdoc">Set the frame timestamp (also known as the device timestamp, hardware timestamp) of a frame object.</div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00682">682</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8h_source.html#l00711">711</a> of file <a class="el" href="_frame_8h_source.html">Frame.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +812,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01100">ob::FrameFactory::createFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01126">ob::FrameFactory::createFrame()</a>.</p>
 
 </div>
 </div>
@@ -847,7 +853,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the new frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01139">ob::FrameFactory::createFrameFromOtherFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01165">ob::FrameFactory::createFrameFromOtherFrame()</a>.</p>
 
 </div>
 </div>
@@ -881,7 +887,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the new frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01155">ob::FrameFactory::createFrameFromStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01181">ob::FrameFactory::createFrameFromStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -939,7 +945,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return an empty frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01120">ob::FrameFactory::createVideoFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01146">ob::FrameFactory::createVideoFrame()</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1011,7 @@ The frame object is created with a reference count of 1, and the reference count
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01182">ob::FrameFactory::createFrameFromBuffer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01208">ob::FrameFactory::createFrameFromBuffer()</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1095,7 @@ The frame object is created with a reference count of 1, and the reference count
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01211">ob::FrameFactory::createVideoFrameFromBuffer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01237">ob::FrameFactory::createVideoFrameFromBuffer()</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1125,7 @@ The frame object is created with a reference count of 1, and the reference count
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frameset object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01231">ob::FrameFactory::createFrameSet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01257">ob::FrameFactory::createFrameSet()</a>.</p>
 
 </div>
 </div>
@@ -1153,7 +1159,7 @@ The frame object is created with a reference count of 1, and the reference count
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00311">ob::Frame::as()</a>, and <a class="el" href="_frame_8hpp_source.html#l00330">ob::Frame::as()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00337">ob::Frame::as()</a>, and <a class="el" href="_frame_8hpp_source.html#l00356">ob::Frame::as()</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1231,7 @@ The frame object is created with a reference count of 1, and the reference count
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00348">ob::Frame::copyFrameInfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00374">ob::Frame::copyFrameInfo()</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1364,7 @@ The frame object is created with a reference count of 1, and the reference count
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t return the frame hardware timestamp in microseconds </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00160">ob::Frame::getTimeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00186">ob::Frame::getTimeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1402,7 @@ The frame object is created with a reference count of 1, and the reference count
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01264">ob::FrameHelper::setFrameDeviceTimestampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01290">ob::FrameHelper::setFrameDeviceTimestampUs()</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1436,7 @@ The frame object is created with a reference count of 1, and the reference count
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t return the frame system timestamp in microseconds </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00174">ob::Frame::getSystemTimeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00200">ob::Frame::getSystemTimeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -1468,7 +1474,7 @@ The frame object is created with a reference count of 1, and the reference count
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00361">ob::Frame::setSystemTimestampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00387">ob::Frame::setSystemTimestampUs()</a>.</p>
 
 </div>
 </div>
@@ -1505,7 +1511,7 @@ Only some models of device support getting the global timestamp. Check the devic
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t The global timestamp of the frame in microseconds. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00193">ob::Frame::getGlobalTimeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00219">ob::Frame::getGlobalTimeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -1539,7 +1545,7 @@ Only some models of device support getting the global timestamp. Check the devic
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint8_t* Pointer to the frame data buffer. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00131">ob::Frame::getData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00157">ob::Frame::getData()</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1594,7 @@ The size of the new data should be equal to or less than the current data size o
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00382">ob::Frame::updateData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00408">ob::Frame::updateData()</a>.</p>
 
 </div>
 </div>
@@ -1621,7 +1627,7 @@ The size of the new data should be equal to or less than the current data size o
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the frame data size If it is point cloud data, it return the number of bytes occupied by all point sets. If you need to find the number of points, you need to divide dataSize by the structure size of the corresponding point type. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00146">ob::Frame::getDataSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00172">ob::Frame::getDataSize()</a>.</p>
 
 </div>
 </div>
@@ -1655,7 +1661,7 @@ The size of the new data should be equal to or less than the current data size o
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const uint8_t * return the metadata pointer of the frame </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00206">ob::Frame::getMetadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00232">ob::Frame::getMetadata()</a>.</p>
 
 </div>
 </div>
@@ -1688,7 +1694,7 @@ The size of the new data should be equal to or less than the current data size o
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the metadata size of the frame </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00219">ob::Frame::getMetadataSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00245">ob::Frame::getMetadataSize()</a>.</p>
 
 </div>
 </div>
@@ -1737,7 +1743,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00402">ob::Frame::updateMetadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00428">ob::Frame::updateMetadata()</a>.</p>
 
 </div>
 </div>
@@ -1775,7 +1781,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00234">ob::Frame::hasMetadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00260">ob::Frame::hasMetadata()</a>.</p>
 
 </div>
 </div>
@@ -1814,7 +1820,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int64_t return the metadata value of the frame </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00249">ob::Frame::getMetadataValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00275">ob::Frame::getMetadataValue()</a>.</p>
 
 </div>
 </div>
@@ -1848,7 +1854,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_stream_profile* Return the stream profile of the frame, if the frame is not captured by a sensor stream, it will return NULL </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00262">ob::Frame::getStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00288">ob::Frame::getStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -1886,7 +1892,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00415">ob::Frame::setStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00441">ob::Frame::setStreamProfile()</a>.</p>
 
 </div>
 </div>
@@ -1920,7 +1926,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_sensor* return the sensor of the frame, if the frame is not captured by a sensor or the sensor stream has been destroyed, it will return NULL </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00274">ob::Frame::getSensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00300">ob::Frame::getSensor()</a>.</p>
 
 </div>
 </div>
@@ -1954,7 +1960,109 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_device* return the device of the frame, if the frame is not captured by a sensor stream or the device has been destroyed, it will return NULL </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00287">ob::Frame::getDevice()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00313">ob::Frame::getDevice()</a>.</p>
+
+</div>
+</div>
+<a id="a98ab7fe8a950cd3f683680d07282dc9f" name="a98ab7fe8a950cd3f683680d07282dc9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ab7fe8a950cd3f683680d07282dc9f">&#9670;&#160;</a></span>ob_frame_get_token()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OB_EXPORT uint64_t ob_frame_get_token </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the auth token carried by the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t The auth token value. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00131">ob::Frame::getToken()</a>.</p>
+
+</div>
+</div>
+<a id="aa2e174052cd80526113f39cb0dbf5c55" name="aa2e174052cd80526113f39cb0dbf5c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e174052cd80526113f39cb0dbf5c55">&#9670;&#160;</a></span>ob_frame_set_token()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OB_EXPORT void ob_frame_set_token </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the auth token carried by the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>The auth token value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00144">ob::Frame::setToken()</a>.</p>
+
+</div>
+</div>
+<a id="a02bc27a7f41d52f8410a82c73839538a" name="a02bc27a7f41d52f8410a82c73839538a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02bc27a7f41d52f8410a82c73839538a">&#9670;&#160;</a></span>ob_frame_get_device_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OB_EXPORT <a class="el" href="_ob_types_8h.html#a1bf2bdaa2815d538912cc22bc5cc6720">ob_device_info</a> * ob_frame_get_device_info </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#a0246b271f418287137e3d1a0c1ddff72">ob_frame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the device information attached to the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Frame object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ob_device_info* Return the attached device information, or NULL if not available. </dd></dl>
 
 </div>
 </div>
@@ -1987,7 +2095,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the frame width </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00498">ob::VideoFrame::getWidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00524">ob::VideoFrame::getWidth()</a>.</p>
 
 </div>
 </div>
@@ -2020,7 +2128,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the frame height </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00511">ob::VideoFrame::getHeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00537">ob::VideoFrame::getHeight()</a>.</p>
 
 </div>
 </div>
@@ -2055,7 +2163,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#af63360bbcecae8f2fd4479fc1b795b9b">ob_pixel_type</a> return the pixel format of the frame. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00527">ob::VideoFrame::getPixelType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00553">ob::VideoFrame::getPixelType()</a>.</p>
 
 </div>
 </div>
@@ -2093,7 +2201,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00554">ob::VideoFrame::setPixelType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00580">ob::VideoFrame::setPixelType()</a>.</p>
 
 </div>
 </div>
@@ -2127,7 +2235,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint8_t return the effective number of pixels in the pixel, or 0 if it is an unsupported format </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00541">ob::VideoFrame::getPixelAvailableBitSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00567">ob::VideoFrame::getPixelAvailableBitSize()</a>.</p>
 
 </div>
 </div>
@@ -2166,7 +2274,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00569">ob::VideoFrame::setPixelAvailableBitSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00595">ob::VideoFrame::setPixelAvailableBitSize()</a>.</p>
 
 </div>
 </div>
@@ -2199,7 +2307,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float The value scale of the depth frame </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00639">ob::DepthFrame::getValueScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00665">ob::DepthFrame::getValueScale()</a>.</p>
 
 </div>
 </div>
@@ -2237,7 +2345,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00653">ob::DepthFrame::setValueScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00679">ob::DepthFrame::setValueScale()</a>.</p>
 
 </div>
 </div>
@@ -2270,7 +2378,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float The coordinate value scale of the points frame </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00738">ob::PointsFrame::getCoordinateValueScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00764">ob::PointsFrame::getCoordinateValueScale()</a>.</p>
 
 </div>
 </div>
@@ -2303,7 +2411,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a6492e9923b828aee716db40004db9b4b">ob_accel_value</a> Return the accelerometer data. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00794">ob::AccelFrame::getValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00820">ob::AccelFrame::getValue()</a>.</p>
 
 </div>
 </div>
@@ -2336,7 +2444,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float Return the temperature value. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00807">ob::AccelFrame::getTemperature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00833">ob::AccelFrame::getTemperature()</a>.</p>
 
 </div>
 </div>
@@ -2369,7 +2477,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a8785ff80bb1ac60427ff8e75d7b58761">ob_gyro_value</a> Return the gyroscope data. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00841">ob::GyroFrame::getValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00867">ob::GyroFrame::getValue()</a>.</p>
 
 </div>
 </div>
@@ -2402,7 +2510,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float Return the temperature value. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00854">ob::GyroFrame::getTemperature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00880">ob::GyroFrame::getTemperature()</a>.</p>
 
 </div>
 </div>
@@ -2436,7 +2544,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the number of frames </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00917">ob::FrameSet::getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00943">ob::FrameSet::getCount()</a>.</p>
 
 </div>
 </div>
@@ -2470,7 +2578,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the depth frame. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00982">ob::FrameSet::getDepthFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01008">ob::FrameSet::getDepthFrame()</a>.</p>
 
 </div>
 </div>
@@ -2504,7 +2612,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the color frame. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00997">ob::FrameSet::getColorFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01023">ob::FrameSet::getColorFrame()</a>.</p>
 
 </div>
 </div>
@@ -2538,7 +2646,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the infrared frame. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01012">ob::FrameSet::getIrFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01038">ob::FrameSet::getIrFrame()</a>.</p>
 
 </div>
 </div>
@@ -2572,7 +2680,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the point cloud frame. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01027">ob::FrameSet::getPointsFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01053">ob::FrameSet::getPointsFrame()</a>.</p>
 
 </div>
 </div>
@@ -2612,7 +2720,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame of the specified type, or nullptr if it does not exist. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00931">ob::FrameSet::getFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00957">ob::FrameSet::getFrame()</a>.</p>
 
 </div>
 </div>
@@ -2651,7 +2759,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_frame* Return the frame at the specified index, or nullptr if it does not exist. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00948">ob::FrameSet::getFrameByIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00974">ob::FrameSet::getFrameByIndex()</a>.</p>
 
 </div>
 </div>
@@ -2692,7 +2800,7 @@ The frame push to the frameset will be add reference count, so you still need to
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00965">ob::FrameSet::pushFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00991">ob::FrameSet::pushFrame()</a>.</p>
 
 </div>
 </div>
@@ -2725,7 +2833,7 @@ The frame push to the frameset will be add reference count, so you still need to
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the point cloud frame width </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00751">ob::PointsFrame::getWidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00777">ob::PointsFrame::getWidth()</a>.</p>
 
 </div>
 </div>
@@ -2758,7 +2866,7 @@ The frame push to the frameset will be add reference count, so you still need to
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t return the point cloud frame height </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00765">ob::PointsFrame::getHeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00791">ob::PointsFrame::getHeight()</a>.</p>
 
 </div>
 </div>

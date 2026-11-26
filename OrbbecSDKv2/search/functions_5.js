@@ -4,7 +4,7 @@ var searchData=
   ['filter_1',['Filter',['../classob_1_1_filter.html#a805002efecbccf445e3a8022f2ccb888',1,'ob::Filter::Filter()=default'],['../classob_1_1_filter.html#ae0b786a1ce8ac090e26cb2d6f7195461',1,'ob::Filter::Filter(ob_filter *impl)']]],
   ['firmwareversion_2',['firmwareVersion',['../classob_1_1_device_info.html#a68b56a5a8f68d9b7d27799fde807bb1e',1,'ob::DeviceInfo']]],
   ['forceip_3',['forceIp',['../classob_1_1_context.html#a2610b0f957e942df11e32c95d674a138',1,'ob::Context']]],
-  ['format_4',['format',['../classob_1_1_frame.html#ac02381cb60d381d3156566791f5e547f',1,'ob::Frame::format()'],['../classob_1_1_stream_profile.html#a857b2d48ed65fe1f8c8e525c621c70c1',1,'ob::StreamProfile::format()']]],
+  ['format_4',['format',['../classob_1_1_application_point_cloud_config.html#a8e5b5ef15d8bbb9c7ef6502e323b644e',1,'ob::ApplicationPointCloudConfig::format()'],['../classob_1_1_frame.html#ac02381cb60d381d3156566791f5e547f',1,'ob::Frame::format()'],['../classob_1_1_stream_profile.html#a857b2d48ed65fe1f8c8e525c621c70c1',1,'ob::StreamProfile::format()']]],
   ['formatconvertfilter_5',['FormatConvertFilter',['../classob_1_1_format_convert_filter.html#ae8f175e46b2c48519a1778317e540df8',1,'ob::FormatConvertFilter']]],
   ['fps_6',['fps',['../classob_1_1_video_stream_profile.html#a55f84b0e399a8e2e1dcfb92af73d8406',1,'ob::VideoStreamProfile']]],
   ['frame_7',['Frame',['../classob_1_1_frame.html#a33a5ec474d4793588c5b637f79d7c6ce',1,'ob::Frame']]],

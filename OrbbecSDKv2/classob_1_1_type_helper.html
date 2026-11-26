@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.10.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -98,6 +98,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a642b2325875ee3e324ab84773b9c9b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> to " string " type and then return.  <br /></td></tr>
 <tr class="memitem:ad382c254f09fb63e4d1f50adced328f4" id="r_ad382c254f09fb63e4d1f50adced328f4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad382c254f09fb63e4d1f50adced328f4">convertOBIMUSampleRateTypeToString</a> (const <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e">OBIMUSampleRate</a> &amp;type)</td></tr>
 <tr class="memdesc:ad382c254f09fb63e4d1f50adced328f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a> to " string " type and then return.  <br /></td></tr>
+<tr class="memitem:a5fe458a8c491123d8dae57208568a81c" id="r_a5fe458a8c491123d8dae57208568a81c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fe458a8c491123d8dae57208568a81c">convertOBIMUSampleRateTypeToValue</a> (const <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e">OBIMUSampleRate</a> &amp;type)</td></tr>
+<tr class="memdesc:a5fe458a8c491123d8dae57208568a81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a> to its numeric frequency value in Hz.  <br /></td></tr>
+<tr class="memitem:a0e31326b557aafdd0f09d13dbd464186" id="r_a0e31326b557aafdd0f09d13dbd464186"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e">OBIMUSampleRate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e31326b557aafdd0f09d13dbd464186">convertOBIMUSampleRateValueToType</a> (float value)</td></tr>
+<tr class="memdesc:a0e31326b557aafdd0f09d13dbd464186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a numeric IMU sample rate value in Hz to <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a>.  <br /></td></tr>
 <tr class="memitem:a39437fc6c65e75e0e6f35222775bbf76" id="r_a39437fc6c65e75e0e6f35222775bbf76"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39437fc6c65e75e0e6f35222775bbf76">convertOBGyroFullScaleRangeTypeToString</a> (const <a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8">OBGyroFullScaleRange</a> &amp;type)</td></tr>
 <tr class="memdesc:a39437fc6c65e75e0e6f35222775bbf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8" title="Enumeration of gyroscope ranges.">OBGyroFullScaleRange</a> to " string " type and then return.  <br /></td></tr>
 <tr class="memitem:a0f5a7cc0477bff30d588548866b2816d" id="r_a0f5a7cc0477bff30d588548866b2816d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f5a7cc0477bff30d588548866b2816d">convertOBAccelFullScaleRangeTypeToString</a> (const <a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0">OBAccelFullScaleRange</a> &amp;type)</td></tr>
@@ -108,6 +112,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:abf179867500d1685ce98da3a087e006f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a> to " string " type and then return.  <br /></td></tr>
 <tr class="memitem:aea89802ce8fb0a2ab618daee63110fff" id="r_aea89802ce8fb0a2ab618daee63110fff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea89802ce8fb0a2ab618daee63110fff">convertSensorTypeToStreamType</a> (<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> type)</td></tr>
 <tr class="memdesc:aea89802ce8fb0a2ab618daee63110fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> to <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> type and then return.  <br /></td></tr>
+<tr class="memitem:abd2dcae6044de968432cb13dddbe2d25" id="r_abd2dcae6044de968432cb13dddbe2d25"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd2dcae6044de968432cb13dddbe2d25">convertStreamTypeToSensorType</a> (<a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a> type)</td></tr>
+<tr class="memdesc:abd2dcae6044de968432cb13dddbe2d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> to <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> and then return.  <br /></td></tr>
+<tr class="memitem:aca4de1cf76744fd65891d7dc3993e068" id="r_aca4de1cf76744fd65891d7dc3993e068"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345">OBFrameType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca4de1cf76744fd65891d7dc3993e068">convertStreamTypeToFrameType</a> (<a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a> type)</td></tr>
+<tr class="memdesc:aca4de1cf76744fd65891d7dc3993e068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> to <a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> and then return.  <br /></td></tr>
+<tr class="memitem:a8590f5cc9cd6d7c3a1d1956eef854fa0" id="r_a8590f5cc9cd6d7c3a1d1956eef854fa0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8590f5cc9cd6d7c3a1d1956eef854fa0">convertFrameTypeToStreamType</a> (<a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345">OBFrameType</a> type)</td></tr>
+<tr class="memdesc:a8590f5cc9cd6d7c3a1d1956eef854fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> to <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> and then return.  <br /></td></tr>
+<tr class="memitem:a5f253c6f176483298271a55ea45f33cc" id="r_a5f253c6f176483298271a55ea45f33cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f253c6f176483298271a55ea45f33cc">convertFrameTypeToSensorType</a> (<a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345">OBFrameType</a> type)</td></tr>
+<tr class="memdesc:a5f253c6f176483298271a55ea45f33cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert <a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> to <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> and then return.  <br /></td></tr>
 <tr class="memitem:a601f214c3c63635d19ad702e2bb0d916" id="r_a601f214c3c63635d19ad702e2bb0d916"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a601f214c3c63635d19ad702e2bb0d916">isVideoSensorType</a> (<a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> type)</td></tr>
 <tr class="memdesc:a601f214c3c63635d19ad702e2bb0d916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given sensor type is a video sensor.  <br /></td></tr>
 <tr class="memitem:a5c5cc585043ab35441e63c3a7b1bb9d5" id="r_a5c5cc585043ab35441e63c3a7b1bb9d5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c5cc585043ab35441e63c3a7b1bb9d5">isVideoStreamType</a> (<a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a> type)</td></tr>
@@ -297,6 +309,78 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5fe458a8c491123d8dae57208568a81c" name="a5fe458a8c491123d8dae57208568a81c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe458a8c491123d8dae57208568a81c">&#9670;&#160;</a></span>convertOBIMUSampleRateTypeToValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ob::TypeHelper::convertOBIMUSampleRateTypeToValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e">OBIMUSampleRate</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a> to its numeric frequency value in Hz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a> type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>IMU sample rate value in Hz. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00078">78</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0e31326b557aafdd0f09d13dbd464186" name="a0e31326b557aafdd0f09d13dbd464186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e31326b557aafdd0f09d13dbd464186">&#9670;&#160;</a></span>convertOBIMUSampleRateValueToType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e">OBIMUSampleRate</a> ob::TypeHelper::convertOBIMUSampleRateValueToType </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a numeric IMU sample rate value in Hz to <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>IMU sample rate value in Hz.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Matching <a class="el" href="_ob_types_8h.html#a0f011a2fd624160a9a0352688429276e" title="Enumeration of IMU sample rate values (gyroscope or accelerometer)">OBIMUSampleRate</a>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00089">89</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a39437fc6c65e75e0e6f35222775bbf76" name="a39437fc6c65e75e0e6f35222775bbf76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39437fc6c65e75e0e6f35222775bbf76">&#9670;&#160;</a></span>convertOBGyroFullScaleRangeTypeToString()</h2>
 
@@ -329,7 +413,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a1d34f2e7fcba8d1a60b7d5df918ba3f8" title="Enumeration of gyroscope ranges.">OBGyroFullScaleRange</a> of "string" type. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00078">78</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00100">100</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
 
 </div>
 </div>
@@ -365,7 +449,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a6cb24ce2297d40025a4882b22b4550d0" title="Enumeration of accelerometer ranges.">OBAccelFullScaleRange</a> of "string" type. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00089">89</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00111">111</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +485,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0b7836c86904c3fbe87add2da0b487d9" title="Data structures for LiDAR scan rate.">OBLiDARScanRate</a> of "string" type. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00099">99</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00121">121</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
 
 </div>
 </div>
@@ -437,7 +521,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a414c49b425147fdad7373d38d98d8392">OBFrameMetadataType</a> of "string" type. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00110">110</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00132">132</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,9 +557,153 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> type. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00121">121</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00143">143</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_pipeline_8hpp_source.html#l00220">ob::Config::disableStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00074">ob::Config::enableStream()</a>, <a class="el" href="_pipeline_8hpp_source.html#l00136">ob::Config::enableVideoStream()</a>, and <a class="el" href="_pipeline_8hpp_source.html#l00121">ob::Config::enableVideoStream()</a>.</p>
+
+</div>
+</div>
+<a id="abd2dcae6044de968432cb13dddbe2d25" name="abd2dcae6044de968432cb13dddbe2d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2dcae6044de968432cb13dddbe2d25">&#9670;&#160;</a></span>convertStreamTypeToSensorType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> ob::TypeHelper::convertStreamTypeToSensorType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> to <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> and then return. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> type. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00154">154</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aca4de1cf76744fd65891d7dc3993e068" name="aca4de1cf76744fd65891d7dc3993e068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca4de1cf76744fd65891d7dc3993e068">&#9670;&#160;</a></span>convertStreamTypeToFrameType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345">OBFrameType</a> ob::TypeHelper::convertStreamTypeToFrameType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> to <a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> and then return. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> type. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00165">165</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8590f5cc9cd6d7c3a1d1956eef854fa0" name="a8590f5cc9cd6d7c3a1d1956eef854fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8590f5cc9cd6d7c3a1d1956eef854fa0">&#9670;&#160;</a></span>convertFrameTypeToStreamType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2">OBStreamType</a> ob::TypeHelper::convertFrameTypeToStreamType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345">OBFrameType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert <a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> to <a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> and then return. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a4372502297ded5d6e6ee8db1d71d69d2" title="Enumeration value describing the type of data stream.">OBStreamType</a> type. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00176">176</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5f253c6f176483298271a55ea45f33cc" name="a5f253c6f176483298271a55ea45f33cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f253c6f176483298271a55ea45f33cc">&#9670;&#160;</a></span>convertFrameTypeToSensorType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8">OBSensorType</a> ob::TypeHelper::convertFrameTypeToSensorType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345">OBFrameType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert <a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> to <a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> and then return. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td><a class="el" href="_ob_types_8h.html#a42b4219d92627d3cf51af225ec58a345" title="Enumeration value describing the type of frame.">OBFrameType</a> type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a0bf6f74f3eaabbf4a71720b9363b2aa8" title="Enumeration value describing the sensor type.">OBSensorType</a> type. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00187">187</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
 
 </div>
 </div>
@@ -513,7 +741,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true/false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00142">142</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00208">208</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +779,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the given stream type is a video stream, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00164">164</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_type_helper_8hpp_source.html#l00230">230</a> of file <a class="el" href="_type_helper_8hpp_source.html">TypeHelper.hpp</a>.</p>
 
 </div>
 </div>

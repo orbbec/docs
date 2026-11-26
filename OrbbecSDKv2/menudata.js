@@ -131,8 +131,8 @@ var menudata={children:[
 {text:"t",url:"globals_func_t.html#index_t"}]},
 {text:"Typedefs",url:"globals_type.html",children:[
 {text:"d",url:"globals_type.html#index_d"},
-{text:"o",url:"globals_type.html#index_o"},
-{text:"t",url:"globals_type.html#index_t"}]},
+{text:"o",url:"globals_type_o.html#index_o"},
+{text:"t",url:"globals_type_t.html#index_t"}]},
 {text:"Enumerations",url:"globals_enum.html",children:[
 {text:"o",url:"globals_enum.html#index_o"}]},
 {text:"Enumerator",url:"globals_eval.html",children:[

@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.10.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -105,6 +105,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0a9a2cd5cfe7ef171b99327b4a695823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vendor specific code of a filter by filter name.  <br /></td></tr>
 <tr class="memitem:a808c14f38dd224c2a2f028e9f9814648" id="r_a808c14f38dd224c2a2f028e9f9814648"><td class="memItemLeft" align="right" valign="top">OB_EXPORT <a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a808c14f38dd224c2a2f028e9f9814648">ob_create_private_filter</a> (const char *name, const char *activation_key, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:a808c14f38dd224c2a2f028e9f9814648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a private Filter object with activation key.  <br /></td></tr>
+<tr class="memitem:a15b0820b9d6656b64ddc9f659439c12f" id="r_a15b0820b9d6656b64ddc9f659439c12f"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15b0820b9d6656b64ddc9f659439c12f">ob_filter_activate_private_ex</a> (<a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> *filter, <a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> *device, const <a class="el" href="structob__priv__filter__activate__options.html">ob_priv_filter_activate_options</a> *options, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
+<tr class="memdesc:a15b0820b9d6656b64ddc9f659439c12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate a private filter object with a specific device.  <br /></td></tr>
 <tr class="memitem:ab8e457abd4a4c0b9001625c2fcd571b5" id="r_ab8e457abd4a4c0b9001625c2fcd571b5"><td class="memItemLeft" align="right" valign="top">OB_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8e457abd4a4c0b9001625c2fcd571b5">ob_delete_filter</a> (<a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> *filter, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
 <tr class="memdesc:ab8e457abd4a4c0b9001625c2fcd571b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the filter.  <br /></td></tr>
 <tr class="memitem:a703e67976bc4da12147aaa1db4d8daf0" id="r_a703e67976bc4da12147aaa1db4d8daf0"><td class="memItemLeft" align="right" valign="top">OB_EXPORT const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a703e67976bc4da12147aaa1db4d8daf0">ob_filter_get_config_schema</a> (const <a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> *filter, <a class="el" href="structob__error.html">ob_error</a> **error)</td></tr>
@@ -161,7 +163,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8h_source.html#l00267">267</a> of file <a class="el" href="_filter_8h_source.html">Filter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8h_source.html#l00277">277</a> of file <a class="el" href="_filter_8h_source.html">Filter.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +179,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_filter_8h_source.html#l00268">268</a> of file <a class="el" href="_filter_8h_source.html">Filter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_filter_8h_source.html#l00278">278</a> of file <a class="el" href="_filter_8h_source.html">Filter.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +213,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00442">ob::Align::Align()</a>, <a class="el" href="_filter_8hpp_source.html#l00306">ob::FilterFactory::createFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00598">ob::DecimationFilter::DecimationFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00489">ob::FormatConvertFilter::FormatConvertFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00515">ob::HdrMerge::HdrMerge()</a>, <a class="el" href="_filter_8hpp_source.html#l00348">ob::PointCloudFilter::PointCloudFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00546">ob::SequenceIdFilter::SequenceIdFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l00642">ob::ThresholdFilter::ThresholdFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00451">ob::Align::Align()</a>, <a class="el" href="_filter_8hpp_source.html#l00315">ob::FilterFactory::createFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00665">ob::DecimationFilter::DecimationFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00556">ob::FormatConvertFilter::FormatConvertFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00582">ob::HdrMerge::HdrMerge()</a>, <a class="el" href="_filter_8hpp_source.html#l00357">ob::PointCloudFilter::PointCloudFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00613">ob::SequenceIdFilter::SequenceIdFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00709">ob::ThresholdFilter::ThresholdFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l00499">ob::UnDistortionFilter::UnDistortionFilter()</a>.</p>
 
 </div>
 </div>
@@ -244,7 +246,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>char The filter of name </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00089">ob::Filter::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00090">ob::Filter::init()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +280,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const char* Return the vendor specific code of the filter. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00335">ob::FilterFactory::getFilterVendorSpecificCode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00344">ob::FilterFactory::getFilterVendorSpecificCode()</a>.</p>
 
 </div>
 </div>
@@ -318,7 +320,51 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_filter* Return the private filter object. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00320">ob::FilterFactory::createPrivateFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01932">ob::DisparityTransform::DisparityTransform()</a>, <a class="el" href="_filter_8hpp_source.html#l01129">ob::EdgeNoiseRemovalFilter::EdgeNoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01289">ob::FalsePositiveFilter::FalsePositiveFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00958">ob::HoleFillingFilter::HoleFillingFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01820">ob::LutNoiseRemovalFilter::LutNoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01627">ob::MgcNoiseRemovalFilter::MgcNoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00991">ob::NoiseRemovalFilter::NoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00705">ob::SpatialAdvancedFilter::SpatialAdvancedFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00815">ob::SpatialFastFilter::SpatialFastFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00868">ob::SpatialModerateFilter::SpatialModerateFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l01062">ob::TemporalFilter::TemporalFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00329">ob::FilterFactory::createPrivateFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l02083">ob::DisparityTransform::DisparityTransform()</a>, <a class="el" href="_filter_8hpp_source.html#l01196">ob::EdgeNoiseRemovalFilter::EdgeNoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l02109">ob::EnhancedDepthFilter::EnhancedDepthFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01355">ob::FalsePositiveFilter::FalsePositiveFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01025">ob::HoleFillingFilter::HoleFillingFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01971">ob::LutNoiseRemovalFilter::LutNoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01778">ob::MgcNoiseRemovalFilter::MgcNoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l01058">ob::NoiseRemovalFilter::NoiseRemovalFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00772">ob::SpatialAdvancedFilter::SpatialAdvancedFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00882">ob::SpatialFastFilter::SpatialFastFilter()</a>, <a class="el" href="_filter_8hpp_source.html#l00935">ob::SpatialModerateFilter::SpatialModerateFilter()</a>, and <a class="el" href="_filter_8hpp_source.html#l01129">ob::TemporalFilter::TemporalFilter()</a>.</p>
+
+</div>
+</div>
+<a id="a15b0820b9d6656b64ddc9f659439c12f" name="a15b0820b9d6656b64ddc9f659439c12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b0820b9d6656b64ddc9f659439c12f">&#9670;&#160;</a></span>ob_filter_activate_private_ex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OB_EXPORT void ob_filter_activate_private_ex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> *</td>          <td class="paramname"><span class="paramname"><em>filter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a586726fa91c4f6b1f6bce948a0b5fd97">ob_device</a> *</td>          <td class="paramname"><span class="paramname"><em>device</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structob__priv__filter__activate__options.html">ob_priv_filter_activate_options</a> *</td>          <td class="paramname"><span class="paramname"><em>options</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structob__error.html">ob_error</a> **</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate a private filter object with a specific device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>The private filter object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The device to associate with the activation. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">options</td><td>Optional extensible activation options (may be NULL). See <a class="el" href="structob__priv__filter__activate__options.html">ob_priv_filter_activate_options</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>Pointer to an error object that will be set if an error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l02109">ob::EnhancedDepthFilter::EnhancedDepthFilter()</a>.</p>
 
 </div>
 </div>
@@ -350,7 +396,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00116">ob::Filter::~Filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00117">ob::Filter::~Filter()</a>.</p>
 
 </div>
 </div>
@@ -384,7 +430,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A csv format string representing the configuration schema of the filter </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00219">ob::Filter::getConfigSchema()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00228">ob::Filter::getConfigSchema()</a>.</p>
 
 </div>
 </div>
@@ -419,7 +465,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_filter_config_schema_list* Return the filter config schema list of the filter </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00089">ob::Filter::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00090">ob::Filter::init()</a>.</p>
 
 </div>
 </div>
@@ -451,7 +497,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00089">ob::Filter::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00090">ob::Filter::init()</a>.</p>
 
 </div>
 </div>
@@ -534,7 +580,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double The value of the config. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00261">ob::Filter::getConfigValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00270">ob::Filter::getConfigValue()</a>.</p>
 
 </div>
 </div>
@@ -579,7 +625,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00245">ob::Filter::setConfigValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00254">ob::Filter::setConfigValue()</a>.</p>
 
 </div>
 </div>
@@ -611,7 +657,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00146">ob::Filter::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00147">ob::Filter::reset()</a>.</p>
 
 </div>
 </div>
@@ -651,7 +697,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00155">ob::Filter::enable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00156">ob::Filter::enable()</a>.</p>
 
 </div>
 </div>
@@ -685,7 +731,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The post processing filter status. True: enable; False: disable. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00164">ob::Filter::isEnabled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00165">ob::Filter::isEnabled()</a>.</p>
 
 </div>
 </div>
@@ -724,7 +770,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The frame object processed by the filter. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00178">ob::Filter::process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00179">ob::Filter::process()</a>.</p>
 
 </div>
 </div>
@@ -768,7 +814,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00204">ob::Filter::setCallBack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00213">ob::Filter::setCallBack()</a>.</p>
 
 </div>
 </div>
@@ -808,7 +854,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00193">ob::Filter::pushFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00198">ob::Filter::pushFrame()</a>.</p>
 
 </div>
 </div>
@@ -841,7 +887,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The number of list </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01960">ob::OBFilterList::getCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l02280">ob::OBFilterList::getCount()</a>.</p>
 
 </div>
 </div>
@@ -880,7 +926,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> The index of <a class="el" href="_ob_types_8h.html#a6bfb534915b1e2f4754f20f0d4e6c635">ob_filter</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01974">ob::OBFilterList::getFilter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l02294">ob::OBFilterList::getFilter()</a>.</p>
 
 </div>
 </div>
@@ -912,7 +958,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l01949">ob::OBFilterList::~OBFilterList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sensor_8hpp_source.html#l00093">ob::Sensor::createRecommendedFilters()</a>, and <a class="el" href="_filter_8hpp_source.html#l02269">ob::OBFilterList::~OBFilterList()</a>.</p>
 
 </div>
 </div>
@@ -945,7 +991,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The number of config schema items in the filter list </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00089">ob::Filter::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00090">ob::Filter::init()</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1030,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ob_filter_config_schema_item* The config schema item by index </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00089">ob::Filter::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00090">ob::Filter::init()</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1069,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00477">ob::Align::setAlignToStreamProfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_filter_8hpp_source.html#l00486">ob::Align::setAlignToStreamProfile()</a>.</p>
 
 </div>
 </div>

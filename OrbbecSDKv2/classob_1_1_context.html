@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.10.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -106,12 +106,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:add1d4b543d4765207462b1af057244a9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classob_1_1_context.html">Context</a> constructor.  <br /></td></tr>
 <tr class="memitem:ac360323cdb405bc1122cac5ce76afbfb" id="r_ac360323cdb405bc1122cac5ce76afbfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac360323cdb405bc1122cac5ce76afbfb">~Context</a> () noexcept</td></tr>
 <tr class="memdesc:ac360323cdb405bc1122cac5ce76afbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classob_1_1_context.html">Context</a> destructor.  <br /></td></tr>
+<tr class="memitem:ac6072475b72420949c84b82d30b8d10f" id="r_ac6072475b72420949c84b82d30b8d10f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6072475b72420949c84b82d30b8d10f">setTimestampClockType</a> (<a class="el" href="_ob_types_8h.html#a9caa114c9201f869dce3b939a11dbeaf">OBClockType</a> type) const</td></tr>
+<tr class="memdesc:ac6072475b72420949c84b82d30b8d10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the host-side timestamp clock type for the current context.  <br /></td></tr>
+<tr class="memitem:ad42446d4d5b2a4b68da9b96fb31ab4ea" id="r_ad42446d4d5b2a4b68da9b96fb31ab4ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_ob_types_8h.html#a9caa114c9201f869dce3b939a11dbeaf">OBClockType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad42446d4d5b2a4b68da9b96fb31ab4ea">getTimestampClockType</a> () const</td></tr>
+<tr class="memdesc:ad42446d4d5b2a4b68da9b96fb31ab4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current host-side timestamp clock type for the context.  <br /></td></tr>
 <tr class="memitem:ae92967f6967638c4672b29b676263fff" id="r_ae92967f6967638c4672b29b676263fff"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classob_1_1_device_list.html">DeviceList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae92967f6967638c4672b29b676263fff">queryDeviceList</a> () const</td></tr>
 <tr class="memdesc:ae92967f6967638c4672b29b676263fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the enumerated device list.  <br /></td></tr>
 <tr class="memitem:a00f2f7c3fb07dc96b22e248e38c1ef8d" id="r_a00f2f7c3fb07dc96b22e248e38c1ef8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f2f7c3fb07dc96b22e248e38c1ef8d">enableNetDeviceEnumeration</a> (bool enable) const</td></tr>
 <tr class="memdesc:a00f2f7c3fb07dc96b22e248e38c1ef8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable or disable net device enumeration.  <br /></td></tr>
 <tr class="memitem:a2610b0f957e942df11e32c95d674a138" id="r_a2610b0f957e942df11e32c95d674a138"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2610b0f957e942df11e32c95d674a138">forceIp</a> (const char *macAddress, const <a class="el" href="struct_o_b_net_ip_config.html">OBNetIpConfig</a> &amp;config)</td></tr>
 <tr class="memdesc:a2610b0f957e942df11e32c95d674a138"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Force" a static IP address configuration in a device identified by its MAC Address.  <br /></td></tr>
+<tr class="memitem:acf09332f4ad2a55ab2db821ac7e6be24" id="r_acf09332f4ad2a55ab2db821ac7e6be24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf09332f4ad2a55ab2db821ac7e6be24">sendActionCommand</a> (uint32_t deviceKey, uint32_t groupKey, uint32_t groupMask, const char *destIp=&quot;255.255.255.255&quot;, uint64_t scheduledTime=0)</td></tr>
+<tr class="memdesc:acf09332f4ad2a55ab2db821ac7e6be24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an Action Command to GVCP devices.  <br /></td></tr>
 <tr class="memitem:ae9281d8fdfbd7711f85a0684ef4f7d2e" id="r_ae9281d8fdfbd7711f85a0684ef4f7d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9281d8fdfbd7711f85a0684ef4f7d2e">setGvcpPortScheme</a> (<a class="el" href="_ob_types_8h.html#a2eef4aaadbc9ca50ca3ef91762779af5">OBGvcpPortScheme</a> scheme)</td></tr>
 <tr class="memdesc:ae9281d8fdfbd7711f85a0684ef4f7d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the GVCP port scheme used for network device discovery and control.  <br /></td></tr>
 <tr class="memitem:aaea7a451e40147040f60add51ebdef85" id="r_aaea7a451e40147040f60add51ebdef85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_ob_types_8h.html#a2eef4aaadbc9ca50ca3ef91762779af5">OBGvcpPortScheme</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaea7a451e40147040f60add51ebdef85">getGvcpPortScheme</a> () const</td></tr>
@@ -124,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6f3b6473f90bceda87c2f28605084d8" id="r_ac6f3b6473f90bceda87c2f28605084d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6f3b6473f90bceda87c2f28605084d8">unregisterDeviceChangedCallback</a> (<a class="el" href="_ob_types_8h.html#ac7d644c9696d5f69759555511dd42459">OBCallbackId</a> id)</td></tr>
 <tr class="memitem:a456929389510efbff4d825ecee7e50ad" id="r_a456929389510efbff4d825ecee7e50ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a456929389510efbff4d825ecee7e50ad">enableDeviceClockSync</a> (uint64_t repeatIntervalMsec) const</td></tr>
 <tr class="memdesc:a456929389510efbff4d825ecee7e50ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates device clock synchronization to synchronize the clock of the host and all created devices (if supported).  <br /></td></tr>
+<tr class="memitem:a191332f3edc19b2482d032291d8073d6" id="r_a191332f3edc19b2482d032291d8073d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a191332f3edc19b2482d032291d8073d6">syncDeviceHardwarePPSTime</a> (uint64_t hardwarePPSTime) const</td></tr>
+<tr class="memdesc:a191332f3edc19b2482d032291d8073d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates synchronization time to all created devices (if supported).  <br /></td></tr>
 <tr class="memitem:ace3bc9a6f637a4c5d93b4c1df059ed53" id="r_ace3bc9a6f637a4c5d93b4c1df059ed53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace3bc9a6f637a4c5d93b4c1df059ed53">freeIdleMemory</a> () const</td></tr>
 <tr class="memdesc:ace3bc9a6f637a4c5d93b4c1df059ed53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees idle memory from the internal frame memory pool.  <br /></td></tr>
 <tr class="memitem:ac906bfbb9b3a463f836ae388b6f83785" id="r_ac906bfbb9b3a463f836ae388b6f83785"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac906bfbb9b3a463f836ae388b6f83785">setUvcBackendType</a> (<a class="el" href="_ob_types_8h.html#abb0e29489221368f6a07c2735c144a2a">OBUvcBackendType</a> type) const</td></tr>
@@ -267,6 +275,76 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ac6072475b72420949c84b82d30b8d10f" name="ac6072475b72420949c84b82d30b8d10f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6072475b72420949c84b82d30b8d10f">&#9670;&#160;</a></span>setTimestampClockType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ob::Context::setTimestampClockType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_ob_types_8h.html#a9caa114c9201f869dce3b939a11dbeaf">OBClockType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the host-side timestamp clock type for the current context. </p>
+<dl class="section attention"><dt>Attention</dt><dd>All <a class="el" href="classob_1_1_context.html">ob::Context</a> instances share the same underlying SDK runtime and clock type. </dd>
+<dd>
+Switching affects frame system and global timestamps; avoid switching during streaming. </dd>
+<dd>
+It is recommended to synchronize device timestamps after switching.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The clock type to use for host-side timestamps. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00097">97</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad42446d4d5b2a4b68da9b96fb31ab4ea" name="ad42446d4d5b2a4b68da9b96fb31ab4ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42446d4d5b2a4b68da9b96fb31ab4ea">&#9670;&#160;</a></span>getTimestampClockType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_ob_types_8h.html#a9caa114c9201f869dce3b939a11dbeaf">OBClockType</a> ob::Context::getTimestampClockType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current host-side timestamp clock type for the context. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="_ob_types_8h.html#a9caa114c9201f869dce3b939a11dbeaf" title="Host-side timestamp clock type for device.">OBClockType</a> The current clock type. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00108">108</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+
+</div>
+</div>
 <a id="ae92967f6967638c4672b29b676263fff" name="ae92967f6967638c4672b29b676263fff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae92967f6967638c4672b29b676263fff">&#9670;&#160;</a></span>queryDeviceList()</h2>
 
@@ -293,7 +371,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Queries the enumerated device list. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;DeviceList&gt; A pointer to the device list class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00093">93</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00120">120</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +408,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00109">109</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00136">136</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -372,7 +450,66 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>bool true if the configuration command was processed successfully, false otherwise.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This applies to all GVCP devices </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00126">126</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00153">153</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acf09332f4ad2a55ab2db821ac7e6be24" name="acf09332f4ad2a55ab2db821ac7e6be24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf09332f4ad2a55ab2db821ac7e6be24">&#9670;&#160;</a></span>sendActionCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ob::Context::sendActionCommand </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>deviceKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>groupKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>groupMask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>destIp</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;255.255.255.255&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>scheduledTime</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send an Action Command to GVCP devices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceKey</td><td><a class="el" href="classob_1_1_device.html">Device</a> key to match. </td></tr>
+    <tr><td class="paramname">groupKey</td><td>Group key to match. </td></tr>
+    <tr><td class="paramname">groupMask</td><td>Group mask, bitwise-ANDed with Action block masks. </td></tr>
+    <tr><td class="paramname">destIp</td><td>Destination IPv4 address. Defaults to "255.255.255.255" for broadcast. </td></tr>
+    <tr><td class="paramname">scheduledTime</td><td>PTP timestamp. 0 = immediate, non-zero = scheduled.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool true on success. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00171">171</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -410,7 +547,7 @@ Static Public Member Functions</h2></td></tr>
 <dd>
 Switching to a different scheme will force disconnection of all currently connected network devices. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00142">142</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00187">187</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -440,7 +577,7 @@ Switching to a different scheme will force disconnection of all currently connec
 <p>Get the current GVCP port scheme. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current GVCP port scheme. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00153">153</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00198">198</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -487,7 +624,7 @@ Switching to a different scheme will force disconnection of all currently connec
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Device&gt; The created device object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00171">171</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00216">216</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -524,7 +661,7 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00187">187</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00232">232</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -551,9 +688,9 @@ Switching to a different scheme will force disconnection of all currently connec
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00197">197</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00242">242</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00187">setDeviceChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00232">setDeviceChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -580,9 +717,9 @@ Switching to a different scheme will force disconnection of all currently connec
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00212">212</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00257">257</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00187">setDeviceChangedCallback()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_context_8hpp_source.html#l00232">setDeviceChangedCallback()</a>.</p>
 
 </div>
 </div>
@@ -617,7 +754,42 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00229">229</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00274">274</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a191332f3edc19b2482d032291d8073d6" name="a191332f3edc19b2482d032291d8073d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a191332f3edc19b2482d032291d8073d6">&#9670;&#160;</a></span>syncDeviceHardwarePPSTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ob::Context::syncDeviceHardwarePPSTime </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>hardwarePPSTime</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activates synchronization time to all created devices (if supported). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hardwarePPSTime</td><td>unit:ms. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00285">285</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -647,7 +819,7 @@ Switching to a different scheme will force disconnection of all currently connec
 <p>Frees idle memory from the internal frame memory pool. </p>
 <p>The SDK includes an internal frame memory pool that caches memory allocated for frames received from devices. </p>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00239">239</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00295">295</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -684,7 +856,7 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00253">253</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00309">309</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -719,7 +891,7 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00265">265</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00321">321</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -759,7 +931,7 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00278">278</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00334">334</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +967,7 @@ Switching to a different scheme will force disconnection of all currently connec
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Other settings, such as log level and output directory, remain unchanged. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00291">291</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00347">347</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -830,7 +1002,7 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00302">302</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00358">358</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -870,7 +1042,7 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00314">314</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00370">370</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -934,7 +1106,7 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00331">331</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00387">387</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1143,7 @@ Switching to a different scheme will force disconnection of all currently connec
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00346">346</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8hpp_source.html#l00402">402</a> of file <a class="el" href="_context_8hpp_source.html">Context.hpp</a>.</p>
 
 </div>
 </div>

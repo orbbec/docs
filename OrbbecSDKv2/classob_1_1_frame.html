@@ -24,7 +24,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="orbbec_icon.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.8.6</span>
+   <div id="projectname">OrbbecSDK<span id="projectnumber">&#160;2.10.6</span>
    </div>
    <div id="projectbrief">OrbbecSDK: Software-Development-Kit for Orbbec 3D Cameras</div>
   </td>
@@ -123,6 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5744c4a1302b949861e0499f183b9911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the format of the frame.  <br /></td></tr>
 <tr class="memitem:a992ede8faf96b0c0e6564dae5bfe0052" id="r_a992ede8faf96b0c0e6564dae5bfe0052"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a992ede8faf96b0c0e6564dae5bfe0052">getIndex</a> () const</td></tr>
 <tr class="memdesc:a992ede8faf96b0c0e6564dae5bfe0052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sequence number of the frame.  <br /></td></tr>
+<tr class="memitem:ae577590bfd8952f104d16d364e325cd3" id="r_ae577590bfd8952f104d16d364e325cd3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae577590bfd8952f104d16d364e325cd3">getToken</a> () const</td></tr>
+<tr class="memdesc:ae577590bfd8952f104d16d364e325cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the auth token carried by the frame.  <br /></td></tr>
+<tr class="memitem:a0bf7268206a3d14e5d76ac943f239d3f" id="r_a0bf7268206a3d14e5d76ac943f239d3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf7268206a3d14e5d76ac943f239d3f">setToken</a> (uint64_t token)</td></tr>
+<tr class="memdesc:a0bf7268206a3d14e5d76ac943f239d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the auth token carried by the frame.  <br /></td></tr>
 <tr class="memitem:a44bc0c90754f59f255a132ef4594fd55" id="r_a44bc0c90754f59f255a132ef4594fd55"><td class="memItemLeft" align="right" valign="top">virtual uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44bc0c90754f59f255a132ef4594fd55">getData</a> () const</td></tr>
 <tr class="memdesc:a44bc0c90754f59f255a132ef4594fd55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get frame data.  <br /></td></tr>
 <tr class="memitem:abb09ded5ff8616ed2b69f306f24e7d47" id="r_abb09ded5ff8616ed2b69f306f24e7d47"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb09ded5ff8616ed2b69f306f24e7d47">getDataSize</a> () const</td></tr>
@@ -225,7 +229,7 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00062">62</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00785">ob::AccelFrame::AccelFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00908">ob::FrameSet::FrameSet()</a>, <a class="el" href="_frame_8hpp_source.html#l00832">ob::GyroFrame::GyroFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00897">ob::LiDARPointsFrame::LiDARPointsFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00727">ob::PointsFrame::PointsFrame()</a>, and <a class="el" href="_frame_8hpp_source.html#l00489">ob::VideoFrame::VideoFrame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00811">ob::AccelFrame::AccelFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00934">ob::FrameSet::FrameSet()</a>, <a class="el" href="_frame_8hpp_source.html#l00858">ob::GyroFrame::GyroFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00923">ob::LiDARPointsFrame::LiDARPointsFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00753">ob::PointsFrame::PointsFrame()</a>, and <a class="el" href="_frame_8hpp_source.html#l00515">ob::VideoFrame::VideoFrame()</a>.</p>
 
 </div>
 </div>
@@ -317,7 +321,7 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00090">90</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01287">is()</a>, and <a class="el" href="_frame_8hpp_source.html#l00425">type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01313">is()</a>, and <a class="el" href="_frame_8hpp_source.html#l00451">type()</a>.</p>
 
 </div>
 </div>
@@ -349,7 +353,7 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00103">103</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00429">format()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00455">format()</a>.</p>
 
 </div>
 </div>
@@ -382,7 +386,72 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00118">118</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00433">index()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00459">index()</a>.</p>
+
+</div>
+</div>
+<a id="ae577590bfd8952f104d16d364e325cd3" name="ae577590bfd8952f104d16d364e325cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae577590bfd8952f104d16d364e325cd3">&#9670;&#160;</a></span>getToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t ob::Frame::getToken </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the auth token carried by the frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint64_t The auth token value. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00131">131</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0bf7268206a3d14e5d76ac943f239d3f" name="a0bf7268206a3d14e5d76ac943f239d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf7268206a3d14e5d76ac943f239d3f">&#9670;&#160;</a></span>setToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ob::Frame::setToken </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the auth token carried by the frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">token</td><td>The auth token value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00144">144</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -412,9 +481,9 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 <p>Get frame data. </p>
 <dl class="section return"><dt>Returns</dt><dd>const uint8_t * The frame data pointer. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00131">131</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00157">157</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00437">data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00463">data()</a>.</p>
 
 </div>
 </div>
@@ -444,9 +513,9 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 <p>Get the size of the frame data. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The size of the frame data. For point cloud data, this returns the number of bytes occupied by all point sets. To find the number of points, divide the dataSize by the structure size of the corresponding point type. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00146">146</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00172">172</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00442">dataSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00468">dataSize()</a>.</p>
 
 </div>
 </div>
@@ -477,9 +546,9 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 <p>The hardware timestamp is the time point when the frame was captured by the device, on device clock domain.</p>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t The hardware timestamp of the frame in microseconds. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00160">160</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00186">186</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00446">timeStamp()</a>, and <a class="el" href="_frame_8hpp_source.html#l00450">timeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00472">timeStamp()</a>, and <a class="el" href="_frame_8hpp_source.html#l00476">timeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -510,9 +579,9 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 <p>The system timestamp is the time point when the frame was received by the host, on host clock domain.</p>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t The system timestamp of the frame in microseconds. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00174">174</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00200">200</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00454">systemTimeStamp()</a>, and <a class="el" href="_frame_8hpp_source.html#l00458">systemTimeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00480">systemTimeStamp()</a>, and <a class="el" href="_frame_8hpp_source.html#l00484">systemTimeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -546,9 +615,9 @@ The internal frame object should not be deleted by the caller.</dd></dl>
 Only some devices support getting the global timestamp. Check the device support status by <a class="el" href="classob_1_1_device.html#aa1ffb742ce2fcfb509c74376eb99763b">Device::isGlobalTimestampSupported()</a> function.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>uint64_t The global timestamp of the frame in microseconds. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00193">193</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00219">219</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00462">globalTimeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00488">globalTimeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -578,9 +647,9 @@ Only some devices support getting the global timestamp. Check the device support
 <p>Get the metadata pointer of the frame. </p>
 <dl class="section return"><dt>Returns</dt><dd>const uint8_t * The metadata pointer of the frame. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00206">206</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00232">232</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00466">metadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00492">metadata()</a>.</p>
 
 </div>
 </div>
@@ -610,9 +679,9 @@ Only some devices support getting the global timestamp. Check the device support
 <p>Get the size of the metadata of the frame. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The size of the metadata of the frame. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00219">219</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00245">245</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00470">metadataSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00496">metadataSize()</a>.</p>
 
 </div>
 </div>
@@ -648,7 +717,7 @@ Only some devices support getting the global timestamp. Check the device support
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool The result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00234">234</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00260">260</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -684,7 +753,7 @@ Only some devices support getting the global timestamp. Check the device support
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int64_t The metadata value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00249">249</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00275">275</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -714,7 +783,7 @@ Only some devices support getting the global timestamp. Check the device support
 <p>get <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> of the frame </p>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;StreamProfile&gt; The <a class="el" href="classob_1_1_stream_profile.html">StreamProfile</a> of the frame, may return nullptr if the frame is not captured from a stream. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00262">262</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00288">288</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -744,7 +813,7 @@ Only some devices support getting the global timestamp. Check the device support
 <p>get owner sensor of the frame </p>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Sensor&gt; The owner sensor of the frame, return nullptr if the frame is not owned by any sensor or the sensor is destroyed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00274">274</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00300">300</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -774,7 +843,7 @@ Only some devices support getting the global timestamp. Check the device support
 <p>get owner device of the frame </p>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Device&gt; The owner device of the frame, return nullptr if the frame is not owned by any device or the device is destroyed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00287">287</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00313">313</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -804,9 +873,9 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool The result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01287">1287</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l01313">1313</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00311">as()</a>, <a class="el" href="_frame_8hpp_source.html#l00330">as()</a>, and <a class="el" href="_frame_8hpp_source.html#l01287">is()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00337">as()</a>, <a class="el" href="_frame_8hpp_source.html#l00356">as()</a>, and <a class="el" href="_frame_8hpp_source.html#l01313">is()</a>.</p>
 
 </div>
 </div>
@@ -844,7 +913,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;T&gt; The result. If it cannot be converted, an exception will be thrown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00311">311</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00337">337</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -882,7 +951,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;T&gt; The result. If it cannot be converted, an exception will be thrown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00330">330</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00356">356</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -918,7 +987,7 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00348">348</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00374">374</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -953,7 +1022,7 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00361">361</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00387">387</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1067,7 @@ The size of the new data should be equal to or less than the current data size o
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00382">382</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00408">408</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1112,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00402">402</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00428">428</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -1078,7 +1147,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00415">415</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00441">441</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -1105,9 +1174,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00425">425</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00451">451</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00249">getMetadataValue()</a>, <a class="el" href="_frame_8hpp_source.html#l00090">getType()</a>, and <a class="el" href="_frame_8hpp_source.html#l00234">hasMetadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00275">getMetadataValue()</a>, <a class="el" href="_frame_8hpp_source.html#l00090">getType()</a>, and <a class="el" href="_frame_8hpp_source.html#l00260">hasMetadata()</a>.</p>
 
 </div>
 </div>
@@ -1134,7 +1203,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00429">429</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00455">455</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00103">getFormat()</a>.</p>
 
@@ -1163,9 +1232,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00433">433</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00459">459</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01081">ob::FrameSet::getFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00948">ob::FrameSet::getFrameByIndex()</a>, and <a class="el" href="_frame_8hpp_source.html#l00118">getIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l01107">ob::FrameSet::getFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00974">ob::FrameSet::getFrameByIndex()</a>, and <a class="el" href="_frame_8hpp_source.html#l00118">getIndex()</a>.</p>
 
 </div>
 </div>
@@ -1192,9 +1261,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00437">437</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00463">463</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00437">data()</a>, <a class="el" href="_frame_8hpp_source.html#l00131">getData()</a>, and <a class="el" href="_frame_8hpp_source.html#l00382">updateData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00463">data()</a>, <a class="el" href="_frame_8hpp_source.html#l00157">getData()</a>, and <a class="el" href="_frame_8hpp_source.html#l00408">updateData()</a>.</p>
 
 </div>
 </div>
@@ -1221,9 +1290,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00442">442</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00468">468</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00146">getDataSize()</a>, and <a class="el" href="_frame_8hpp_source.html#l00382">updateData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00172">getDataSize()</a>, and <a class="el" href="_frame_8hpp_source.html#l00408">updateData()</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1319,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00446">446</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00472">472</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -1277,9 +1346,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00450">450</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00476">476</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00160">getTimeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00186">getTimeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1375,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00454">454</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00480">480</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
 </div>
 </div>
@@ -1333,9 +1402,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00458">458</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00484">484</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00174">getSystemTimeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00200">getSystemTimeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -1362,9 +1431,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00462">462</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00488">488</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00193">getGlobalTimeStampUs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00219">getGlobalTimeStampUs()</a>.</p>
 
 </div>
 </div>
@@ -1391,9 +1460,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00466">466</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00492">492</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00206">getMetadata()</a>, and <a class="el" href="_frame_8hpp_source.html#l00402">updateMetadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00232">getMetadata()</a>, and <a class="el" href="_frame_8hpp_source.html#l00428">updateMetadata()</a>.</p>
 
 </div>
 </div>
@@ -1420,9 +1489,9 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00470">470</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00496">496</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00219">getMetadataSize()</a>, and <a class="el" href="_frame_8hpp_source.html#l00402">updateMetadata()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00245">getMetadataSize()</a>, and <a class="el" href="_frame_8hpp_source.html#l00428">updateMetadata()</a>.</p>
 
 </div>
 </div>
@@ -1451,7 +1520,7 @@ The metadata size should be equal to or less than 256 bytes, otherwise it will c
 
 <p class="definition">Definition at line <a class="el" href="_frame_8hpp_source.html#l00050">50</a> of file <a class="el" href="_frame_8hpp_source.html">Frame.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00311">as()</a>, <a class="el" href="_frame_8hpp_source.html#l00330">as()</a>, <a class="el" href="_frame_8hpp_source.html#l00348">copyFrameInfo()</a>, <a class="el" href="_frame_8hpp_source.html#l00062">Frame()</a>, <a class="el" href="_frame_8hpp_source.html#l00997">ob::FrameSet::getColorFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00738">ob::PointsFrame::getCoordinateValueScale()</a>, <a class="el" href="_frame_8hpp_source.html#l00917">ob::FrameSet::getCount()</a>, <a class="el" href="_frame_8hpp_source.html#l00131">getData()</a>, <a class="el" href="_frame_8hpp_source.html#l00146">getDataSize()</a>, <a class="el" href="_frame_8hpp_source.html#l00982">ob::FrameSet::getDepthFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00287">getDevice()</a>, <a class="el" href="_frame_8hpp_source.html#l00103">getFormat()</a>, <a class="el" href="_frame_8hpp_source.html#l00931">ob::FrameSet::getFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00948">ob::FrameSet::getFrameByIndex()</a>, <a class="el" href="_frame_8hpp_source.html#l00193">getGlobalTimeStampUs()</a>, <a class="el" href="_frame_8hpp_source.html#l00765">ob::PointsFrame::getHeight()</a>, <a class="el" href="_frame_8hpp_source.html#l00511">ob::VideoFrame::getHeight()</a>, <a class="el" href="_frame_8hpp_source.html#l00069">getImpl()</a>, <a class="el" href="_frame_8hpp_source.html#l00118">getIndex()</a>, <a class="el" href="_frame_8hpp_source.html#l01012">ob::FrameSet::getIrFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00206">getMetadata()</a>, <a class="el" href="_frame_8hpp_source.html#l00219">getMetadataSize()</a>, <a class="el" href="_frame_8hpp_source.html#l00249">getMetadataValue()</a>, <a class="el" href="_frame_8hpp_source.html#l00541">ob::VideoFrame::getPixelAvailableBitSize()</a>, <a class="el" href="_frame_8hpp_source.html#l00527">ob::VideoFrame::getPixelType()</a>, <a class="el" href="_frame_8hpp_source.html#l01027">ob::FrameSet::getPointsFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00274">getSensor()</a>, <a class="el" href="_frame_8hpp_source.html#l00262">getStreamProfile()</a>, <a class="el" href="_frame_8hpp_source.html#l00174">getSystemTimeStampUs()</a>, <a class="el" href="_frame_8hpp_source.html#l00807">ob::AccelFrame::getTemperature()</a>, <a class="el" href="_frame_8hpp_source.html#l00854">ob::GyroFrame::getTemperature()</a>, <a class="el" href="_frame_8hpp_source.html#l00160">getTimeStampUs()</a>, <a class="el" href="_frame_8hpp_source.html#l00090">getType()</a>, <a class="el" href="_frame_8hpp_source.html#l00794">ob::AccelFrame::getValue()</a>, <a class="el" href="_frame_8hpp_source.html#l00841">ob::GyroFrame::getValue()</a>, <a class="el" href="_frame_8hpp_source.html#l00639">ob::DepthFrame::getValueScale()</a>, <a class="el" href="_frame_8hpp_source.html#l00751">ob::PointsFrame::getWidth()</a>, <a class="el" href="_frame_8hpp_source.html#l00498">ob::VideoFrame::getWidth()</a>, <a class="el" href="_frame_8hpp_source.html#l00234">hasMetadata()</a>, <a class="el" href="_frame_8hpp_source.html#l00965">ob::FrameSet::pushFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00569">ob::VideoFrame::setPixelAvailableBitSize()</a>, <a class="el" href="_frame_8hpp_source.html#l00554">ob::VideoFrame::setPixelType()</a>, <a class="el" href="_frame_8hpp_source.html#l00415">setStreamProfile()</a>, <a class="el" href="_frame_8hpp_source.html#l00361">setSystemTimestampUs()</a>, <a class="el" href="_frame_8hpp_source.html#l00653">ob::DepthFrame::setValueScale()</a>, <a class="el" href="_frame_8hpp_source.html#l00382">updateData()</a>, <a class="el" href="_frame_8hpp_source.html#l00402">updateMetadata()</a>, and <a class="el" href="_frame_8hpp_source.html#l00076">~Frame()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_frame_8hpp_source.html#l00337">as()</a>, <a class="el" href="_frame_8hpp_source.html#l00356">as()</a>, <a class="el" href="_frame_8hpp_source.html#l00374">copyFrameInfo()</a>, <a class="el" href="_frame_8hpp_source.html#l00062">Frame()</a>, <a class="el" href="_frame_8hpp_source.html#l01023">ob::FrameSet::getColorFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00764">ob::PointsFrame::getCoordinateValueScale()</a>, <a class="el" href="_frame_8hpp_source.html#l00943">ob::FrameSet::getCount()</a>, <a class="el" href="_frame_8hpp_source.html#l00157">getData()</a>, <a class="el" href="_frame_8hpp_source.html#l00172">getDataSize()</a>, <a class="el" href="_frame_8hpp_source.html#l01008">ob::FrameSet::getDepthFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00313">getDevice()</a>, <a class="el" href="_frame_8hpp_source.html#l00103">getFormat()</a>, <a class="el" href="_frame_8hpp_source.html#l00957">ob::FrameSet::getFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00974">ob::FrameSet::getFrameByIndex()</a>, <a class="el" href="_frame_8hpp_source.html#l00219">getGlobalTimeStampUs()</a>, <a class="el" href="_frame_8hpp_source.html#l00791">ob::PointsFrame::getHeight()</a>, <a class="el" href="_frame_8hpp_source.html#l00537">ob::VideoFrame::getHeight()</a>, <a class="el" href="_frame_8hpp_source.html#l00069">getImpl()</a>, <a class="el" href="_frame_8hpp_source.html#l00118">getIndex()</a>, <a class="el" href="_frame_8hpp_source.html#l01038">ob::FrameSet::getIrFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00232">getMetadata()</a>, <a class="el" href="_frame_8hpp_source.html#l00245">getMetadataSize()</a>, <a class="el" href="_frame_8hpp_source.html#l00275">getMetadataValue()</a>, <a class="el" href="_frame_8hpp_source.html#l00567">ob::VideoFrame::getPixelAvailableBitSize()</a>, <a class="el" href="_frame_8hpp_source.html#l00553">ob::VideoFrame::getPixelType()</a>, <a class="el" href="_frame_8hpp_source.html#l01053">ob::FrameSet::getPointsFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00300">getSensor()</a>, <a class="el" href="_frame_8hpp_source.html#l00288">getStreamProfile()</a>, <a class="el" href="_frame_8hpp_source.html#l00200">getSystemTimeStampUs()</a>, <a class="el" href="_frame_8hpp_source.html#l00833">ob::AccelFrame::getTemperature()</a>, <a class="el" href="_frame_8hpp_source.html#l00880">ob::GyroFrame::getTemperature()</a>, <a class="el" href="_frame_8hpp_source.html#l00186">getTimeStampUs()</a>, <a class="el" href="_frame_8hpp_source.html#l00131">getToken()</a>, <a class="el" href="_frame_8hpp_source.html#l00090">getType()</a>, <a class="el" href="_frame_8hpp_source.html#l00820">ob::AccelFrame::getValue()</a>, <a class="el" href="_frame_8hpp_source.html#l00867">ob::GyroFrame::getValue()</a>, <a class="el" href="_frame_8hpp_source.html#l00665">ob::DepthFrame::getValueScale()</a>, <a class="el" href="_frame_8hpp_source.html#l00777">ob::PointsFrame::getWidth()</a>, <a class="el" href="_frame_8hpp_source.html#l00524">ob::VideoFrame::getWidth()</a>, <a class="el" href="_frame_8hpp_source.html#l00260">hasMetadata()</a>, <a class="el" href="_frame_8hpp_source.html#l00991">ob::FrameSet::pushFrame()</a>, <a class="el" href="_frame_8hpp_source.html#l00595">ob::VideoFrame::setPixelAvailableBitSize()</a>, <a class="el" href="_frame_8hpp_source.html#l00580">ob::VideoFrame::setPixelType()</a>, <a class="el" href="_frame_8hpp_source.html#l00441">setStreamProfile()</a>, <a class="el" href="_frame_8hpp_source.html#l00387">setSystemTimestampUs()</a>, <a class="el" href="_frame_8hpp_source.html#l00144">setToken()</a>, <a class="el" href="_frame_8hpp_source.html#l00679">ob::DepthFrame::setValueScale()</a>, <a class="el" href="_frame_8hpp_source.html#l00408">updateData()</a>, <a class="el" href="_frame_8hpp_source.html#l00428">updateMetadata()</a>, and <a class="el" href="_frame_8hpp_source.html#l00076">~Frame()</a>.</p>
 
 </div>
 </div>
