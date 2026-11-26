@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.3. 环境配置 &mdash; OrbbecSDK V2  文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=a2eacb60" />
+      <link rel="stylesheet" type="text/css" href="../../_static/language_switch.css?v=be0aaf98" />
+
+  
+    <link rel="shortcut icon" href="../../_static/orbbec_footerlogo_3d_world.svg"/>
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=7d86a446"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=beaddf03"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="2. 快速入门" href="../2_QuickStarts/QuickStarts.html" />
+    <link rel="prev" title="1.2. SDK 概述" href="SDKOverview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            OrbbecSDK V2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="overview.html">1. 概述</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Introduction.html">1.1. 引言</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SDKOverview.html">1.2. SDK 概述</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SDKOverview.html#id1">1.2.1. 术语</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SDKOverview.html#orbbec-sdk-v2">1.2.2. Orbbec SDK v2 架构概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SDKOverview.html#id2">1.2.3. SDK 概念概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SDKOverview.html#id3">1.2.4. SDK 编程模型</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.3. 环境配置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sdk">1.3.1. SDK 下载</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1.3.2. 设备支持验证</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">1.3.3. 开发环境配置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_QuickStarts/QuickStarts.html">2. 快速入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_QuickStarts/QuickStart.html">2.1. Windows 系统的快速入门</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#id1">2.1.1. 元数据注册</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#sdk-zip">2.1.2. 编译 SDK 包(.zip)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#linux">2.2. Linux 系统的快速入门</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#udev">2.2.1. 安装 udev 规则脚本</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#id2">2.2.2. 编译 SDK 包(.zip)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#id3">2.3. 如何使用安装包</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#deb">2.3.1. 使用 .deb 包安装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../2_QuickStarts/QuickStart.html#exe">2.3.2. 使用 .exe 包安装</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_Application_Guide/Application_Guide.html">3. 应用指南</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html">3.1. 创建设备</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#pipeline">3.2. 创建 Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id2">3.3. 获取传感器列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id3">3.4. 获取视频数据流</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id4">3.4.1. 阻塞轮询模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id5">3.4.2. 异步回调模式</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#imu">3.5. 获取 IMU 数据流</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id6">3.5.1. 阻塞轮询模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id7">3.5.2. 异步回调模式</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id8">3.6. 帧汇聚</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#d2c">3.7. D2C</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id9">3.7.1. 硬件 D2C</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id10">3.7.2. 软件 D2C</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#c2d">3.8. 软件 C2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id11">3.9. 深度点云</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id12">3.9.1. 同步模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id13">3.9.2. 异步回调模式</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#rgbd">3.10. RGBD 点云</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id14">3.10.1. 同步模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id15">3.10.2. 异步回调模式</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id16">3.11. 去噪滤波</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id17">3.11.1. 硬件去噪滤波</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id18">3.11.2. 软件去噪滤波</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#depth">3.12. Depth 后处理滤波</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id19">3.13. 录制与回放</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id20">3.13.1. 录制</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id21">3.13.2. 回放</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id22">3.14. 固件升级</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id23">3.15. 深度预设</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id24">3.16. 设备断开与重新连接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id25">3.17. 常用接口</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id26">3.17.1. 获取序列号</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#ldp">3.17.2. LDP 开关</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#lrm">3.17.3. LRM 开关</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id27">3.17.4. 获取 LDP 测量值</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id28">3.17.5. 获取 LDP 保护状态</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id29">3.17.6. 激光开关模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id30">3.17.7. 设备重启</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#ip">3.17.8. 网络设备 IP 地址的修改与设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id31">3.17.9. 获取设备温度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id32">3.17.10. 获取设备基线</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id33">3.17.11. 获取流配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id34">3.17.12. 获取 IMU 流配置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id35">3.17.13. 获取内参和外参</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id36">3.17.14. 获取 IMU 内参</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id37">3.17.15. 获取视频帧与 IMU 之间的外参</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id38">3.17.16. 设置 Depth 自动曝光</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id39">3.17.17. 设置 Depth 曝光</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id40">3.17.18. 设置 Depth 增益</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id41">3.17.19. 设置 Depth 镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id42">3.17.20. 设置 Depth 翻转</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id43">3.17.21. 设置 Depth 旋转</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id44">3.17.22. 设置 Depth 单位</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id45">3.17.23. 设置 Depth 的最小值和最大值</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id46">3.17.24. 相机深度工作模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#d2d">3.17.25. 视差转深度（D2D）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#ir">3.17.26. 设置 IR自动曝光</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id47">3.17.27. 设置 IR 曝光</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id48">3.17.28. 设置 IR 增益</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id49">3.17.29. 设置 IR 目标亮度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id50">3.17.30. 设置 IR 最大曝光值</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id51">3.17.31. 设置 IR 镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id52">3.17.32. 设置 IR 翻转</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id53">3.17.33. 设置 IR 旋转</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#color">3.17.34. 设置 Color自动曝光</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id54">3.17.35. 设置 Color 曝光</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id55">3.17.36. 设置 Color 增益</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id56">3.17.37. 设置 Color 镜像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id57">3.17.38. 设置 Color 翻转</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id58">3.17.39. 设置 Color 旋转</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#color-awb">3.17.40. 设置 Color 自动白平衡（AWB）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id59">3.17.41. 设置 Color 白平衡参数</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id60">3.17.42. 设置 Color 亮度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id61">3.17.43. 设置 Color 锐度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#color-gamma">3.17.44. 设置 Color Gamma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id62">3.17.45. 设置 Color 饱和度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id63">3.17.46. 设置 Color 色调</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id64">3.17.47. 设置 Color 自动曝光优先级</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id65">3.17.48. 设置 Color 背光补偿</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id66">3.17.49. 设置 Color 对比度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id67">3.17.50. 设置 Color 电力线路频率</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id68">3.17.51. 激光开关模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#hdr">3.17.52. HDR 融合</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#metadata">3.17.53. 获取 MetaData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id69">3.17.54. 触发采集</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id70">3.17.54.1. 软件触发采集</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id71">3.17.54.2. 定时抓拍</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id72">3.17.55. 时间戳清零</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id73">3.17.56. 设备时间同步</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id74">3.17.57. 多设备同步</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#usb">3.17.57.1. USB 和网络设备</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#gmsl">3.17.57.2. GMSL 设备</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id75">3.17.57.2.1. 编译</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id76">3.17.57.2.2. 多设备同步配置</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id77">3.17.57.2.3. 测试结果</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id78">3.18. 日志管理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id79">3.18.1. 设置日志级别</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id80">3.18.2. 将日志输出到控制台</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id81">3.18.3. 将日志输出到文件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id82">3.18.4. 设置日志回调输出</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Application_Guide/ApplicationGuide.html#id83">3.18.5. 修改配置文件中的日志级别</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_FAQ/FAQs.html">4. 常见问题</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_FAQ/FAQ.html">4.1. 如何保存 Orbbec SDK v2 的日志</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_FAQ/FAQ.html#orbbecviewer">4.1.1. 如何使用 OrbbecViewer 保存日志</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../4_FAQ/FAQ.html#windows">4.1.1.1. Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../4_FAQ/FAQ.html#linux-x64-arm64">4.1.1.2. Linux (x64/ARM64)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../4_FAQ/FAQ.html#id1">4.1.2. 如何在 Orbbec SDK v2 应用程序中保存日志</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../4_FAQ/FAQ.html#id2">4.1.2.1. Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../4_FAQ/FAQ.html#id3">4.1.2.2. Linux (x64/ARM64)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../4_FAQ/FAQ.html#usbfs">4.2. 如何提高 usbfs 内存限制</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">5. 许可证</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OrbbecSDK V2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="overview.html"><span class="section-number">1. </span>概述</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1.3. </span>环境配置</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/1_overview/EnvironmentSetup.md.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="lang-switch docs-floating-switches__item"><a class="lang-other" href="#">English</a> | <a class="lang-current" href="#">中文</a></div><script>(function(){function getDockHost(){  if(window.matchMedia && window.matchMedia('(max-width: 768px)').matches){    return document.body;  }  return document.querySelector('.wy-nav-side') || document.body;}function ensureDock(){  var dock=document.querySelector('[data-docs-switch-dock]');  var host=getDockHost();  if(!dock){    dock=document.createElement('div');    dock.className='docs-floating-switches';    dock.setAttribute('data-docs-switch-dock','');  }  if(dock.parentNode!==host){    host.appendChild(dock);  }  return dock;}function mountSwitch(){var p=window.location.pathname;var isEn=p.indexOf('/en/')!==-1 && p.indexOf('/zh/')===-1;if(p.indexOf('/zh/')!==-1) isEn=false;var other = isEn ? p.replace(/\/en\//, '/zh/') : p.replace(/\/zh\//, '/en/');var current=p;var sw=document.querySelector('.lang-switch'); if(!sw) return;ensureDock().appendChild(sw);var o=sw.querySelector('.lang-other'); var c=sw.querySelector('.lang-current');if(isEn){ o.textContent='中文'; c.textContent='English'; } else { o.textContent='English'; c.textContent='中文'; }o.setAttribute('href', other); c.setAttribute('href', current);}if(document.body){ mountSwitch(); }else { document.addEventListener('DOMContentLoaded', mountSwitch, {once:true}); }window.addEventListener('resize', mountSwitch, {passive:true});})();</script><section id="id1">
+<h1><span class="section-number">1.3. </span>环境配置<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<section id="sdk">
+<h2><span class="section-number">1.3.1. </span>SDK 下载<a class="headerlink" href="#sdk" title="Link to this heading"></a></h2>
+<p>请访问 Orbbec 官方 GitHub 仓库 <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/releases">OrbbecSDK_v2 发布页面</a> 下载 SDK 的预编译版本。您也可以下载 <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2">源代码</a> 并自行编译。有关编译说明，请参阅 <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/blob/main/docs/tutorial/building_orbbec_sdk.md">如何构建 Orbbec SDK</a>。</p>
+<p>下图以 v2.8.6 版本为例。请访问 <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2/releases/tag/v2.8.6">OrbbecSDK_v2 发布页面</a>，在 “Assets” 栏目中下载预编译的 SDK 及 OrbbecViewer 工具。</p>
+<p><img alt="image.png" src="../../_images/Download-SDK.png" /></p>
+</section>
+<section id="id2">
+<h2><span class="section-number">1.3.2. </span>设备支持验证<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>在使用 SDK 之前，请务必查看支持的设备列表，以确认您的设备是否兼容，并确保其能正常运行。</p>
+<p>本页概述了所有支持的 <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2?tab=readme-ov-file#13-supported-platforms">平台</a> 和 <a class="reference external" href="https://github.com/orbbec/OrbbecSDK_v2?tab=readme-ov-file#14-supported-devices">设备</a>。</p>
+</section>
+<section id="id3">
+<h2><span class="section-number">1.3.3. </span>开发环境配置<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>以 Windows 为例来配置开发环境。建议使用 Visual Studio 2019 作为集成开发环境（IDE）。请确保已正确安装 CMake、Visual Studio 2017 或更高版本、GCC、OpenCV 以及其他必要的依赖项。</p>
+<p>为确保 SDK 示例能正确渲染和显示，请务必安装 OpenCV。否则示例可能无法运行或显示异常。</p>
+<p><img alt="image.png" src="../../_images/Need_Opencv_Sample.png" /></p>
+<p>您可以通过此链接下载 OpenCV:<a class="reference external" href="https://opencv.org/releases/">https://opencv.org/releases/</a>。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="SDKOverview.html" class="btn btn-neutral float-left" title="1.2. SDK 概述" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../2_QuickStarts/QuickStarts.html" class="btn btn-neutral float-right" title="2. 快速入门" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024-2025,Orbbec Inc. All Rights Reserved。
+      <span class="lastupdated">最后更新于 2026-11-26 16:45:43.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
